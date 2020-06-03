@@ -1,5 +1,9 @@
 " init.vim The Leader of other rc files
 " redundant character " is for debug
+
+set encoding=utf-8
+scriptencoding utf-8
+
 "
 "
 "
