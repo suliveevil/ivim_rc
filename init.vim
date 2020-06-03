@@ -35,6 +35,9 @@ source $HOME/.vim/_rc/my_rc_pac/basic/basic.vim
 source $HOME/.vim/_rc/my_rc_pac/completion/ultisnips.vim
 
 "
+source $HOME/.vim/_rc/my_rc_pac/completion/auto-popup-menu.vim
+
+"
 source $HOME/.vim/_rc/my_rc_pac/interface/buffet.vim
 
 "
