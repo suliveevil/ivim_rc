@@ -31,15 +31,19 @@ source $HOME/.vim/_rc/my_rc/basic/_5_find_search__.vim
 
 source $HOME/.vim/_rc/my_rc_pac/basic/basic.vim
 
+"
+source $HOME/.vim/_rc/my_rc_pac/completion/ultisnips.vim
+
+"
 source $HOME/.vim/_rc/my_rc_pac/interface/buffet.vim
+
 "
 source $HOME/.vim/_rc/my_rc_pac/interface/lightline.vim
 
 "
 source $HOME/.vim/_rc/my_rc_pac/explorer/nerdtree.vim
 
-"
-source $HOME/.vim/_rc/my_rc_pac/explorer/dirvish.vim
+"source $HOME/.vim/_rc/my_rc_pac/explorer/dirvish.vim
 
 "
 source $HOME/.vim/_rc/my_rc_pac/explorer/vinegar.vim
