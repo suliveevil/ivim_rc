@@ -1,6 +1,12 @@
 # ivim_rc
 
-iVim rc folder, under $HOME
+iVim rc folder, under $HOME/vim
+
+```viml
+:!mv .vim vim_backup
+:!mkdir $HOME/vim
+:!ln -s vim .vim
+```
 
 
 ## my_rc
