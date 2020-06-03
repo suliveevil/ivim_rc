@@ -1,4 +1,4 @@
-map <Leader>nt :NERDTreeToggle<CR>
+nnoremap <Leader>nt :NERDTreeToggle<CR>
 
 
 "open NERDTree automatically when vim starts up on opening a directory

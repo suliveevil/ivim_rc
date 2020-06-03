@@ -36,6 +36,15 @@ source $HOME/.vim/_rc/my_rc_pac/interface/buffet.vim
 source $HOME/.vim/_rc/my_rc_pac/interface/lightline.vim
 
 "
+source $HOME/.vim/_rc/my_rc_pac/explorer/nerdtree.vim
+
+"
+source $HOME/.vim/_rc/my_rc_pac/explorer/dirvish.vim
+
+"
+source $HOME/.vim/_rc/my_rc_pac/explorer/vinegar.vim
+
+"
 source $HOME/.vim/_rc/my_rc_pac/interface/thumbnail.vim
 
 "
