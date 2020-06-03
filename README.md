@@ -1,6 +1,6 @@
 # ivim_rc
 
-iVim rc folder
+iVim rc folder, under $HOME
 
 
 ## my_rc
