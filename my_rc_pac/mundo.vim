@@ -5,11 +5,11 @@ set undodir=~/.vim/undo
 
 nnoremap <Leader>5 :MundoToggle<CR>
 
-let g:mundo_width = 60
+let g:mundo_width = 50
 
-let g:mundo_preview_height = 40
+let g:mundo_preview_height = 50
 
-let g:mundo_right = 1
+let g:mundo_right = 0
 
 " Defaults
 " let g:mundo_mappings = {
@@ -34,6 +34,8 @@ let g:mundo_right = 1
 "           \ '?': 'toggle_help',
 "           \ 'q': 'quit',
 "           \ '<2-LeftMouse>': 'mouse_click' }
+
+
 
 
 
