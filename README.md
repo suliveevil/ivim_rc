@@ -13,3 +13,20 @@ config Vim
 config plugins and packages
 
 
+## Plugins and Packages
+
+### Plugin/Package Manager
+
+### VimL
+
+###  Code
+
+### Completion
+
+### Interface/UI
+
+### IO/Communication
+
+
+
+
