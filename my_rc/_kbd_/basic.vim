@@ -6,8 +6,9 @@
 set nocompatible
 
 " 解决 vi compatible 模式下 backspace 置空
-set backspace = eol,start,indent
-
+set backspace = eol
+set backspace+= start
+set backspace+= indent
 
 "✅ iVim Extended Keyboards
 "nnoremap <leader>eks <D-s>

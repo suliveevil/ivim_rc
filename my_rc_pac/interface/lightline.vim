@@ -1,7 +1,3 @@
-let g:lightline = {
-\ 'enable': { 'tabline': 0 },
-\ }
-
 let g:lightline.active = {
     \ 'left': [ [ 'mode', 'paste' ],
     \           [ 'readonly', 'filename', 'modified' ] ],
