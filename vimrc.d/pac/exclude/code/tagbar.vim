@@ -1,0 +1,1 @@
+nnoremap <silent><leader>tb :TagbarToggle<CR>
