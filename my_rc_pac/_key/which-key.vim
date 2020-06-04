@@ -1,9 +1,12 @@
 set timeoutlen=500
-let g:which_key_timeout = 700
+let g:which_key_timeout = 1000
 
-“https://github.com/liuchengxu/space-vim/blob/master/layers/%2Bvim/which-key/config.vim
-nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
-vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Space>'<CR>
+let g:which_key_exit = "\<Space>"
+
+"https://github.com/liuchengxu/space-vim/blob/master/layers/%2Bvim/which-key/config.vim
+
+nnoremap <leader> <Space> :<c-u>WhichKey '<Space>'<CR>
+vnoremap <leader> <Space> :<c-u>WhichKeyVisual '<Space>'<CR>
 
 nnoremap <silent> <localleader> :<c-u>WhichKey ','<CR>
 vnoremap <silent> <localleader> :<c-u>WhichKeyVisual ','<CR>
@@ -17,18 +20,22 @@ autocmd! FileType which_key
 
 
 let g:which_key_sep = '→'
-"let g:which_key_exit="<Space><Space>"
 let g:which_key_vertical=0
 let g:which_key_use_floating_win=1
+let g:which_key_run_map_on_popup = 1
 let g:which_key_floating_opts = { 'col': '+4' }
 
+highlight Pmenu guibg=brown gui=bold
 highlight default link WhichKey          Function
 highlight default link WhichKeySeperator DiffAdded
 highlight default link WhichKeyGroup     Keyword
 highlight default link WhichKeyDesc      Identifier
-
-
-"“highlight default link WhichKeyFloating Pmenu
-highlight WhichKeyFloating Comment
-"\ ctermbg=DarkBlue  ctermfg=Green 
+highlight default link WhichKeyFloating Pmenu
+"highlight WhichKeyFloating IncSearch
+"\ ctermbg=DarkBlue  ctermfg=Green
 "\ guibg=DarkBlue guifg=Mengenta
+
+let g:WhichKeyFormatFunc = function('which_key#format')
+
+
+

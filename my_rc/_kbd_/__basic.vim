@@ -23,6 +23,7 @@ let g:mapleader = "\<space>"
 "✅ 跳转
 
 nnremap <leader>j <C-]>
+nnremap <leader>k <C-[>
 " 跳转 Home End
 noremap H ^
 noremap L $
