@@ -1,9 +1,9 @@
 " init.vim The Leader of other rc files
 scriptencoding utf-8
 set encoding=utf-8
-source $HOME/.vim/_rc/my_rc/_kbd_/basic.vim
-source $HOME/.vim/_rc/my_rc/basic/_0_basic__.vim
-source $HOME/.vim/_rc/my_rc/basic/_5_find_search__.vim
+source $HOME/.vim/_rc/my_rc/_0_basic__.vim
+source $HOME/.vim/_rc/my_rc/_5_find_search__.vim
+source $HOME/.vim/_rc/my_rc/_kbd_/__basic.vim
 source $HOME/.vim/_rc/my_rc/interface/basic.vim
 source $HOME/.vim/_rc/my_rc/io/clipboard.vim
 source $HOME/.vim/_rc/my_rc_pac/_key/sneak.vim

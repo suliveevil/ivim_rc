@@ -1,8 +1,14 @@
 set timeoutlen=500
 let g:which_key_timeout = 300
 
+“https://github.com/liuchengxu/space-vim/blob/master/layers/%2Bvim/which-key/config.vim
+nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
+vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Space>'<CR>
 
-nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+nnoremap <silent> <localleader> :<c-u>WhichKey ','<CR>
+vnoremap <silent> <localleader> :<c-u>WhichKeyVisual ','<CR>
+
+
 autocmd! FileType which_key
 
 "infects lightline
