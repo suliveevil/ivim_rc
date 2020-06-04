@@ -49,13 +49,13 @@ set list
 "✅ 单行字符数提示
 set colorcolumn=80
 
-"✅ 行号
-set number
-"✅ 相对行号
-"✅ 根据模式切换相对行号
+"✅ 行号 number
+"✅ 相对行号:根据模式切换相对行号
 augroup relative_numbers
         autocmd!
         autocmd InsertEnter * :set norelativenumber
-        autocmd InsertLeave * :set relativenumber
+        autocmd InsertEnter * :set number
+        autocmd InsertLeave * :set norelativenumber
+        autocmd InsertLeave * :set nonumber
 augroup END
 
