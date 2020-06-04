@@ -1,0 +1,1 @@
+source $HOME/vimrc.d/__init__.vim
