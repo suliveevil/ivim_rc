@@ -1,0 +1,9 @@
+map <Leader>h <Plug>(wintabs_previous)
+map <Leader>l <Plug>(wintabs_next)
+map <Leader>tc <Plug>(wintabs_close)
+map <Leader>tu <Plug>(wintabs_undo)
+map <Leader>to <Plug>(wintabs_only)
+map <Leader>tc <Plug>(wintabs_close_window)
+map <Leader>wo <Plug>(wintabs_only_window)
+command! Tabc WintabsCloseVimtab
+command! Tabo WintabsOnlyVimtab

@@ -6,6 +6,7 @@ source $HOME/.vim/_rc/my_rc/_5_find_search__.vim
 source $HOME/.vim/_rc/my_rc/_kbd_/__basic.vim
 source $HOME/.vim/_rc/my_rc/interface/basic.vim
 source $HOME/.vim/_rc/my_rc/io/clipboard.vim
+source $HOME/.vim/_rc/my_rc/redi.vim
 source $HOME/.vim/_rc/my_rc_pac/_key/sneak.vim
 source $HOME/.vim/_rc/my_rc_pac/_key/which-key.vim
 source $HOME/.vim/_rc/my_rc_pac/basic/basic.vim
@@ -14,8 +15,10 @@ source $HOME/.vim/_rc/my_rc_pac/completion/ultisnips.vim
 source $HOME/.vim/_rc/my_rc_pac/explorer/nerdtree.vim
 source $HOME/.vim/_rc/my_rc_pac/explorer/vinegar.vim
 source $HOME/.vim/_rc/my_rc_pac/interface/buffet.vim
-source $HOME/.vim/_rc/my_rc_pac/interface/lightline.vim
+“source $HOME/.vim/_rc/my_rc_pac/interface/lightline.vim
+source $HOME/.vim/_rc/my_rc/interface/statusline.vim
 source $HOME/.vim/_rc/my_rc_pac/interface/thumbnail.vim
+source $HOME/.vim/_rc/my_rc_pac/interface/wintabs.vim
 source $HOME/.vim/_rc/my_rc_pac/leaderf.vim
 source $HOME/.vim/_rc/my_rc_pac/mundo.vim
 source $HOME/.vim/_rc/my_rc_pac/tagbar.vim

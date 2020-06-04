@@ -1,5 +1,5 @@
 set timeoutlen=500
-let g:which_key_timeout = 300
+let g:which_key_timeout = 700
 
 “https://github.com/liuchengxu/space-vim/blob/master/layers/%2Bvim/which-key/config.vim
 nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
@@ -17,7 +17,7 @@ autocmd! FileType which_key
 
 
 let g:which_key_sep = '→'
-"let g:which_key_exit="jk"
+"let g:which_key_exit="<Space><Space>"
 let g:which_key_vertical=0
 let g:which_key_use_floating_win=1
 let g:which_key_floating_opts = { 'col': '+4' }
@@ -29,6 +29,6 @@ highlight default link WhichKeyDesc      Identifier
 
 
 "“highlight default link WhichKeyFloating Pmenu
-highlight WhichKeyFloating 
-\ ctermbg=DarkBlue  ctermfg=Green 
-\ guibg=DarkBlue guifg=Mengenta
+highlight WhichKeyFloating Comment
+"\ ctermbg=DarkBlue  ctermfg=Green 
+"\ guibg=DarkBlue guifg=Mengenta
