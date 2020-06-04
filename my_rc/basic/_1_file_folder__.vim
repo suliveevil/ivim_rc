@@ -3,7 +3,7 @@
 "✅ 处理未保存或者只读文件时,给出提示
 set confirm
 
-"✅ 历史
+"✅ 历史 undo tree
 set undofile
 
 set history=2048

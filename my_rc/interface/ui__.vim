@@ -1,6 +1,12 @@
+"⚠️ 侧边栏------------------------------------------------------------
+set signcolumn=yes
+" 去掉 sign column 的白色背景
+hi! SignColumn guibg=NONE ctermbg=NONE
+
+
 "⚠️ 标题栏------------------------------------------------------------
 
-set titlelen=0
+"set titlelen=0
 "set titlestring = %{strftime(\"%Y\-%m\-%d\-%w")}
 
 "set titlestring  = expand("%:p")
@@ -67,3 +73,14 @@ set showcmd
 "   \ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 
 set statusline=%F%m%r%h%w/ [FORMAT=%{&ff}]/ [TYPE=%Y]/ [ASCII=/%03.3b]/ [HEX=/%02.2B]/ [POS=%04l,%04v][%p%%]/ [LEN=%L]
+
+" 终端设置，隐藏行号和侧边栏-----------------------------------------------
+if has('terminal') && exists(':terminal') == 2
+	if exists('##TerminalOpen')
+		augroup VimUnixTerminalGroup
+			au! 
+			au TerminalOpen * setlocal nonumber signcolumn=no
+		augroup END
+	endif
+endif
+

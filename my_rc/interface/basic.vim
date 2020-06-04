@@ -9,7 +9,7 @@
 set errorbells
 set visualbell
 
-set nostartofline
+"set nostartofline
 set showmatch
 set showmode
 set showcmd

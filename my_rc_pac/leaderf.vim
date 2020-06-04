@@ -1,4 +1,4 @@
-" don't show the help in normal mode
+don't show the help in normal mode
 let g:Lf_HideHelp = 1
 let g:Lf_UseCache = 0
 let g:Lf_UseVersionControlTool = 0

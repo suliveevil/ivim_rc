@@ -18,6 +18,8 @@ source $HOME/.vim/_rc/my_rc/basic/_5_find_search__.vim
 "
 "
 "
+source $HOME/.vim/_rc/my_rc/interface/basic.vim
+"
 "
 "
 "
@@ -26,6 +28,7 @@ source $HOME/.vim/_rc/my_rc/basic/_5_find_search__.vim
 "
 "
 
+source $HOME/.vim/_rc/my_rc_pac/mode/sneak.vim
 
 "
 
@@ -45,6 +48,7 @@ source $HOME/.vim/_rc/my_rc_pac/interface/lightline.vim
 
 "
 source $HOME/.vim/_rc/my_rc_pac/explorer/nerdtree.vim
+map gS <Plug>Sneak_,
 
 "source $HOME/.vim/_rc/my_rc_pac/explorer/dirvish.vim
 
