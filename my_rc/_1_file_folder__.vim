@@ -96,10 +96,10 @@ set encoding=utf-8
 set termencoding=utf-8
 
 
-"⚠️ 文件类型
+"⚠️ 文件类型与缩进
 filetype on
 
-
+filetype indent on
 
 
 "⚠️ 预处理

@@ -1,9 +1,10 @@
 
 noremap <Tab> :bn<CR>
 noremap <S-Tab> :bp<CR>
-noremap <Leader> <Tab> :Bw<CR>
-noremap <Leader> <S-Tab> :Bw!<CR>
-noremap <C-t> :tabnew split<CR>
+noremap <Leader><Tab> :Bw<CR>
+noremap <Leader><S-Tab> :Bw!<CR>
+" current buffer open in a new tab
+noremap <Leader>tt :tabnew split<CR>
 
 
 let g:buffet_tab_icon = "#"
@@ -12,8 +13,8 @@ let g:buffet_modified_icon = "+"
 let g:buffet_left_trunc_icon = "<"
 let g:buffet_right_trunc_icon = ">"
 let g:buffet_hidden_buffers = ["terminal", "quickfix"]
-" current buffer open in a new tab
-map <C-t> :tab split<CR>
+
+
 
 
 "nmap <leader>1 <Plug>BuffetSwitch(1)

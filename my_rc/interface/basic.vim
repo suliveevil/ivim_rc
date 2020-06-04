@@ -33,9 +33,8 @@ set shiftwidth=4
 set smarttab
 set expandtab
 
-"✅ 字体----------------------------------------------------------------------
 if has('ivim')
-    ifont Menlo 15
+    ifont Menlo 16
 else
     "
 endif
