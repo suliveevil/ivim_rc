@@ -11,6 +11,10 @@ scriptencoding utf-8
 "
 "
 source $HOME/.vim/_rc/my_rc/_kbd_/basic.vim
+
+"
+source $HOME/.vim/_rc/my_rc/basic/_0_basic__.vim
+
 "
 source $HOME/.vim/_rc/my_rc/io/clipboard.vim
 "

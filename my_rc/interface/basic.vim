@@ -1,8 +1,8 @@
 "✅------------------------------基本界面显示--------------------------------✅
 
 " 帮助语言
-"set helplang=cn
-"set langmenu=zh_CN.utf-8
+set helplang=cn,en
+set langmenu=zh_CN.utf-8
 
 
 "出错时，发出视觉提示，，不要发出响声
@@ -17,7 +17,6 @@ set lazyredraw
 
 
 "✅ 字符--------------------------------------------------------------------
-
 
 
 "✅ 空白字符
@@ -55,7 +54,7 @@ augroup relative_numbers
         autocmd!
         autocmd InsertEnter * :set norelativenumber
         autocmd InsertEnter * :set number
-        autocmd InsertLeave * :set norelativenumber
         autocmd InsertLeave * :set nonumber
+        autocmd InsertLeave * :set relativenumber
 augroup END
 
