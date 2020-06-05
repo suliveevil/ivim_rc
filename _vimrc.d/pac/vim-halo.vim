@@ -1,6 +1,5 @@
 highlight link Halo IncSearch
 
-autocmd BufEnter * call halo#run()
 
 nnoremap [q  :cprevious \| call halo#run()<cr>
 nnoremap ]q  :cnext \| call halo#run()<cr>
