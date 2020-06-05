@@ -17,7 +17,7 @@ let g:which_key_run_map_on_popup = 1
 let g:which_key_floating_opts = { 'col': '+4' }
 let g:WhichKeyFormatFunc = function('which_key#format')
 
-highlight Pmenu guibg=brown gui=bold ctermbg=DarkBlue ctermfg=Green
+highlight Pmenu guibg=DarkBlue gui=bold ctermbg=DarkBlue ctermfg=Green
 highlight default link WhichKey          Function
 highlight default link WhichKeySeperator DiffAdded
 highlight default link WhichKeyGroup     Keyword
