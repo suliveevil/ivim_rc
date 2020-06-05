@@ -33,6 +33,8 @@ n  <Space>lc     :call TimeLogLine('continue_task')<CR>
 n  <Space>li     :call TimeLogLine('interval_task')<CR>
 n  <Space>le     :call TimeLogLine('end_task')<CR>
 n  <Space>ls     :call TimeLogLine('start_task')<CR>
+n  <Space>s/   * :FlyGrep<CR>
+n  <Space>p    * <Plug>(ctrlp)
 n  <Space>     * :WhichKey ' '<CR>
 n  <Space>x      <Plug>TranslateX
 v  <Space>r      <Plug>TranslateRV
@@ -44,8 +46,6 @@ n  <Space>t      <Plug>Translate
 n  <Space>bb   * :Thumbnail<CR>
 n  <Space>tb   * :TagbarToggle<CR>
 n  <Space>5    * :MundoToggle<CR>
-n  <Space>s/   * :FlyGrep<CR>
-n  <Space>p    * <Plug>(ctrlp)
 n  <Space>--   * :ifont -<CR>
 n  <Space>++   * :ifont +<CR>
 n  <Space>9    * :vertical resize+5<CR>
@@ -58,8 +58,13 @@ n  <Space>wj   * :set splitbelow<CR>:split<CR>
 n  <Space>wk   * :set nosplitbelow<CR>:split<CR>
 n  <Space>wh   * :set nosplitright<CR>:vsplit<CR>
 n  <Space>wl   * :set splitright<CR>:vsplit<CR>
-n  <Space>tc   * :tabe<CR>
    <Space>zz     :call ToggleFold()<CR>
+n  <Space>tc   * :tabe<CR>
+n  <Space>k    * <C-W>k
+n  <Space>j    * <C-W>j
+v  <Space>q    * <Esc>
+n  <Space>s    * <C-S>
+n  <Space>v    * <C-V>
 n  <Space>bD   * :bdelete!<CR>
 n  <Space>bd   * :bdelete <CR>
 n  <Space>bh   * :bhide<CR>
@@ -67,14 +72,10 @@ n  <Space>bn   * :bnext<CR>
 n  <Space>bp   * :bprevious<CR>
 n  <Space>bo   * :enew<CR>
 n  <Space>bl   * :ls<CR>
-n  <Space>k    * <C-W>k
-n  <Space>j    * <C-W>j
-v  <Space>q    * <Esc>
-n  <Space>s    * <C-S>
-n  <Space>v    * <C-V>
 x  ,             <Plug>Sneak_,
 o  ,             <Plug>Sneak_,
 n  ,             <Plug>Sneak_,
+n  -             <Plug>VinegarUp
 x  ;             <Plug>Sneak_;
 o  ;             <Plug>Sneak_;
 n  ;             <Plug>Sneak_;
@@ -95,6 +96,10 @@ x  s             <Plug>Sneak_s
 n  s             <Plug>Sneak_s
 n  y<C-G>      & :<C-U>call setreg(v:register, fugitive#Object(@%))<CR>
 o  z             <Plug>Sneak_s
+n  <Plug>VinegarVerticalSplitUp * :call <SNR>115_opendir('vsplit')<CR>
+n  <Plug>VinegarSplitUp * :call <SNR>115_opendir('split')<CR>
+n  <Plug>VinegarTabUp * :call <SNR>115_opendir('tabedit')<CR>
+n  <Plug>VinegarUp * :call <SNR>115_opendir('edit')<CR>
 n  <Plug>TranslateX * :TranslateX<CR>
 v  <Plug>TranslateRV * :TranslateR<CR>
 n  <Plug>TranslateR * :TranslateR<CR>
@@ -138,12 +143,12 @@ x  <Plug>Sneak_F * :<C-U>call sneak#wrap(visualmode(), 1, 1, 1, 0)<CR>
 x  <Plug>Sneak_f * :<C-U>call sneak#wrap(visualmode(), 1, 0, 1, 0)<CR>
 n  <Plug>Sneak_F * :<C-U>call sneak#wrap('', 1, 1, 1, 0)<CR>
 n  <Plug>Sneak_f * :<C-U>call sneak#wrap('', 1, 0, 1, 0)<CR>
-o  <Plug>Sneak_, * :<C-U>call <SNR>87_rpt(v:operator, 1)<CR>
-o  <Plug>Sneak_; * :<C-U>call <SNR>87_rpt(v:operator, 0)<CR>
-x  <Plug>Sneak_, * :<C-U>call <SNR>87_rpt(visualmode(), 1)<CR>
-x  <Plug>Sneak_; * :<C-U>call <SNR>87_rpt(visualmode(), 0)<CR>
-n  <Plug>Sneak_, * :<C-U>call <SNR>87_rpt('', 1)<CR>
-n  <Plug>Sneak_; * :<C-U>call <SNR>87_rpt('', 0)<CR>
+o  <Plug>Sneak_, * :<C-U>call <SNR>110_rpt(v:operator, 1)<CR>
+o  <Plug>Sneak_; * :<C-U>call <SNR>110_rpt(v:operator, 0)<CR>
+x  <Plug>Sneak_, * :<C-U>call <SNR>110_rpt(visualmode(), 1)<CR>
+x  <Plug>Sneak_; * :<C-U>call <SNR>110_rpt(visualmode(), 0)<CR>
+n  <Plug>Sneak_, * :<C-U>call <SNR>110_rpt('', 1)<CR>
+n  <Plug>Sneak_; * :<C-U>call <SNR>110_rpt('', 0)<CR>
 o  <Plug>SneakRepeat * :<C-U>call sneak#wrap(v:operator, sneak#util#getc(), sneak#util#getc(), sneak#util#getc(), sneak#util#getc())<CR>
 o  <Plug>Sneak_S * :<C-U>call sneak#wrap(v:operator, 2, 1, 2, 1)<CR>
 o  <Plug>Sneak_s * :<C-U>call sneak#wrap(v:operator, 2, 0, 2, 1)<CR>
@@ -151,12 +156,12 @@ x  <Plug>Sneak_S * :<C-U>call sneak#wrap(visualmode(), 2, 1, 2, 1)<CR>
 x  <Plug>Sneak_s * :<C-U>call sneak#wrap(visualmode(), 2, 0, 2, 1)<CR>
 n  <Plug>Sneak_S * :<C-U>call sneak#wrap('', 2, 1, 2, 1)<CR>
 n  <Plug>Sneak_s * :<C-U>call sneak#wrap('', 2, 0, 2, 1)<CR>
-n  <Plug>(characterize) & :<C-U>echo <SNR>78_info(matchstr(getline('.')[col('.')-1:-1],'.'))<CR>
+n  <Plug>(characterize) & :<C-U>echo <SNR>101_info(matchstr(getline('.')[col('.')-1:-1],'.'))<CR>
 v  <Plug>SearchVisual   :<C-U>call search#search_visual('')<CR>
 n  <Plug>SearchNormal   :set operatorfunc=search#search_normal<CR>g@
 v  <F4>          <Plug>(MakeDigraph)
 n  <F4>          <Plug>(MakeDigraph)
-n  <Plug>(UnicodeSwapCompleteName) & :<C-U>call <SNR>75_ToggleUnicodeCompletion()<CR>
+n  <Plug>(UnicodeSwapCompleteName) & :<C-U>call <SNR>98_ToggleUnicodeCompletion()<CR>
 n  <Plug>(UnicodeGA) & :<C-U>UnicodeName<CR>
 v  <Plug>(MakeDigraph) & :<C-U>call unicode#GetDigraph(visualmode(), 1)<CR>
 n  <Plug>(MakeDigraph) & :set opfunc=unicode#GetDigraph<CR>g@
@@ -171,7 +176,7 @@ x  <Plug>(openbrowser-open-incognito) * :<C-U>call openbrowser#_keymap_open('v',
 n  <Plug>(openbrowser-open-incognito) * :<C-U>call openbrowser#_keymap_open('n', 0, ['--incognito'])<CR>
 x  <Plug>(openbrowser-open) * :<C-U>call openbrowser#_keymap_open('v')<CR>
 n  <Plug>(openbrowser-open) * :<C-U>call openbrowser#_keymap_open('n')<CR>
-n  <Plug>NERDCommenterAltDelims * :call <SNR>68_SwitchToAlternativeDelimiters(1)<CR>
+n  <Plug>NERDCommenterAltDelims * :call <SNR>71_SwitchToAlternativeDelimiters(1)<CR>
 x  <Plug>NERDCommenterUncomment * :call NERDComment("x", "Uncomment")<CR>
 n  <Plug>NERDCommenterUncomment * :call NERDComment("n", "Uncomment")<CR>
 x  <Plug>NERDCommenterAlignBoth * :call NERDComment("x", "AlignBoth")<CR>
