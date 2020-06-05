@@ -25,17 +25,29 @@ endif
 
 
 "模式与光标样式
+" 1 -> blinking block    
+" 2 -> solid block          
+" 3 -> blinking underscore
+" 4 -> solid underscore  
+" 5 -> blinking vertical bar 
+" 6 -> solid vertical bar
 "SI = 插入模式
 let &t_SI.="\e[5 q"
+"let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+
 "SR = 替换模式
 let &t_SR.="\e[4 q"
+"let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+
 "EI = 其他模式
 let &t_EI.="\e[1 q"
-"  1 -> blinking block    2 -> solid block           3 -> blinking underscore
-"  4 -> solid underscore  5 -> blinking vertical bar 6 -> solid vertical bar
-"let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-"let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 "let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+
+
+
+
+
 
 
 "光标颜色
@@ -50,12 +62,12 @@ endif
 
 
 "光标所在行和列
-autocmd InsertLeave,WinEnter * set cursorcolumn
-autocmd InsertEnter,WinLeave * set cursorcolumn
-autocmd InsertLeave,WinEnter * set cursorline
-autocmd InsertEnter,WinLeave * set nocursorline
+" autocmd InsertLeave,WinEnter * set cursorcolumn
+" autocmd InsertEnter,WinLeave * set cursorcolumn
+" autocmd InsertLeave,WinEnter * set cursorline
+" autocmd InsertEnter,WinLeave * set nocursorline
 
 
-set virtualedit=onemore
+" set virtualedit=onemore
 
 

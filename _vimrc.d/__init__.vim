@@ -4,7 +4,7 @@
 source $HOME/.vimrc.d/basic.vim
 source $HOME/.vimrc.d/buffer.vim
 source $HOME/.vimrc.d/completion.vim
-source $HOME/.vimrc.d/cursor_mouse__.vim
+source $HOME/.vimrc.d/cursor_mouse.vim
 source $HOME/.vimrc.d/file_folder.vim
 source $HOME/.vimrc.d/file_ignore.vim
 source $HOME/.vimrc.d/find_search.vim

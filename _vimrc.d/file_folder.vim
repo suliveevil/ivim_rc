@@ -13,8 +13,10 @@ set backupdir   =$HOME/.vim/files/backup/
 set backupext   =-vimbackup
 set backupskip  =
 " 交换文件
-set directory   =$HOME/.vim/files/swap//
-set updatecount =100
+
+set directory   =.,$HOME/.vim/files/swap/
+set updatecount =200
+set updatetime=5000
 " 撤销文件
 set undofile
 set undodir     =$HOME/.vim/files/undo/

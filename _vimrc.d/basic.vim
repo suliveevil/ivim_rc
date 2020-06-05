@@ -42,6 +42,7 @@ set expandtab
 "✅ 字体
 if has('ivim')
     ifont Menlo 16
+    set guifont=Menlo:h16
     nnoremap <leader>++ :ifont +<cr>
     nnoremap <leader>-- :ifont -<cr>
 endif
@@ -80,7 +81,7 @@ let g:mapleader = "\<space>"
 " nnoremap <Leader>j <C-]>
 
 
-"✅ 插入模式 set virtualedit
+"✅ 插入模式 set virtualedit=one
 
 " iPadOS 不需要设置 ; 替换 :
 "nnoremap ; :
