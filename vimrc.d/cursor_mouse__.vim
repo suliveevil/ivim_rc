@@ -56,3 +56,8 @@ autocmd InsertLeave,WinEnter * set cursorcolumn
 autocmd InsertEnter,WinLeave * set cursorcolumn
 autocmd InsertLeave,WinEnter * set cursorline
 autocmd InsertEnter,WinLeave * set nocursorline
+
+
+set virtualedit=all
+
+

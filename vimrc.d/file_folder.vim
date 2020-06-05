@@ -1,5 +1,26 @@
 " 本地文件
 
+" 临时文件
+
+" 如果文件夹不存在，则新建文件夹
+if !isdirectory($HOME.'/.vim/files') && exists('*mkdir')
+  call mkdir($HOME.'/.vim/files')
+endif
+
+" 备份文件
+set backup
+set backupdir   =$HOME/.vim/files/backup/
+set backupext   =-vimbackup
+set backupskip  =
+" 交换文件
+set directory   =$HOME/.vim/files/swap//
+set updatecount =100
+" 撤销文件
+set undofile
+set undodir     =$HOME/.vim/files/undo/
+" viminfo 文件
+set viminfo     ='100,n$HOME/.vim/files/info/viminfo
+
 " 新建
 
 

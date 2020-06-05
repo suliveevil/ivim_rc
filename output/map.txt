@@ -52,7 +52,7 @@ n  <Space>9    * :vertical resize+5<CR>
 n  <Space>0    * :vertical resize-5<CR>
 n  <Space>@    * :res -5<CR>
 n  <Space>#    * :res +5<CR>
-n  <Space>l    * <C-W>l
+n  <Space>l    * :nohlsearch<CR>:diffupdate<CR>:syntax sync fromstart<CR><C-L>
 n  <Space>h    * <C-W>h
 n  <Space>wj   * :set splitbelow<CR>:split<CR>
 n  <Space>wk   * :set nosplitbelow<CR>:split<CR>
@@ -80,6 +80,7 @@ o  ;             <Plug>Sneak_;
 n  ;             <Plug>Sneak_;
    H           * ^
    L           * $
+n  N           * 'nN'[v:searchforward]
 n  S             <Plug>Sneak_S
 x  Z             <Plug>Sneak_S
 o  Z             <Plug>Sneak_S
@@ -89,8 +90,10 @@ n  ga            <Plug>(characterize)
 v  gx            <Plug>NetrwBrowseXVis
 n  gx            <Plug>NetrwBrowseX
 v  jk          * <Esc>
+n  n           * 'Nn'[v:searchforward]
 x  s             <Plug>Sneak_s
 n  s             <Plug>Sneak_s
+n  y<C-G>      & :<C-U>call setreg(v:register, fugitive#Object(@%))<CR>
 o  z             <Plug>Sneak_s
 n  <Plug>TranslateX * :TranslateX<CR>
 v  <Plug>TranslateRV * :TranslateR<CR>
@@ -135,12 +138,12 @@ x  <Plug>Sneak_F * :<C-U>call sneak#wrap(visualmode(), 1, 1, 1, 0)<CR>
 x  <Plug>Sneak_f * :<C-U>call sneak#wrap(visualmode(), 1, 0, 1, 0)<CR>
 n  <Plug>Sneak_F * :<C-U>call sneak#wrap('', 1, 1, 1, 0)<CR>
 n  <Plug>Sneak_f * :<C-U>call sneak#wrap('', 1, 0, 1, 0)<CR>
-o  <Plug>Sneak_, * :<C-U>call <SNR>83_rpt(v:operator, 1)<CR>
-o  <Plug>Sneak_; * :<C-U>call <SNR>83_rpt(v:operator, 0)<CR>
-x  <Plug>Sneak_, * :<C-U>call <SNR>83_rpt(visualmode(), 1)<CR>
-x  <Plug>Sneak_; * :<C-U>call <SNR>83_rpt(visualmode(), 0)<CR>
-n  <Plug>Sneak_, * :<C-U>call <SNR>83_rpt('', 1)<CR>
-n  <Plug>Sneak_; * :<C-U>call <SNR>83_rpt('', 0)<CR>
+o  <Plug>Sneak_, * :<C-U>call <SNR>87_rpt(v:operator, 1)<CR>
+o  <Plug>Sneak_; * :<C-U>call <SNR>87_rpt(v:operator, 0)<CR>
+x  <Plug>Sneak_, * :<C-U>call <SNR>87_rpt(visualmode(), 1)<CR>
+x  <Plug>Sneak_; * :<C-U>call <SNR>87_rpt(visualmode(), 0)<CR>
+n  <Plug>Sneak_, * :<C-U>call <SNR>87_rpt('', 1)<CR>
+n  <Plug>Sneak_; * :<C-U>call <SNR>87_rpt('', 0)<CR>
 o  <Plug>SneakRepeat * :<C-U>call sneak#wrap(v:operator, sneak#util#getc(), sneak#util#getc(), sneak#util#getc(), sneak#util#getc())<CR>
 o  <Plug>Sneak_S * :<C-U>call sneak#wrap(v:operator, 2, 1, 2, 1)<CR>
 o  <Plug>Sneak_s * :<C-U>call sneak#wrap(v:operator, 2, 0, 2, 1)<CR>
@@ -148,12 +151,12 @@ x  <Plug>Sneak_S * :<C-U>call sneak#wrap(visualmode(), 2, 1, 2, 1)<CR>
 x  <Plug>Sneak_s * :<C-U>call sneak#wrap(visualmode(), 2, 0, 2, 1)<CR>
 n  <Plug>Sneak_S * :<C-U>call sneak#wrap('', 2, 1, 2, 1)<CR>
 n  <Plug>Sneak_s * :<C-U>call sneak#wrap('', 2, 0, 2, 1)<CR>
-n  <Plug>(characterize) & :<C-U>echo <SNR>76_info(matchstr(getline('.')[col('.')-1:-1],'.'))<CR>
+n  <Plug>(characterize) & :<C-U>echo <SNR>78_info(matchstr(getline('.')[col('.')-1:-1],'.'))<CR>
 v  <Plug>SearchVisual   :<C-U>call search#search_visual('')<CR>
 n  <Plug>SearchNormal   :set operatorfunc=search#search_normal<CR>g@
 v  <F4>          <Plug>(MakeDigraph)
 n  <F4>          <Plug>(MakeDigraph)
-n  <Plug>(UnicodeSwapCompleteName) & :<C-U>call <SNR>73_ToggleUnicodeCompletion()<CR>
+n  <Plug>(UnicodeSwapCompleteName) & :<C-U>call <SNR>75_ToggleUnicodeCompletion()<CR>
 n  <Plug>(UnicodeGA) & :<C-U>UnicodeName<CR>
 v  <Plug>(MakeDigraph) & :<C-U>call unicode#GetDigraph(visualmode(), 1)<CR>
 n  <Plug>(MakeDigraph) & :set opfunc=unicode#GetDigraph<CR>g@
@@ -168,7 +171,7 @@ x  <Plug>(openbrowser-open-incognito) * :<C-U>call openbrowser#_keymap_open('v',
 n  <Plug>(openbrowser-open-incognito) * :<C-U>call openbrowser#_keymap_open('n', 0, ['--incognito'])<CR>
 x  <Plug>(openbrowser-open) * :<C-U>call openbrowser#_keymap_open('v')<CR>
 n  <Plug>(openbrowser-open) * :<C-U>call openbrowser#_keymap_open('n')<CR>
-n  <Plug>NERDCommenterAltDelims * :call <SNR>66_SwitchToAlternativeDelimiters(1)<CR>
+n  <Plug>NERDCommenterAltDelims * :call <SNR>68_SwitchToAlternativeDelimiters(1)<CR>
 x  <Plug>NERDCommenterUncomment * :call NERDComment("x", "Uncomment")<CR>
 n  <Plug>NERDCommenterUncomment * :call NERDComment("n", "Uncomment")<CR>
 x  <Plug>NERDCommenterAlignBoth * :call NERDComment("x", "AlignBoth")<CR>
