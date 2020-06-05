@@ -6,6 +6,8 @@
 "✅ 禁用 vi 兼容模式
 set nocompatible
 
+set viminfo=20,<50,s10
+
 " backspace
 " 解决 vi compatible 模式下 backspace 置空
 set backspace = eol
@@ -13,12 +15,10 @@ set backspace+= start
 set backspace+= indent
 
 
-
+set timeout
 set timeoutlen=500
-
 "✅ 功能键超时检测（终端下功能键为一串 ESC 开头的字符串）
 set ttimeout
-
 " 功能键超时检测 50 毫秒
 set ttimeoutlen=50
 
@@ -49,8 +49,8 @@ endif
 "换行符显示
 set list
 
-"✅ 单行字符数提示
-set colorcolumn=80
+"✅ 单行字符数提示(会导致屏幕重绘，耗时)
+"set colorcolumn=80
 
 "--------------------------------------------------------------------
 
@@ -84,9 +84,6 @@ let g:mapleader = "\<space>"
 
 " iPadOS 不需要设置 ; 替换 :
 "nnoremap ; :
-
-set undofile
-set undodir=~/.vim/undo
 
 
 "

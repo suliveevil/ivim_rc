@@ -13,9 +13,7 @@ set selectmode=mouse,key
 "该配置在不折行时比较有用。
 "set sidescrolloff=10
 
-"显示光标位置
-set ruler
-set scrolloff=9
+set scrolloff=5
 
 "自动定位到上次打开最后位置
 if has("autocmd")
@@ -58,6 +56,6 @@ autocmd InsertLeave,WinEnter * set cursorline
 autocmd InsertEnter,WinLeave * set nocursorline
 
 
-set virtualedit=all
+set virtualedit=onemore
 
 

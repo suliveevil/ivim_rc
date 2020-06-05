@@ -1,35 +1,29 @@
-
 " rc files - basic config $HOME/.vimrc.d/
-for fpath in split(globpath('./.vimrc.d/', '*.vim'), '\n')
-    exe 'source' fpath
-endfor
 
 
-" pac rc
-for fpath in split(globpath('./.vimrc.d/pac/', '*.vim'), '\n')
-    exe 'source' fpath
-endfor
-
-" pac rc - key
-for fpath in split(globpath('./.vimrc.d/pac/key/', '*.vim'), '\n')
-    exe 'source' fpath
-endfor
-
-
-" pac rc - explore
-for fpath in split(globpath('./.vimrc.d/pac/explore', '*.vim'), '\n')
-    exe 'source' fpath
-endfor
-
-" pac rc - find-search
-for fpath in split(globpath('./.vimrc.d/pac/find-search', '*.vim'), '\n')
-    exe 'source' fpath
-endfor
-
-
-
-nnoremap <silent><leader> :<C-u>WhichKey '<Space>'<CR>
+source $HOME/.vimrc.d/basic.vim
+source $HOME/.vimrc.d/buffer.vim
+source $HOME/.vimrc.d/completion.vim
+source $HOME/.vimrc.d/cursor_mouse__.vim
+source $HOME/.vimrc.d/file_folder.vim
+source $HOME/.vimrc.d/file_ignore.vim
+source $HOME/.vimrc.d/find_search.vim
+source $HOME/.vimrc.d/mode-change.vim
+source $HOME/.vimrc.d/mode-cmd.vim
+source $HOME/.vimrc.d/mode-ex-mode.vim
+source $HOME/.vimrc.d/mode-insert.vim
+source $HOME/.vimrc.d/mode-normal-replace.vim
+source $HOME/.vimrc.d/mode-o.vim
+source $HOME/.vimrc.d/mode-select.vim
+source $HOME/.vimrc.d/mode-terminal.vim
+source $HOME/.vimrc.d/mode-visual.vim
+source $HOME/.vimrc.d/tabpage.vim
+source $HOME/.vimrc.d/ui-fold-wrap.vim
+source $HOME/.vimrc.d/ui-line.vim
+source $HOME/.vimrc.d/ui-window.vim
+source $HOME/.vimrc.d/ui.vim
 
 
 
+source $HOME/.vimrc.d/pac/__init__.vim
 
