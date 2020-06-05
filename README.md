@@ -1,14 +1,7 @@
 # vimrc.d
 
-iVim rc folder, under $HOME/vim
-
-```viml
-:!mv .vim vim_backup
-:!mkdir -p $HOME/.vim/pack/start/
-:!ln -s vim .vim
-```
-
-
+iVim rc folder, under $HOME/.vim
+Vim in a-Shell, under $HOME/Documents/.vim
 
 
 ## Plugins and Packages
