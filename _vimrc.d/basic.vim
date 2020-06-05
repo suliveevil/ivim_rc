@@ -13,6 +13,9 @@ set backspace+= start
 set backspace+= indent
 
 
+
+set timeoutlen=500
+
 "✅ 功能键超时检测（终端下功能键为一串 ESC 开头的字符串）
 set ttimeout
 
