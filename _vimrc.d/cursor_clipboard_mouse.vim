@@ -1,13 +1,14 @@
-"✅ 鼠标-----------------------------------------------------------------
-"set mousehide
-if has('mouse')
-    set mouse=a
-endif
-set selection=exclusive
-set selectmode=mouse,key
+
 
 
 "✅ 光标-----------------------------------------------------------------
+
+
+" set virtualedit=onemore
+
+set cursorline
+set cursorcolumn
+
 
 "✅ 水平滚动时，光标距离行首或行尾的位置（单位：字符）。
 "该配置在不折行时比较有用。
@@ -46,10 +47,6 @@ let &t_EI.="\e[1 q"
 
 
 
-
-
-
-
 "光标颜色
 if has('gui_running')
     highlight Cursor guifg=white guibg=black
@@ -68,6 +65,13 @@ endif
 " autocmd InsertEnter,WinLeave * set nocursorline
 
 
-" set virtualedit=onemore
 
 
+
+"✅ 鼠标-----------------------------------------------------------------
+"set mousehide
+if has('mouse')
+    set mouse=a
+endif
+set selection=exclusive
+set selectmode=mouse,key

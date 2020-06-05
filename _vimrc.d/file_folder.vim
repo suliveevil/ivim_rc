@@ -32,7 +32,7 @@ set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 
 
 " 保存
-nnoremap <c-s> :w<cr>
+nnoremap <C-s> :w<cr>
 
 "⚠️ w!! 提权保存文件
 " cnoremap w!! w !sudo tee >/dev/null %
