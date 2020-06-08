@@ -1,0 +1,852 @@
+verbo function
+----
+function <SNR>3_SynSet()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/syntax/synload.vim line 33
+function <SNR>90_entries(path) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 74
+function <SNR>8_LoadFTPlugin()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/ftplugin.vim line 14
+function lightline#init() abort
+	Last set from ~/_vim/autoload/lightline.vim line 142
+function <SNR>110_nr(x) abort
+	Last set from ~/_vim/autoload/lightline/colorscheme.vim line 142
+function startify#fortune#cowsay(...) abort
+	Last set from ~/_vim/autoload/startify/fortune.vim line 45
+function <SNR>112_set_mappings() abort
+	Last set from ~/_vim/autoload/startify.vim line 845
+function startify#pad(lines) abort
+	Last set from ~/_vim/autoload/startify.vim line 433
+function ctrlp#mrufiles#list(...)
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 124
+function <SNR>90_toggle(op) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 248
+function nerdtree#and(x, y) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 49
+function startify#get_lastline() abort
+	Last set from ~/_vim/autoload/startify.vim line 13
+function paste#Paste()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/autoload/paste.vim line 12
+function <SNR>84_attach_autocmds() abort
+	Last set from ~/_vim/plugin/sneak.vim line 251
+function <SNR>90_cursor_options() abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 253
+function <SNR>113_draw_box(lines) abort
+	Last set from ~/_vim/autoload/startify/fortune.vim line 9
+function <SNR>112_init_env()
+	Last set from ~/_vim/autoload/startify.vim line 1051
+function <SNR>62_ConvertLeadingSpacesToTabs(line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2058
+function startify#fortune#boxed(...) abort
+	Last set from ~/_vim/autoload/startify/fortune.vim line 29
+function nerdtree#runningCygwin() abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 217
+function <SNR>6_BMHash2(name)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 758
+function NERDComment(mode, type) range
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1232
+function <SNR>79_activateDirNode(directoryNode, ...) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 123
+function nerdtree#ui_glue#openBookmark(name) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 490
+function startify#session_write(session_path)
+	Last set from ~/_vim/autoload/startify.vim line 269
+function NERDTreeAddKeyMap(options)
+	Last set from ~/_vim/plugin/NERD_tree.vim line 210
+function lightline#enable() abort
+	Last set from ~/_vim/autoload/lightline.vim line 37
+function <SNR>6_SynOnOff()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 1125
+function <SNR>62_ReplaceDelims(toReplace1, toReplace2, replacor1, replacor2, str)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2919
+function <SNR>6_TagFiles()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 267
+function <SNR>92_relatives(first, ...) abort
+	Last set from ~/_vim/plugin/vinegar.vim line 83
+function <SNR>79_jumpToFirstChild(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 402
+function <SNR>6_SearchP()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 257
+function <SNR>99_VimEnter(dirname)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/netrwPlugin.vim line 152
+function NERDTreeAddMenuSeparator(...)
+	Last set from ~/_vim/plugin/NERD_tree.vim line 201
+function NERDTreeMoveNode()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 199
+function NERDTreeCopyPath()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 379
+function nerdtree#deprecated(func, ...) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 153
+function lightline#tab#filename(n) abort
+	Last set from ~/_vim/autoload/lightline/tab.vim line 11
+function <SNR>62_CountNonESCedOccurances(str, searchstr, escChar)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2110
+function ctrlp#mrufiles#opts()
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 11
+function <SNR>92_escaped(first, last) abort
+	Last set from ~/_vim/plugin/vinegar.vim line 95
+function startify#session_delete_buffers()
+	Last set from ~/_vim/autoload/startify.vim line 372
+function <SNR>82_FindParentVCSRoot(path)
+	Last set from ~/_vim/nerdtree_plugin/vcs.vim line 34
+function <SNR>90_url_decode(str) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 378
+function sneak#cancel() abort
+	Last set from ~/_vim/plugin/sneak.vim line 59
+function <SNR>90_statusbump() abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 243
+function NERDTreeAddNode()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 165
+function <SNR>79_chRoot(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 176
+function nerdtree#slash() abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 34
+function <SNR>62_CreateDelimMapFromCms()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 567
+function <SNR>79_openInNewTab(target) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 520
+function <SNR>106_convert(name, index) abort
+	Last set from ~/_vim/autoload/lightline.vim line 336
+function NERDTreeRevealFileLinux()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 427
+function <SNR>90_ContextMotion(reverse) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 153
+function <SNR>62_SetupStateBeforeLineComment(topLine, bottomLine)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1585
+function <SNR>112_show_files() abort
+	Last set from ~/_vim/autoload/startify.vim line 681
+function startify#open_buffers(...) abort
+	Last set from ~/_vim/autoload/startify.vim line 400
+function lightline#colorscheme#background() abort
+	Last set from ~/_vim/autoload/lightline/colorscheme.vim line 228
+function lightline#update() abort
+	Last set from ~/_vim/autoload/lightline.vim line 13
+function MenuExplOpen()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 862
+function <SNR>62_CanPlaceCursor(line, col)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1999
+function <SNR>89_UNCompleteList(A, C, P)
+	Last set from ~/_vim/plugin/unicode.vim line 26
+function <SNR>62_CreateMaps(modes, target, desc, combo)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 3154
+function <SNR>85_on_vimenter()
+	Last set from ~/_vim/plugin/startify.vim line 36
+function sneak#is_sneaking() abort
+	Last set from ~/_vim/plugin/sneak.vim line 55
+function <SNR>112_show_lists(lists) abort
+	Last set from ~/_vim/autoload/startify.vim line 477
+function NetrwStatusLine()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/netrwPlugin.vim line 163
+function <SNR>112_set_custom_section(section) abort
+	Last set from ~/_vim/autoload/startify.vim line 545
+function <SNR>62_SwapOuterMultiPartDelimsForPlaceHolders(line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 3064
+function <SNR>112_is_in_skiplist(arg) abort
+	Last set from ~/_vim/autoload/startify.vim line 800
+function <SNR>89_ToggleUnicodeCompletion()
+	Last set from ~/_vim/plugin/unicode.vim line 22
+function lightline#concatenate(xs, right) abort
+	Last set from ~/_vim/autoload/lightline.vim line 302
+function <SNR>62_AddLeftDelimAligned(delim, theLine, alignIndx)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1908
+function <SNR>62_CommentLines(forceNested, align, firstLine, lastLine)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 808
+function <SNR>106_line(tabline, inactive) abort
+	Last set from ~/_vim/autoload/lightline.vim line 401
+function <SNR>98_NoMatchParen()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/matchparen.vim line 202
+function <SNR>112_leftmouse()
+	Last set from ~/_vim/autoload/startify.vim line 866
+function <SNR>62_LastIndexOfDelim(delim, str)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2772
+function <SNR>62_IsSexyComment(topline, bottomline)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2691
+function <SNR>106_subseparator(components, subseparator, expanded) abort
+	Last set from ~/_vim/autoload/lightline.vim line 294
+function UltiSnips#map_keys#MapKeys() abort
+	Last set from ~/_vim/autoload/UltiSnips/map_keys.vim line 56
+function ctrlp#mrufiles#bufs()
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 129
+function <SNR>79_handleLeftClick() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 339
+function <SNR>110_upconvert(nr) abort
+	Last set from ~/_vim/autoload/lightline/colorscheme.vim line 150
+function <SNR>96_LP_And(pat1, pat2)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/logiPat.vim line 291
+function <SNR>90_legacy_option_map(letter) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 291
+function lightline#disable() abort
+	Last set from ~/_vim/autoload/lightline.vim line 56
+function <SNR>92_fnameescape(file) abort
+	Last set from ~/_vim/plugin/vinegar.vim line 11
+function <SNR>90_MapNextFamily(map, cmd) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 43
+function <SNR>6_BMHash(name)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 743
+function <SNR>79_upDirCurrentRootClosed() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 694
+function <SNR>62_UncommentLinesNormal(topline, bottomline)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1887
+function <SNR>79_toggleShowFiles() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 644
+function <SNR>96_StackLook(description)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/logiPat.vim line 300
+function <SNR>60_DisableMatchParen()
+	Last set from ~/_vim/plugin/hiPairs.vim line 76
+function <SNR>62_GetSexyComMarker(space, esc)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2310
+function <SNR>99_LocalBrowse(dirname)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/netrwPlugin.vim line 102
+function NERDTreeListNode()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 296
+function lightline#colorscheme#fill(p) abort
+	Last set from ~/_vim/autoload/lightline/colorscheme.vim line 183
+function <SNR>96_LP_PatPush(pat)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/logiPat.vim line 155
+function <SNR>79_closeChildren(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 205
+function <SNR>62_IsNumEven(num)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2646
+function <SNR>62_AppendCommentToLine()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 641
+function nerdtree#compareNodes(n1, n2) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 112
+function <SNR>90_Context(reverse) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 149
+function <SNR>90_map(...) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 12
+function ctrlp#mrufiles#tgrel()
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 133
+function <SNR>6_BMRemove()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 669
+function sneak#state() abort
+	Last set from ~/_vim/plugin/sneak.vim line 51
+function <SNR>62_InitVariable(var, value)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 36
+function <SNR>62_CommentLinesToggle(forceNested, firstLine, lastLine)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1072
+function ctrlp#mrufiles#cachefile()
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 137
+function <SNR>79_toggleZoom() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 655
+function <SNR>62_TabSpace()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 3119
+function <SNR>62_AddRightDelimAligned(delim, theLine, alignIndx)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1932
+function nerdtree#checkForBrowse(dir) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 71
+function nerdtree#ui_glue#revealBookmark(name) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 565
+function <SNR>112_warn(msg) abort
+	Last set from ~/_vim/autoload/startify.vim line 1101
+function sneak#reset(key) abort
+	Last set from ~/_vim/plugin/sneak.vim line 261
+function <SNR>81_promptToDelBuffer(bufnum, msg)
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 101
+function <SNR>6_XxdFind()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 593
+function nerdtree#version(...) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 12
+function <SNR>62_UncommentLines(topLine, bottomLine)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1635
+function lightline#link(...) abort
+	Last set from ~/_vim/autoload/lightline.vim line 217
+function <SNR>90_TransformOpfunc(type) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 502
+function <SNR>106_flatten_twice(xss) abort
+	Last set from ~/_vim/autoload/lightline.vim line 347
+function NERDTreeExecuteFileLinux()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 448
+function <SNR>112_close() abort
+	Last set from ~/_vim/autoload/startify.vim line 980
+function <SNR>58_install_keymap()
+	Last set from ~/_vim/plugin/floaterm.vim line 59
+function <SNR>112_check_user_options(path) abort
+	Last set from ~/_vim/autoload/startify.vim line 938
+function NERDTreeExecuteFileWindows()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 459
+function <SNR>62_AddRightDelim(delim, theLine)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1922
+function UnimpairedMapTransform(algorithm, key) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 512
+function <SNR>62_CommentLinesSexy(topline, bottomline)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 938
+function startify#session_close() abort
+	Last set from ~/_vim/autoload/startify.vim line 259
+function <SNR>6_FixFText()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 221
+function <SNR>84_rpt(op, reverse) abort
+	Last set from ~/_vim/plugin/sneak.vim line 95
+function <SNR>96_LP_Execute(preclvl)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/logiPat.vim line 235
+function <SNR>9_LoadIndent()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/indent.vim line 13
+function NERDTreeCWD()
+	Last set from ~/_vim/plugin/NERD_tree.vim line 226
+function <SNR>6_BMMunge(fname, bnum)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 821
+function <SNR>62_GetSexyComLeft(space, esc)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2381
+function cursorword#timer_callback(...) abort
+	Last set from ~/_vim/autoload/cursorword.vim line 55
+function <SNR>97_ManPager()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/manpager.vim line 7
+function <SNR>90_Transform(algorithm, type) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 479
+function <SNR>60_InitColor()
+	Last set from ~/_vim/plugin/hiPairs.vim line 89
+function <SNR>90_ExecMove(cmd) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 203
+function <SNR>62_Right(...)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2991
+function cursorword#highlight() abort
+	Last set from ~/_vim/autoload/cursorword.vim line 11
+function <SNR>79_displayHelp() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 278
+function <SNR>79_deleteBookmark(bookmark) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 252
+function NERDTreeRender()
+	Last set from ~/_vim/plugin/NERD_tree.vim line 214
+function <SNR>79_jumpToRoot() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 454
+function <SNR>90_MoveSelectionUp(count) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 221
+function <SNR>79_jumpToPrevSibling(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 465
+function <SNR>79_customOpenBookmark(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 98
+function <SNR>62_HasCStyleComments()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2467
+function <SNR>112_display_by_path(path_prefix, path_format, use_env) abort
+	Last set from ~/_vim/autoload/startify.vim line 555
+function lightline#tabs() abort
+	Last set from ~/_vim/autoload/lightline.vim line 457
+function <SNR>112_show_sessions() abort
+	Last set from ~/_vim/autoload/startify.vim line 686
+function <SNR>6_SetupKeymaps() abort
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 388
+function <SNR>62_SexyNested()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2355
+function startify#get_session_path() abort
+	Last set from ~/_vim/autoload/startify.vim line 23
+function <SNR>79_closeTreeWindow() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 238
+function <SNR>6_EditVimrc()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 199
+function <SNR>62_DoesBlockHaveMultipartDelim(top, bottom)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2152
+function nerdtree#echo(msg) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 229
+function <SNR>62_TabbedCol(line, col)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 3112
+function <SNR>79_openNodeRecursively(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 532
+function <SNR>79_openExplorer(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 515
+function <SNR>112_set_cursor() abort
+	Last set from ~/_vim/autoload/startify.vim line 813
+function <SNR>62_UncommentLinesSexy(topline, bottomline)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1680
+function <SNR>60_ClearMatch()
+	Last set from ~/_vim/plugin/hiPairs.vim line 107
+function startify#debug()
+	Last set from ~/_vim/autoload/startify.vim line 389
+function startify#insane_in_the_membrane(on_vimenter) abort
+	Last set from ~/_vim/autoload/startify.vim line 42
+function <SNR>84_map_reset_key(key, mode) abort
+	Last set from ~/_vim/plugin/sneak.vim line 277
+function nerdtree#ui_glue#setupCommands() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 607
+function NERDCommentIsCharCommented(line, col) abort
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1373
+function <SNR>62_LeftMostIndx(countCommentedLines, countEmptyLines, topline, bottomline)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2835
+function <SNR>85_on_vimleavepre()
+	Last set from ~/_vim/plugin/startify.vim line 52
+function <SNR>98_DoMatchParen()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/matchparen.vim line 210
+function <SNR>84_getnchars(n, mode) abort
+	Last set from ~/_vim/plugin/sneak.vim line 294
+function <SNR>86_setup_keymaps() abort
+	Last set from ~/_vim/plugin/tagbar.vim line 98
+function <SNR>112_show_bookmarks() abort
+	Last set from ~/_vim/autoload/startify.vim line 734
+function <SNR>6_SetupCompilers() abort
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 607
+function NERDTreeExecFile()
+	Last set from ~/_vim/nerdtree_plugin/exec_menuitem.vim line 28
+function <SNR>62_CanToggleCommentLine(forceNested, lineNum)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2032
+function startify#session_load(source_last_session, ...) abort
+	Last set from ~/_vim/autoload/startify.vim line 174
+function <SNR>110_rgb(r, g, b) abort
+	Last set from ~/_vim/autoload/lightline/colorscheme.vim line 146
+function <SNR>79_openHSplit(target) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 505
+function <SNR>112_show_dir() abort
+	Last set from ~/_vim/autoload/startify.vim line 676
+function <SNR>62_SwitchToAlternativeDelimiters(printMsgs)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 595
+function TestFiletypeFuncs(testlist)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/filetype.vim line 2201
+function <SNR>6_BMShow(...)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 687
+function NERDTreeCopyNode()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 336
+function <SNR>62_IsEscaped(str, indx, escChar)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2658
+function <SNR>79_jumpToLastChild(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 407
+function nerdtree#runningWindows() abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 212
+function <SNR>106_evaluate_expand(component) abort
+	Last set from ~/_vim/autoload/lightline.vim line 324
+function sneak#init() abort
+	Last set from ~/_vim/plugin/sneak.vim line 27
+function lightline#statusline(inactive) abort
+	Last set from ~/_vim/autoload/lightline.vim line 307
+function <SNR>56_addtomrufs(fname)
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 70
+function ToggleFold()
+	Last set from ~/_vimrc.d/ui-fold-wrap.vim line 15
+function <SNR>62_TrimTrailingWhitespace(line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1624
+function <SNR>62_GetSexyComRight(space, esc)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2419
+function <SNR>62_HasMultipartDelims()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2451
+function <SNR>79_SID() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 620
+function <SNR>62_PlaceDelimitersAndInsBetween()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1479
+function <SNR>112_print_section_header() abort
+	Last set from ~/_vim/autoload/startify.vim line 1013
+function startify#session_list_as_string(lead, ...) abort
+	Last set from ~/_vim/autoload/startify.vim line 384
+function <SNR>62_CommentBlock(top, bottom, lSide, rSide, forceNested)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 676
+function lightline#mode() abort
+	Last set from ~/_vim/autoload/lightline.vim line 212
+function <SNR>113_get_random_offset(max) abort
+	Last set from ~/_vim/autoload/startify/fortune.vim line 4
+function <SNR>79_jumpToChild(node, last) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 417
+function startify#center(lines) abort
+	Last set from ~/_vim/autoload/startify.vim line 438
+function nerdtree#compareNodesBySortKey(n1, n2) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 117
+function <SNR>59_HelpTab()
+	Last set from ~/_vim/plugin/helptab.vim line 7
+function <SNR>79_openVSplit(target) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 510
+function NERDCommentIsLineCommented(lineNo)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1218
+function <SNR>62_ReplaceLeftMostDelim(toReplace, replacor, str)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2933
+function <SNR>6_TextWidth()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 316
+function <SNR>82_CreateTabTreeVCS(name)
+	Last set from ~/_vim/nerdtree_plugin/vcs.vim line 17
+function <SNR>62_FindBoundingLinesOfSexyCom(lineNum)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2235
+function ctrlp#mrufiles#remove(files)
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 106
+function nerdtree#loadClassFiles() abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 185
+function lightline#tabline() abort
+	Last set from ~/_vim/autoload/lightline.vim line 445
+function ctrlp#mrufiles#refresh(...)
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 92
+function <SNR>90_xml_entity_decode(str) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 462
+function startify#set_mark(type, ...) abort
+	Last set from ~/_vim/autoload/startify.vim line 890
+function <SNR>92_setup_vinegar() abort
+	Last set from ~/_vim/plugin/vinegar.vim line 100
+function <SNR>79_toggleIgnoreFilter() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 634
+function <SNR>6_SpellReplace(n)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 994
+function <SNR>112_filter_oldfiles(path_prefix, path_format, use_env) abort
+	Last set from ~/_vim/autoload/startify.vim line 585
+function <SNR>62_Esc(str)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2166
+function lightline#tab#readonly(n) abort
+	Last set from ~/_vim/autoload/lightline/tab.vim line 23
+function <SNR>62_ConvertLeadingWhiteSpace(line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2088
+function <SNR>6_BMFilename(name, num)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 779
+function <SNR>79_openInNewTabSilent(target) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 526
+function nerdtree#postSourceActions() abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 203
+function <SNR>56_excl(fn)
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 27
+function nerdtree#has_opt(options, name) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 180
+function <SNR>110_convert(rgb) abort
+	Last set from ~/_vim/autoload/lightline/colorscheme.vim line 111
+function NERDTreeListNodeWin32()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 318
+function <SNR>96_LP_Or(pat1, pat2)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/logiPat.vim line 282
+function nerdtree#echoWarning(msg) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 248
+function <SNR>62_InvertComment(firstLine, lastLine)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1180
+function <SNR>79_jumpToParent(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 436
+function <SNR>86_init_var(var, value) abort
+	Last set from ~/_vim/plugin/tagbar.vim line 45
+function ctrlp#mrufiles#init()
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 145
+function <SNR>90_fnameescape(file) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 120
+function lightline#error(msg) abort
+	Last set from ~/_vim/autoload/lightline.vim line 491
+function <SNR>62_NumberOfLeadingTabs(s)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2899
+function <SNR>96_LP_Not(pat)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/logiPat.vim line 268
+function <SNR>83_redir(new, cmd)
+	Last set from ~/_vim/plugin/redir-output.vim line 10
+function NERDTreeExecuteFile()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 416
+function <SNR>81_renameBuffer(bufNum, newNodeName, isDirectory)
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 139
+function <SNR>6_XxdConv()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 566
+function nerdtree#exec(cmd, ignoreAll) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 167
+function <SNR>106_term(p) abort
+	Last set from ~/_vim/autoload/lightline.vim line 243
+function lightline#toggle() abort
+	Last set from ~/_vim/autoload/lightline.vim line 74
+function <SNR>6_SpellDel()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 1002
+function <SNR>56_savetofile(mrufs)
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 88
+function <SNR>110_black(x) abort
+	Last set from ~/_vim/autoload/lightline/colorscheme.vim line 129
+function <SNR>90_string_encode(str) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 359
+function <SNR>63_initVariable(var, value)
+	Last set from ~/_vim/plugin/NERD_tree.vim line 39
+function <SNR>79_jumpToSibling(node, forward) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 475
+function sneak#to(op, input, inputlen, count, repeatmotion, reverse, inclusive, label) abort
+	Last set from ~/_vim/plugin/sneak.vim line 108
+function <SNR>6_BMTruncName(fname)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 801
+function NERDTreeDeleteNode()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 254
+function nerdtree#ui_glue#bookmarkNode(...) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 147
+function NERDTreeAddSubmenu(options)
+	Last set from ~/_vim/plugin/NERD_tree.vim line 206
+function lightline#tab#modified(n) abort
+	Last set from ~/_vim/autoload/lightline/tab.vim line 18
+function <SNR>62_HasLeadingTabs(...)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2457
+function nerdtree#renderView() abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 255
+function <SNR>90_TransformSetup(algorithm) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 506
+function <SNR>79_previewNodeCurrent(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 549
+function <SNR>6_BMAdd()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 657
+function <SNR>79_toggleShowBookmarks() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 639
+function <SNR>79_upDirCurrentRootOpen() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 689
+function <SNR>62_SaveScreenState()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 3053
+function <SNR>62_AltMultipart()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1950
+function <SNR>62_FindDelimiterIndex(delimiter, line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2178
+function <SNR>79_closeCurrentDir(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 213
+function <SNR>62_IsDelimValid(delimiter, delIndx, line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2582
+function <SNR>62_Multipart()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2872
+function <SNR>92_absolutes(first, ...) abort
+	Last set from ~/_vim/plugin/vinegar.vim line 75
+function <SNR>62_IsInSexyComment(line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2681
+function <SNR>62_UncommentLineNormal(line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1810
+function <SNR>96_LP_OpPush(op)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/logiPat.vim line 181
+function <SNR>62_SetUpForNewFiletype(filetype, forceReset)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 526
+function <SNR>6_FnameEscape(fname)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 146
+function <SNR>5_StarSetf(ft)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/filetype.vim line 47
+function ctrlp#mrufiles#add(fn)
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 118
+function <SNR>62_NumLinesInBuf()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2905
+function <SNR>62_IsCommentedFromStartOfLine(left, line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2515
+function <SNR>90_putline(how, map) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 331
+function <SNR>92_opendir(cmd) abort
+	Last set from ~/_vim/plugin/vinegar.vim line 39
+function <SNR>79_customOpenFile(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 86
+function <SNR>60_Compare(a, b)
+	Last set from ~/_vim/plugin/hiPairs.vim line 71
+function <SNR>62_DoesBlockHaveDelim(delim, top, bottom)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2135
+function <SNR>6_SetupColorSchemes() abort
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 356
+function <SNR>79_showMenu(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 628
+function <SNR>6_SpellLang()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 454
+function nerdtree#ui_glue#clearBookmarks(bookmarks) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 187
+function <SNR>79_activateAll() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 115
+function <SNR>62_ConvertLeadingTabsToSpaces(line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2074
+function <SNR>90_BlankUp(count) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 185
+function NERDTreeRevealInFinder()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 405
+function <SNR>60_IsBufferChanged()
+	Last set from ~/_vim/plugin/hiPairs.vim line 120
+function NERDTreeQuickLook()
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 394
+function <SNR>64_reuseWin(dir) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 85
+function <SNR>79_activateBookmark(bm) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 141
+function NERDTreeFocus()
+	Last set from ~/_vim/plugin/NERD_tree.vim line 218
+function <SNR>106_normalize(result) abort
+	Last set from ~/_vim/autoload/lightline.vim line 314
+function <SNR>112_get_lists() abort
+	Last set from ~/_vim/autoload/startify.vim line 445
+function <SNR>79_toggleShowHidden() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 650
+function cursorword#cursormoved() abort
+	Last set from ~/_vim/autoload/cursorword.vim line 45
+function <SNR>62_UnEsc(str, escChar)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 3134
+function <SNR>62_ReplaceRightMostDelim(toReplace, replacor, str)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2958
+function nerdtree#ui_glue#createDefaultBindings() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 7
+function <SNR>60_EnableMatchParen()
+	Last set from ~/_vim/plugin/hiPairs.vim line 83
+function lightline#onetab(n, active) abort
+	Last set from ~/_vim/autoload/lightline.vim line 479
+function <SNR>90_Move(cmd, count, map) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 216
+function <SNR>56_reformat(mrufs, ...)
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 43
+function <SNR>79_chCwd(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 166
+function nerdtree#echoError(msg) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 238
+function <SNR>79_refreshCurrent(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 594
+function NERDTreeAddPathFilter(callback)
+	Last set from ~/_vim/plugin/NERD_tree.vim line 251
+function <SNR>112_filter_oldfiles_unsafe(path_prefix, path_format, use_env) abort
+	Last set from ~/_vim/autoload/startify.vim line 640
+function <SNR>96_LP_PatPop(lookup)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/logiPat.vim line 165
+function NetUserPass(...)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/netrwPlugin.vim line 180
+function <SNR>62_IsCommented(left, right, line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2499
+function lightline#colorscheme() abort
+	Last set from ~/_vim/autoload/lightline.vim line 184
+function <SNR>112_compare_by_index(foo, bar)
+	Last set from ~/_vim/autoload/startify.vim line 873
+function <SNR>79_initCustomOpenArgs() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 108
+function sneak#wrap(op, inputlen, reverse, inclusive, label) abort
+	Last set from ~/_vim/plugin/sneak.vim line 71
+function <SNR>112_cd_to_vcs_root(path) abort
+	Last set from ~/_vim/autoload/startify.vim line 967
+function startify#set_batchmode(batchmode) abort
+	Last set from ~/_vim/autoload/startify.vim line 884
+function <SNR>90_string_decode(str) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 364
+function <SNR>6_Helpfind()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 92
+function <SNR>56_record(bufnr)
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 59
+function <SNR>62_IsCommentedNormOrSexy(lineNum)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2477
+function startify#fortune#quote() abort
+	Last set from ~/_vim/autoload/startify/fortune.vim line 24
+function <SNR>79_customOpenDir(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 92
+function <SNR>62_CanCommentLine(forceNested, lineNum)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1968
+function <SNR>112_sort_by_tick(one, two)
+	Last set from ~/_vim/autoload/startify.vim line 933
+function <SNR>62_IsCommentedOutermost(left, right, leftAlt, rightAlt, line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2535
+function <SNR>82_ToggleTabTreeVCS(name)
+	Last set from ~/_vim/nerdtree_plugin/vcs.vim line 25
+function <SNR>90_xml_encode(str) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 452
+function <SNR>112_transform(absolute_path)
+	Last set from ~/_vim/autoload/startify.vim line 1090
+function cursorword#matchadd(...) abort
+	Last set from ~/_vim/autoload/cursorword.vim line 23
+function <SNR>90_MoveSelectionDown(count) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 226
+function <SNR>79_refreshRoot() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 577
+function nerdtree#completeBookmarks(A, L, P) abort
+	Last set from ~/_vim/autoload/nerdtree.vim line 107
+function <SNR>62_CanSexyCommentLines(topline, bottomline)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2010
+function <SNR>62_Nested()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2893
+function nerdtree#ui_glue#chRootCwd() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 182
+function <SNR>112_show_commands() abort
+	Last set from ~/_vim/autoload/startify.vim line 771
+function LogiPat(pat, ...)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/logiPat.vim line 61
+function <SNR>62_AddLeftDelim(delim, theLine)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1902
+function <SNR>112_get_index_as_string() abort
+	Last set from ~/_vim/autoload/startify.vim line 993
+function lightline#colorscheme#flatten(p) abort
+	Last set from ~/_vim/autoload/lightline/colorscheme.vim line 209
+function <SNR>106_expand(components) abort
+	Last set from ~/_vim/autoload/lightline.vim line 369
+function NERDTreeExecFileActive()
+	Last set from ~/_vim/nerdtree_plugin/exec_menuitem.vim line 23
+function <SNR>60_HiPairs(flag)
+	Last set from ~/_vim/plugin/hiPairs.vim line 131
+function <SNR>62_SwapOuterPlaceHoldersForMultiPartDelims(line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 3092
+function <SNR>6_ToggleGuiOption(option)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 277
+function lightline#highlight(...) abort
+	Last set from ~/_vim/autoload/lightline.vim line 262
+function <SNR>62_RemoveDelimiters(left, right, line)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1537
+function <SNR>79_previewNodeHSplit(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 554
+function <SNR>79_handleMiddleMouse() abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 374
+function <SNR>86_setup_options() abort
+	Last set from ~/_vim/plugin/tagbar.vim line 51
+function startify#session_save(bang, ...) abort
+	Last set from ~/_vim/autoload/startify.vim line 211
+function startify#fortune#predefined_quotes() abort
+	Last set from ~/_vim/autoload/startify/fortune.vim line 62
+function <SNR>98_Highlight_Matching_Pair()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/matchparen.vim line 39
+function <SNR>62_Left(...)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2806
+function <SNR>90_FileByOffset(num) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 87
+function <SNR>112_register(line, index, type, cmd, path)
+	Last set from ~/_vim/autoload/startify.vim line 1026
+function <SNR>112_open_buffer(entry)
+	Last set from ~/_vim/autoload/startify.vim line 523
+function <SNR>79_findAndRevealPath(pathStr) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 285
+function <SNR>60_InitMatchPairs()
+	Last set from ~/_vim/plugin/hiPairs.vim line 102
+function <SNR>62_NerdEcho(msg, typeOfMsg)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2881
+function <SNR>62_UntabbedCol(line, col)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 3144
+function lightline#tab#tabnum(n) abort
+	Last set from ~/_vim/autoload/lightline/tab.vim line 28
+function <SNR>54_info(char) abort
+	Last set from ~/_vim/plugin/characterize.vim line 10
+function <SNR>84_map_netrw_key(key) abort
+	Last set from ~/_vim/plugin/sneak.vim line 424
+function <SNR>6_SetupLazyloadMenus()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 631
+function <SNR>92_seek(file) abort
+	Last set from ~/_vim/plugin/vinegar.vim line 56
+function <SNR>6_FileFormat()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 329
+function lightline#update_disable() abort
+	Last set from ~/_vim/autoload/lightline.vim line 30
+function <SNR>62_RecoverStateAfterLineComment(state)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1611
+function nerdtree#ui_glue#invokeKeyMap(key) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 397
+function <SNR>90_setup_paste() abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 305
+function nerdtree#ui_glue#upDir(preserveState) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 665
+function NERDTreeAddMenuItem(options)
+	Last set from ~/_vim/plugin/NERD_tree.vim line 197
+function <SNR>62_CommentLinesMinimal(firstLine, lastLine)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 874
+function <SNR>62_RestoreScreenState()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 2979
+function <SNR>79_activateFileNode(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 135
+function <SNR>56_mergelists()
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 31
+function <SNR>79_previewBookmark(bookmark) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 540
+function <SNR>90_maps() abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 16
+function <SNR>112_create_last_session_link(session_path)
+	Last set from ~/_vim/autoload/startify.vim line 1038
+function <SNR>6_XxdBack()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 580
+function <SNR>90_BlankDown(count) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 191
+function <SNR>81_inputPrompt(action)
+	Last set from ~/_vim/nerdtree_plugin/fs_menu.vim line 57
+function <SNR>79_previewNodeVSplit(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 559
+function <SNR>90_url_encode(str) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 373
+function <SNR>92_slash() abort
+	Last set from ~/_vim/plugin/vinegar.vim line 71
+function startify#get_separator() abort
+	Last set from ~/_vim/autoload/startify.vim line 18
+function <SNR>96_String(str)
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/logiPat.vim line 149
+function <SNR>6_SelectAll()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 142
+function <SNR>56_chop(mrufs)
+	Last set from ~/_vim/autoload/ctrlp/mrufiles.vim line 38
+function lightline#palette() abort
+	Last set from ~/_vim/autoload/lightline.vim line 208
+function startify#session_list(lead, ...) abort
+	Last set from ~/_vim/autoload/startify.vim line 379
+function <SNR>90_xml_decode(str) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 474
+function <SNR>84_ft_hook() abort
+	Last set from ~/_vim/plugin/sneak.vim line 282
+function <SNR>85_update_oldfiles(file)
+	Last set from ~/_vim/plugin/startify.vim line 25
+function <SNR>62_RightMostIndx(countCommentedLines, countEmptyLines, topline, bottomline)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 3020
+function <SNR>90_option_map(letter, option, mode) abort
+	Last set from ~/_vim/plugin/unimpaired.vim line 257
+function <SNR>6_SpellPopup()
+	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim line 938
+function <SNR>79_jumpToNextSibling(node) abort
+	Last set from ~/_vim/autoload/nerdtree/ui_glue.vim line 460
+function startify#session_delete(bang, ...) abort
+	Last set from ~/_vim/autoload/startify.vim line 339
+function <SNR>62_AltNested()
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1956
+function <SNR>62_CommentRegion(topLine, topCol, bottomLine, bottomCol, forceNested)
+	Last set from ~/_vim/plugin/NERD_commenter.vim line 1132

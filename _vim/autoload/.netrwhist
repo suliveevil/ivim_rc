@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/private/var/mobile/Containers/Data/Application/AE355FF7-333B-4ACE-8BD0-F0425D000E0C/SystemData'
+let g:netrw_dirhist_0='/private/var/mobile/Containers/Data/Application/AE355FF7-333B-4ACE-8BD0-F0425D000E0C'
+let g:netrw_dirhist_9='/private/var/mobile/Containers/Data/Application/AE355FF7-333B-4ACE-8BD0-F0425D000E0C/StoreKit'
+let g:netrw_dirhist_8='/private/var/mobile/Containers/Data/Application/AE355FF7-333B-4ACE-8BD0-F0425D000E0C'
+let g:netrw_dirhist_7='/private/var/mobile/Containers/Data/Application/AE355FF7-333B-4ACE-8BD0-F0425D000E0C/Library'
+let g:netrw_dirhist_6='/private/var/mobile/Containers/Data/Application/AE355FF7-333B-4ACE-8BD0-F0425D000E0C/Library/ivim'
+let g:netrw_dirhist_5='/private/var/mobile/Containers/Data/Application/AE355FF7-333B-4ACE-8BD0-F0425D000E0C/Library'
+let g:netrw_dirhist_4='/private/var/mobile/Containers/Data/Application/AE355FF7-333B-4ACE-8BD0-F0425D000E0C'
+let g:netrw_dirhist_3='/private/var/mobile/Containers/Data/Application/AE355FF7-333B-4ACE-8BD0-F0425D000E0C/Documents'
+let g:netrw_dirhist_2='/private/var/mobile/Containers/Data/Application/AE355FF7-333B-4ACE-8BD0-F0425D000E0C'

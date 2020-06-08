@@ -1,0 +1,116 @@
+verb script
+----
+  1: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/vimrc
+  2: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/syntax/syntax.vim
+  3: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/syntax/synload.vim
+  4: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/syntax/syncolor.vim
+  5: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/filetype.vim
+  6: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/menu.vim
+  7: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/autoload/paste.vim
+  8: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/ftplugin.vim
+  9: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/indent.vim
+ 10: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim
+ 11: ~/.vimrc
+ 12: ~/_vimrc.d/__init__.vim
+ 13: ~/_vimrc.d/basic.vim
+ 14: ~/_vimrc.d/buffer.vim
+ 15: ~/_vimrc.d/code.vim
+ 16: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/syntax/nosyntax.vim
+ 17: ~/_vimrc.d/file_folder.vim
+ 18: ~/_vimrc.d/file_ignore.vim
+ 19: ~/_vimrc.d/find_search.vim
+ 20: ~/_vimrc.d/mode-change.vim
+ 21: ~/_vimrc.d/mode-cmd.vim
+ 22: ~/_vimrc.d/mode-ex-mode.vim
+ 23: ~/_vimrc.d/mode-insert.vim
+ 24: ~/_vimrc.d/mode-normal-replace.vim
+ 25: ~/_vimrc.d/mode-o.vim
+ 26: ~/_vimrc.d/mode-select.vim
+ 27: ~/_vimrc.d/mode-terminal.vim
+ 28: ~/_vimrc.d/mode-visual.vim
+ 29: ~/_vimrc.d/tabpage.vim
+ 30: ~/_vimrc.d/ui-fold-wrap.vim
+ 31: ~/_vimrc.d/ui-line.vim
+ 32: ~/_vimrc.d/ui-window.vim
+ 33: ~/_vimrc.d/ui.vim
+ 34: ~/_vimrc.d/pac/__init__.vim
+ 35: ~/_vimrc.d/pac/indentLine.vim
+ 36: ~/_vimrc.d/pac/mundo.vim
+ 37: ~/_vimrc.d/pac/randomtag.vim
+ 38: ~/_vimrc.d/pac/tagbar.vim
+ 39: ~/_vimrc.d/pac/thumbnail.vim
+ 40: ~/_vimrc.d/pac/ultisnips.vim
+ 41: ~/_vimrc.d/pac/unicode.vim
+ 42: ~/_vimrc.d/pac/vim-buffet.vim
+ 43: ~/_vimrc.d/pac/cursorword.vim
+ 44: ~/_vimrc.d/pac/vim-halo.vim
+ 45: ~/_vimrc.d/pac/vim-redir-output.vim
+ 46: ~/_vimrc.d/pac/vim-translator.vim
+ 47: ~/_vimrc.d/pac/explore/nerdtree.vim
+ 48: ~/_vimrc.d/pac/explore/vinegar.vim
+ 49: ~/_vimrc.d/pac/key/_key_map_.vim
+ 50: ~/_vimrc.d/pac/key/vim-which-key.vim
+ 51: ~/_vimrc.d/pac/find-search/ctrlp.vim
+ 52: ~/_vimrc.d/pac/find-search/FlyGrep.vim
+ 53: ~/_vimrc.d/pac/find-search/sneak.vim
+ 54: ~/_vim/plugin/characterize.vim
+ 55: ~/_vim/plugin/ctrlp.vim
+ 56: ~/_vim/autoload/ctrlp/mrufiles.vim
+ 57: ~/_vim/plugin/cursorword.vim
+ 58: ~/_vim/plugin/floaterm.vim
+ 59: ~/_vim/plugin/helptab.vim
+ 60: ~/_vim/plugin/hiPairs.vim
+ 61: ~/_vim/plugin/lightline.vim
+ 62: ~/_vim/plugin/NERD_commenter.vim
+ 63: ~/_vim/plugin/NERD_tree.vim
+ 64: ~/_vim/autoload/nerdtree.vim
+ 65: ~/_vim/lib/nerdtree/path.vim
+ 66: ~/_vim/lib/nerdtree/menu_controller.vim
+ 67: ~/_vim/lib/nerdtree/menu_item.vim
+ 68: ~/_vim/lib/nerdtree/key_map.vim
+ 69: ~/_vim/lib/nerdtree/bookmark.vim
+ 70: ~/_vim/lib/nerdtree/tree_file_node.vim
+ 71: ~/_vim/lib/nerdtree/tree_dir_node.vim
+ 72: ~/_vim/lib/nerdtree/opener.vim
+ 73: ~/_vim/lib/nerdtree/creator.vim
+ 74: ~/_vim/lib/nerdtree/flag_set.vim
+ 75: ~/_vim/lib/nerdtree/nerdtree.vim
+ 76: ~/_vim/lib/nerdtree/ui.vim
+ 77: ~/_vim/lib/nerdtree/event.vim
+ 78: ~/_vim/lib/nerdtree/notifier.vim
+ 79: ~/_vim/autoload/nerdtree/ui_glue.vim
+ 80: ~/_vim/nerdtree_plugin/exec_menuitem.vim
+ 81: ~/_vim/nerdtree_plugin/fs_menu.vim
+ 82: ~/_vim/nerdtree_plugin/vcs.vim
+ 83: ~/_vim/plugin/redir-output.vim
+ 84: ~/_vim/plugin/sneak.vim
+ 85: ~/_vim/plugin/startify.vim
+ 86: ~/_vim/plugin/tagbar.vim
+ 87: ~/_vim/plugin/UltiSnips.vim
+ 88: ~/_vim/autoload/UltiSnips/map_keys.vim
+ 89: ~/_vim/plugin/unicode.vim
+ 90: ~/_vim/plugin/unimpaired.vim
+ 91: ~/_vim/plugin/vimcdoc.vim
+ 92: ~/_vim/plugin/vinegar.vim
+ 93: ~/_vim/plugin/which_key.vim
+ 94: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/getscriptPlugin.vim
+ 95: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/gzip.vim
+ 96: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/logiPat.vim
+ 97: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/manpager.vim
+ 98: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/matchparen.vim
+ 99: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/netrwPlugin.vim
+100: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/rrhelper.vim
+101: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/spellfile.vim
+102: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/tarPlugin.vim
+103: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/tohtml.vim
+104: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/vimballPlugin.vim
+105: /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/zipPlugin.vim
+106: ~/_vim/autoload/lightline.vim
+107: ~/_vim/autoload/lightline/tab.vim
+108: ~/_vim/autoload/lightline/colorscheme/default.vim
+109: ~/_vim/autoload/lightline/colorscheme/powerline.vim
+110: ~/_vim/autoload/lightline/colorscheme.vim
+111: ~/_vim/autoload/cursorword.vim
+112: ~/_vim/autoload/startify.vim
+113: ~/_vim/autoload/startify/fortune.vim
+114: ~/_vim/syntax/startify.vim
