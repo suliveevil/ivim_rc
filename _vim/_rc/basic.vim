@@ -44,7 +44,11 @@ noremap <Leader>q <Esc>
 
 colorscheme murphy
 
-"✅ 高亮-----------------------------------------------------------------------
+"✅ 颜色和高亮-----------------------------------------------------------------
+if !has('gui_running')
+    set t_Co=256
+    endif
+
 " 设置可以高亮的关键字
 if has("autocmd")
   " Highlight TODO, FIXME, NOTE, etc.
@@ -64,6 +68,29 @@ highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 
+"✅ 查找 搜索------------------------------------------------------------------
+set magic
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" n 始终向后搜索，N 始终向前搜索
+nnoremap <expr> n  'Nn'[v:searchforward]
+nnoremap <expr> N  'nN'[v:searchforward]
+
+autocmd BufWritePost :nohls<CR>
+
+if has('iVim')
+    nnoremap <Leader>dc :!openurl dash://<cword><CR> :<Esc>
+    nnoremap <Leader>dw :!openurl eudic://dict/<cword><CR> :<Esc>
+else
+    nnoremap <Leader>dc :!open -g dash://<cword><CR> :<Esc>
+    nnoremap <Leader>dw :!open -g eudic://dict/<cword><CR> :<Esc>
+
+endif
+
+" 屏幕重绘，取消搜索高亮，刷新 diff 模式高亮，解决代码语法高亮问题
 
 "✅ 字符-----------------------------------------------------------------------
 
@@ -605,26 +632,8 @@ set suffixes+=.obj
 
 "
 
-"✅ 查找 搜索------------------------------------------------------------------
-set magic
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
 
-" n 始终向后搜索，N 始终向前搜索
-nnoremap <expr> n  'Nn'[v:searchforward]
-nnoremap <expr> N  'nN'[v:searchforward]
-
-autocmd BufWritePost :nohls<CR>
-
-" 屏幕重绘，取消搜索高亮，刷新 diff 模式高亮，解决代码语法高亮问题
-
-if !has('gui_running')
-    set t_Co=256
-endif
-
-"✅ Tab - 管理多个 Window 的布局
+"✅ Tab - 管理多个 Window 的布局----------------------------------------------
 
 "tablist = []
 "for i in range(tabpagenr('$'))
@@ -649,7 +658,7 @@ endif
 " 一个 Tab 可以管理一个或多个 Window。
 " 一个 Vim 界面可以有多个 Tab。
 
-"✅ Window - 查看一个 Buffer 的内容
+"✅ Window - 查看一个 Buffer 的内容----------------------------------------------
 
 " 查看
 
@@ -676,7 +685,7 @@ nnoremap <leader>w9 :vertical resize+5<CR>
 
 " 退出
 
-"✅ Buffer
+"✅ Buffer 加载一个文件----------------------------------------------
 
 nnoremap <leader>bd :bde<cr>
 nnoremap <leader>bD :bde!<cr>
