@@ -3,6 +3,7 @@ iplug list
 [Colorizer]          https://github.com/chrisbra/Colorizer
 [ctrlp.vim]          https://github.com/ctrlpvim/ctrlp.vim
 [fern.vim]           https://github.com/lambdalisue/fern.vim
+[findr.vim]          https://github.com/conweller/findr.vim
 [goyo.vim]           https://github.com/junegunn/goyo.vim
 [helptab.vim]        https://github.com/suliveevil/helptab.vim
 [hiPairs]            https://github.com/suliveevil/hiPairs
@@ -28,6 +29,7 @@ iplug list
 [vim-illuminate]     https://github.com/RRethy/vim-illuminate
 [vim-markdown]       https://github.com/plasticboy/vim-markdown
 [vim-mundo]          https://github.com/suliveevil/vim-mundo
+[vim-orgmode]        https://github.com/jceb/vim-orgmode
 [vim-pandoc-syntax]  https://github.com/vim-pandoc/vim-pandoc-syntax
 [vim-pandoc]         https://github.com/vim-pandoc/vim-pandoc
 [vim-plist]          https://github.com/suliveevil/vim-plist
@@ -37,6 +39,7 @@ iplug list
 [vim-repl]           https://github.com/sillybun/vim-repl
 [vim-slime]          https://github.com/jpalardy/vim-slime
 [vim-snippets]       https://github.com/honza/vim-snippets
+[vim-speeddating]    https://github.com/tpope/vim-speeddating
 [vim-surround]       https://github.com/tpope/vim-surround
 [vim-textobj-user]   https://github.com/kana/vim-textobj-user
 [vim-unimpaired]     https://github.com/tpope/vim-unimpaired
@@ -47,4 +50,4 @@ iplug list
 [vimcdoc]            https://github.com/yianwillis/vimcdoc
 [vimtex]             https://github.com/lervag/vimtex
 
-46 plugin(s) found
+49 plugin(s) found
