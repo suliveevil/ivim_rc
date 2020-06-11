@@ -1,0 +1,393 @@
+[
+  {
+    "oid" : "c172131e0369672bc1b9454a2aec6d532d350dcc",
+    "origin" : "https:\/\/github.com\/itchyny\/lightline.vim",
+    "rev" : "b:master",
+    "type" : "start",
+    "docDir" : "doc",
+    "name" : "lightline.vim"
+  },
+  {
+    "origin" : "https:\/\/github.com\/ctrlpvim\/ctrlp.vim",
+    "name" : "ctrlp.vim",
+    "type" : "start",
+    "oid" : "d93d97813dc839ef0782302a0debd7c4877f09f3",
+    "rev" : "b:master",
+    "docDir" : "doc"
+  },
+  {
+    "oid" : "57fca55f8e370bc05df41690332a5bd419a22349",
+    "name" : "helptab.vim",
+    "docDir" : "doc",
+    "rev" : "b:master",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/suliveevil\/helptab.vim"
+  },
+  {
+    "docDir" : "doc",
+    "origin" : "https:\/\/github.com\/Yggdroot\/indentLine",
+    "type" : "start",
+    "name" : "indentLine",
+    "oid" : "43dbd7092801637972b1d9fcecaaeee11f8e00cf",
+    "rev" : "b:master"
+  },
+  {
+    "docDir" : "doc",
+    "rev" : "b:master",
+    "type" : "start",
+    "oid" : "fade3d4b26f5a0d58f256a06ba7b0a04d9fb4f3b",
+    "origin" : "https:\/\/github.com\/preservim\/nerdcommenter",
+    "name" : "nerdcommenter"
+  },
+  {
+    "docDir" : "doc",
+    "oid" : "d48ab70721d4f688ed34bd5939e2d6f4c89548c5",
+    "origin" : "https:\/\/github.com\/preservim\/nerdtree",
+    "name" : "nerdtree",
+    "rev" : "b:master",
+    "type" : "start"
+  },
+  {
+    "oid" : "4d15633cdaf61602e1d9fd216a77fc02e0881b2d",
+    "origin" : "https:\/\/github.com\/luochen1990\/rainbow",
+    "name" : "rainbow",
+    "rev" : "b:master",
+    "type" : "start",
+    "docDir" : "doc"
+  },
+  {
+    "origin" : "https:\/\/github.com\/majutsushi\/tagbar",
+    "docDir" : "doc",
+    "type" : "start",
+    "name" : "tagbar",
+    "oid" : "fcabc99ca606ea0ddd4379e7710bb4bf90d2d0f5",
+    "rev" : "b:master"
+  },
+  {
+    "rev" : "b:master",
+    "type" : "start",
+    "name" : "ultisnips",
+    "origin" : "https:\/\/github.com\/SirVer\/ultisnips",
+    "docDir" : "doc",
+    "oid" : "e83c82099d9bd43dc7895e3cb5b114ee5a2a07c6"
+  },
+  {
+    "origin" : "https:\/\/github.com\/chrisbra\/unicode.vim",
+    "docDir" : "doc",
+    "name" : "unicode.vim",
+    "rev" : "b:master",
+    "oid" : "76e95c6f8c863f5079cd103b18990684bb02d525",
+    "type" : "start"
+  },
+  {
+    "type" : "start",
+    "oid" : "12dd6316974f71ce333e360c0260b4e1f81169c3",
+    "origin" : "https:\/\/github.com\/junegunn\/vim-easy-align",
+    "rev" : "b:master",
+    "docDir" : "doc",
+    "name" : "vim-easy-align"
+  },
+  {
+    "origin" : "https:\/\/github.com\/easymotion\/vim-easymotion",
+    "type" : "start",
+    "name" : "vim-easymotion",
+    "oid" : "dd7b4b526775bc8553e16bc402020573b04a948c",
+    "docDir" : "doc",
+    "rev" : "b:master"
+  },
+  {
+    "docDir" : "doc",
+    "origin" : "https:\/\/github.com\/liuchengxu\/vim-which-key",
+    "rev" : "b:master",
+    "type" : "start",
+    "name" : "vim-which-key",
+    "oid" : "dffbb044f7974bf4615960689a3ff64e63daeab3"
+  },
+  {
+    "docDir" : "doc",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/tpope\/vim-vinegar",
+    "oid" : "fcce70f1403ba4101668a4c960c577bddbd00f06",
+    "name" : "vim-vinegar",
+    "rev" : "b:master"
+  },
+  {
+    "rev" : "b:master",
+    "oid" : "4afbe5ebf32ad85341b4c02b0e1d8ca96a64c561",
+    "docDir" : "doc",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/tpope\/vim-unimpaired",
+    "name" : "vim-unimpaired"
+  },
+  {
+    "name" : "vim-surround",
+    "origin" : "https:\/\/github.com\/tpope\/vim-surround",
+    "type" : "start",
+    "docDir" : "doc",
+    "oid" : "f51a26d3710629d031806305b6c8727189cd1935",
+    "rev" : "b:master"
+  },
+  {
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/tpope\/vim-repeat",
+    "oid" : "c947ad2b6a16983724a0153bdf7f66d7a80a32ca",
+    "type" : "start",
+    "name" : "vim-repeat"
+  },
+  {
+    "name" : "vim-redir-output",
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/suliveevil\/vim-redir-output",
+    "type" : "start",
+    "oid" : "8c64cae9710f6f44dde98f0a590219b95b2da9ab"
+  },
+  {
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/suliveevil\/hiPairs",
+    "type" : "start",
+    "oid" : "f25963661acfb8b886952221c5f2db03601277e0",
+    "name" : "hiPairs"
+  },
+  {
+    "oid" : "0778289e391c419f7a3af9de8229f798ee292013",
+    "docDir" : "doc",
+    "rev" : "b:master",
+    "type" : "start",
+    "name" : "vim-illuminate",
+    "origin" : "https:\/\/github.com\/RRethy\/vim-illuminate"
+  },
+  {
+    "origin" : "https:\/\/github.com\/plasticboy\/vim-markdown",
+    "type" : "start",
+    "name" : "vim-markdown",
+    "rev" : "b:master",
+    "oid" : "da5a7ac96f517e0fd6f886bc3fbe27156ca1f946",
+    "docDir" : "doc"
+  },
+  {
+    "type" : "start",
+    "oid" : "046fc0664b953ab17153da379df0b9fd34b85ec1",
+    "rev" : "b:master",
+    "docDir" : "doc",
+    "origin" : "https:\/\/github.com\/suliveevil\/vim-mundo",
+    "name" : "vim-mundo"
+  },
+  {
+    "type" : "start",
+    "rev" : "b:master",
+    "oid" : "baaaad0d377bce2e78823ce10cebdd50e4bbf41a",
+    "origin" : "https:\/\/github.com\/suliveevil\/vim-pythonsense",
+    "docDir" : "doc",
+    "name" : "vim-pythonsense"
+  },
+  {
+    "oid" : "41a675ddbeefd6a93664a4dc52f302fe3086a933",
+    "origin" : "https:\/\/github.com\/kana\/vim-textobj-user",
+    "name" : "vim-textobj-user",
+    "docDir" : "doc",
+    "type" : "start",
+    "rev" : "b:master"
+  },
+  {
+    "origin" : "https:\/\/github.com\/mg979\/vim-visual-multi",
+    "type" : "start",
+    "rev" : "b:master",
+    "name" : "vim-visual-multi",
+    "oid" : "f972b5357af0e5c9b840f8e82eceb313891ef8b2",
+    "docDir" : "doc"
+  },
+  {
+    "oid" : "3e129198bba7d6b50406902002ad7d213a6cccaa",
+    "type" : "start",
+    "docDir" : "doc",
+    "rev" : "b:master",
+    "name" : "goyo.vim",
+    "origin" : "https:\/\/github.com\/junegunn\/goyo.vim"
+  },
+  {
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/junegunn\/limelight.vim",
+    "name" : "limelight.vim",
+    "type" : "start",
+    "oid" : "26e913a2e061195245bc62d24009ab67143a3c32"
+  },
+  {
+    "origin" : "https:\/\/github.com\/ZSaberLv0\/vim-easymotion-chs",
+    "type" : "start",
+    "oid" : "05d41216942255f6ec0ad1d04339e2fe3b90a460",
+    "rev" : "b:master",
+    "name" : "vim-easymotion-chs"
+  },
+  {
+    "oid" : "0f83788cb67e0743a3a9c8d3a3a6e52a01bdc6c2",
+    "name" : "neocomplete",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/Shougo\/neocomplete",
+    "docDir" : "doc",
+    "rev" : "b:master"
+  },
+  {
+    "type" : "start",
+    "oid" : "8e69652c7a7e7aabd96cff21b6ee6b6a295c901c",
+    "docDir" : "doc",
+    "origin" : "https:\/\/github.com\/ludovicchabant\/vim-gutentags",
+    "name" : "vim-gutentags",
+    "rev" : "b:master"
+  },
+  {
+    "type" : "start",
+    "name" : "vim-fugitive",
+    "oid" : "27a5c3abd211c2784513dab4db082fa414ad0967",
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/tpope\/vim-fugitive",
+    "docDir" : "doc"
+  },
+  {
+    "oid" : "17b349d49156887d9203e3fac6fa072746f505c0",
+    "docDir" : "doc",
+    "name" : "vim-yoink",
+    "rev" : "b:master",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/svermeulen\/vim-yoink"
+  },
+  {
+    "type" : "start",
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/yianwillis\/vimcdoc",
+    "name" : "vimcdoc",
+    "docDir" : "doc",
+    "oid" : "2c660f187009cedd9e35ca8939a10613c7f0bd20"
+  },
+  {
+    "type" : "start",
+    "docDir" : "doc",
+    "name" : "vim-pandoc",
+    "oid" : "e49f9e7e3fc041dab0e9a1de4b564b3ddd8f77aa",
+    "origin" : "https:\/\/github.com\/vim-pandoc\/vim-pandoc",
+    "rev" : "b:master"
+  },
+  {
+    "origin" : "https:\/\/github.com\/vim-pandoc\/vim-pandoc-syntax",
+    "rev" : "b:master",
+    "docDir" : "doc",
+    "name" : "vim-pandoc-syntax",
+    "type" : "start",
+    "oid" : "0d1129e5cf1b0e3a90e923c3b5f40133bf153f7c"
+  },
+  {
+    "name" : "fern.vim",
+    "oid" : "33f0fabef78a82d409f2431a1698d131b4f041f0",
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/lambdalisue\/fern.vim",
+    "type" : "start",
+    "docDir" : "doc"
+  },
+  {
+    "type" : "start",
+    "name" : "open-browser.vim",
+    "docDir" : "doc",
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/tyru\/open-browser.vim",
+    "oid" : "d6f1784685abdd86500fdb5fa2fbaf2aab833f18"
+  },
+  {
+    "rev" : "b:master",
+    "name" : "Colorizer",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/chrisbra\/Colorizer",
+    "docDir" : "doc",
+    "oid" : "879e6c69c0c02c4ef0f08b3955c60de16efd8fb8"
+  },
+  {
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/itchyny\/vim-grep",
+    "oid" : "b22f49fe10969e1b821d8dba25fff86f6b4df966",
+    "name" : "vim-grep",
+    "type" : "start"
+  },
+  {
+    "rev" : "b:master",
+    "name" : "vim-plist",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/suliveevil\/vim-plist",
+    "oid" : "12dce205a219321423de9fd3175e7bcc1c7d135d"
+  },
+  {
+    "oid" : "51c66faf14b824ee5d6ddfc5a54530d9f92fe764",
+    "rev" : "b:develop",
+    "origin" : "https:\/\/github.com\/python-mode\/python-mode",
+    "name" : "python-mode",
+    "type" : "start",
+    "docDir" : "doc"
+  },
+  {
+    "name" : "vimtex",
+    "rev" : "b:master",
+    "docDir" : "doc",
+    "oid" : "49bc335fffa40a7b7b84b6110b57ebcbaaf019ea",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/lervag\/vimtex"
+  },
+  {
+    "oid" : "55c659d3429f09ebb818615056a86a67901f022c",
+    "name" : "neoformat",
+    "docDir" : "doc",
+    "type" : "start",
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/sbdchd\/neoformat"
+  },
+  {
+    "docDir" : "doc",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/jpalardy\/vim-slime",
+    "oid" : "a81139239d6447b1c021e4873e6a14b47f32b65a",
+    "name" : "vim-slime",
+    "rev" : "b:master"
+  },
+  {
+    "oid" : "4172542f92b56cb639b8d2548516f6e4e0eb61e0",
+    "name" : "vim-repl",
+    "rev" : "b:master",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/sillybun\/vim-repl"
+  },
+  {
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/jceb\/vim-orgmode",
+    "oid" : "ecdc5b279d7b4e0ae4ebfb9e0f139e3ca6698033",
+    "name" : "vim-orgmode",
+    "type" : "start",
+    "docDir" : "doc"
+  },
+  {
+    "origin" : "https:\/\/github.com\/tpope\/vim-speeddating",
+    "oid" : "fe98cfaa7ea9c4b838d42a6830437c919eb55b4e",
+    "type" : "start",
+    "docDir" : "doc",
+    "rev" : "b:master",
+    "name" : "vim-speeddating"
+  },
+  {
+    "origin" : "https:\/\/github.com\/conweller\/findr.vim",
+    "type" : "start",
+    "oid" : "92126073e8ac1df8d864c062853df68a243f4f2f",
+    "docDir" : "doc",
+    "rev" : "b:master",
+    "name" : "findr.vim"
+  },
+  {
+    "name" : "vim-colors-solarized",
+    "type" : "opt",
+    "origin" : "https:\/\/github.com\/altercation\/vim-colors-solarized.git",
+    "docDir" : "doc",
+    "rev" : "b:master",
+    "oid" : "528a59f26d12278698bb946f8fb82a63711eec21"
+  },
+  {
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/suliveevil\/ivim-snippets",
+    "type" : "start",
+    "oid" : "7a2e8de935deeae65c449e950a5ddbc7e7d79369",
+    "name" : "ivim-snippets"
+  }
+]
