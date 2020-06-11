@@ -1,0 +1,210 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.003  000.003: --- VIM STARTING ---
+000.054  000.051: Allocated generic buffers
+000.055  000.001: GUI prepared
+000.056  000.001: clipboard setup
+000.059  000.003: window checked
+000.287  000.228: inits 1
+000.290  000.003: parsing arguments
+000.291  000.001: expanding arguments
+000.300  000.009: shell init
+000.321  000.021: inits 2
+000.432  000.111: init highlight
+007.148  001.344  001.344: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+007.263  002.057  000.713: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/synload.vim
+014.457  000.218  000.218: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/autoload/paste.vim
+016.061  002.865  002.647: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/menu.vim
+016.083  008.307  005.442: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/filetype.vim
+016.141  012.483  002.119: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syntax.vim
+016.321  000.022  000.022: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/filetype.vim
+017.038  000.248  000.248: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/ftplugin.vim
+017.801  000.263  000.263: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/indent.vim
+017.860  017.323  004.307: sourcing $VIM/vimrc
+018.601  000.364  000.364: sourcing $VIMRUNTIME/macmap.vim
+021.951  000.156  000.156: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+022.355  000.135  000.135: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+022.621  000.132  000.132: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+022.782  001.522  001.099: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/colors/murphy.vim
+026.034  000.321  000.321: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/nosyntax.vim
+026.748  000.146  000.146: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+027.180  000.122  000.122: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+027.455  000.137  000.137: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+027.617  001.294  000.889: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/colors/murphy.vim
+027.683  001.505  000.211: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/synload.vim
+027.704  002.591  000.765: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syntax.vim
+027.836  000.022  000.022: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/filetype.vim
+027.978  000.021  000.021: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/filetype.vim
+028.146  000.022  000.022: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/ftplugin.vim
+028.283  000.020  000.020: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/filetype.vim
+028.730  000.027  000.027: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/ftplugin.vim
+028.877  000.020  000.020: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/indent.vim
+030.587  010.233  005.988: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/basic.vim
+043.246  000.239  000.239: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/asyncrun.vim
+043.616  000.251  000.251: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/ctrlp.vim
+043.942  000.222  000.222: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/findr.vim
+044.099  000.026  000.026: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/helptab.vim
+044.491  000.279  000.279: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/indentLine.vim
+044.842  000.245  000.245: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/lightline.vim
+045.165  000.218  000.218: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/limelight.vim
+045.570  000.287  000.287: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/neocomplete.vim
+045.873  000.200  000.200: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/nerdtree.vim
+046.173  000.197  000.197: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/openbrowser.vim
+046.308  000.027  000.027: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/python-mode.vim
+046.435  000.026  000.026: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/rainbow.vim
+046.785  000.249  000.249: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/tagbar.vim
+047.128  000.236  000.236: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/ultisnips.vim
+047.401  000.169  000.169: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/unicode.vim
+048.275  000.147  000.147: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+048.657  000.131  000.131: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+048.915  000.132  000.132: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+049.074  001.233  000.823: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/colors/murphy.vim
+049.380  000.133  000.133: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+073.164  000.154  000.154: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+073.507  000.139  000.139: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/syntax/syncolor.vim
+075.662  003.652  003.359: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/opt/vim-colors-solarized/colors/solarized.vim
+075.919  028.390  023.372: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/vim-colors-solarized.vim
+076.362  000.281  000.281: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/vim-grep.vim
+077.158  000.670  000.670: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/vim-markdown.vim
+077.576  000.288  000.288: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/vim-mundo.vim
+077.990  000.285  000.285: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/vim-pandoc.vim
+078.488  000.374  000.374: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/vim-repl.vim
+079.060  000.370  000.370: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac/vim-which-key.vim
+079.084  048.295  014.766: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/_vim/_rc/pac.vim
+079.092  059.977  001.449: sourcing $HOME/.vimrc
+079.095  000.999: sourcing vimrc file(s)
+099.386  000.332  000.332: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/plugin/getscriptPlugin.vim
+099.776  000.293  000.293: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/plugin/gzip.vim
+100.306  000.436  000.436: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/plugin/logiPat.vim
+100.587  000.190  000.190: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/plugin/manpager.vim
+101.103  000.424  000.424: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/plugin/matchparen.vim
+101.794  000.597  000.597: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/plugin/netrwPlugin.vim
+102.216  000.278  000.278: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/plugin/rrhelper.vim
+102.691  000.350  000.350: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/plugin/spellfile.vim
+103.081  000.277  000.277: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/plugin/tarPlugin.vim
+103.492  000.274  000.274: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/plugin/tohtml.vim
+104.014  000.353  000.353: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/plugin/vimballPlugin.vim
+104.778  000.470  000.470: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/plugin/zipPlugin.vim
+104.788  021.419: loading plugins
+110.967  001.815  001.815: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/asyncrun.vim/plugin/asyncrun.vim
+111.986  000.336  000.336: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/calendar.vim/plugin/calendar.vim
+113.172  000.414  000.414: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/Colorizer/plugin/ColorizerPlugin.vim
+124.553  000.513  000.513: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim
+124.684  010.681  010.168: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/ctrlp.vim/plugin/ctrlp.vim
+125.834  000.339  000.339: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/fern.vim/plugin/fern.vim
+141.931  015.257  015.257: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/findr.vim/plugin/findr.vim
+142.671  000.303  000.303: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/goyo.vim/plugin/goyo.vim
+143.637  000.296  000.296: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/helptab.vim/plugin/helptab.vim
+144.585  000.530  000.530: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/hiPairs/plugin/hiPairs.vim
+147.563  000.309  000.309: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/ivim-dash/autoload/dash/defaults.vim
+147.673  001.452  001.143: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/ivim-dash/autoload/dash.vim
+148.015  002.928  001.476: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/ivim-dash/plugin/dash.vim
+149.153  000.328  000.328: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/lightline.vim/plugin/lightline.vim
+149.852  000.318  000.318: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/limelight.vim/plugin/limelight.vim
+151.384  000.292  000.292: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/neocomplete/plugin/neocomplete/buffer.vim
+151.771  000.232  000.232: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/neocomplete/plugin/neocomplete/dictionary.vim
+152.154  000.233  000.233: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/neocomplete/plugin/neocomplete/member.vim
+152.595  000.289  000.289: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/neocomplete/plugin/neocomplete/tag.vim
+153.050  000.293  000.293: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/neocomplete/plugin/neocomplete.vim
+154.129  000.274  000.274: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/neoformat/plugin/neoformat.vim
+159.156  004.484  004.484: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim
+162.102  000.501  000.501: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim
+164.938  000.948  000.948: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/path.vim
+165.897  000.375  000.375: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/menu_controller.vim
+166.708  000.266  000.266: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/menu_item.vim
+167.548  000.300  000.300: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/key_map.vim
+168.731  000.484  000.484: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/bookmark.vim
+169.843  000.482  000.482: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/tree_file_node.vim
+171.372  000.882  000.882: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/tree_dir_node.vim
+172.548  000.481  000.481: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/opener.vim
+173.636  000.488  000.488: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/creator.vim
+174.428  000.247  000.247: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/flag_set.vim
+175.305  000.325  000.325: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/nerdtree.vim
+176.675  000.805  000.805: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/ui.vim
+177.382  000.154  000.154: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/event.vim
+178.256  000.276  000.276: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/lib/nerdtree/notifier.vim
+180.186  001.103  001.103: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim
+183.758  000.365  000.365: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/exec_menuitem.vim
+186.751  002.815  002.815: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim
+187.191  000.261  000.261: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/vcs.vim
+188.108  027.932  016.374: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/nerdtree/plugin/NERD_tree.vim
+189.202  000.439  000.439: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/NrrwRgn/plugin/NrrwRgn.vim
+190.447  000.463  000.463: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/open-browser.vim/plugin/openbrowser.vim
+192.495  000.379  000.379: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/python-mode/autoload/pymode.vim
+193.545  000.040  000.040: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/filetype.vim
+194.437  000.033  000.033: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/ftplugin.vim
+229.288  000.091  000.091: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/filetype.vim
+229.989  000.033  000.033: sourcing /private/var/containers/Bundle/Application/0357CD0E-2651-48B3-8014-D02F65266910/iVim.app/runtime/ftplugin.vim
+230.096  038.949  038.373: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/python-mode/plugin/pymode.vim
+416.951  185.002  185.002: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/searchvim/plugin/searchvim.vim
+418.644  000.944  000.944: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/tagbar/plugin/tagbar.vim
+420.413  000.354  000.354: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/ultisnips/autoload/UltiSnips/map_keys.vim
+420.476  001.441  001.087: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/ultisnips/plugin/UltiSnips.vim
+421.099  000.307  000.307: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/ultisnips/ftdetect/snippets.vim
+422.174  000.669  000.669: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/unicode.vim/plugin/unicode.vim
+422.727  000.253  000.253: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/unicode.vim/ftdetect/unicode.vim
+424.936  001.626  001.626: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/utl.vim/plugin/utl.vim
+425.728  000.646  000.646: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/utl.vim/plugin/utl_rc.vim
+426.654  000.770  000.770: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/utl.vim/plugin/utl_scm.vim
+427.214  000.418  000.418: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/utl.vim/plugin/utl_uri.vim
+428.074  000.438  000.438: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim
+432.579  004.136  004.136: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim
+433.396  000.397  000.397: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-easymotion-chs/plugin/setup.vim
+436.138  002.079  002.079: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-fugitive/plugin/fugitive.vim
+436.725  000.291  000.291: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-fugitive/ftdetect/fugitive.vim
+437.468  000.345  000.345: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-grep/plugin/grep.vim
+438.306  000.428  000.428: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-illuminate/plugin/illuminate.vim
+441.274  002.002  002.002: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-mark/plugin/mark.vim
+442.369  000.316  000.316: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-markdown/ftdetect/markdown.vim
+444.658  000.529  000.529: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-mundo/autoload/mundo/util.vim
+444.892  001.635  001.106: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-mundo/plugin/mundo.vim
+446.058  000.303  000.303: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-orgmode/ftdetect/org.vim
+447.098  000.550  000.550: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-pandoc/plugin/pandoc.vim
+448.088  000.275  000.275: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-pandoc/ftdetect/pandoc.vim
+448.808  000.290  000.290: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-pandoc-syntax/plugin/pandoc-syntax-check.vim
+487.335  038.119  038.119: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-plist/plugin/plist.vim
+488.092  000.414  000.414: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-plist/ftdetect/plist.vim
+489.335  000.361  000.361: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-redir-output/plugin/redir-output.vim
+490.946  000.568  000.568: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-repl/plugin/default.vim
+491.393  000.314  000.314: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-repl/plugin/vim-repl.vim
+492.609  000.851  000.851: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-speeddating/plugin/speeddating.vim
+494.493  001.279  001.279: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-surround/plugin/surround.vim
+495.155  000.300  000.300: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-SyntaxRange/plugin/SyntaxRange.vim
+502.569  006.953  006.953: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim
+504.300  001.019  001.019: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim
+507.208  000.882  000.882: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim
+508.568  000.743  000.743: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim
+509.423  000.541  000.541: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps/all.vim
+510.522  005.318  003.152: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-visual-multi/plugin/visual-multi.vim
+511.298  000.382  000.382: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-which-key/plugin/which_key.vim
+512.202  000.531  000.531: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-yoink/plugin/yoink.vim
+513.417  000.351  000.351: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vimcdoc/plugin/vimcdoc.vim
+513.710  039.176: loading packages
+514.601  000.454  000.454: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/ultisnips/after/plugin/UltiSnips_after.vim
+516.038  001.017  001.017: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim
+516.085  000.904: loading after plugins
+516.090  000.005: inits 3
+516.873  000.643  000.643: sourcing $VIMRUNTIME/menu.vim
+518.074  001.341: starting GUI
+518.605  000.531: reading viminfo
+518.613  000.008: GUI delay
+518.614  000.001: setting raw mode
+518.614  000.000: start termcap
+518.618  000.004: clearing screen
+518.835  000.217: opening buffers
+520.599  000.923  000.923: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim
+522.502  000.361  000.361: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/lightline.vim/autoload/lightline/tab.vim
+524.744  000.423  000.423: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/lightline.vim/autoload/lightline/colorscheme.vim
+525.162  001.829  001.406: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/lightline.vim/autoload/lightline/colorscheme/wombat.vim
+527.517  005.569: BufEnter autocommands
+527.521  000.004: editing files in windows
+531.547  003.125  003.125: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-yoink/autoload/yoink.vim
+531.732  001.086: VimEnter autocommands
+531.734  000.002: before starting main loop
+533.033  000.474  000.474: sourcing /private/var/mobile/Containers/Data/Application/BF3B1B48-21E9-43A7-A11A-75921FCF47E9/Documents/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim
+547.641  015.433: first screen update
+547.643  000.002: --- VIM STARTED ---
