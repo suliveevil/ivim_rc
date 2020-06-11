@@ -1,801 +1,1438 @@
 verb map
 ----
-x  <C-E>       * :call UltiSnips#SaveLastVisualSelection()<CR>gvs
-	Last set from ~/_vim/autoload/UltiSnips/map_keys.vim line 64
-s  <C-E>       * <Esc>:call UltiSnips#ExpandSnippet()<CR>
-	Last set from ~/_vim/autoload/UltiSnips/map_keys.vim line 62
+s  <C-K>       *@<Esc>:call UltiSnips#JumpBackwards()<CR> Last set from ~/.vim/pack/ivim/start/ultisnips/autoload/UltiSnips.vim line 78
+n  <Space>b    *@:call pymode#breakpoint#operate(line('.'))<CR> Last set from ~/.vim/pack/ivim/start/python-mode/ftplugin/python/pymode.vim line 51
+v  <Space>r    *@:PymodeRun<CR> Last set from ~/.vim/pack/ivim/start/python-mode/ftplugin/python/pymode.vim line 44
+n  <Space>r    *@:PymodeRun<CR> Last set from ~/.vim/pack/ivim/start/python-mode/ftplugin/python/pymode.vim line 43
+o  C           *@:<C-U>call pymode#motion#select_c('^\s*class\s', 0)<CR> Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 33
+x  K           *@:<C-U>call pymode#doc#show(@*)<CR> Last set from ~/.vim/pack/ivim/start/python-mode/ftplugin/python/pymode.vim line 125
+n  K           *@:call pymode#doc#find()<CR> Last set from ~/.vim/pack/ivim/start/python-mode/ftplugin/python/pymode.vim line 124
+o  M           *@:<C-U>call pymode#motion#select('^\s*\(async\s\+\)\=@', '^\s*\(async\s\+\)\=def\s', 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 39
+o  [M          *@:<C-U>call pymode#motion#move('^\s*\(async\s\+\)\=def\s', 'b')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 26
+o  [C          *@:<C-U>call pymode#motion#move('^\(class\|\%(async\s\+\)\=def\)\s', 'b')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 24
+o  [[          *@:<C-U>call pymode#motion#move('^\(class\|\%(async\s\+\)\=def\)\s', 'b')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 22
+n  [M          *@:<C-U>call pymode#motion#move('^\s*\(async\s\+\)\=def\s', 'b')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 19
+n  [C          *@:<C-U>call pymode#motion#move('^\(class\|\%(async\s\+\)\=def\)\s', 'b')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 17
+n  [[          *@:<C-U>call pymode#motion#move('^\(class\|\%(async\s\+\)\=def\)\s', 'b')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 15
+x  [M          *@:call pymode#motion#vmove('^\s*\(async\s\+\)\=def\s', 'b')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 31
+nox[m           @<Plug>(PythonsenseStartOfPythonFunction)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/after/ftplugin/python/pythonsense.vim line 51
+nox[]           @<Plug>(PythonsenseEndOfPreviousPythonClass)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/after/ftplugin/python/pythonsense.vim line 41
+x  [[          *@:call pymode#motion#vmove('^\(class\|\%(async\s\+\)\=def\)\s', 'b')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 29
+o  ]M          *@:<C-U>call pymode#motion#move('^\s*\(async\s\+\)\=def\s', '')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 25
+o  ]C          *@:<C-U>call pymode#motion#move('^\(class\|\%(async\s\+\)\=def\)\s', '')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 23
+o  ]]          *@:<C-U>call pymode#motion#move('^\(class\|\%(async\s\+\)\=def\)\s', '')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 21
+n  ]M          *@:<C-U>call pymode#motion#move('^\s*\(async\s\+\)\=def\s', '')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 18
+n  ]C          *@:<C-U>call pymode#motion#move('^\(class\|\%(async\s\+\)\=def\)\s', '')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 16
+n  ]]          *@:<C-U>call pymode#motion#move('^\(class\|\%(async\s\+\)\=def\)\s', '')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 14
+x  ]M          *@:call pymode#motion#vmove('^\s*\(async\s\+\)\=def\s', '')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 30
+nox]m           @<Plug>(PythonsenseStartOfNextPythonFunction)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/after/ftplugin/python/pythonsense.vim line 45
+nox][           @<Plug>(PythonsenseEndOfPythonClass)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/after/ftplugin/python/pythonsense.vim line 35
+x  ]]          *@:call pymode#motion#vmove('^\(class\|\%(async\s\+\)\=def\)\s', '')<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 28
+x  aM          *@:<C-U>call pymode#motion#select('^\s*\(async\s\+\)\=@', '^\s*\(async\s\+\)\=def\s', 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 42
+o  aM          *@:<C-U>call pymode#motion#select('^\s*\(async\s\+\)\=@', '^\s*\(async\s\+\)\=def\s', 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 40
+x  aC          *@:<C-U>call pymode#motion#select_c('^\s*class\s', 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 36
+o  aC          *@:<C-U>call pymode#motion#select_c('^\s*class\s', 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 34
+x  iM          *@:<C-U>call pymode#motion#select('^\s*\(async\s\+\)\=@', '^\s*\(async\s\+\)\=def\s', 1)<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 43
+o  iM          *@:<C-U>call pymode#motion#select('^\s*\(async\s\+\)\=@', '^\s*\(async\s\+\)\=def\s', 1)<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 41
+x  iC          *@:<C-U>call pymode#motion#select_c('^\s*class\s', 1)<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 37
+o  iC          *@:<C-U>call pymode#motion#select_c('^\s*class\s', 1)<CR>
+	Last set from ~/.vim/pack/ivim/start/python-mode/after/ftplugin/python.vim line 35
+n  <Plug>(PythonsensePyWhere) *@:Pywhere<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 88
+o  <Plug>(PythonsenseEndOfPreviousPythonFunction) *@V:<C-U>call pythonsense#move_to_python_object("def", 1, 0, "o")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 84
+v  <Plug>(PythonsenseEndOfPreviousPythonFunction) *@:call pythonsense#move_to_python_object("def", 1, 0, "v")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 83
+n  <Plug>(PythonsenseEndOfPreviousPythonFunction) *@:<C-U>call pythonsense#move_to_python_object("def", 1, 0, "n")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 82
+o  <Plug>(PythonsenseStartOfPythonFunction) *@V:<C-U>call pythonsense#move_to_python_object("def", 0, 0, "o")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 81
+v  <Plug>(PythonsenseStartOfPythonFunction) *@:call pythonsense#move_to_python_object("def", 0, 0, "v")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 80
+n  <Plug>(PythonsenseStartOfPythonFunction) *@:<C-U>call pythonsense#move_to_python_object("def", 0, 0, "n")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 79
+o  <Plug>(PythonsenseEndOfPythonFunction) *@V:<C-U>call pythonsense#move_to_python_object("def", 1, 1, "o")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 78
+v  <Plug>(PythonsenseEndOfPythonFunction) *@:call pythonsense#move_to_python_object("def", 1, 1, "v")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 77
+n  <Plug>(PythonsenseEndOfPythonFunction) *@:<C-U>call pythonsense#move_to_python_object("def", 1, 1, "n")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 76
+o  <Plug>(PythonsenseStartOfNextPythonFunction) *@V:<C-U>call pythonsense#move_to_python_object("def", 0, 1, "o")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 75
+v  <Plug>(PythonsenseStartOfNextPythonFunction) *@:call pythonsense#move_to_python_object("def", 0, 1, "v")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 74
+n  <Plug>(PythonsenseStartOfNextPythonFunction) *@:<C-U>call pythonsense#move_to_python_object("def", 0, 1, "n")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 73
+o  <Plug>(PythonsenseEndOfPreviousPythonClass) *@V:<C-U>call pythonsense#move_to_python_object("class", 1, 0, "o")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 71
+v  <Plug>(PythonsenseEndOfPreviousPythonClass) *@:call pythonsense#move_to_python_object("class", 1, 0, "v")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 70
+n  <Plug>(PythonsenseEndOfPreviousPythonClass) *@:<C-U>call pythonsense#move_to_python_object("class", 1, 0, "n")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 69
+o  <Plug>(PythonsenseStartOfPythonClass) *@V:<C-U>call pythonsense#move_to_python_object("class", 0, 0, "o")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 68
+v  <Plug>(PythonsenseStartOfPythonClass) *@:call pythonsense#move_to_python_object("class", 0, 0, "v")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 67
+n  <Plug>(PythonsenseStartOfPythonClass) *@:<C-U>call pythonsense#move_to_python_object("class", 0, 0, "n")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 66
+o  <Plug>(PythonsenseEndOfPythonClass) *@V:<C-U>call pythonsense#move_to_python_object("class", 1, 1, "o")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 65
+v  <Plug>(PythonsenseEndOfPythonClass) *@:call pythonsense#move_to_python_object("class", 1, 1, "v")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 64
+n  <Plug>(PythonsenseEndOfPythonClass) *@:<C-U>call pythonsense#move_to_python_object("class", 1, 1, "n")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 63
+o  <Plug>(PythonsenseStartOfNextPythonClass) *@V:<C-U>call pythonsense#move_to_python_object("class", 0, 1, "o")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 62
+v  <Plug>(PythonsenseStartOfNextPythonClass) *@:call pythonsense#move_to_python_object("class", 0, 1, "v")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 61
+n  <Plug>(PythonsenseStartOfNextPythonClass) *@:<C-U>call pythonsense#move_to_python_object("class", 0, 1, "n")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 60
+v  <Plug>(PythonsenseInnerDocStringTextObject) *@:<C-U>cal pythonsense#python_docstring_text_object(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 55
+v  <Plug>(PythonsenseOuterDocStringTextObject) *@:<C-U>cal pythonsense#python_docstring_text_object(0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 54
+v  <Plug>(PythonsenseInnerClassTextObject) *@:<C-U>call pythonsense#python_class_text_object(1, "v")<CR><Esc>gv
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 53
+v  <Plug>(PythonsenseOuterClassTextObject) *@:<C-U>call pythonsense#python_class_text_object(0, "v")<CR><Esc>gv
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 52
+v  <Plug>(PythonsenseInnerFunctionTextObject) *@:<C-U>call pythonsense#python_function_text_object(1, "v")<CR><Esc>gv
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 51
+v  <Plug>(PythonsenseOuterFunctionTextObject) *@:<C-U>call pythonsense#python_function_text_object(0, "v")<CR><Esc>gv
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 50
+o  <Plug>(PythonsenseInnerDocStringTextObject) *@:<C-U>call pythonsense#python_docstring_text_object(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 49
+o  <Plug>(PythonsenseOuterDocStringTextObject) *@:<C-U>call pythonsense#python_docstring_text_object(0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 48
+o  <Plug>(PythonsenseInnerClassTextObject) *@:<C-U>call pythonsense#python_class_text_object(1, "o")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 47
+o  <Plug>(PythonsenseOuterClassTextObject) *@:<C-U>call pythonsense#python_class_text_object(0, "o")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 46
+o  <Plug>(PythonsenseInnerFunctionTextObject) *@:<C-U>call pythonsense#python_function_text_object(1, "o")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 45
+o  <Plug>(PythonsenseOuterFunctionTextObject) *@:<C-U>call pythonsense#python_function_text_object(0, "o")<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 44
+n  <C-C>v        <Plug>SlimeConfig
+	Last set from ~/.vim/pack/ivim/start/vim-slime/plugin/slime.vim line 38
+n  <C-C><C-C>    <Plug>SlimeParagraphSend
+	Last set from ~/.vim/pack/ivim/start/vim-slime/plugin/slime.vim line 34
+x  <C-C><C-C>    <Plug>SlimeRegionSend
+	Last set from ~/.vim/pack/ivim/start/vim-slime/plugin/slime.vim line 30
 s  <C-H>       * <C-G>"_c
-	Last set from ~/_vim/autoload/UltiSnips/map_keys.vim line 72
+	Last set from ~/.vim/pack/ivim/start/ultisnips/autoload/UltiSnips/map_keys.vim line 72
+x  <C-N>         <Plug>(VM-Find-Subword-Under)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+n  <C-N>         <Plug>(VM-Find-Under)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
    <C-P>         <Plug>(ctrlp)
-	Last set from ~/_vim/plugin/ctrlp.vim line 39
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/plugin/ctrlp.vim line 39
 s  <C-R>       * <C-G>"_c<C-R>
-	Last set from ~/_vim/autoload/UltiSnips/map_keys.vim line 73
+	Last set from ~/.vim/pack/ivim/start/ultisnips/autoload/UltiSnips/map_keys.vim line 73
 n  <C-S>       * :w<CR>
-	Last set from ~/_vim_rc/basic.vim line 689
+	Last set from ~/_vim/_rc/basic.vim line 764
+v  <Space>w    * :SendLineToREPL<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-repl/plugin/vim-repl.vim line 4
+n  <Space>w    * :SendCurrentLine<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-repl/plugin/vim-repl.vim line 3
+   <Space><Space>   <Plug>(easymotion-prefix)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 244
 n  <Space>un     <Plug>(UnicodeSwapCompleteName)
-	Last set from ~/_vim/plugin/unicode.vim line 83
+	Last set from ~/.vim/pack/ivim/start/unicode.vim/plugin/unicode.vim line 83
 n  <Space>ca     <Plug>NERDCommenterAltDelims
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 x  <Space>cu     <Plug>NERDCommenterUncomment
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>cu     <Plug>NERDCommenterUncomment
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 x  <Space>cb     <Plug>NERDCommenterAlignBoth
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>cb     <Plug>NERDCommenterAlignBoth
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 x  <Space>cl     <Plug>NERDCommenterAlignLeft
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>cl     <Plug>NERDCommenterAlignLeft
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>cA     <Plug>NERDCommenterAppend
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 x  <Space>cy     <Plug>NERDCommenterYank
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>cy     <Plug>NERDCommenterYank
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 x  <Space>cs     <Plug>NERDCommenterSexy
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>cs     <Plug>NERDCommenterSexy
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 x  <Space>ci     <Plug>NERDCommenterInvert
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>ci     <Plug>NERDCommenterInvert
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>c$     <Plug>NERDCommenterToEOL
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 x  <Space>cn     <Plug>NERDCommenterNested
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>cn     <Plug>NERDCommenterNested
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 x  <Space>cm     <Plug>NERDCommenterMinimal
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>cm     <Plug>NERDCommenterMinimal
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 x  <Space>c<Space>   <Plug>NERDCommenterToggle
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>c<Space>   <Plug>NERDCommenterToggle
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 x  <Space>cc     <Plug>NERDCommenterComment
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>cc     <Plug>NERDCommenterComment
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3175
-n  <Space>K    * :call UncolorAllWords()<CR>
-	Last set from ~/_vim/plugin/intrestingword.vim line 250
-v  <Space>k    * :call InterestingWords('v')<CR>
-	Last set from ~/_vim/plugin/intrestingword.vim line 249
-n  <Space>p    * :CtrlP<CR>
-	Last set from ~/_vim_rc/rc_pac/find-search/ctrlp.vim line 1
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3162
 n  <Space>1    * :echom "THis is one"<CR>
-	Last set from ~/_vim_rc/rc_pac/key/vim-which-key.vim line 12
+	Last set from ~/_vim/_rc/pac/vim-which-key.vim line 9
 n  <Space>a<Tab> * :echom "Hello, World"<CR>
-	Last set from ~/_vim_rc/rc_pac/key/vim-which-key.vim line 11
-n  <Space>     * :WhichKey ' '<CR>
-	Last set from ~/_vim_rc/rc_pac/key/vim-which-key.vim line 3
-n  <Space>bb   * :Thumbnail<CR>
-	Last set from ~/_vim_rc/rc_pac/thumbnail.vim line 2
-n  <Space>tt   * :TagbarToggle<CR>
-	Last set from ~/_vim_rc/rc_pac/tagbar.vim line 3
+	Last set from ~/_vim/_rc/pac/vim-which-key.vim line 8
+n  <Space>r    * :REPLToggle<CR>
+	Last set from ~/_vim/_rc/pac/vim-repl.vim line 36
 n  <Space>5    * :MundoToggle<CR>
-	Last set from ~/_vim_rc/rc_pac/vim-mundo.vim line 2
-n  <Space>id   * :IndentLinesToggle<CR>
-	Last set from ~/_vim_rc/rc_pac/indentLine.vim line 3
-v  <Space>q    * <Esc>
-	Last set from ~/_vim_rc/basic.vim line 635
-n  <Space>s    * <C-S>
-	Last set from ~/_vim_rc/basic.vim line 707
-n  <Space>v    * <C-V>
-	Last set from ~/_vim_rc/basic.vim line 698
-n  <Space>9    * :vertical resize+5<CR>
-	Last set from ~/_vim_rc/basic.vim line 581
-n  <Space>0    * :vertical resize-5<CR>
-	Last set from ~/_vim_rc/basic.vim line 580
-n  <Space>@    * :res -5<CR>
-	Last set from ~/_vim_rc/basic.vim line 579
-n  <Space>"    * :res +5<CR>
-	Last set from ~/_vim_rc/basic.vim line 578
-n  <Space>l    * <C-W>l
-	Last set from ~/_vim_rc/basic.vim line 574
-n  <Space>k    * :call InterestingWords('n')<CR>
-	Last set from ~/_vim/plugin/intrestingword.vim line 248
+	Last set from ~/_vim/_rc/pac/vim-mundo.vim line 2
+n  <Space>tt   * :TagbarToggle<CR>
+	Last set from ~/_vim/_rc/pac/tagbar.vim line 3
+n  <Space>p    * :CtrlP<CR>
+	Last set from ~/_vim/_rc/pac/ctrlp.vim line 1
+n  <Space>k    * <Esc>
+	Last set from ~/_vim/_rc/basic.vim line 755
 n  <Space>j    * <C-]>
-	Last set from ~/_vim_rc/basic.vim line 679
-n  <Space>h    * <C-W>h
-	Last set from ~/_vim_rc/basic.vim line 571
-n  <Space>wj   * :set splitbelow<CR>:split<CR>
-	Last set from ~/_vim_rc/basic.vim line 566
-n  <Space>wk   * :set nosplitbelow<CR>:split<CR>
-	Last set from ~/_vim_rc/basic.vim line 565
-n  <Space>wh   * :set nosplitright<CR>:vsplit<CR>
-	Last set from ~/_vim_rc/basic.vim line 564
-n  <Space>wl   * :set splitright<CR>:vsplit<CR>
-	Last set from ~/_vim_rc/basic.vim line 563
+	Last set from ~/_vim/_rc/basic.vim line 754
+v  <Space>q    * <Esc>
+	Last set from ~/_vim/_rc/basic.vim line 720
+n  <Space>v    * <C-V>
+	Last set from ~/_vim/_rc/basic.vim line 676
+n  <Space>     * :WhichKey ' '<CR>
+	Last set from ~/_vim/_rc/pac/vim-which-key.vim line 5
 n  <Space>bD   * :bdelete!<CR>
-	Last set from ~/_vim_rc/basic.vim line 186
+	Last set from ~/_vim/_rc/basic.vim line 260
 n  <Space>bd   * :bdelete <CR>
-	Last set from ~/_vim_rc/basic.vim line 185
+	Last set from ~/_vim/_rc/basic.vim line 259
 n  <Space>bh   * :bhide<CR>
-	Last set from ~/_vim_rc/basic.vim line 182
+	Last set from ~/_vim/_rc/basic.vim line 256
 n  <Space>bn   * :bnext<CR>
-	Last set from ~/_vim_rc/basic.vim line 178
+	Last set from ~/_vim/_rc/basic.vim line 252
 n  <Space>bp   * :bprevious<CR>
-	Last set from ~/_vim_rc/basic.vim line 177
+	Last set from ~/_vim/_rc/basic.vim line 251
 n  <Space>bo   * :enew<CR>
-	Last set from ~/_vim_rc/basic.vim line 174
+	Last set from ~/_vim/_rc/basic.vim line 248
 n  <Space>bl   * :ls<CR>
-	Last set from ~/_vim_rc/basic.vim line 170
+	Last set from ~/_vim/_rc/basic.vim line 244
    <Space>zz     :call ToggleFold()<CR>
-	Last set from ~/_vim_rc/basic.vim line 156
-x  ,             <Plug>Sneak_,
-	Last set from ~/_vim/plugin/sneak.vim line 388
-o  ,             <Plug>Sneak_,
-	Last set from ~/_vim/plugin/sneak.vim line 387
-n  ,             <Plug>Sneak_,
-	Last set from ~/_vim/plugin/sneak.vim line 386
+	Last set from ~/_vim/_rc/basic.vim line 226
+n  <Space>--   * :ifont -<CR>
+	Last set from ~/_vim/_rc/basic.vim line 88
+n  <Space>++   * :ifont +<CR>
+	Last set from ~/_vim/_rc/basic.vim line 87
+no <Space>q    * <Esc>
+	Last set from ~/_vim/_rc/basic.vim line 29
 n  -             <Plug>VinegarUp
-	Last set from ~/_vim/plugin/vinegar.vim line 32
-x  ;             <Plug>Sneak_;
-	Last set from ~/_vim/plugin/sneak.vim line 382
-o  ;             <Plug>Sneak_;
-	Last set from ~/_vim/plugin/sneak.vim line 381
-n  ;             <Plug>Sneak_;
-	Last set from ~/_vim/plugin/sneak.vim line 380
-n  <p          & :<C-U>call <SNR>78_putline(v:count1 . ']p', 'Below')<CR><']
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  <P          & :<C-U>call <SNR>78_putline(v:count1 . '[p', 'Above')<CR><']
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  =p          & :<C-U>call <SNR>78_putline(v:count1 . ']p', 'Below')<CR>=']
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  =P          & :<C-U>call <SNR>78_putline(v:count1 . '[p', 'Above')<CR>=']
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 32
+n  <p          & :<C-U>call <SNR>115_putline(v:count1 . ']p', 'Below')<CR><']
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  <P          & :<C-U>call <SNR>115_putline(v:count1 . '[p', 'Above')<CR><']
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+x  <NOP>       * :call UltiSnips#SaveLastVisualSelection()<CR>gvs
+	Last set from ~/.vim/pack/ivim/start/ultisnips/autoload/UltiSnips/map_keys.vim line 64
+s  <NOP>       * <Esc>:call UltiSnips#ExpandSnippetOrJump()<CR>
+	Last set from ~/.vim/pack/ivim/start/ultisnips/autoload/UltiSnips/map_keys.vim line 59
+n  =p          & :<C-U>call <SNR>115_putline(v:count1 . ']p', 'Below')<CR>=']
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  =P          & :<C-U>call <SNR>115_putline(v:count1 . '[p', 'Above')<CR>=']
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  =op         * <Nop>
-	Last set from ~/_vim/plugin/unimpaired.vim line 302
-n  =o            <SNR>78_legacy_option_map(nr2char(getchar()))
-	Last set from ~/_vim/plugin/unimpaired.vim line 301
-n  >p          & :<C-U>call <SNR>78_putline(v:count1 . ']p', 'Below')<CR>>']
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  >P          & :<C-U>call <SNR>78_putline(v:count1 . '[p', 'Above')<CR>>']
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-   H           * ^
-	Last set from ~/_vim_rc/basic.vim line 682
-   L           * $
-	Last set from ~/_vim_rc/basic.vim line 683
-n  N           * :call WordNavigation(0)<CR>
-	Last set from ~/_vim/plugin/intrestingword.vim line 253
-n  S             <Plug>Sneak_S
-	Last set from ~/_vim/plugin/sneak.vim line 370
-x  Z             <Plug>Sneak_S
-	Last set from ~/_vim/plugin/sneak.vim line 400
-o  Z             <Plug>Sneak_S
-	Last set from ~/_vim/plugin/sneak.vim line 376
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 302
+n  =o            <SNR>115_legacy_option_map(nr2char(getchar()))
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 301
+n  >p          & :<C-U>call <SNR>115_putline(v:count1 . ']p', 'Below')<CR>>']
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  >P          & :<C-U>call <SNR>115_putline(v:count1 . '[p', 'Above')<CR>>']
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+noxH           * ^
+	Last set from ~/_vim/_rc/basic.vim line 757
+noxL           * $
+	Last set from ~/_vim/_rc/basic.vim line 758
+n  N           * 'nN'[v:searchforward]
+	Last set from ~/_vim/_rc/basic.vim line 599
+x  S             <Plug>VSurround
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 608
+n  U           * <C-R>
+	Last set from ~/_vim/_rc/basic.vim line 125
+noxY             y$
+	Last set from ~/_vim/_rc/basic.vim line 122
 n  [xx           <Plug>unimpaired_line_xml_encode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 x  [x            <Plug>unimpaired_xml_encode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [x            <Plug>unimpaired_xml_encode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [uu           <Plug>unimpaired_line_url_encode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 x  [u            <Plug>unimpaired_url_encode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [u            <Plug>unimpaired_url_encode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [yy           <Plug>unimpaired_line_string_encode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 x  [y            <Plug>unimpaired_string_encode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [y            <Plug>unimpaired_string_encode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [P            <Plug>unimpairedPutAbove
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [p            <Plug>unimpairedPutAbove
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [op         & :call <SNR>78_setup_paste()<CR>O
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [op         & :call <SNR>115_setup_paste()<CR>O
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [o+         & :set cursorline cursorcolumn<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [ox         & :set cursorline cursorcolumn<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [ov         & :set virtualedit+=all<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [ow         & :setlocal wrap<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [os         & :setlocal spell<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [or         & :setlocal relativenumber<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [on         & :setlocal number<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [ol         & :setlocal list<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [oi         & :set ignorecase<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [oh         & :set hlsearch<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [ow         & :setlocal wrap<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [os         & :setlocal spell<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [or         & :setlocal relativenumber<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [on         & :setlocal number<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [ol         & :setlocal list<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [oi         & :set ignorecase<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [oh         & :set hlsearch<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [od         & :diffthis<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [o|         & :setlocal cursorcolumn<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [ou         & :setlocal cursorcolumn<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [o_         & :setlocal cursorline<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [o-         & :setlocal cursorline<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [oc         & :setlocal cursorline<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [o|         & :setlocal cursorcolumn<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [ou         & :setlocal cursorcolumn<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [o_         & :setlocal cursorline<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [o-         & :setlocal cursorline<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [oc         & :setlocal cursorline<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [ob         & :set background=light<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 x  [e            <Plug>unimpairedMoveSelectionUp
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [e            <Plug>unimpairedMoveUp
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [<Space>      <Plug>unimpairedBlankUp
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 o  [n            <Plug>unimpairedContextPrevious
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 x  [n            <Plug>unimpairedContextPrevious
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [n            <Plug>unimpairedContextPrevious
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [f            <Plug>unimpairedDirectoryPrevious
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [<C-T>        <Plug>unimpairedTPPrevious
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [T            <Plug>unimpairedTFirst
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [t            <Plug>unimpairedTPrevious
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [<C-Q>        <Plug>unimpairedQPFile
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [Q            <Plug>unimpairedQFirst
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [q            <Plug>unimpairedQPrevious
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [<C-L>        <Plug>unimpairedLPFile
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [L            <Plug>unimpairedLFirst
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  [l            <Plug>unimpairedLPrevious
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [B            <Plug>unimpairedBFirst
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [b            <Plug>unimpairedBPrevious
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [A            <Plug>unimpairedAFirst
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  [a            <Plug>unimpairedAPrevious
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  [L          * :lfirst | call halo#run()<CR>
-	Last set from ~/_vim_rc/rc_pac/vim-halo.vim line 11
-n  [l          * :lprevious | call halo#run()<CR>
-	Last set from ~/_vim_rc/rc_pac/vim-halo.vim line 9
-n  [Q          * :cfirst | call halo#run()<CR>
-	Last set from ~/_vim_rc/rc_pac/vim-halo.vim line 6
-n  [q          * :cprevious | call halo#run()<CR>
-	Last set from ~/_vim_rc/rc_pac/vim-halo.vim line 4
-n  \           * :WhichKey ','<CR>
-	Last set from ~/_vim_rc/rc_pac/key/vim-which-key.vim line 4
-n  \--         * :ifont -<CR>
-	Last set from ~/_vim_rc/basic.vim line 42
-n  \++         * :ifont +<CR>
-	Last set from ~/_vim_rc/basic.vim line 41
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+x  \\c           <Plug>(VM-Visual-Cursors)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+n  \\gS          <Plug>(VM-Reselect-Last)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+n  \\/           <Plug>(VM-Start-Regex-Search)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+n  \\\           <Plug>(VM-Add-Cursor-At-Pos)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+x  \\a           <Plug>(VM-Visual-Add)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+x  \\f           <Plug>(VM-Visual-Find)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+x  \\/           <Plug>(VM-Visual-Regex)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+x  \\A           <Plug>(VM-Visual-All)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+n  \\A           <Plug>(VM-Select-All)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
 n  ]xx           <Plug>unimpaired_line_xml_decode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 x  ]x            <Plug>unimpaired_xml_decode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]x            <Plug>unimpaired_xml_decode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]uu           <Plug>unimpaired_line_url_decode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 x  ]u            <Plug>unimpaired_url_decode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]u            <Plug>unimpaired_url_decode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]yy           <Plug>unimpaired_line_string_decode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 x  ]y            <Plug>unimpaired_string_decode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]y            <Plug>unimpaired_string_decode
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]P            <Plug>unimpairedPutBelow
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]p            <Plug>unimpairedPutBelow
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]op         & :call <SNR>78_setup_paste()<CR>o
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]op         & :call <SNR>115_setup_paste()<CR>o
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]o+         & :set nocursorline nocursorcolumn<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]ox         & :set nocursorline nocursorcolumn<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]ov         & :set virtualedit-=all<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]ow         & :setlocal nowrap<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]os         & :setlocal nospell<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]or         & :setlocal norelativenumber<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]on         & :setlocal nonumber<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]ol         & :setlocal nolist<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]oi         & :set noignorecase<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]oh         & :set nohlsearch<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]ow         & :setlocal nowrap<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]os         & :setlocal nospell<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]or         & :setlocal norelativenumber<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]on         & :setlocal nonumber<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]ol         & :setlocal nolist<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]oi         & :set noignorecase<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]oh         & :set nohlsearch<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]od         & :diffoff<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]o|         & :setlocal nocursorcolumn<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]ou         & :setlocal nocursorcolumn<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]o_         & :setlocal nocursorline<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]o-         & :setlocal nocursorline<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]oc         & :setlocal nocursorline<C-R>=<SNR>78_statusbump()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]o|         & :setlocal nocursorcolumn<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]ou         & :setlocal nocursorcolumn<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]o_         & :setlocal nocursorline<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]o-         & :setlocal nocursorline<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]oc         & :setlocal nocursorline<C-R>=<SNR>115_statusbump()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]ob         & :set background=dark<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 x  ]e            <Plug>unimpairedMoveSelectionDown
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]e            <Plug>unimpairedMoveDown
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]<Space>      <Plug>unimpairedBlankDown
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 o  ]n            <Plug>unimpairedContextNext
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 x  ]n            <Plug>unimpairedContextNext
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]n            <Plug>unimpairedContextNext
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]f            <Plug>unimpairedDirectoryNext
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]<C-T>        <Plug>unimpairedTPNext
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]T            <Plug>unimpairedTLast
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]t            <Plug>unimpairedTNext
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]<C-Q>        <Plug>unimpairedQNFile
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]Q            <Plug>unimpairedQLast
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]q            <Plug>unimpairedQNext
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]<C-L>        <Plug>unimpairedLNFile
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]L            <Plug>unimpairedLLast
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ]l            <Plug>unimpairedLNext
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]B            <Plug>unimpairedBLast
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]b            <Plug>unimpairedBNext
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]A            <Plug>unimpairedALast
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  ]a            <Plug>unimpairedANext
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  ]L          * :llast | call halo#run()<CR>
-	Last set from ~/_vim_rc/rc_pac/vim-halo.vim line 12
-n  ]l          * :lnext | call halo#run()<CR>
-	Last set from ~/_vim_rc/rc_pac/vim-halo.vim line 10
-n  ]Q          * :clast | call halo#run()<CR>
-	Last set from ~/_vim_rc/rc_pac/vim-halo.vim line 7
-n  ]q          * :cnext | call halo#run()<CR>
-	Last set from ~/_vim_rc/rc_pac/vim-halo.vim line 5
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+x  ad            <Plug>(PythonsenseOuterDocStringTextObject)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 121
+o  ad            <Plug>(PythonsenseOuterDocStringTextObject)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 120
+o  af            <Plug>(PythonsenseOuterFunctionTextObject)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 110
+x  af            <Plug>(PythonsenseOuterFunctionTextObject)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 109
+o  ac            <Plug>(PythonsenseOuterClassTextObject)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 99
+x  ac            <Plug>(PythonsenseOuterClassTextObject)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 98
 n  cop         * <Nop>
-	Last set from ~/_vim/plugin/unimpaired.vim line 298
-n  co            <SNR>78_legacy_option_map(nr2char(getchar()))
-	Last set from ~/_vim/plugin/unimpaired.vim line 297
-v  gx            <Plug>NetrwBrowseXVis
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/netrwPlugin.vim line 88
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 298
+n  co            <SNR>115_legacy_option_map(nr2char(getchar()))
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 297
+n  cS            <Plug>CSurround
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 602
+n  cs            <Plug>Csurround
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 601
+n  ds            <Plug>Dsurround
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 600
+noxg:            <Plug>(PythonsensePyWhere)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 134
+x  gS            <Plug>VgSurround
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 609
+x  gx            <Plug>NetrwBrowseXVis
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/netrwPlugin.vim line 88
 n  gx            <Plug>NetrwBrowseX
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/netrwPlugin.vim line 82
-n  ga            <Plug>(characterize)
-	Last set from ~/_vim/plugin/characterize.vim line 43
-v  jk          * <Esc>
-	Last set from ~/_vim_rc/basic.vim line 622
-n  n           * :call WordNavigation(1)<CR>
-	Last set from ~/_vim/plugin/intrestingword.vim line 252
-x  s             <Plug>Sneak_s
-	Last set from ~/_vim/plugin/sneak.vim line 397
-n  s             <Plug>Sneak_s
-	Last set from ~/_vim/plugin/sneak.vim line 367
-n  yop         & :call <SNR>78_setup_paste()<CR>0C
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yo+         & :set <C-R>=<SNR>78_cursor_options()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yox         & :set <C-R>=<SNR>78_cursor_options()<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/netrwPlugin.vim line 82
+n  ga          * :UnicodeName<CR>
+	Last set from ~/_vim/_rc/pac/unicode.vim line 1
+x  id            <Plug>(PythonsenseInnerDocStringTextObject)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 126
+o  id            <Plug>(PythonsenseInnerDocStringTextObject)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 125
+o  if            <Plug>(PythonsenseInnerFunctionTextObject)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 115
+x  if            <Plug>(PythonsenseInnerFunctionTextObject)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 114
+o  ic            <Plug>(PythonsenseInnerClassTextObject)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 104
+x  ic            <Plug>(PythonsenseInnerClassTextObject)
+	Last set from ~/.vim/pack/ivim/start/vim-pythonsense/ftplugin/python/pythonsense.vim line 103
+x  jk          * <Esc>
+	Last set from ~/_vim/_rc/basic.vim line 704
+n  n           * 'Nn'[v:searchforward]
+	Last set from ~/_vim/_rc/basic.vim line 598
+n  yop         & :call <SNR>115_setup_paste()<CR>0C
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yo+         & :set <C-R>=<SNR>115_cursor_options()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yox         & :set <C-R>=<SNR>115_cursor_options()<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  yov         & :set <C-R>=(&virtualedit =~# "all") ? "virtualedit-=all" : "virtualedit+=all"<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yow         & :setlocal <C-R>=<SNR>78_toggle("wrap")<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yos         & :setlocal <C-R>=<SNR>78_toggle("spell")<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yor         & :setlocal <C-R>=<SNR>78_toggle("relativenumber")<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yon         & :setlocal <C-R>=<SNR>78_toggle("number")<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yol         & :setlocal <C-R>=<SNR>78_toggle("list")<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yoi         & :set <C-R>=<SNR>78_toggle("ignorecase")<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yoh         & :set <C-R>=<SNR>78_toggle("hlsearch")<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yow         & :setlocal <C-R>=<SNR>115_toggle("wrap")<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yos         & :setlocal <C-R>=<SNR>115_toggle("spell")<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yor         & :setlocal <C-R>=<SNR>115_toggle("relativenumber")<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yon         & :setlocal <C-R>=<SNR>115_toggle("number")<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yol         & :setlocal <C-R>=<SNR>115_toggle("list")<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yoi         & :set <C-R>=<SNR>115_toggle("ignorecase")<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yoh         & :set <C-R>=<SNR>115_toggle("hlsearch")<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  yod         & :<C-R>=&diff ? "diffoff" : "diffthis"<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yo|         & :setlocal <C-R>=<SNR>78_toggle("cursorcolumn")<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  you         & :setlocal <C-R>=<SNR>78_toggle("cursorcolumn")<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yo_         & :setlocal <C-R>=<SNR>78_toggle("cursorline")<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yo-         & :setlocal <C-R>=<SNR>78_toggle("cursorline")<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-n  yoc         & :setlocal <C-R>=<SNR>78_toggle("cursorline")<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yo|         & :setlocal <C-R>=<SNR>115_toggle("cursorcolumn")<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  you         & :setlocal <C-R>=<SNR>115_toggle("cursorcolumn")<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yo_         & :setlocal <C-R>=<SNR>115_toggle("cursorline")<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yo-         & :setlocal <C-R>=<SNR>115_toggle("cursorline")<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  yoc         & :setlocal <C-R>=<SNR>115_toggle("cursorline")<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
 n  yob         & :set background=<C-R>=&background == "dark" ? "light" : "dark"<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 36
-o  z             <Plug>Sneak_s
-	Last set from ~/_vim/plugin/sneak.vim line 373
-v  <Plug>NetrwBrowseXVis * :<C-U>call netrw#BrowseXVis()<CR>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/netrwPlugin.vim line 90
-n  <Plug>NetrwBrowseX * :call netrw#BrowseX(expand((exists("g:netrw_gx")? g:netrw_gx : '<cfile>')),netrw#CheckIfRemote())<CR>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/plugin/netrwPlugin.vim line 84
-n  <Plug>VinegarVerticalSplitUp * :call <SNR>83_opendir('vsplit')<CR>
-	Last set from ~/_vim/plugin/vinegar.vim line 37
-n  <Plug>VinegarSplitUp * :call <SNR>83_opendir('split')<CR>
-	Last set from ~/_vim/plugin/vinegar.vim line 36
-n  <Plug>VinegarTabUp * :call <SNR>83_opendir('tabedit')<CR>
-	Last set from ~/_vim/plugin/vinegar.vim line 35
-n  <Plug>VinegarUp * :call <SNR>83_opendir('edit')<CR>
-	Last set from ~/_vim/plugin/vinegar.vim line 30
-n  <Plug>unimpaired_line_xml_decode * <SNR>78_TransformSetup("xml_decode")."_"
-	Last set from ~/_vim/plugin/unimpaired.vim line 515
-x  <Plug>unimpaired_xml_decode * <SNR>78_TransformSetup("xml_decode")
-	Last set from ~/_vim/plugin/unimpaired.vim line 514
-n  <Plug>unimpaired_xml_decode * <SNR>78_TransformSetup("xml_decode")
-	Last set from ~/_vim/plugin/unimpaired.vim line 513
-n  <Plug>unimpaired_line_xml_encode * <SNR>78_TransformSetup("xml_encode")."_"
-	Last set from ~/_vim/plugin/unimpaired.vim line 515
-x  <Plug>unimpaired_xml_encode * <SNR>78_TransformSetup("xml_encode")
-	Last set from ~/_vim/plugin/unimpaired.vim line 514
-n  <Plug>unimpaired_xml_encode * <SNR>78_TransformSetup("xml_encode")
-	Last set from ~/_vim/plugin/unimpaired.vim line 513
-n  <Plug>unimpaired_line_url_decode * <SNR>78_TransformSetup("url_decode")."_"
-	Last set from ~/_vim/plugin/unimpaired.vim line 515
-x  <Plug>unimpaired_url_decode * <SNR>78_TransformSetup("url_decode")
-	Last set from ~/_vim/plugin/unimpaired.vim line 514
-n  <Plug>unimpaired_url_decode * <SNR>78_TransformSetup("url_decode")
-	Last set from ~/_vim/plugin/unimpaired.vim line 513
-n  <Plug>unimpaired_line_url_encode * <SNR>78_TransformSetup("url_encode")."_"
-	Last set from ~/_vim/plugin/unimpaired.vim line 515
-x  <Plug>unimpaired_url_encode * <SNR>78_TransformSetup("url_encode")
-	Last set from ~/_vim/plugin/unimpaired.vim line 514
-n  <Plug>unimpaired_url_encode * <SNR>78_TransformSetup("url_encode")
-	Last set from ~/_vim/plugin/unimpaired.vim line 513
-n  <Plug>unimpaired_line_string_decode * <SNR>78_TransformSetup("string_decode")."_"
-	Last set from ~/_vim/plugin/unimpaired.vim line 515
-x  <Plug>unimpaired_string_decode * <SNR>78_TransformSetup("string_decode")
-	Last set from ~/_vim/plugin/unimpaired.vim line 514
-n  <Plug>unimpaired_string_decode * <SNR>78_TransformSetup("string_decode")
-	Last set from ~/_vim/plugin/unimpaired.vim line 513
-n  <Plug>unimpaired_line_string_encode * <SNR>78_TransformSetup("string_encode")."_"
-	Last set from ~/_vim/plugin/unimpaired.vim line 515
-x  <Plug>unimpaired_string_encode * <SNR>78_TransformSetup("string_encode")
-	Last set from ~/_vim/plugin/unimpaired.vim line 514
-n  <Plug>unimpaired_string_encode * <SNR>78_TransformSetup("string_encode")
-	Last set from ~/_vim/plugin/unimpaired.vim line 513
-n  <Plug>unimpairedPutBelow * :call <SNR>78_putline(']p', 'Below')<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 344
-n  <Plug>unimpairedPutAbove * :call <SNR>78_putline('[p', 'Above')<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 343
-n  <Plug>unimpairedPaste * :call <SNR>78_setup_paste()<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 323
-   <Plug>unimpairedMoveSelectionDown * :<C-U>call <SNR>78_MoveSelectionDown(v:count1)<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 234
-   <Plug>unimpairedMoveSelectionUp * :<C-U>call <SNR>78_MoveSelectionUp(v:count1)<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 233
-n  <Plug>unimpairedMoveDown * :<C-U>call <SNR>78_Move('+',v:count1,'Down')<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 232
-n  <Plug>unimpairedMoveUp * :<C-U>call <SNR>78_Move('--',v:count1,'Up')<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 231
-n  <Plug>unimpairedBlankDown * :<C-U>call <SNR>78_BlankDown(v:count1)<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 198
-n  <Plug>unimpairedBlankUp * :<C-U>call <SNR>78_BlankUp(v:count1)<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 197
-o  <Plug>unimpairedContextNext * :<C-U>call <SNR>78_ContextMotion(0)<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 147
-o  <Plug>unimpairedContextPrevious * :<C-U>call <SNR>78_ContextMotion(1)<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 146
-x  <Plug>unimpairedContextNext * :<C-U>exe 'normal! gv'|call <SNR>78_Context(0)<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 145
-x  <Plug>unimpairedContextPrevious * :<C-U>exe 'normal! gv'|call <SNR>78_Context(1)<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 144
-n  <Plug>unimpairedContextNext * :<C-U>call <SNR>78_Context(0)<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 143
-n  <Plug>unimpairedContextPrevious * :<C-U>call <SNR>78_Context(1)<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 142
-n  <Plug>unimpairedDirectoryPrevious * :<C-U>edit <C-R>=<SNR>78_fnameescape(fnamemodify(<SNR>78_FileByOffset(-v:count1), ':.'))<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 129
-n  <Plug>unimpairedDirectoryNext * :<C-U>edit <C-R>=<SNR>78_fnameescape(fnamemodify(<SNR>78_FileByOffset(v:count1), ':.'))<CR><CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 128
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 36
+n  ySS           <Plug>YSsurround
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 607
+n  ySs           <Plug>YSsurround
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 606
+n  yss           <Plug>Yssurround
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 605
+n  yS            <Plug>YSurround
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 604
+n  ys            <Plug>Ysurround
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 603
+n  y<C-G>      & :<C-U>call setreg(v:register, fugitive#Object(@%))<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-fugitive/plugin/fugitive.vim line 519
+n  <F11>       * <Esc>:REPLPDBS<CR>
+	Last set from ~/_vim/_rc/pac/vim-repl.vim line 39
+n  <F10>       * <Esc>:REPLPDBN<CR>
+	Last set from ~/_vim/_rc/pac/vim-repl.vim line 38
+n  <F12>       * <Esc>:REPLDebugStopAtCurrentLine<CR>
+	Last set from ~/_vim/_rc/pac/vim-repl.vim line 37
+x  <Plug>(YoinkYankPreserveCursorPosition) * yoink#startYankPreserveCursorPosition()
+	Last set from ~/.vim/pack/ivim/start/vim-yoink/plugin/yoink.vim line 43
+n  <Plug>(YoinkYankPreserveCursorPosition) * yoink#startYankPreserveCursorPosition()
+	Last set from ~/.vim/pack/ivim/start/vim-yoink/plugin/yoink.vim line 42
+n  <Plug>(YoinkPostPasteToggleFormat) * :<C-U>call yoink#postPasteToggleFormat()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-yoink/plugin/yoink.vim line 40
+n  <Plug>(YoinkPaste_P) * :<C-U>call yoink#setupPaste('P', v:register, v:count)<CR>:set opfunc=yoink#paste<CR>g@l
+	Last set from ~/.vim/pack/ivim/start/vim-yoink/plugin/yoink.vim line 38
+n  <Plug>(YoinkPaste_p) * :<C-U>call yoink#setupPaste('p', v:register, v:count)<CR>:set opfunc=yoink#paste<CR>g@l
+	Last set from ~/.vim/pack/ivim/start/vim-yoink/plugin/yoink.vim line 37
+n  <Plug>(YoinkPostPasteSwapBack) * :<C-U>call yoink#postPasteSwap(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-yoink/plugin/yoink.vim line 34
+n  <Plug>(YoinkPostPasteSwapForward) * :<C-U>call yoink#postPasteSwap(-1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-yoink/plugin/yoink.vim line 33
+n  <Plug>(YoinkRotateBack) * :<C-U>call yoink#rotateThenPrint(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-yoink/plugin/yoink.vim line 31
+n  <Plug>(YoinkRotateForward) * :<C-U>call yoink#rotateThenPrint(-1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-yoink/plugin/yoink.vim line 30
+n  <C-Down>      <Plug>(VM-Add-Cursor-Down)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+n  <C-Up>        <Plug>(VM-Add-Cursor-Up)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+n  <S-Right>     <Plug>(VM-Select-l)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+n  <S-Left>      <Plug>(VM-Select-h)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 18
+n  <Plug>(VM-Select-BBW) * :<C-U>call vm#commands#motion('BBW', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Select-gE) * :<C-U>call vm#commands#motion('gE', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Select-ge) * :<C-U>call vm#commands#motion('ge', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Select-E) * :<C-U>call vm#commands#motion('E', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Select-e) * :<C-U>call vm#commands#motion('e', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Select-B) * :<C-U>call vm#commands#motion('B', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Select-b) * :<C-U>call vm#commands#motion('b', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Select-W) * :<C-U>call vm#commands#motion('W', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Select-w) * :<C-U>call vm#commands#motion('w', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Select-l) * :<C-U>call vm#commands#motion('l', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Select-k) * :<C-U>call vm#commands#motion('k', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Select-j) * :<C-U>call vm#commands#motion('j', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Select-h) * :<C-U>call vm#commands#motion('h', v:count1, 1, 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 35
+n  <Plug>(VM-Mouse-Column) * :call vm#commands#mouse_column()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 31
+n  <Plug>(VM-Mouse-Word)   <Plug>(VM-Left-Mouse)<Plug>(VM-Find-Under)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 30
+n  <Plug>(VM-Mouse-Cursor)   <Plug>(VM-Left-Mouse)<Plug>(VM-Add-Cursor-At-Pos)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 29
+n  <Plug>(VM-Left-Mouse) * <LeftMouse>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 28
+x  <Plug>(VM-Visual-Regex) * :call vm#commands#find_by_regex(2)<CR>:call feedkeys('/', 'n')<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 26
+n  <Plug>(VM-Start-Regex-Search) * @=vm#commands#find_by_regex(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 25
+x  <Plug>(VM-Find-Subword-Under) * <SNR>118_Visual('under')
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 23
+n  <Plug>(VM-Find-Under) * :<C-U>call vm#commands#ctrln(v:count1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 22
+x  <Plug>(VM-Visual-Reduce) * :<C-U>call vm#visual#reduce()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 20
+x  <Plug>(VM-Visual-Add) * <Esc>:call vm#commands#visual_add()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 19
+x  <Plug>(VM-Visual-Cursors) * <Esc>:call vm#commands#visual_cursors()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 18
+x  <Plug>(VM-Visual-All) * <SNR>118_Visual('all')
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 17
+n  <Plug>(VM-Select-All) * :call vm#commands#find_all(0, 1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 16
+n  <Plug>(VM-Reselect-Last) * :call vm#commands#reselect_last()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 15
+n  <Plug>(VM-Select-Cursor-Up) * :<C-U>call vm#commands#add_cursor_up(1, v:count1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 13
+n  <Plug>(VM-Select-Cursor-Down) * :<C-U>call vm#commands#add_cursor_down(1, v:count1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 12
+n  <Plug>(VM-Add-Cursor-Up) * :<C-U>call vm#commands#add_cursor_up(0, v:count1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 11
+n  <Plug>(VM-Add-Cursor-Down) * :<C-U>call vm#commands#add_cursor_down(0, v:count1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 10
+n  <Plug>(VM-Add-Cursor-At-Word) * :call vm#commands#add_cursor_at_word(1, 1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 9
+n  <Plug>(VM-Add-Cursor-At-Pos) * :call vm#commands#add_cursor_at_pos(0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 8
+x  <Plug>(VM-Visual-Find)   vm#operators#find(1, 1)
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 6
+n  <Plug>VinegarVerticalSplitUp * :call <SNR>116_opendir('vsplit')<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 37
+n  <Plug>VinegarSplitUp * :call <SNR>116_opendir('split')<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 36
+n  <Plug>VinegarTabUp * :call <SNR>116_opendir('tabedit')<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 35
+n  <Plug>VinegarUp * :call <SNR>116_opendir('edit')<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 30
+n  <Plug>unimpaired_line_xml_decode * <SNR>115_TransformSetup("xml_decode")."_"
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 515
+x  <Plug>unimpaired_xml_decode * <SNR>115_TransformSetup("xml_decode")
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 514
+n  <Plug>unimpaired_xml_decode * <SNR>115_TransformSetup("xml_decode")
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 513
+n  <Plug>unimpaired_line_xml_encode * <SNR>115_TransformSetup("xml_encode")."_"
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 515
+x  <Plug>unimpaired_xml_encode * <SNR>115_TransformSetup("xml_encode")
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 514
+n  <Plug>unimpaired_xml_encode * <SNR>115_TransformSetup("xml_encode")
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 513
+n  <Plug>unimpaired_line_url_decode * <SNR>115_TransformSetup("url_decode")."_"
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 515
+x  <Plug>unimpaired_url_decode * <SNR>115_TransformSetup("url_decode")
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 514
+n  <Plug>unimpaired_url_decode * <SNR>115_TransformSetup("url_decode")
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 513
+n  <Plug>unimpaired_line_url_encode * <SNR>115_TransformSetup("url_encode")."_"
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 515
+x  <Plug>unimpaired_url_encode * <SNR>115_TransformSetup("url_encode")
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 514
+n  <Plug>unimpaired_url_encode * <SNR>115_TransformSetup("url_encode")
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 513
+n  <Plug>unimpaired_line_string_decode * <SNR>115_TransformSetup("string_decode")."_"
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 515
+x  <Plug>unimpaired_string_decode * <SNR>115_TransformSetup("string_decode")
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 514
+n  <Plug>unimpaired_string_decode * <SNR>115_TransformSetup("string_decode")
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 513
+n  <Plug>unimpaired_line_string_encode * <SNR>115_TransformSetup("string_encode")."_"
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 515
+x  <Plug>unimpaired_string_encode * <SNR>115_TransformSetup("string_encode")
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 514
+n  <Plug>unimpaired_string_encode * <SNR>115_TransformSetup("string_encode")
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 513
+n  <Plug>unimpairedPutBelow * :call <SNR>115_putline(']p', 'Below')<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 344
+n  <Plug>unimpairedPutAbove * :call <SNR>115_putline('[p', 'Above')<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 343
+n  <Plug>unimpairedPaste * :call <SNR>115_setup_paste()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 323
+   <Plug>unimpairedMoveSelectionDown * :<C-U>call <SNR>115_MoveSelectionDown(v:count1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 234
+   <Plug>unimpairedMoveSelectionUp * :<C-U>call <SNR>115_MoveSelectionUp(v:count1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 233
+n  <Plug>unimpairedMoveDown * :<C-U>call <SNR>115_Move('+',v:count1,'Down')<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 232
+n  <Plug>unimpairedMoveUp * :<C-U>call <SNR>115_Move('--',v:count1,'Up')<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 231
+n  <Plug>unimpairedBlankDown * :<C-U>call <SNR>115_BlankDown(v:count1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 198
+n  <Plug>unimpairedBlankUp * :<C-U>call <SNR>115_BlankUp(v:count1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 197
+o  <Plug>unimpairedContextNext * :<C-U>call <SNR>115_ContextMotion(0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 147
+o  <Plug>unimpairedContextPrevious * :<C-U>call <SNR>115_ContextMotion(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 146
+x  <Plug>unimpairedContextNext * :<C-U>exe 'normal! gv'|call <SNR>115_Context(0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 145
+x  <Plug>unimpairedContextPrevious * :<C-U>exe 'normal! gv'|call <SNR>115_Context(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 144
+n  <Plug>unimpairedContextNext * :<C-U>call <SNR>115_Context(0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 143
+n  <Plug>unimpairedContextPrevious * :<C-U>call <SNR>115_Context(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 142
+n  <Plug>unimpairedDirectoryPrevious * :<C-U>edit <C-R>=<SNR>115_fnameescape(fnamemodify(<SNR>115_FileByOffset(-v:count1), ':.'))<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 129
+n  <Plug>unimpairedDirectoryNext * :<C-U>edit <C-R>=<SNR>115_fnameescape(fnamemodify(<SNR>115_FileByOffset(v:count1), ':.'))<CR><CR>
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 128
 n  <Plug>unimpairedTPNext * :<C-U>exe "p".(v:count ? v:count : "")."tnext"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 62
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 62
 n  <Plug>unimpairedTPPrevious * :<C-U>exe "p".(v:count ? v:count : "")."tprevious"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 61
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 61
 n  <Plug>unimpairedTLast * :<C-U>exe "".(v:count ? v:count : "")."tlast"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 50
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 50
 n  <Plug>unimpairedTFirst * :<C-U>exe "".(v:count ? v:count : "")."tfirst"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 49
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 49
 n  <Plug>unimpairedTNext * :<C-U>exe "".(v:count ? v:count : "")."tnext"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 48
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 48
 n  <Plug>unimpairedTPrevious * :<C-U>exe "".(v:count ? v:count : "")."tprevious"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 47
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 47
 n  <Plug>unimpairedQNFile * :<C-U>exe "".(v:count ? v:count : "")."cnfile"<CR>zv
-	Last set from ~/_vim/plugin/unimpaired.vim line 57
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 57
 n  <Plug>unimpairedQPFile * :<C-U>exe "".(v:count ? v:count : "")."cpfile"<CR>zv
-	Last set from ~/_vim/plugin/unimpaired.vim line 56
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 56
 n  <Plug>unimpairedQLast * :<C-U>exe "".(v:count ? v:count : "")."clast"<CR>zv
-	Last set from ~/_vim/plugin/unimpaired.vim line 50
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 50
 n  <Plug>unimpairedQFirst * :<C-U>exe "".(v:count ? v:count : "")."cfirst"<CR>zv
-	Last set from ~/_vim/plugin/unimpaired.vim line 49
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 49
 n  <Plug>unimpairedQNext * :<C-U>exe "".(v:count ? v:count : "")."cnext"<CR>zv
-	Last set from ~/_vim/plugin/unimpaired.vim line 48
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 48
 n  <Plug>unimpairedQPrevious * :<C-U>exe "".(v:count ? v:count : "")."cprevious"<CR>zv
-	Last set from ~/_vim/plugin/unimpaired.vim line 47
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 47
 n  <Plug>unimpairedLNFile * :<C-U>exe "".(v:count ? v:count : "")."lnfile"<CR>zv
-	Last set from ~/_vim/plugin/unimpaired.vim line 57
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 57
 n  <Plug>unimpairedLPFile * :<C-U>exe "".(v:count ? v:count : "")."lpfile"<CR>zv
-	Last set from ~/_vim/plugin/unimpaired.vim line 56
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 56
 n  <Plug>unimpairedLLast * :<C-U>exe "".(v:count ? v:count : "")."llast"<CR>zv
-	Last set from ~/_vim/plugin/unimpaired.vim line 50
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 50
 n  <Plug>unimpairedLFirst * :<C-U>exe "".(v:count ? v:count : "")."lfirst"<CR>zv
-	Last set from ~/_vim/plugin/unimpaired.vim line 49
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 49
 n  <Plug>unimpairedLNext * :<C-U>exe "".(v:count ? v:count : "")."lnext"<CR>zv
-	Last set from ~/_vim/plugin/unimpaired.vim line 48
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 48
 n  <Plug>unimpairedLPrevious * :<C-U>exe "".(v:count ? v:count : "")."lprevious"<CR>zv
-	Last set from ~/_vim/plugin/unimpaired.vim line 47
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 47
 n  <Plug>unimpairedBLast * :<C-U>exe "".(v:count ? v:count : "")."blast"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 50
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 50
 n  <Plug>unimpairedBFirst * :<C-U>exe "".(v:count ? v:count : "")."bfirst"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 49
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 49
 n  <Plug>unimpairedBNext * :<C-U>exe "".(v:count ? v:count : "")."bnext"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 48
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 48
 n  <Plug>unimpairedBPrevious * :<C-U>exe "".(v:count ? v:count : "")."bprevious"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 47
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 47
 n  <Plug>unimpairedALast * :<C-U>exe "".(v:count ? v:count : "")."last"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 50
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 50
 n  <Plug>unimpairedAFirst * :<C-U>exe "".(v:count ? v:count : "")."first"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 49
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 49
 n  <Plug>unimpairedANext * :<C-U>exe "".(v:count ? v:count : "")."next"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 48
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 48
 n  <Plug>unimpairedAPrevious * :<C-U>exe "".(v:count ? v:count : "")."previous"<CR>
-	Last set from ~/_vim/plugin/unimpaired.vim line 47
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 47
+v  <Plug>VgSurround * :<C-U>call <SNR>114_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 595
+v  <Plug>VSurround * :<C-U>call <SNR>114_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 594
+n  <Plug>YSurround * <SNR>114_opfunc2('setup')
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 593
+n  <Plug>Ysurround * <SNR>114_opfunc('setup')
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 592
+n  <Plug>YSsurround * <SNR>114_opfunc2('setup').'_'
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 591
+n  <Plug>Yssurround * '^'.v:count1.<SNR>114_opfunc('setup').'g_'
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 590
+n  <Plug>CSurround * :<C-U>call <SNR>114_changesurround(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 589
+n  <Plug>Csurround * :<C-U>call <SNR>114_changesurround()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 588
+n  <Plug>Dsurround * :<C-U>call <SNR>114_dosurround(<SNR>114_inputtarget())<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 587
+n  <Plug>SurroundRepeat * .
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 586
+   <Plug>SlimeConfig & :<C-U>SlimeConfig<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-slime/plugin/slime.vim line 22
+   <Plug>SlimeParagraphSend & <SNR>112_Operatorip
+	Last set from ~/.vim/pack/ivim/start/vim-slime/plugin/slime.vim line 21
+   <Plug>SlimeMotionSend & <SNR>112_Operator
+	Last set from ~/.vim/pack/ivim/start/vim-slime/plugin/slime.vim line 20
+   <Plug>SlimeLineSend & :<C-U>call slime#send_lines(v:count1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-slime/plugin/slime.vim line 19
+   <Plug>SlimeRegionSend & :<C-U>call slime#send_op(visualmode(), 1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-slime/plugin/slime.vim line 18
+   <SNR>112_Operator * :<C-U>call slime#store_curpos()<CR>:set opfunc=slime#send_op<CR>g@
+	Last set from ~/.vim/pack/ivim/start/vim-slime/plugin/slime.vim line 16
+   <Plug>(easymotion-prefix)N   <Plug>(easymotion-N)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)n   <Plug>(easymotion-n)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)k   <Plug>(easymotion-k)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)j   <Plug>(easymotion-j)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)gE   <Plug>(easymotion-gE)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)ge   <Plug>(easymotion-ge)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)E   <Plug>(easymotion-E)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)e   <Plug>(easymotion-e)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)B   <Plug>(easymotion-B)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)b   <Plug>(easymotion-b)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)W   <Plug>(easymotion-W)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)w   <Plug>(easymotion-w)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)T   <Plug>(easymotion-T)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)t   <Plug>(easymotion-t)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)s   <Plug>(easymotion-s)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)F   <Plug>(easymotion-F)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+   <Plug>(easymotion-prefix)f   <Plug>(easymotion-f)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 261
+x  <Plug>(easymotion-activate) * :<C-U>call EasyMotion#activate(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 234
+nos<Plug>(easymotion-activate) * :<C-U>call EasyMotion#activate(0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 233
+   <Plug>(easymotion-dotrepeat) * :<C-U>call EasyMotion#DotRepeat()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 229
+x  <Plug>(easymotion-repeat) * <Esc>:<C-U>call EasyMotion#Repeat(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 226
+nos<Plug>(easymotion-repeat) * :<C-U>call EasyMotion#Repeat(0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 224
+x  <Plug>(easymotion-prev) * :<C-U>call EasyMotion#NextPrevious(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 219
+nos<Plug>(easymotion-prev) * :<C-U>call EasyMotion#NextPrevious(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 217
+x  <Plug>(easymotion-next) * :<C-U>call EasyMotion#NextPrevious(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 214
+nos<Plug>(easymotion-next) * :<C-U>call EasyMotion#NextPrevious(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 212
+x  <Plug>(easymotion-wl) * <Esc>:<C-U>call EasyMotion#WBL(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-wl) * :<C-U>call EasyMotion#WBL(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-lineforward) * <Esc>:<C-U>call EasyMotion#LineAnywhere(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-lineforward) * :<C-U>call EasyMotion#LineAnywhere(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-lineanywhere) * <Esc>:<C-U>call EasyMotion#LineAnywhere(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-lineanywhere) * :<C-U>call EasyMotion#LineAnywhere(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-wl) * <Esc>:<C-U>call EasyMotion#WBL(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-wl) * :<C-U>call EasyMotion#WBL(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-linebackward) * <Esc>:<C-U>call EasyMotion#LineAnywhere(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-linebackward) * :<C-U>call EasyMotion#LineAnywhere(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bl) * <Esc>:<C-U>call EasyMotion#WBL(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bl) * :<C-U>call EasyMotion#WBL(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-el) * <Esc>:<C-U>call EasyMotion#EL(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-el) * :<C-U>call EasyMotion#EL(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-gel) * <Esc>:<C-U>call EasyMotion#EL(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-gel) * :<C-U>call EasyMotion#EL(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-el) * <Esc>:<C-U>call EasyMotion#EL(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-el) * :<C-U>call EasyMotion#EL(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-jumptoanywhere) * <Esc>:<C-U>call EasyMotion#JumpToAnywhere(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-jumptoanywhere) * :<C-U>call EasyMotion#JumpToAnywhere(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-vim-n) * <Esc>:<C-U>call EasyMotion#Search(1,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-vim-n) * :<C-U>call EasyMotion#Search(0,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-n) * <Esc>:<C-U>call EasyMotion#Search(1,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-n) * :<C-U>call EasyMotion#Search(0,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-n) * <Esc>:<C-U>call EasyMotion#Search(1,2,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-n) * :<C-U>call EasyMotion#Search(0,2,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-vim-N) * <Esc>:<C-U>call EasyMotion#Search(1,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-vim-N) * :<C-U>call EasyMotion#Search(0,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-N) * <Esc>:<C-U>call EasyMotion#Search(1,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-N) * :<C-U>call EasyMotion#Search(0,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-eol-j) * <Esc>:<C-U>call EasyMotion#Eol(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-eol-j) * :<C-U>call EasyMotion#Eol(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-sol-k) * <Esc>:<C-U>call EasyMotion#Sol(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-sol-k) * :<C-U>call EasyMotion#Sol(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-sol-j) * <Esc>:<C-U>call EasyMotion#Sol(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-sol-j) * :<C-U>call EasyMotion#Sol(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-k) * <Esc>:<C-U>call EasyMotion#JK(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-k) * :<C-U>call EasyMotion#JK(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-j) * <Esc>:<C-U>call EasyMotion#JK(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-j) * :<C-U>call EasyMotion#JK(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-jk) * <Esc>:<C-U>call EasyMotion#JK(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-jk) * :<C-U>call EasyMotion#JK(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-eol-bd-jk) * <Esc>:<C-U>call EasyMotion#Eol(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-eol-bd-jk) * :<C-U>call EasyMotion#Eol(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-sol-bd-jk) * <Esc>:<C-U>call EasyMotion#Sol(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-sol-bd-jk) * :<C-U>call EasyMotion#Sol(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-eol-k) * <Esc>:<C-U>call EasyMotion#Eol(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-eol-k) * :<C-U>call EasyMotion#Eol(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-iskeyword-ge) * <Esc>:<C-U>call EasyMotion#EK(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-iskeyword-ge) * :<C-U>call EasyMotion#EK(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-w) * <Esc>:<C-U>call EasyMotion#WB(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-w) * :<C-U>call EasyMotion#WB(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-W) * <Esc>:<C-U>call EasyMotion#WBW(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-W) * :<C-U>call EasyMotion#WBW(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-iskeyword-w) * <Esc>:<C-U>call EasyMotion#WBK(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-iskeyword-w) * :<C-U>call EasyMotion#WBK(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-gE) * <Esc>:<C-U>call EasyMotion#EW(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-gE) * :<C-U>call EasyMotion#EW(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-e) * <Esc>:<C-U>call EasyMotion#E(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-e) * :<C-U>call EasyMotion#E(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-E) * <Esc>:<C-U>call EasyMotion#EW(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-E) * :<C-U>call EasyMotion#EW(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-iskeyword-e) * <Esc>:<C-U>call EasyMotion#EK(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-iskeyword-e) * :<C-U>call EasyMotion#EK(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-b) * <Esc>:<C-U>call EasyMotion#WB(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-b) * :<C-U>call EasyMotion#WB(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-iskeyword-b) * <Esc>:<C-U>call EasyMotion#WBK(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-iskeyword-b) * :<C-U>call EasyMotion#WBK(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-iskeyword-bd-w) * <Esc>:<C-U>call EasyMotion#WBK(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-iskeyword-bd-w) * :<C-U>call EasyMotion#WBK(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-W) * <Esc>:<C-U>call EasyMotion#WBW(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-W) * :<C-U>call EasyMotion#WBW(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-w) * <Esc>:<C-U>call EasyMotion#WB(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-w) * :<C-U>call EasyMotion#WB(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-iskeyword-bd-e) * <Esc>:<C-U>call EasyMotion#EK(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-iskeyword-bd-e) * :<C-U>call EasyMotion#EK(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-ge) * <Esc>:<C-U>call EasyMotion#E(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-ge) * :<C-U>call EasyMotion#E(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-E) * <Esc>:<C-U>call EasyMotion#EW(1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-E) * :<C-U>call EasyMotion#EW(0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-e) * <Esc>:<C-U>call EasyMotion#E(1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-e) * :<C-U>call EasyMotion#E(0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-B) * <Esc>:<C-U>call EasyMotion#WBW(1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-B) * :<C-U>call EasyMotion#WBW(0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+n  <Plug>(easymotion-overwin-w) * :<C-U>call EasyMotion#overwin#w()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 139
+n  <Plug>(easymotion-overwin-line) * :<C-U>call EasyMotion#overwin#line()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 138
+n  <Plug>(easymotion-overwin-f2) * :<C-U>call EasyMotion#OverwinF(2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 137
+n  <Plug>(easymotion-overwin-f) * :<C-U>call EasyMotion#OverwinF(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 136
+x  <Plug>(easymotion-Tln) * <Esc>:<C-U>call EasyMotion#TL(-1,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-Tln) * :<C-U>call EasyMotion#TL(-1,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-t2) * <Esc>:<C-U>call EasyMotion#T(2,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-t2) * :<C-U>call EasyMotion#T(2,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-t) * <Esc>:<C-U>call EasyMotion#T(1,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-t) * :<C-U>call EasyMotion#T(1,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-s) * <Esc>:<C-U>call EasyMotion#S(1,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-s) * :<C-U>call EasyMotion#S(1,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-tn) * <Esc>:<C-U>call EasyMotion#T(-1,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-tn) * :<C-U>call EasyMotion#T(-1,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-t2) * <Esc>:<C-U>call EasyMotion#T(2,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-t2) * :<C-U>call EasyMotion#T(2,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-tl) * <Esc>:<C-U>call EasyMotion#TL(1,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-tl) * :<C-U>call EasyMotion#TL(1,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-tn) * <Esc>:<C-U>call EasyMotion#T(-1,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-tn) * :<C-U>call EasyMotion#T(-1,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-fn) * <Esc>:<C-U>call EasyMotion#S(-1,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-fn) * :<C-U>call EasyMotion#S(-1,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-tl) * <Esc>:<C-U>call EasyMotion#TL(1,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-tl) * :<C-U>call EasyMotion#TL(1,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-fl) * <Esc>:<C-U>call EasyMotion#SL(1,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-fl) * :<C-U>call EasyMotion#SL(1,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-tl2) * <Esc>:<C-U>call EasyMotion#TL(2,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-tl2) * :<C-U>call EasyMotion#TL(2,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-fn) * <Esc>:<C-U>call EasyMotion#S(-1,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-fn) * :<C-U>call EasyMotion#S(-1,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-f) * <Esc>:<C-U>call EasyMotion#S(1,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-f) * :<C-U>call EasyMotion#S(1,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-fl) * <Esc>:<C-U>call EasyMotion#SL(1,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-fl) * :<C-U>call EasyMotion#SL(1,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-Fl2) * <Esc>:<C-U>call EasyMotion#SL(2,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-Fl2) * :<C-U>call EasyMotion#SL(2,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-tl2) * <Esc>:<C-U>call EasyMotion#TL(2,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-tl2) * :<C-U>call EasyMotion#TL(2,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-f2) * <Esc>:<C-U>call EasyMotion#S(2,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-f2) * :<C-U>call EasyMotion#S(2,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-Fln) * <Esc>:<C-U>call EasyMotion#SL(-1,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-Fln) * :<C-U>call EasyMotion#SL(-1,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-sln) * <Esc>:<C-U>call EasyMotion#SL(-1,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-sln) * :<C-U>call EasyMotion#SL(-1,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-tln) * <Esc>:<C-U>call EasyMotion#TL(-1,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-tln) * :<C-U>call EasyMotion#TL(-1,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-fl2) * <Esc>:<C-U>call EasyMotion#SL(2,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-fl2) * :<C-U>call EasyMotion#SL(2,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-fl2) * <Esc>:<C-U>call EasyMotion#SL(2,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-fl2) * :<C-U>call EasyMotion#SL(2,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-T2) * <Esc>:<C-U>call EasyMotion#T(2,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-T2) * :<C-U>call EasyMotion#T(2,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-tln) * <Esc>:<C-U>call EasyMotion#TL(-1,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-tln) * :<C-U>call EasyMotion#TL(-1,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-T) * <Esc>:<C-U>call EasyMotion#T(1,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-T) * :<C-U>call EasyMotion#T(1,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-t) * <Esc>:<C-U>call EasyMotion#T(1,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-t) * :<C-U>call EasyMotion#T(1,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-Tn) * <Esc>:<C-U>call EasyMotion#T(-1,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-Tn) * :<C-U>call EasyMotion#T(-1,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-s2) * <Esc>:<C-U>call EasyMotion#S(2,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-s2) * :<C-U>call EasyMotion#S(2,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-Tl) * <Esc>:<C-U>call EasyMotion#TL(1,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-Tl) * :<C-U>call EasyMotion#TL(1,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-sn) * <Esc>:<C-U>call EasyMotion#S(-1,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-sn) * :<C-U>call EasyMotion#S(-1,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-Fn) * <Esc>:<C-U>call EasyMotion#S(-1,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-Fn) * :<C-U>call EasyMotion#S(-1,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-sl) * <Esc>:<C-U>call EasyMotion#SL(1,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-sl) * :<C-U>call EasyMotion#SL(1,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-Fl) * <Esc>:<C-U>call EasyMotion#SL(1,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-Fl) * :<C-U>call EasyMotion#SL(1,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-sl2) * <Esc>:<C-U>call EasyMotion#SL(2,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-sl2) * :<C-U>call EasyMotion#SL(2,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-fln) * <Esc>:<C-U>call EasyMotion#SL(-1,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-fln) * :<C-U>call EasyMotion#SL(-1,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-F) * <Esc>:<C-U>call EasyMotion#S(1,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-F) * :<C-U>call EasyMotion#S(1,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-f) * <Esc>:<C-U>call EasyMotion#S(1,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-f) * :<C-U>call EasyMotion#S(1,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-F2) * <Esc>:<C-U>call EasyMotion#S(2,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-F2) * :<C-U>call EasyMotion#S(2,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-bd-f2) * <Esc>:<C-U>call EasyMotion#S(2,1,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-bd-f2) * :<C-U>call EasyMotion#S(2,0,2)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-Tl2) * <Esc>:<C-U>call EasyMotion#TL(2,1,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-Tl2) * :<C-U>call EasyMotion#TL(2,0,1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+x  <Plug>(easymotion-fln) * <Esc>:<C-U>call EasyMotion#SL(-1,1,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 80
+nos<Plug>(easymotion-fln) * :<C-U>call EasyMotion#SL(-1,0,0)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 78
+n  <Plug>(EasyAlignOperator) * :set opfunc=<SNR>93_easy_align_op<CR>g@
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 141
+v  <Plug>(EasyAlignRepeat) * :<C-U>call <SNR>93_repeat_in_visual()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 138
+n  <Plug>(EasyAlignRepeat) * :call <SNR>93_easy_align_repeat()<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 137
+v  <Plug>(LiveEasyAlign) * :<C-U>call <SNR>93_live_easy_align_op(visualmode(), 1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 134
+n  <Plug>(LiveEasyAlign) * :set opfunc=<SNR>93_live_easy_align_op<CR>g@
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 133
+v  <Plug>(EasyAlign) * :<C-U>call <SNR>93_easy_align_op(visualmode(), 1)<CR>
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 132
+n  <Plug>(EasyAlign) * :set opfunc=<SNR>93_easy_align_op<CR>g@
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 131
 v  <F4>          <Plug>(MakeDigraph)
-	Last set from ~/_vim/plugin/unicode.vim line 63
+	Last set from ~/.vim/pack/ivim/start/unicode.vim/plugin/unicode.vim line 63
 n  <F4>          <Plug>(MakeDigraph)
-	Last set from ~/_vim/plugin/unicode.vim line 59
-n  <Plug>(UnicodeSwapCompleteName) & :<C-U>call <SNR>77_ToggleUnicodeCompletion()<CR>
-	Last set from ~/_vim/plugin/unicode.vim line 55
+	Last set from ~/.vim/pack/ivim/start/unicode.vim/plugin/unicode.vim line 59
+n  <Plug>(UnicodeSwapCompleteName) & :<C-U>call <SNR>91_ToggleUnicodeCompletion()<CR>
+	Last set from ~/.vim/pack/ivim/start/unicode.vim/plugin/unicode.vim line 55
 n  <Plug>(UnicodeGA) & :<C-U>UnicodeName<CR>
-	Last set from ~/_vim/plugin/unicode.vim line 50
+	Last set from ~/.vim/pack/ivim/start/unicode.vim/plugin/unicode.vim line 50
 v  <Plug>(MakeDigraph) & :<C-U>call unicode#GetDigraph(visualmode(), 1)<CR>
-	Last set from ~/_vim/plugin/unicode.vim line 49
+	Last set from ~/.vim/pack/ivim/start/unicode.vim/plugin/unicode.vim line 49
 n  <Plug>(MakeDigraph) & :set opfunc=unicode#GetDigraph<CR>g@
-	Last set from ~/_vim/plugin/unicode.vim line 48
+	Last set from ~/.vim/pack/ivim/start/unicode.vim/plugin/unicode.vim line 48
 s  <Del>       * <C-G>"_c
-	Last set from ~/_vim/autoload/UltiSnips/map_keys.vim line 71
+	Last set from ~/.vim/pack/ivim/start/ultisnips/autoload/UltiSnips/map_keys.vim line 71
 s  <BS>        * <C-G>"_c
-	Last set from ~/_vim/autoload/UltiSnips/map_keys.vim line 70
+	Last set from ~/.vim/pack/ivim/start/ultisnips/autoload/UltiSnips/map_keys.vim line 70
 s  <C-Tab>     * <Esc>:call UltiSnips#ListSnippets()<CR>
-	Last set from ~/_vim/autoload/UltiSnips/map_keys.vim line 67
-o  <Plug>SneakPrevious   <Plug>Sneak_,
-	Last set from ~/_vim/plugin/sneak.vim line 421
-o  <Plug>SneakNext   <Plug>Sneak_;
-	Last set from ~/_vim/plugin/sneak.vim line 420
-x  <Plug>SneakPrevious   <Plug>Sneak_,
-	Last set from ~/_vim/plugin/sneak.vim line 419
-x  <Plug>SneakNext   <Plug>Sneak_;
-	Last set from ~/_vim/plugin/sneak.vim line 418
-n  <Plug>SneakPrevious   <Plug>Sneak_,
-	Last set from ~/_vim/plugin/sneak.vim line 417
-n  <Plug>SneakNext   <Plug>Sneak_;
-	Last set from ~/_vim/plugin/sneak.vim line 416
-o  <Plug>(SneakStreakBackward)   <Plug>SneakLabel_S
-	Last set from ~/_vim/plugin/sneak.vim line 415
-o  <Plug>(SneakStreak)   <Plug>SneakLabel_s
-	Last set from ~/_vim/plugin/sneak.vim line 414
-x  <Plug>(SneakStreakBackward)   <Plug>SneakLabel_S
-	Last set from ~/_vim/plugin/sneak.vim line 413
-x  <Plug>(SneakStreak)   <Plug>SneakLabel_s
-	Last set from ~/_vim/plugin/sneak.vim line 412
-n  <Plug>(SneakStreakBackward)   <Plug>SneakLabel_S
-	Last set from ~/_vim/plugin/sneak.vim line 411
-n  <Plug>(SneakStreak)   <Plug>SneakLabel_s
-	Last set from ~/_vim/plugin/sneak.vim line 410
-x  <Plug>VSneakPrevious   <Plug>Sneak_,
-	Last set from ~/_vim/plugin/sneak.vim line 409
-x  <Plug>VSneakNext   <Plug>Sneak_;
-	Last set from ~/_vim/plugin/sneak.vim line 408
-x  <Plug>VSneakBackward   <Plug>Sneak_S
-	Last set from ~/_vim/plugin/sneak.vim line 407
-x  <Plug>VSneakForward   <Plug>Sneak_s
-	Last set from ~/_vim/plugin/sneak.vim line 406
-n  <Plug>SneakBackward   <Plug>Sneak_S
-	Last set from ~/_vim/plugin/sneak.vim line 405
-n  <Plug>SneakForward   <Plug>Sneak_s
-	Last set from ~/_vim/plugin/sneak.vim line 404
-o  <Plug>SneakLabel_S * :<C-U>call sneak#wrap(v:operator, 2, 1, 2, 2)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 364
-o  <Plug>SneakLabel_s * :<C-U>call sneak#wrap(v:operator, 2, 0, 2, 2)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 363
-x  <Plug>SneakLabel_S * :<C-U>call sneak#wrap(visualmode(), 2, 1, 2, 2)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 362
-x  <Plug>SneakLabel_s * :<C-U>call sneak#wrap(visualmode(), 2, 0, 2, 2)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 361
-n  <Plug>SneakLabel_S * :<C-U>call sneak#wrap('', 2, 1, 2, 2)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 360
-n  <Plug>SneakLabel_s * :<C-U>call sneak#wrap('', 2, 0, 2, 2)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 359
-o  <Plug>Sneak_T * :<C-U>call sneak#wrap(v:operator, 1, 1, 0, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 357
-o  <Plug>Sneak_t * :<C-U>call sneak#wrap(v:operator, 1, 0, 0, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 356
-x  <Plug>Sneak_T * :<C-U>call sneak#wrap(visualmode(), 1, 1, 0, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 355
-x  <Plug>Sneak_t * :<C-U>call sneak#wrap(visualmode(), 1, 0, 0, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 354
-n  <Plug>Sneak_T * :<C-U>call sneak#wrap('', 1, 1, 0, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 353
-n  <Plug>Sneak_t * :<C-U>call sneak#wrap('', 1, 0, 0, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 352
-o  <Plug>Sneak_F * :<C-U>call sneak#wrap(v:operator, 1, 1, 1, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 349
-o  <Plug>Sneak_f * :<C-U>call sneak#wrap(v:operator, 1, 0, 1, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 348
-x  <Plug>Sneak_F * :<C-U>call sneak#wrap(visualmode(), 1, 1, 1, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 347
-x  <Plug>Sneak_f * :<C-U>call sneak#wrap(visualmode(), 1, 0, 1, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 346
-n  <Plug>Sneak_F * :<C-U>call sneak#wrap('', 1, 1, 1, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 345
-n  <Plug>Sneak_f * :<C-U>call sneak#wrap('', 1, 0, 1, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 344
-o  <Plug>Sneak_, * :<C-U>call <SNR>72_rpt(v:operator, 1)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 341
-o  <Plug>Sneak_; * :<C-U>call <SNR>72_rpt(v:operator, 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 340
-x  <Plug>Sneak_, * :<C-U>call <SNR>72_rpt(visualmode(), 1)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 339
-x  <Plug>Sneak_; * :<C-U>call <SNR>72_rpt(visualmode(), 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 338
-n  <Plug>Sneak_, * :<C-U>call <SNR>72_rpt('', 1)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 337
-n  <Plug>Sneak_; * :<C-U>call <SNR>72_rpt('', 0)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 336
-o  <Plug>SneakRepeat * :<C-U>call sneak#wrap(v:operator, sneak#util#getc(), sneak#util#getc(), sneak#util#getc(), sneak#util#getc())<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 333
-o  <Plug>Sneak_S * :<C-U>call sneak#wrap(v:operator, 2, 1, 2, 1)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 331
-o  <Plug>Sneak_s * :<C-U>call sneak#wrap(v:operator, 2, 0, 2, 1)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 330
-x  <Plug>Sneak_S * :<C-U>call sneak#wrap(visualmode(), 2, 1, 2, 1)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 329
-x  <Plug>Sneak_s * :<C-U>call sneak#wrap(visualmode(), 2, 0, 2, 1)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 328
-n  <Plug>Sneak_S * :<C-U>call sneak#wrap('', 2, 1, 2, 1)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 327
-n  <Plug>Sneak_s * :<C-U>call sneak#wrap('', 2, 0, 2, 1)<CR>
-	Last set from ~/_vim/plugin/sneak.vim line 326
-n  <Plug>NERDCommenterAltDelims * :call <SNR>50_SwitchToAlternativeDelimiters(1)<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3206
+	Last set from ~/.vim/pack/ivim/start/ultisnips/autoload/UltiSnips/map_keys.vim line 67
+x  <Plug>(openbrowser-smart-search) * :<C-U>call openbrowser#_keymap_smart_search('v')<CR>
+	Last set from ~/.vim/pack/ivim/start/open-browser.vim/plugin/openbrowser.vim line 57
+n  <Plug>(openbrowser-smart-search) * :<C-U>call openbrowser#_keymap_smart_search('n')<CR>
+	Last set from ~/.vim/pack/ivim/start/open-browser.vim/plugin/openbrowser.vim line 56
+x  <Plug>(openbrowser-search) * :<C-U>call openbrowser#_keymap_search('v')<CR>
+	Last set from ~/.vim/pack/ivim/start/open-browser.vim/plugin/openbrowser.vim line 55
+n  <Plug>(openbrowser-search) * :<C-U>call openbrowser#_keymap_search('n')<CR>
+	Last set from ~/.vim/pack/ivim/start/open-browser.vim/plugin/openbrowser.vim line 54
+x  <Plug>(openbrowser-open-incognito) * :<C-U>call openbrowser#_keymap_open('v', 0, ['--incognito'])<CR>
+	Last set from ~/.vim/pack/ivim/start/open-browser.vim/plugin/openbrowser.vim line 53
+n  <Plug>(openbrowser-open-incognito) * :<C-U>call openbrowser#_keymap_open('n', 0, ['--incognito'])<CR>
+	Last set from ~/.vim/pack/ivim/start/open-browser.vim/plugin/openbrowser.vim line 52
+x  <Plug>(openbrowser-open) * :<C-U>call openbrowser#_keymap_open('v')<CR>
+	Last set from ~/.vim/pack/ivim/start/open-browser.vim/plugin/openbrowser.vim line 51
+n  <Plug>(openbrowser-open) * :<C-U>call openbrowser#_keymap_open('n')<CR>
+	Last set from ~/.vim/pack/ivim/start/open-browser.vim/plugin/openbrowser.vim line 50
+n  <Plug>NERDCommenterAltDelims * :call <SNR>62_SwitchToAlternativeDelimiters(1)<CR>
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3193
 x  <Plug>NERDCommenterUncomment * :call NERDComment("x", "Uncomment")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 n  <Plug>NERDCommenterUncomment * :call NERDComment("n", "Uncomment")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 x  <Plug>NERDCommenterAlignBoth * :call NERDComment("x", "AlignBoth")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 n  <Plug>NERDCommenterAlignBoth * :call NERDComment("n", "AlignBoth")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 x  <Plug>NERDCommenterAlignLeft * :call NERDComment("x", "AlignLeft")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 n  <Plug>NERDCommenterAlignLeft * :call NERDComment("n", "AlignLeft")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 n  <Plug>NERDCommenterAppend * :call NERDComment("n", "Append")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 x  <Plug>NERDCommenterYank * :call NERDComment("x", "Yank")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 n  <Plug>NERDCommenterYank * :call NERDComment("n", "Yank")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 x  <Plug>NERDCommenterSexy * :call NERDComment("x", "Sexy")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 n  <Plug>NERDCommenterSexy * :call NERDComment("n", "Sexy")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 x  <Plug>NERDCommenterInvert * :call NERDComment("x", "Invert")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 n  <Plug>NERDCommenterInvert * :call NERDComment("n", "Invert")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 n  <Plug>NERDCommenterToEOL * :call NERDComment("n", "ToEOL")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 x  <Plug>NERDCommenterNested * :call NERDComment("x", "Nested")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 n  <Plug>NERDCommenterNested * :call NERDComment("n", "Nested")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 x  <Plug>NERDCommenterMinimal * :call NERDComment("x", "Minimal")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 n  <Plug>NERDCommenterMinimal * :call NERDComment("n", "Minimal")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 x  <Plug>NERDCommenterToggle * :call NERDComment("x", "Toggle")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 n  <Plug>NERDCommenterToggle * :call NERDComment("n", "Toggle")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 x  <Plug>NERDCommenterComment * :call NERDComment("x", "Comment")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
 n  <Plug>NERDCommenterComment * :call NERDComment("n", "Comment")<CR>
-	Last set from ~/_vim/plugin/NERD_commenter.vim line 3173
-n  <Plug>InterestingWordsBackward & :call WordNavigation(0)<CR>
-	Last set from ~/_vim/plugin/intrestingword.vim line 266
-n  <Plug>InterestingWordsForeward & :call WordNavigation(1)<CR>
-	Last set from ~/_vim/plugin/intrestingword.vim line 264
-n  <Plug>InterestingWordsClear & :call UncolorAllWords()<CR>
-	Last set from ~/_vim/plugin/intrestingword.vim line 262
-v  <Plug>InterestingWords & :call InterestingWords('v')<CR>
-	Last set from ~/_vim/plugin/intrestingword.vim line 260
-n  <Plug>InterestingWords & :call InterestingWords('n')<CR>
-	Last set from ~/_vim/plugin/intrestingword.vim line 258
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3160
+x  <Plug>(Limelight) * :Limelight<CR>
+	Last set from ~/.vim/pack/ivim/start/limelight.vim/plugin/limelight.vim line 27
+n  <Plug>(Limelight) * :set opfunc=limelight#operator<CR>g@
+	Last set from ~/.vim/pack/ivim/start/limelight.vim/plugin/limelight.vim line 26
 n  <Plug>(ctrlp) * :<C-U>CtrlP<CR>
-	Last set from ~/_vim/plugin/ctrlp.vim line 36
-n  <Plug>(characterize) & :<C-U>echo <SNR>38_info(matchstr(getline('.')[col('.')-1:-1],'.'))<CR>
-	Last set from ~/_vim/plugin/characterize.vim line 41
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/plugin/ctrlp.vim line 36
+x  <Plug>ColorFgBg * :<C-U>ColorSwapFgBg<CR>
+	Last set from ~/.vim/pack/ivim/start/Colorizer/plugin/ColorizerPlugin.vim line 51
+n  <Plug>ColorFgBg * :<C-U>ColorSwapFgBg<CR>
+	Last set from ~/.vim/pack/ivim/start/Colorizer/plugin/ColorizerPlugin.vim line 50
+x  <Plug>ColorContrast * :<C-U>ColorContrast<CR>
+	Last set from ~/.vim/pack/ivim/start/Colorizer/plugin/ColorizerPlugin.vim line 49
+n  <Plug>ColorContrast * :<C-U>ColorContrast<CR>
+	Last set from ~/.vim/pack/ivim/start/Colorizer/plugin/ColorizerPlugin.vim line 48
+x  <Plug>Colorizer * :ColorHighlight<CR>
+	Last set from ~/.vim/pack/ivim/start/Colorizer/plugin/ColorizerPlugin.vim line 47
+n  <Plug>Colorizer * :<C-U>ColorToggle<CR>
+	Last set from ~/.vim/pack/ivim/start/Colorizer/plugin/ColorizerPlugin.vim line 46
+v  <Plug>NetrwBrowseXVis * :<C-U>call netrw#BrowseXVis()<CR>
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/netrwPlugin.vim line 90
+n  <Plug>NetrwBrowseX * :call netrw#BrowseX(expand((exists("g:netrw_gx")? g:netrw_gx : '<cfile>')),netrw#CheckIfRemote())<CR>
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/netrwPlugin.vim line 84
 o  <D-g>         <Esc><D-g>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 75
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 75
 v  <D-g>         <Esc><D-g>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 72
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 72
 n  <D-g>       * n
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 71
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 71
 o  <D-f>         <Esc><D-f>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 69
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 69
 v  <D-f>         <Esc><D-f>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 66
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 66
 n  <D-f>       * /
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 65
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 65
 o  <D-a>         <Esc><D-a>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 63
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 63
 v  <D-a>         <Esc><D-a>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 60
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 60
 n  <D-a>       * :if &slm != ""|exe ":norm gggH<C-O>G"| else|exe ":norm ggVG"|endif<CR>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 59
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 59
 o  <D-z>         <Esc><D-z>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 46
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 46
 v  <D-z>         <Esc><D-z>gv
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 43
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 43
 n  <D-z>       * u
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 42
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 42
 o  <S-D-s>       <Esc><D-s>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 39
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 39
 v  <S-D-s>       <Esc><D-s>gv
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 36
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 36
 n  <S-D-s>     * :browse confirm saveas<CR>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 35
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 35
 o  <D-s>         <Esc><D-s>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 33
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 33
 v  <D-s>         <Esc><D-s>gv
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 30
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 30
 n  <D-s>       * :if expand("%") == ""|browse confirm w| else|confirm w|endif<CR>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 29
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 29
 o  <D-w>         <Esc><D-w>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 27
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 27
 v  <D-w>         <Esc><D-w>gv
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 24
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 24
 n  <D-w>       * :if winheight(2) < 0 | confirm enew | else | confirm close | endif<CR>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 23
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 23
 o  <D-o>         <Esc><D-o>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 21
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 21
 v  <D-o>         <Esc><D-o>gv
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 18
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 18
 n  <D-o>       * :browse confirm e<CR>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 17
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 17
 o  <D-n>         <Esc><D-n>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 15
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 15
 v  <D-n>         <Esc><D-n>gv
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 12
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 12
 n  <D-n>       * :confirm enew<CR>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 11
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 11
 x  <BS>          "-d
 v  <D-x>       * "+x
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 48
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 48
 v  <D-c>       * "+y
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 50
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 50
 v  <D-v>       & "-c<Esc>:call paste#Paste()<CR>
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 56
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 56
 n  <D-v>       * "+gP
-	Last set from /private/var/containers/Bundle/Application/DD23F09B-22FC-4C46-9632-E6869FFE7A3A/iVim.app/runtime/macmap.vim line 54
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/macmap.vim line 54

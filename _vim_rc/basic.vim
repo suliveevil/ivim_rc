@@ -20,6 +20,49 @@ set ttimeout
 " 功能键超时检测 50 毫秒
 set ttimeoutlen=50
 
+
+
+"✅ Vim Leader 键--------------------------------------------------------------
+
+"✅ Leader 键-空格键作为 Leader(全局变量）
+let g:mapleader = "\<space>"
+noremap <Leader>q <Esc>
+
+"✅ 普通模式
+" jump
+" nnoremap <Leader>j <C-]>
+
+"✅ 插入模式 set virtualedit=one
+
+" iPadOS 不需要设置 ; 替换 :
+"nnoremap ; :
+
+
+
+"✅ 主题-----------------------------------------------------------------------
+colorscheme murphy
+
+"✅ 高亮-----------------------------------------------------------------------
+" 设置可以高亮的关键字
+if has("autocmd")
+  " Highlight TODO, FIXME, NOTE, etc.
+  if v:version > 701
+    autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|XXX\|BUG\|HACK\)')
+    autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\|NOTICE\)')
+  endif
+endif
+
+" for error highlight，防止错误整行标红导致看不清
+highlight clear SpellBad
+highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline
+highlight clear SpellCap
+highlight SpellCap term=underline cterm=underline
+highlight clear SpellRare
+highlight SpellRare term=underline cterm=underline
+highlight clear SpellLocal
+highlight SpellLocal term=underline cterm=underline
+
+
 "✅ 字符-----------------------------------------------------------------------
 
 "✅ 空白字符
@@ -34,6 +77,9 @@ set softtabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
+
+" for # indent, python文件中输入新行时#号注释不切回行首
+autocmd BufNewFile,BufRead *.py inoremap # X<c-h>#
 
 "✅ 字体
 if has('ivim')
@@ -65,28 +111,46 @@ set ruler
 "nnoremap <leader>ekh <D-h>
 "nnoremap <leader>ek. <D-.>
 
-"---------------------------------✅ Vim Leader 键-----------------------------
+"✅ 编辑-----------------------------------------------------------------------
+" history存储容量
+set history=2048
 
-"✅ Leader 键-空格键作为 Leader(全局变量）
-let g:mapleader = "\<space>"
+" 文件修改之后自动载入
+set autoread
 
-"✅ 普通模式
-" jump
-" nnoremap <Leader>j <C-]>
+" 剪贴板：让 Y 表现的和其他大写字母一样
+map Y y$
 
-"✅ 插入模式 set virtualedit=one
+" 重做：u 撤销， U 重做
+nnoremap U <C-r>
 
-" iPadOS 不需要设置 ; 替换 :
-"nnoremap ; :
+" 保存python文件时删除多余空格
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl
+\ autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
-"
-"✅ 主题-----------------------------------------------------------------------
-colorscheme murphy
+
+
+
+"✅ 补全-----------------------------------------------------------------------
+set completeopt=longest,menu
+
+" disable scanning included files
+" set complete-=i
+
+" disable searching tags
+" set complete-=t
 
 "✅ 标签栏状态栏命令栏---------------------------------------------------------
 set showtabline=2
 set guioptions-=e
 set laststatus=2
+set wildmenu
 set wildmode=longest,full
 "✅ 行-------------------------------------------------------------------------
 
@@ -96,17 +160,22 @@ set list
 "✅ 单行字符数提示
 set colorcolumn=80
 
-"✅ 行号 number
-set number
-set relativenumber
+"✅ 行号 number 相对行号:根据模式切换相对行号
+set relativenumber number
+autocmd FocusLost * :set norelativenumber number
+autocmd FocusGained * :set relativenumber
 
-"✅ 相对行号:根据模式切换相对行号
-"augroup relative_numbers
-"        autocmd InsertEnter * :set norelativenumber
-"        autocmd InsertEnter * :set number
-"        autocmd InsertLeave * :set nonumber
-"        autocmd InsertLeave * :set relativenumber
-"augroup END
+autocmd InsertEnter * :set norelativenumber number
+autocmd InsertLeave * :set relativenumber
+
+function! NumberToggle()
+    if(&relativenumber == 1)
+        set norelativenumber number
+    else
+        set relativenumber
+    endif
+endfunction
+
 
 "✅ 折行Wrap-------------------------------------------------------------------
 
@@ -167,6 +236,10 @@ endfun
 
 "✅ Buffer - 加载一个文件
 
+set hidden
+
+
+
 " 查看
 nnoremap <silent><leader>bl :ls<cr>
 
@@ -186,21 +259,19 @@ nnoremap <leader>bh :bhide<cr>
 nnoremap <leader>bd :bdelete <cr>
 nnoremap <leader>bD :bdelete!<cr>
 
-syntax on
+syntax enable
+filetype on
+filetype plugin on
 filetype plugin indent on
 
-" disable scanning included files
-set complete-=i
 
-" disable searching tags
-set complete-=t
 
 "✅ 光标-----------------------------------------------------------------------
 
 " set virtualedit=onemore
 
-"set cursorline
-"set cursorcolumn
+set nocursorline
+set nocursorcolumn
 
 "✅ 水平滚动时，光标距离行首或行尾的位置（单位：字符）。
 "该配置在不折行时比较有用。
@@ -208,21 +279,16 @@ set complete-=t
 
 set scrolloff=5
 
-"自动定位到上次打开最后位置
+"自动定位到上次打开最后位置, 需要确认 .viminfo 当前用户可写
 if has("autocmd")
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") |
+              \exe "normal! g'\"" | endif
 endif
 
 "模式与光标样式
-" 1 -> blinking block    
-" 2 -> solid block          
-" 3 -> blinking underscore
-" 4 -> solid underscore  
-" 5 -> blinking vertical bar 
-" 6 -> solid vertical bar
+" 1 -> blinking block        " 2 -> solid block
+" 3 -> blinking underscore   " 4 -> solid underscore
+" 5 -> blinking vertical bar " 6 -> solid vertical bar
 "SI = 插入模式
 let &t_SI.="\e[5 q"
 "let &t_SI = "\<Esc>]50;CursorShape=1\x7"
@@ -332,16 +398,20 @@ set backupdir   =~/_vim/files/backup/
 set backupext   =-vimbackup
 set backupskip  =
 
+if !isdirectory("_vim/files/yankring")
+    call mkdir("_vim/files/yankring", "p")
+endif
+
 
 " 新建
 
 " 打开
 
 " 保存
-nnoremap <C-s> :w<cr>
+
 
 "⚠️ w!! 提权保存文件
-" cnoremap w!! w !sudo tee >/dev/null %
+cnoremap w!! w !sudo tee >/dev/null %
 
 " 另存为
 
@@ -517,10 +587,18 @@ set suffixes+=.obj
 
 "
 
-"✅ 查找 ----------------------------------------------------------------------
+"✅ 查找 搜索------------------------------------------------------------------
+set magic
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
 " n 始终向后搜索，N 始终向前搜索
 nnoremap <expr> n  'Nn'[v:searchforward]
 nnoremap <expr> N  'nN'[v:searchforward]
+
+autocmd BufWritePost :nohls<CR>
 
 " 屏幕重绘，取消搜索高亮，刷新 diff 模式高亮，解决代码语法高亮问题
 
@@ -536,13 +614,12 @@ endif
 "endfor
 
 " 创建/删除
-"nnoremap <leader>tc :tabe<CR>
-"nnoremap <leader>tp :tabe<CR>
-"nnoremap <leader>tn :tabe<CR>
-"nnoremap t- :-tabnext<CR>
-"nnoremap t= :+tabnext<CR>
+"nnoremap <leader> t c :tabe<CR>
+
 
 " 移动/聚焦
+nnoremap <Leader> t p :-tabnext<CR>
+nnoremap <Leader> t n :+tabnext<CR>
 
 " 调整布局
 
@@ -561,27 +638,31 @@ endif
 
 " 创建
 
-nnoremap <leader>wl :set splitright<CR>:vsplit<CR>
-nnoremap <leader>wh :set nosplitright<CR>:vsplit<CR>
-nnoremap <leader>wk :set nosplitbelow<CR>:split<CR>
-nnoremap <leader>wj :set splitbelow<CR>:split<CR>
-"nnoremap <leader>wd :bde <cr>
-"nnoremap <leader>wD :bde!<cr>
+nnoremap <leader> x l :set splitright<CR>:vsplit<CR>
+nnoremap <leader> x h :set nosplitright<CR>:vsplit<CR>
+nnoremap <leader> x k :set nosplitbelow<CR>:split<CR>
+nnoremap <leader> x j :set splitbelow<CR>:split<CR>
+
 
 " 切换/聚焦
-nnoremap <leader>h <C-w>h
-nnoremap <leader>j <C-w>j
-nnoremap <leader>k <C-w>k
-nnoremap <leader>l <C-w>l
+nnoremap <leader> w h <C-w>h
+nnoremap <leader> w j <C-w>j
+nnoremap <leader> w k <C-w>k
+nnoremap <leader> w l <C-w>l
 
 " 调整
 
-nnoremap <leader>" :res +5<CR>
-nnoremap <leader>@ :res -5<CR>
-nnoremap <leader>0 :vertical resize-5<CR>
-nnoremap <leader>9 :vertical resize+5<CR>
+nnoremap <leader> w " :res +5<CR>
+nnoremap <leader> w @ :res -5<CR>
+nnoremap <leader> w 0 :vertical resize-5<CR>
+nnoremap <leader> w 9 :vertical resize+5<CR>
 
 " 退出
+
+"✅ Buffer
+
+nnoremap <leader> b d :bde <cr>
+nnoremap <leader> b D :bde!<cr>
 
 "----------------------------------✅ 模式切换---------------------------------
 
@@ -603,7 +684,7 @@ nnoremap <leader>v <C-v>
 " S
 
 " 普通➡️选择-块
-nnoremap <leader>s <C-s>
+
 
 " ----------------------------------------------
 
@@ -619,7 +700,7 @@ nnoremap <leader>s <C-s>
 " the method `jj` maps to <Esc> sucks
 " because `jj` is used for join the lines
 " noremap jj <Esc>
-inoremap jk <Esc>
+inoremap jk <Esc>l
 vnoremap jk <Esc>
 cnoremap jk <Esc>
 snoremap jk <Esc>
@@ -643,11 +724,6 @@ vnoremap <leader>q <ESC>
 " 命令行➡️普通
 
 "----------------------------------✅ 命令模式---------------------------------
-"移动 - Vim ：  Ctrl + [hjkl]
-cnoremap <C-h> <Left>
-cnoremap <C-j> <Down>
-cnoremap <C-k> <Up>
-cnoremap <C-l> <Right>
 
 "移动 - Emacs ：Ctrl + [fbnpaeg]
 "cnoremap <C-p> <Up>
@@ -660,11 +736,6 @@ cnoremap <C-e> <End>
 "----------------------------------✅ 插入模式---------------------------------
 
 "✅ 插入模式
-"移动 - Vim ：  Ctrl + [hjkl]
-inoremap <C-h> <Left>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-l> <Right>
 "移动 - Emacs ：Ctrl + [fbnpaeg]
 inoremap <C-p> <Up>
 inoremap <C-n> <Down>
@@ -692,23 +763,7 @@ noremap L $
 "保存
 nnoremap <C-s> :w<CR>
 
-" 普通➡️可视
-" v
 
-" 普通➡️可视-行
-" V
-
-" 普通➡️可视-块
-nnoremap <leader>v <C-v>
-
-" 普通➡️选择
-" s
-
-" 普通➡️选择-行
-" S
-
-" 普通➡️选择-块
-nnoremap <leader>s <C-s>
 
 "✅ 操组作符等待模式-----------------------------------------------------------
 

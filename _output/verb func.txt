@@ -1,0 +1,1632 @@
+verb func
+----
+function neocomplete#custom#get() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/custom.vim line 29
+function <SNR>94_slash() abort
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 71
+function <SNR>3_SynSet()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/syntax/synload.vim line 33
+function <SNR>114_glob(expr) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 21
+function <SNR>114_escape_pattern(str) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 276
+function <SNR>130_find_last_index(xs, f, ...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 312
+function <SNR>114_path2directory(path) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 322
+function <SNR>92_extractafter(str)
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 70
+function <SNR>93_BlankUp(count) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 185
+function <SNR>72_activateBookmark(bm) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 141
+function <SNR>83_remember_visual(mode)
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 38
+function <SNR>132_check_in_do_auto_complete(event) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 209
+function neocomplete#available_sources() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 123
+function <SNR>134_show_next_level_mappings(next_runtime) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 258
+function <SNR>8_LoadFTPlugin()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/ftplugin.vim line 14
+function <SNR>90_redir(new, cmd)
+	Last set from ~/.vim/pack/ivim/start/vim-redir-output/plugin/redir-output.vim line 10
+function <SNR>92_reindent()
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 363
+function <SNR>114__path2project_directory_git(path) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 326
+function <SNR>55_UnEsc(str, escChar)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3121
+function neocomplete#is_auto_select() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 190
+function <SNR>130_max_by(list, expr) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 129
+function <SNR>72_jumpToFirstChild(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 402
+function lightline#init() abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 142
+function neocomplete#commands#_initialize() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/commands.vim line 29
+function <SNR>97_build_permanent_maps() abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 144
+function <SNR>130_sort(list, expr) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 105
+function <SNR>55_SwitchToAlternativeDelimiters(printMsgs)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 580
+function ctrlp#mrufiles#list(...)
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 124
+function neocomplete#helper#match_word(cur_text, ...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 128
+function nerdtree#and(x, y) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 49
+function <SNR>55_ConvertLeadingSpacesToTabs(line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2043
+function neocomplete#variables#get_frequencies() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/variables.vim line 29
+function <SNR>83_easy_align_repeat()
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 118
+function <SNR>113_unload() abort dict
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 105
+function <SNR>124_check_source() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 254
+function <SNR>95_vm_persist()
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/plugin/visual-multi.vim line 74
+function paste#Paste()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/autoload/paste.vim line 12
+function <SNR>114_is_unix() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 255
+function <SNR>113__module_sid(name) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 208
+function neocomplete#is_cache_disabled() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 181
+function <SNR>75_CreateTabTreeVCS(name)
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/vcs.vim line 17
+function <SNR>72_deleteBookmark(bookmark) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 252
+function neocomplete#init#_current_neocomplete() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/init.vim line 429
+function <SNR>72_openNodeRecursively(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 532
+function <SNR>130_unshift(list, val) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 34
+function neocomplete#smart_close_popup() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 306
+function <SNR>132_check_force_omni(cur_text) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 261
+function <SNR>72_activateDirNode(directoryNode, ...) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 123
+function <SNR>130_foldr1(f, xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 254
+function <SNR>97_assign(plug, key, buffer, ...) abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 240
+function <SNR>55_ReplaceRightMostDelim(toReplace, replacor, str)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2943
+function neocomplete#helper#get_force_omni_complete_pos(cur_text) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 63
+function neocomplete#sources#buffer#get_frequencies() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 106
+function <SNR>102_evaluate_expand(component) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 324
+function <SNR>114_truncate_skipping(str, max, footer_width, separator) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 112
+function <SNR>129_get_candidates(complete_results, complete_pos, complete_str) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/omni.vim line 272
+function neocomplete#helper#get_syn_name(is_trans) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 122
+function <SNR>93_TransformSetup(algorithm) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 506
+function <SNR>72_previewNodeHSplit(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 554
+function <SNR>6_FixFText()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 221
+function nerdtree#runningCygwin() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 217
+function <SNR>72_handleMiddleMouse() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 374
+function <SNR>134_get_register() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 347
+function <SNR>6_BMHash2(name)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 758
+function NERDComment(mode, type) range
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1217
+function <SNR>55_TabSpace()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3106
+function <SNR>114_is_float(Value) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 107
+function <SNR>44_reformat(mrufs, ...)
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 43
+function nerdtree#ui_glue#openBookmark(name) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 490
+function <SNR>134_merge(target, native)
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 110
+function <SNR>81_UNCompleteList(A, C, P)
+	Last set from ~/.vim/pack/ivim/start/unicode.vim/plugin/unicode.vim line 26
+function nerdtree#renderView() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 255
+function NERDTreeAddKeyMap(options)
+	Last set from ~/.vim/pack/ivim/start/nerdtree/plugin/NERD_tree.vim line 210
+function <SNR>72_findAndRevealPath(pathStr) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 285
+function lightline#enable() abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 37
+function <SNR>6_SynOnOff()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 1125
+function mundo#util#GoToBufferGlobal(expr)
+	Last set from ~/.vim/pack/ivim/start/vim-mundo/autoload/mundo/util.vim line 35
+function <SNR>113__global_vital_files() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 139
+function <SNR>55_AddLeftDelimAligned(delim, theLine, alignIndx)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1893
+function <SNR>134_echo_prompt() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 156
+function <SNR>6_TagFiles()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 267
+function <SNR>93_string_decode(str) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 364
+function <SNR>113__unify_path(path) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 302
+function <SNR>6_SearchP()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 257
+function <SNR>115_rand(max) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/commands.vim line 82
+function neocomplete#init#enable() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/init.vim line 33
+function NERDTreeAddMenuSeparator(...)
+	Last set from ~/.vim/pack/ivim/start/nerdtree/plugin/NERD_tree.vim line 201
+function <SNR>132_do_auto_complete(event) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 147
+function NERDTreeMoveNode()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 199
+function NERDTreeCopyPath()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 379
+function <SNR>132_make_cache_current_line() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 248
+function <SNR>94_setup_vinegar() abort
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 100
+function <SNR>47_EnableMatchParen()
+	Last set from ~/.vim/pack/ivim/start/hiPairs/plugin/hiPairs.vim line 83
+function <SNR>55_HasLeadingTabs(...)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2442
+function nerdtree#deprecated(func, ...) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 153
+function <SNR>135_string_to_keys(input) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/mappings.vim line 3
+function <SNR>130_span(f, xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 170
+function lightline#tab#filename(n) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline/tab.vim line 11
+function neocomplete#sources#buffer#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 102
+function <SNR>55_IsCommentedNormOrSexy(lineNum)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2462
+function <SNR>130_permutations(list, ...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 418
+function ctrlp#mrufiles#opts()
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 11
+function neocomplete#match_word(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 170
+function <SNR>56_initVariable(var, value)
+	Last set from ~/.vim/pack/ivim/start/nerdtree/plugin/NERD_tree.vim line 39
+function <SNR>114_strwidthpart_reverse(str, width) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 168
+function <SNR>114__path2project_directory_others(vcs, path) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 367
+function neocomplete#get_keyword_pattern(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 148
+function <SNR>93_FileByOffset(num) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 87
+function neocomplete#handler#_do_auto_complete(event) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 125
+function <SNR>126_get_glob_files(complete_str, path) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/file.vim line 93
+function <SNR>93_xml_entity_decode(str) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 462
+function <SNR>130_product(lists) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 406
+function neocomplete#helper#sort_human(candidates) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 286
+function <SNR>132_is_delimiter() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 332
+function <SNR>130_char_range(from, to) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 147
+function vm#maps#reset() abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 33
+function neocomplete#util#expand(path) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 164
+function NERDTreeAddNode()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 165
+function <SNR>114_substitute_path_separator(path) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 318
+function which_key#wait_for_input()
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 238
+function <SNR>113__exists_autoload_func_with_source(funcname) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 240
+function <SNR>47_IsBufferChanged()
+	Last set from ~/.vim/pack/ivim/start/hiPairs/plugin/hiPairs.vim line 120
+function <SNR>55_CanPlaceCursor(line, col)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1984
+function nerdtree#slash() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 34
+function <SNR>72_previewNodeVSplit(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 559
+function <SNR>101_VimEnter()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 131
+function mundo#util#Hide()
+	Last set from ~/.vim/pack/ivim/start/vim-mundo/autoload/mundo/util.vim line 99
+function <SNR>55_UncommentLinesSexy(topline, bottomline)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1665
+function <SNR>130_uniq_by(list, f) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 52
+function <SNR>55_UncommentLinesNormal(topline, bottomline)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1872
+function illuminate#disable_illumination(bufonly) abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 71
+function <SNR>72_activateFileNode(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 135
+function <SNR>47_DisableMatchParen()
+	Last set from ~/.vim/pack/ivim/start/hiPairs/plugin/hiPairs.vim line 76
+function neocomplete#util#iconv(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 114
+function NERDTreeRevealFileLinux()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 427
+function <SNR>55_AppendCommentToLine()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 626
+function <SNR>33_LP_OpPush(op)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/logiPat.vim line 181
+function <SNR>93_putline(how, map) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 331
+function <SNR>55_AltMultipart()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1935
+function neocomplete#set_default_matchers(matchers) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 287
+function mundo#util#GoToBuffer(expr)
+	Last set from ~/.vim/pack/ivim/start/vim-mundo/autoload/mundo/util.vim line 21
+function <SNR>55_CanToggleCommentLine(forceNested, lineNum)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2017
+function <SNR>93_legacy_option_map(letter) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 291
+function <SNR>55_IsDelimValid(delimiter, delIndx, line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2567
+function which_key#renderer#get_displaynames()
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/renderer.vim line 16
+function lightline#colorscheme#background() abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline/colorscheme.vim line 228
+function <SNR>137_create_rows(layout, mappings) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/renderer.vim line 83
+function lightline#update() abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 13
+function <SNR>124_exists_current_source() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 272
+function MenuExplOpen()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 862
+function <SNR>72_toggleZoom() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 655
+function <SNR>140_initialize_exit_code() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/char_handler.vim line 54
+function neocomplete#dup_filter(list) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 130
+function <SNR>92_extractbefore(str)
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 62
+function <SNR>140_m_char(char)
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/char_handler.vim line 28
+function neocomplete#variables#get_sources() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/variables.vim line 43
+function <SNR>72_jumpToNextSibling(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 460
+function <SNR>102_line(tabline, inactive) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 401
+function <SNR>130_binary_search(list, value, ...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 381
+function neocomplete#get_context_filetype(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 242
+function <SNR>55_CommentLinesToggle(forceNested, firstLine, lastLine)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1057
+function neocomplete#context_filetype#get(filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/context_filetype.vim line 50
+function NetrwStatusLine()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/netrwPlugin.vim line 163
+function <SNR>114_globpath(path, expr) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 32
+function <SNR>113_import(name, ...) abort dict
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 53
+function <SNR>129_get_omni_list(list) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/omni.vim line 169
+function lightline#concatenate(xs, right) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 302
+function <SNR>55_DoesBlockHaveMultipartDelim(top, bottom)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2137
+function <SNR>55_AddRightDelimAligned(delim, theLine, alignIndx)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1917
+function <SNR>101_DisableOnDiff()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 123
+function neocomplete#util#split_rtp(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 203
+function neocomplete#define_source(source) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 108
+function <SNR>130__compare(a, b) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 113
+function neocomplete#filters#converter_remove_overlap#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/filters/converter_remove_overlap.vim line 29
+function <SNR>72_handleLeftClick() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 339
+function <SNR>55_Esc(str)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2151
+function vital#neocomplete#import(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 28
+function <SNR>96_Yank() abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 281
+function <SNR>55_RemoveDelimiters(left, right, line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1522
+function neocomplete#util#sort_by(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 120
+function <SNR>101_IndentLinesToggle()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 234
+function neocomplete#util#escape_pattern(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 111
+function illuminate#on_insert_entered() abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 48
+function UltiSnips#map_keys#MapKeys() abort
+	Last set from ~/.vim/pack/ivim/start/ultisnips/autoload/UltiSnips/map_keys.vim line 56
+function <SNR>101_LeadingSpaceToggle()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 391
+function <SNR>83_generic_easy_align_op(type, vmode, live)
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 77
+function <SNR>33_LP_PatPop(lookup)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/logiPat.vim line 165
+function <SNR>72_toggleShowFiles() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 644
+function <SNR>114__path2project_directory_svn(path) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 342
+function lightline#disable() abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 56
+function <SNR>113__import(name) abort dict
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 158
+function <SNR>6_BMHash(name)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 743
+function <SNR>114_path2project_directory(path, ...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 379
+function <SNR>55_Multipart()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2857
+function neocomplete#sources#member#make_cache_current_line() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/member.vim line 135
+function neocomplete#skip_next_complete() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 279
+function which_key#mappings#parse(key, dict, visual)
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/mappings.vim line 34
+function <SNR>135_get_raw_map_info(key) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/mappings.vim line 29
+function neocomplete#is_eskk_enabled() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 197
+function <SNR>114_getchar_safe(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 289
+function <SNR>92_wrapreg(reg, char, removed, special)
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 303
+function NERDTreeListNode()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 296
+function lightline#colorscheme#fill(p) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline/colorscheme.vim line 183
+function <SNR>55_NumLinesInBuf()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2890
+function <SNR>113_vital_files() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 43
+function neocomplete#handler#_on_moved_i() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 29
+function NERDTreeRender()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/plugin/NERD_tree.vim line 214
+function <SNR>72_jumpToRoot() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 454
+function nerdtree#compareNodes(n1, n2) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 112
+function <SNR>55_TrimTrailingWhitespace(line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1609
+function neocomplete#is_locked(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 176
+function neocomplete#handler#_on_text_changed() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 102
+function neocomplete#sources#dictionary#get_dictionaries(filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/dictionary.vim line 121
+function neocomplete#filters#sorter_filename#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/filters/sorter_filename.vim line 29
+function <SNR>57_reuseWin(dir) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 85
+function <SNR>93_ExecMove(cmd) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 203
+function ctrlp#mrufiles#tgrel()
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 133
+function <SNR>113__get_builtin_module(name) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 193
+function <SNR>72_displayHelp() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 278
+function illuminate#on_cursor_moved() abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 12
+function <SNR>55_GetSexyComRight(space, esc)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2404
+function <SNR>6_BMRemove()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 669
+function <SNR>102_flatten_twice(xss) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 347
+function <SNR>132_check_fallback(cur_text) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 273
+function <SNR>130_all(f, xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 197
+function neocomplete#sources#ultisnips#define() abort
+	Last set from ~/.vim/pack/ivim/start/ultisnips/autoload/neocomplete/sources/ultisnips.vim line 28
+function neocomplete#util#system(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 96
+function <SNR>114_is_string(Value) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 87
+function ctrlp#mrufiles#cachefile()
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 137
+function ctrlp#mrufiles#bufs()
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 129
+function neocomplete#init#_context(context) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/init.vim line 638
+function nerdtree#checkForBrowse(dir) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 71
+function nerdtree#ui_glue#revealBookmark(name) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 565
+function <SNR>113_search(pattern) abort dict
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 120
+function <SNR>92_process(string)
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 88
+function <SNR>115_set_auto_completion_length(len) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/commands.vim line 92
+function <SNR>55_ConvertLeadingWhiteSpace(line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2073
+function <SNR>55_InvertComment(firstLine, lastLine)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1165
+function <SNR>55_IsCommented(left, right, line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2484
+function <SNR>93_Move(cmd, count, map) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 216
+function <SNR>83_abs(v)
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 34
+function neocomplete#util#is_sudo() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 125
+function <SNR>129_set_complete_results_words(complete_results) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/omni.vim line 228
+function <SNR>6_XxdFind()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 593
+function nerdtree#version(...) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 12
+function <SNR>129_get_omni_funcs(filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/omni.vim line 139
+function <SNR>94_relatives(first, ...) abort
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 83
+function neocomplete#mappings#fallback(i) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/mappings.vim line 222
+function lightline#link(...) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 217
+function neocomplete#print_debug(expr) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 253
+function neocomplete#is_enabled() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 173
+function <SNR>55_AddLeftDelim(delim, theLine)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1887
+function NERDTreeExecuteFileLinux()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 448
+function mundo#util#set_default(var, val, ...)
+	Last set from ~/.vim/pack/ivim/start/vim-mundo/autoload/mundo/util.vim line 59
+function <SNR>72_openInNewTab(target) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 520
+function <SNR>130_cons(x, xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 38
+function <SNR>113_load(...) abort dict
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 78
+function <SNR>113__dot_to_sharp(name) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 235
+function <SNR>97_unmap(key, buffer) abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 271
+function <SNR>130_and(xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 207
+function <SNR>75_ToggleTabTreeVCS(name)
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/vcs.vim line 25
+function <SNR>94_escaped(first, last) abort
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 95
+function <SNR>72_toggleShowBookmarks() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 639
+function <SNR>130_any(f, xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 202
+function <SNR>102_normalize(result) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 314
+function neocomplete#init#_filter(filter) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/init.vim line 624
+function neocomplete#get_data_directory() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 258
+function <SNR>134_execute(cmd) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 306
+function <SNR>93_cursor_options() abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 253
+function <SNR>134_has_children(input) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 166
+function <SNR>134_execute_native_fallback() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 292
+function neocomplete#util#uniq(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 117
+function UnimpairedMapTransform(algorithm, key) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 512
+function <SNR>105_convert(rgb) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline/colorscheme.vim line 111
+function <SNR>92_insert(...)
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 311
+function neocomplete#mappings#start_manual_complete(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/mappings.vim line 237
+function neocomplete#sources#dictionary#remake_cache(filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/dictionary.vim line 92
+function <SNR>94_opendir(cmd) abort
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 39
+function neocomplete#util#is_complete_select() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 105
+function <SNR>113__module_sid_base_dir() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 231
+function <SNR>105_nr(x) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline/colorscheme.vim line 142
+function neocomplete#get_cur_text(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 141
+function which_key#char_handler#wait_with_timeout() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/char_handler.vim line 107
+function <SNR>83_easy_align_op(type, ...)
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 110
+function <SNR>9_LoadIndent()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/indent.vim line 13
+function <SNR>92_wrap(string, char, type, removed, special)
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 127
+function neocomplete#context_filetype#filetypes() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/context_filetype.vim line 60
+function NERDTreeCWD()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/plugin/NERD_tree.vim line 226
+function <SNR>114_is_dict(Value) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 102
+function <SNR>72_openHSplit(target) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 505
+function <SNR>6_BMMunge(fname, bnum)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 821
+function <SNR>93_MoveSelectionDown(count) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 226
+function <SNR>130_break(f, xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 182
+function <SNR>72_toggleIgnoreFilter() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 634
+function <SNR>125_make_cache(filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/dictionary.vim line 85
+function <SNR>101_IndentLinesDisable()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 209
+function neocomplete#util#set_dictionary_helper(variable, keys, pattern) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 176
+function neocomplete#get_current_neocomplete() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 96
+function <SNR>137_escape_keys(inp) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/renderer.vim line 169
+function <SNR>124_should_create_cache(bufnr)
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 122
+function neocomplete#util#has_vimproc() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 224
+function <SNR>47_InitColor()
+	Last set from ~/.vim/pack/ivim/start/hiPairs/plugin/hiPairs.vim line 89
+function <SNR>96_Insert(key) abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 233
+function neocomplete#get_keyword_pattern_end(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 167
+function <SNR>113__function(fstr) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 11
+function <SNR>72_openInNewTabSilent(target) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 526
+function <SNR>55_PlaceDelimitersAndInsBetween()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1464
+function neocomplete#context_filetype#set() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/context_filetype.vim line 35
+function <SNR>44_mergelists()
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 31
+function <SNR>136_split_or_new() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 21
+function which_key#char_handler#timeout_for_next_char() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/char_handler.vim line 112
+function neocomplete#print_error(string) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 223
+function neocomplete#mappings#complete_common_string() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/mappings.vim line 167
+function <SNR>72_closeTreeWindow() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 238
+function <SNR>130_uniq(list) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 47
+function neocomplete#close_popup() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 309
+function <SNR>55_Left(...)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2791
+function <SNR>33_LP_Not(pat)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/logiPat.vim line 268
+function neocomplete#util#strwidthpart_reverse(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 76
+function neocomplete#within_comment() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 220
+function lightline#tabs() abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 457
+function <SNR>84_default_mapping(motions, do_mapping)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 249
+function <SNR>6_SetupKeymaps() abort
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 388
+function <SNR>114_is_numeric(Value) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 75
+function illuminate#on_cursor_moved_i() abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 42
+function <SNR>72_customOpenFile(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 86
+function <SNR>44_record(bufnr)
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 59
+function neocomplete#init#disable() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/init.vim line 58
+function <SNR>6_EditVimrc()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 199
+function <SNR>132_is_skip_auto_complete(cur_text) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 220
+function <SNR>114_is_windows() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 243
+function nerdtree#echo(msg) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 229
+function <SNR>130_shift(list) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 30
+function <SNR>106_should_illuminate_file() abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 153
+function <SNR>55_UntabbedCol(line, col)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3131
+function <SNR>134_show_upper_level_mappings() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 176
+function neocomplete#init#_filters(names) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/init.vim line 587
+function <SNR>83_repeat_in_visual()
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 66
+function <SNR>124_make_cache_current_buffer(start, end) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 277
+function which_key#start(vis, bang, prefix)
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 46
+function <SNR>93_ContextMotion(reverse) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 153
+function <SNR>35_NoMatchParen()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/matchparen.vim line 202
+function <SNR>92_redraw()
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 53
+function <SNR>55_CreateDelimMapFromCms()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 552
+function <SNR>72_openVSplit(target) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 510
+function <SNR>72_upDirCurrentRootClosed() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 694
+function neocomplete#util#is_text_changed() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 256
+function <SNR>93_toggle(op) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 248
+function neocomplete#util#get_last_status(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 108
+function <SNR>72_jumpToChild(node, last) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 417
+function nerdtree#ui_glue#clearBookmarks(bookmarks) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 187
+function <SNR>130_has(list, value) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 156
+function nerdtree#ui_glue#setupCommands() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 607
+function neocomplete#commands#_clean() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/commands.vim line 59
+function <SNR>130_find_indices(xs, f, ...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 328
+function NERDCommentIsCharCommented(line, col) abort
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1358
+function mundo#util#RenderGraph()
+	Last set from ~/.vim/pack/ivim/start/vim-mundo/autoload/mundo/util.vim line 105
+function <SNR>92_getchar()
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 13
+function <SNR>55_AltNested()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1941
+function <SNR>44_addtomrufs(fname)
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 70
+function <SNR>113__redir(cmd) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 276
+function <SNR>55_SaveScreenState()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3038
+function neocomplete#helper#check_filetype(dictionary) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 191
+function <SNR>72_refreshCurrent(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 594
+function <SNR>77_setup_keymaps() abort
+	Last set from ~/.vim/pack/ivim/start/tagbar/plugin/tagbar.vim line 98
+function <SNR>93_xml_encode(str) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 452
+function <SNR>74_inputPrompt(action)
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 57
+function <SNR>55_ReplaceLeftMostDelim(toReplace, replacor, str)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2918
+function <SNR>114_is_funcref(Value) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 92
+function neocomplete#util#get_vital() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 30
+function neocomplete#initialize() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 92
+function <SNR>130_group_by(xs, f) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 361
+function <SNR>72_previewNodeCurrent(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 549
+function neocomplete#sources#dictionary#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/dictionary.vim line 40
+function <SNR>130_intersect(list1, list2) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 349
+function <SNR>101_Disable()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 309
+function <SNR>130__default_compare(a, b) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 377
+function neocomplete#exists_echodoc() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 217
+function <SNR>55_IsInSexyComment(line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2666
+function <SNR>33_String(str)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/logiPat.vim line 149
+function <SNR>6_SetupCompilers() abort
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 607
+function neocomplete#init#_autocmds() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/init.vim line 80
+function NERDTreeExecFile()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/exec_menuitem.vim line 28
+function <SNR>55_CanCommentLine(forceNested, lineNum)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1953
+function neocomplete#helper#check_invalid_omnifunc(omnifunc) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 304
+function <SNR>113__self_vital_files() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 132
+function neocomplete#sources#omni#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/omni.vim line 135
+function <SNR>93_entries(path) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 74
+function <SNR>72_jumpToLastChild(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 407
+function neocomplete#filters#converter_remove_overlap#length(left, right) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/filters/converter_remove_overlap.vim line 72
+function <SNR>101_ResetWidth(...)
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 255
+function TestFiletypeFuncs(testlist)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/filetype.vim line 2201
+function neocomplete#has_vimproc() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 137
+function which_key#parse_mappings()
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 357
+function <SNR>74_renameBuffer(bufNum, newNodeName, isDirectory)
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 139
+function <SNR>55_CreateMaps(modes, target, desc, combo)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3141
+function <SNR>6_BMShow(...)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 687
+function NERDTreeCopyNode()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 336
+function <SNR>113_exists(name) abort dict
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 112
+function <SNR>130_push(list, val) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 25
+function neocomplete#helper#call_filters(filters, source, context) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 267
+function <SNR>113__runtime(path) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 251
+function nerdtree#runningWindows() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 212
+function neocomplete#util#truncate_smart(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 61
+function lightline#statusline(inactive) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 307
+function <SNR>134_getchar() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 195
+function ToggleFold()
+	Last set from ~/_vim/_rc/basic.vim line 170
+function <SNR>83_repeat_visual()
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 42
+function which_key#statusline() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 372
+function neocomplete#sources#file#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/file.vim line 152
+function neocomplete#variables#get_source(name) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/variables.vim line 50
+function <SNR>93_maps() abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 16
+function <SNR>93_MapNextFamily(map, cmd) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 43
+function <SNR>55_RightMostIndx(countCommentedLines, countEmptyLines, topline, bottomline)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3005
+function <SNR>124_check_async_cache(context) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 327
+function <SNR>96_Visual(cmd) abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 288
+function <SNR>55_HasMultipartDelims()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2436
+function <SNR>55_NumberOfLeadingTabs(s)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2884
+function <SNR>113_plugin_name() abort dict
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 127
+function <SNR>55_CommentRegion(topLine, topCol, bottomLine, bottomCol, forceNested)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1117
+function neocomplete#filetype_complete(arglead, cmdline, cursorpos) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 300
+function <SNR>92_closematch(str)
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 570
+function <SNR>136_show_floating_win(rows, layout) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 97
+function <SNR>114_input_safe(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 294
+function <SNR>93_fnameescape(file) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 120
+function <SNR>131_initialize_tags(filename) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/tag.vim line 78
+function neocomplete#util#set_default_dictionary(variable, keys, value) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 184
+function neocomplete#is_prefetch() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 214
+function neocomplete#util#disable_default_dictionary(variable) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 195
+function <SNR>95_vm_registers()
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/plugin/visual-multi.vim line 66
+function <SNR>55_FindBoundingLinesOfSexyCom(lineNum)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2220
+function <SNR>130_clear(list) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 68
+function <SNR>111_get_prelude() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 36
+function <SNR>132_complete_key(key) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 296
+function neocomplete#helper#clear_result() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 233
+function neocomplete#commands#_toggle_lock() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/commands.vim line 34
+function lightline#mode() abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 212
+function which_key#format(mapping) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 363
+function neocomplete#head_match(checkstr, headstr) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 229
+function <SNR>136_show_popup(rows) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 58
+function VMInfos() abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/plugin/visual-multi.vim line 96
+function nerdtree#compareNodesBySortKey(n1, n2) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 117
+function <SNR>36_VimEnter(dirname)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/netrwPlugin.vim line 152
+function <SNR>47_InitMatchPairs()
+	Last set from ~/.vim/pack/ivim/start/hiPairs/plugin/hiPairs.vim line 102
+function neocomplete#print_warning(string) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 226
+function neocomplete#is_text_mode() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 205
+function <SNR>55_SwapOuterPlaceHoldersForMultiPartDelims(line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3077
+function <SNR>6_TextWidth()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 316
+function ctrlp#mrufiles#remove(files)
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 106
+function nerdtree#loadClassFiles() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 185
+function lightline#tabline() abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 445
+function <SNR>137_combine(key, desc) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/renderer.vim line 160
+function <SNR>114_input_helper(funcname, args) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 298
+function <SNR>130_sort_by(list, expr) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 120
+function ctrlp#mrufiles#refresh(...)
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 92
+function <SNR>72_jumpToPrevSibling(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 465
+function vm#maps#all#buffer() abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps/all.vim line 80
+function <SNR>55_Nested()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2878
+function <SNR>140_wait_with_timeout(timeout) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/char_handler.vim line 92
+function vm#plugs#buffer() abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 40
+function which_key#get_sep() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 382
+function <SNR>72_initCustomOpenArgs() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 108
+function <SNR>44_excl(fn)
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 27
+function <SNR>124_initialize_source(srcname) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 144
+function neocomplete#init#is_enabled() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/init.vim line 76
+function <SNR>72_openExplorer(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 515
+function <SNR>75_FindParentVCSRoot(path)
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/vcs.vim line 34
+function <SNR>101_LeadingSpaceEnable()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 336
+function <SNR>113_new(plugin_name) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 37
+function neocomplete#define_filter(filter) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 117
+function <SNR>93_url_encode(str) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 373
+function <SNR>72_customOpenDir(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 92
+function neocomplete#start_manual_complete(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 321
+function <SNR>102_subseparator(components, subseparator, expanded) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 294
+function <SNR>6_SpellReplace(n)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 994
+function <SNR>101_Filter()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 286
+function <SNR>124_get_sources_list(context) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 131
+function lightline#tab#readonly(n) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline/tab.vim line 23
+function which_key#char_handler#parse_raw(raw_char)
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/char_handler.vim line 42
+function <SNR>124_make_cache_buffer(srcname) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 199
+function <SNR>55_FindDelimiterIndex(delimiter, line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2163
+function neocomplete#is_multibyte_input(cur_text) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 200
+function <SNR>6_BMFilename(name, num)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 779
+function <SNR>55_ReplaceDelims(toReplace1, toReplace2, replacor1, replacor2, str)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2904
+function <SNR>44_savetofile(mrufs)
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 88
+function <SNR>136_open_split_win() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 170
+function nerdtree#postSourceActions() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 203
+function <SNR>130_zip_fill(xs, ys, filler) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 267
+function <SNR>114_set_default(var, val) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 312
+function <SNR>55_UncommentLineNormal(line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1795
+function neocomplete#complete_check() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 276
+function nerdtree#has_opt(options, name) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 180
+function <SNR>55_SetUpForNewFiletype(filetype, forceReset)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 511
+function <SNR>93_xml_decode(str) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 474
+function which_key#window#close() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 189
+function <SNR>130_min_by(list, expr) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 141
+function neocomplete#undo_completion() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 315
+function neocomplete#mappings#refresh() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/mappings.vim line 230
+function <SNR>92_opfunc2(...) abort
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 562
+function <SNR>93_option_map(letter, option, mode) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 257
+function <SNR>130_with_index(list, ...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 280
+function NERDTreeListNodeWin32()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 318
+function which_key#char_handler#is_exit_code(raw_char) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/char_handler.vim line 74
+function <SNR>130_take_while(f, xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 187
+function <SNR>130_has_common_items(list1, list2) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 345
+function nerdtree#echoWarning(msg) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 248
+function <SNR>102_term(p) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 243
+function neocomplete#mappings#cancel_popup() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/mappings.vim line 126
+function <SNR>92_beep()
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 48
+function neocomplete#mappings#undo_completion() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/mappings.vim line 146
+function neocomplete#get_context() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 103
+function ctrlp#mrufiles#init()
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 145
+function neocomplete#get_default_matchers() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 283
+function <SNR>55_Right(...)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2976
+function lightline#error(msg) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 491
+function vm#plugs#permanent() abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/plugs.vim line 5
+function vital#_neocomplete#Prelude#import() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 5
+function NERDTreeExecuteFile()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 416
+function <SNR>106_remove_illumination() abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 130
+function <SNR>6_XxdConv()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 566
+function <SNR>124_check_changed_buffer(bufnr) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 238
+function <SNR>101_AutoResetWidth()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 266
+function nerdtree#exec(cmd, ignoreAll) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 167
+function <SNR>55_DoesBlockHaveDelim(delim, top, bottom)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2120
+function neocomplete#commands#_unlock() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/commands.vim line 54
+function neocomplete#cancel_popup() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 312
+function neocomplete#util#truncate(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 64
+function neocomplete#sources#buffer#make_cache_current_line() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 110
+function neocomplete#init#_sources(names) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/init.vim line 472
+function <SNR>55_CommentLines(forceNested, align, firstLine, lastLine)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 793
+function lightline#toggle() abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 74
+function neocomplete#util#strwidthpart(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 73
+function <SNR>6_SpellDel()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 1002
+function <SNR>72_showMenu(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 628
+function <SNR>55_GetSexyComLeft(space, esc)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2366
+function neocomplete#get_source_filetypes(filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 236
+function neocomplete#mappings#smart_close_popup() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/mappings.vim line 113
+function <SNR>106_should_illuminate_word() abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 166
+function <SNR>72_chCwd(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 166
+function <SNR>114_is_mac() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 251
+function <SNR>93_map(...) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 12
+function <SNR>136_append_prompt(rows) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 43
+function <SNR>132_indent_current_line() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 306
+function <SNR>6_BMTruncName(fname)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 801
+function neocomplete#mappings#close_popup() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/mappings.vim line 117
+function NERDTreeDeleteNode()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 254
+function nerdtree#ui_glue#bookmarkNode(...) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 147
+function neocomplete#sources#buffer#make_cache(name) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 362
+function <SNR>93_BlankDown(count) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 191
+function NERDTreeAddSubmenu(options)
+	Last set from ~/.vim/pack/ivim/start/nerdtree/plugin/NERD_tree.vim line 206
+function <SNR>33_StackLook(description)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/logiPat.vim line 300
+function lightline#tab#modified(n) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline/tab.vim line 18
+function <SNR>102_expand(components) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 369
+function <SNR>130_find_index(xs, f, ...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 296
+function neocomplete#helper#get_source_filetypes(filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 98
+function <SNR>72_customOpenBookmark(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 98
+function neocomplete#helper#get_cur_text(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 29
+function <SNR>93_Context(reverse) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 149
+function mundo#util#Echo(higroup, text)
+	Last set from ~/.vim/pack/ivim/start/vim-mundo/autoload/mundo/util.vim line 51
+function <SNR>114_escape_file_searching(buffer_name) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 272
+function <SNR>35_DoMatchParen()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/matchparen.vim line 210
+function neocomplete#filters#converter_remove_last_paren#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/filters/converter_remove_last_paren.vim line 29
+function <SNR>72_closeCurrentDir(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 213
+function <SNR>135_escape(mapping) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/mappings.vim line 75
+function neocomplete#helper#get_sources_list(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 196
+function <SNR>128_make_cache_current_buffer(start, end) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/member.vim line 151
+function <SNR>6_BMAdd()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 657
+function <SNR>55_LastIndexOfDelim(delim, str)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2757
+function <SNR>130_partition(f, xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 192
+function neocomplete#mappings#popup_post() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/mappings.vim line 141
+function <SNR>114_truncate(str, width) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 127
+function <SNR>101_InitColor()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 35
+function neocomplete#sources#member#remake_cache(filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/member.vim line 255
+function neocomplete#custom#source(source_name, option_name, value) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/custom.vim line 39
+function neocomplete#util#is_mac(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 102
+function <SNR>55_NerdEcho(msg, typeOfMsg)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2866
+function <SNR>72_jumpToSibling(node, forward) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 475
+function <SNR>55_IsNumEven(num)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2631
+function <SNR>136_close_split_win() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 178
+function <SNR>114_strwidthpart(str, width) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 152
+function neocomplete#filters#converter_abbr#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/filters/converter_abbr.vim line 29
+function <SNR>130_pop(list) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 21
+function which_key#trigger() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 378
+function <SNR>124_make_cache_file(srcname) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 170
+function neocomplete#util#join_rtp(list) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 216
+function <SNR>134_register() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 336
+function <SNR>130_map_accum(expr, xs, init) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 216
+function <SNR>93_Transform(algorithm, type) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 479
+function <SNR>6_FnameEscape(fname)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 146
+function <SNR>55_ConvertLeadingTabsToSpaces(line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2059
+function neocomplete#handler#_on_insert_leave() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 53
+function <SNR>55_IsSexyComment(topline, bottomline)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2676
+function <SNR>130_concat(list) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 77
+function <SNR>5_StarSetf(ft)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/filetype.vim line 47
+function <SNR>55_InitVariable(var, value)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 21
+function ctrlp#mrufiles#add(fn)
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 118
+function <SNR>55_SexyNested()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2340
+function neocomplete#sources#member#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/member.vim line 131
+function <SNR>55_GetSexyComMarker(space, esc)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2295
+function vital#_neocomplete#Data#List#import() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 5
+function neocomplete#sources#tag#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/tag.vim line 58
+function <SNR>55_UncommentLines(topLine, bottomLine)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1620
+function mundo#util#Toggle()
+	Last set from ~/.vim/pack/ivim/start/vim-mundo/autoload/mundo/util.vim line 87
+function <SNR>113__sid(path, filter_pattern) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 261
+function <SNR>55_CanSexyCommentLines(topline, bottomline)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1995
+function <SNR>6_SetupColorSchemes() abort
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 356
+function <SNR>130_has_index(list, index) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 163
+function <SNR>72_refreshRoot() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 577
+function <SNR>55_IsCommentedOutermost(left, right, leftAlt, rightAlt, line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2520
+function neocomplete#disable_default_dictionary(variable) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 297
+function <SNR>101_IndentLinesEnable()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 148
+function <SNR>6_SpellLang()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 454
+function <SNR>113_sid2sfuncs(sid) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 309
+function <SNR>93_url_decode(str) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 378
+function <SNR>106_get_cur_word() abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 120
+function neocomplete#sources#tag#make_cache(force) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/tag.vim line 93
+function <SNR>83_live_easy_align_op(type, ...)
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 114
+function <SNR>128_get_member_list(context, cur_text, var_name) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/member.vim line 205
+function neocomplete#util#is_windows(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 99
+function <SNR>93_statusbump() abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 243
+function <SNR>111_get_string() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 48
+function <SNR>101_LeadingSpaceDisable()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 368
+function <SNR>74_promptToDelBuffer(bufnum, msg)
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 101
+function NERDTreeRevealInFinder()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 405
+function lightline#colorscheme() abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 184
+function NERDTreeFocus()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/plugin/NERD_tree.vim line 218
+function <SNR>130_combinations(list, r) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 438
+function <SNR>33_LP_Or(pat1, pat2)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/logiPat.vim line 282
+function neocomplete#custom_source(source_name, option_name, value) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 126
+function neocomplete#commands#_set_file_type(filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/commands.vim line 77
+function <SNR>101_Setup()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 321
+function <SNR>55_IsCommentedFromStartOfLine(left, line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2500
+function <SNR>101_ResetConcealOption()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 110
+function <SNR>130_or(xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 212
+function <SNR>47_Compare(a, b)
+	Last set from ~/.vim/pack/ivim/start/hiPairs/plugin/hiPairs.vim line 71
+function <SNR>130_foldl(f, init, xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 229
+function nerdtree#ui_glue#createDefaultBindings() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 7
+function neocomplete#init#_others() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/init.vim line 106
+function <SNR>130_foldr(f, init, xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 249
+function lightline#onetab(n, active) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 479
+function neocomplete#helper#clean(directory) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 343
+function neocomplete#helper#complete_configure() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 322
+function <SNR>114_is_number(Value) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 82
+function <SNR>130_zip(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 262
+function <SNR>113__module_path(name) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 227
+function nerdtree#echoError(msg) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 238
+function NERDTreeAddPathFilter(callback)
+	Last set from ~/.vim/pack/ivim/start/nerdtree/plugin/NERD_tree.vim line 251
+function <SNR>113__sfuncname(sid, funcname) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 320
+function neocomplete#complete_common_string() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 318
+function <SNR>55_RecoverStateAfterLineComment(state)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1596
+function neocomplete#helper#indent_current_line() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 308
+function NetUserPass(...)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/netrwPlugin.vim line 180
+function <SNR>136_show_old_win(rows, layout) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 140
+function <SNR>55_CommentLinesMinimal(firstLine, lastLine)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 859
+function <SNR>72_jumpToParent(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 436
+function <SNR>135_add_map_to_dict(map, level, dict)
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/mappings.vim line 84
+function NERDTreeQuickLook()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 394
+function neocomplete#filters#sorter_rank#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/filters/sorter_rank.vim line 29
+function <SNR>92_inputreplacement()
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 36
+function neocomplete#mappings#auto_complete() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/mappings.vim line 69
+function <SNR>113__import_func_name(plugin_name, module_name) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 204
+function <SNR>114_smart_execute_command(action, word) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 268
+function <SNR>72_activateAll() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 115
+function which_key#window#name() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 209
+function <SNR>114__warn_deprecated(name, alternative) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 259
+function neocomplete#util#wcswidth(string) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 70
+function <SNR>77_init_var(var, value) abort
+	Last set from ~/.vim/pack/ivim/start/tagbar/plugin/tagbar.vim line 45
+function <SNR>6_Helpfind()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 92
+function <SNR>113__source(path) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 255
+function neocomplete#filters#matcher_fuzzy#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/filters/matcher_fuzzy.vim line 29
+function neocomplete#helper#is_enabled_source(source, filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 87
+function <SNR>33_LP_PatPush(pat)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/logiPat.vim line 155
+function neocomplete#mappings#define_default_mappings() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/mappings.vim line 29
+function NERDCommentIsLineCommented(lineNo)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1203
+function <SNR>132_close_preview_window() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 239
+function <SNR>34_ManPager()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/manpager.vim line 7
+function neocomplete#handler#_on_insert_char_pre() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 87
+function neocomplete#system(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 134
+function <SNR>105_rgb(r, g, b) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline/colorscheme.vim line 146
+function <SNR>94_fnameescape(file) abort
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 11
+function <SNR>72_upDirCurrentRootOpen() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 689
+function vital#neocomplete#new() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 24
+function <SNR>106_match_word(word) abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 104
+function <SNR>35_Highlight_Matching_Pair()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/matchparen.vim line 39
+function <SNR>46_HelpTab()
+	Last set from ~/.vim/pack/ivim/start/helptab.vim/plugin/helptab.vim line 7
+function neocomplete#util#substitute_path_separator(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 80
+function <SNR>111_get_list() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 42
+function <SNR>55_RestoreScreenState()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2964
+function <SNR>124_clean() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/buffer.vim line 346
+function <SNR>93_setup_paste() abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 305
+function nerdtree#completeBookmarks(A, L, P) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree.vim line 107
+function mundo#util#Show()
+	Last set from ~/.vim/pack/ivim/start/vim-mundo/autoload/mundo/util.vim line 93
+function <SNR>128_initialize_source(srcname, filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/member.vim line 229
+function <SNR>92_fixindent(str, spc)
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 78
+function vm#maps#init() abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 22
+function nerdtree#ui_glue#chRootCwd() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 182
+function <SNR>55_AddRightDelim(delim, theLine)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1907
+function LogiPat(pat, ...)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/logiPat.vim line 61
+function <SNR>55_HasCStyleComments()
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2452
+function <SNR>92_opfunc(type, ...) abort
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 495
+function <SNR>114_wcswidth(str) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 187
+function <SNR>55_SwapOuterMultiPartDelimsForPlaceHolders(line)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3049
+function <SNR>55_TabbedCol(line, col)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 3098
+function <SNR>101_ToggleOnDiff()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 138
+function lightline#colorscheme#flatten(p) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline/colorscheme.vim line 209
+function <SNR>113__extract_files(pattern, files) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 144
+function <SNR>134_handle_char_on_start_is_ok(c) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 23
+function neocomplete#filters#matcher_length#define() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/filters/matcher_length.vim line 29
+function <SNR>81_ToggleUnicodeCompletion()
+	Last set from ~/.vim/pack/ivim/start/unicode.vim/plugin/unicode.vim line 22
+function neocomplete#handler#_on_insert_enter() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 38
+function vm#maps#default() abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 15
+function neocomplete#helper#call_hook(sources, hook_name, context) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 248
+function <SNR>111_escape(path) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 220
+function neocomplete#handler#_on_complete_done() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 62
+function <SNR>83_set_repeat()
+	Last set from ~/.vim/pack/ivim/start/vim-easy-align/plugin/easy_align.vim line 73
+function NERDTreeExecFileActive()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/exec_menuitem.vim line 23
+function <SNR>114_is_cygwin() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 247
+function <SNR>130_flatten(list, ...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 86
+function <SNR>113__get_module(name) abort dict
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 184
+function <SNR>128_get_sources_list(context) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/member.vim line 216
+function neocomplete#helper#complete_check() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 102
+function <SNR>84_motion_map_helper(motions)
+	Last set from ~/.vim/pack/ivim/start/vim-easymotion/plugin/EasyMotion.vim line 63
+function <SNR>134_handle_input(input)
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 265
+function <SNR>6_ToggleGuiOption(option)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 277
+function which_key#register(prefix, dict) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 16
+function <SNR>105_upconvert(nr) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline/colorscheme.vim line 150
+function <SNR>130_conj(xs, x) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 42
+function lightline#highlight(...) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 262
+function <SNR>93_TransformOpfunc(type) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 502
+function <SNR>77_setup_options() abort
+	Last set from ~/.vim/pack/ivim/start/tagbar/plugin/tagbar.vim line 51
+function illuminate#toggle_illumination(bufonly) abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 54
+function neocomplete#util#mb_strlen(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 83
+function <SNR>55_LeftMostIndx(countCommentedLines, countEmptyLines, topline, bottomline)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2820
+function neocomplete#util#glob(pattern, ...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 131
+function <SNR>135_flatten(dict, str) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/mappings.vim line 135
+function <SNR>114_getchar(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 284
+function <SNR>129_set_complete_results_pos(funcs, cur_text) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/omni.vim line 184
+function <SNR>130_foldl1(f, xs) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 241
+function neocomplete#helper#filetype_complete(arglead, cmdline, cursorpos) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 140
+function <SNR>47_HiPairs(flag)
+	Last set from ~/.vim/pack/ivim/start/hiPairs/plugin/hiPairs.vim line 131
+function neocomplete#util#convert2list(expr) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 252
+function lightline#tab#tabnum(n) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline/tab.vim line 28
+function <SNR>97_build_buffer_maps() abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 179
+function <SNR>36_LocalBrowse(dirname)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/netrwPlugin.vim line 102
+function neocomplete#init#_variables() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/init.vim line 134
+function <SNR>6_SetupLazyloadMenus()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 631
+function <SNR>33_LP_Execute(preclvl)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/logiPat.vim line 235
+function <SNR>136_floating_win_col_offset() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 50
+function neocomplete#set_dictionary_helper(variable, keys, value) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 293
+function neocomplete#util#strchars(...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 67
+function <SNR>72_SID() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 620
+function <SNR>102_convert(name, index) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 336
+function <SNR>94_absolutes(first, ...) abort
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 75
+function <SNR>92_dosurround(...)
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 369
+function which_key#renderer#prepare(runtime) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/renderer.vim line 9
+function <SNR>6_FileFormat()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 329
+function <SNR>55_SetupStateBeforeLineComment(topLine, bottomLine)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 1570
+function lightline#update_disable() abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 30
+function <SNR>72_closeChildren(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 205
+function nerdtree#ui_glue#invokeKeyMap(key) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 397
+function <SNR>72_previewBookmark(bookmark) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 540
+function <SNR>94_seek(file) abort
+	Last set from ~/.vim/pack/ivim/start/vim-vinegar/plugin/vinegar.vim line 56
+function neocomplete#is_windows() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 211
+function <SNR>111_get_process() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 54
+function <SNR>93_string_encode(str) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 359
+function <SNR>92_inputtarget()
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 21
+function <SNR>136_hide_cursor() abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 10
+function neocomplete#init#_source(source) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/init.vim line 520
+function illuminate#enable_illumination(bufonly) abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 80
+function vm#maps#all#permanent() abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps/all.vim line 43
+function nerdtree#ui_glue#upDir(preserveState) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 665
+function NERDTreeAddMenuItem(options)
+	Last set from ~/.vim/pack/ivim/start/nerdtree/plugin/NERD_tree.vim line 197
+function neocomplete#util#set_default(var, val, ...) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 168
+function <SNR>105_black(x) abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline/colorscheme.vim line 129
+function <SNR>55_IsEscaped(str, indx, escChar)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2643
+function neocomplete#variables#get_filters() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/variables.vim line 57
+function <SNR>47_ClearMatch()
+	Last set from ~/.vim/pack/ivim/start/hiPairs/plugin/hiPairs.vim line 107
+function <SNR>114_is_list(Value) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Prelude.vim line 97
+function <SNR>44_chop(mrufs)
+	Last set from ~/.vim/pack/ivim/start/ctrlp.vim/autoload/ctrlp/mrufiles.vim line 38
+function <SNR>137_calc_layout(mappings) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/renderer.vim line 24
+function <SNR>132_complete_delay(timer) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/handler.vim line 116
+function <SNR>6_XxdBack()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 580
+function <SNR>92_changesurround(...)
+	Last set from ~/.vim/pack/ivim/start/vim-surround/plugin/surround.vim line 483
+function <SNR>101_SetConcealOption()
+	Last set from ~/.vim/pack/ivim/start/indentLine/after/plugin/indentLine.vim line 96
+function <SNR>33_LP_And(pat1, pat2)
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/plugin/logiPat.vim line 291
+function neocomplete#commands#_lock() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/commands.vim line 49
+function <SNR>97_check_warnings() abort
+	Last set from ~/.vim/pack/ivim/start/vim-visual-multi/autoload/vm/maps.vim line 281
+function <SNR>113__uniq(list) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 325
+function <SNR>136_apply_custom_floating_opts(opts) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 85
+function <SNR>55_CommentLinesSexy(topline, bottomline)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 923
+function <SNR>93_MoveSelectionUp(count) abort
+	Last set from ~/.vim/pack/ivim/start/vim-unimpaired/plugin/unimpaired.vim line 221
+function <SNR>72_chRoot(node) abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 176
+function illuminate#on_leaving_autocmds() abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 36
+function NERDTreeExecuteFileWindows()
+	Last set from ~/.vim/pack/ivim/start/nerdtree/nerdtree_plugin/fs_menu.vim line 459
+function <SNR>6_SelectAll()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 142
+function <SNR>134_create_runtime(key)
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 98
+function <SNR>113__file2module(file) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/neocomplete.vim line 151
+function neocomplete#escape_match(str) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 239
+function neocomplete#util#dup_filter(list) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/util.vim line 241
+function neocomplete#helper#unite_patterns(pattern_var, filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/helper.vim line 156
+function lightline#palette() abort
+	Last set from ~/.vim/pack/ivim/start/lightline.vim/autoload/lightline.vim line 208
+function <SNR>134_join(...) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key.vim line 302
+function <SNR>128_make_cache_lines(srcname, filetype, lines) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/member.vim line 160
+function <SNR>55_CommentBlock(top, bottom, lSide, rSide, forceNested)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 661
+function which_key#window#show(runtime) abort
+	Last set from ~/.vim/pack/ivim/start/vim-which-key/autoload/which_key/window.vim line 155
+function <SNR>130_find(list, default, f) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/vital/_neocomplete/Data/List.vim line 286
+function neocomplete#sources#member#make_cache_current_buffer() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/member.vim line 143
+function <SNR>129_get_complete_pos(complete_results) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/omni.vim line 258
+function <SNR>72_toggleShowHidden() abort
+	Last set from ~/.vim/pack/ivim/start/nerdtree/autoload/nerdtree/ui_glue.vim line 650
+function <SNR>6_SpellPopup()
+	Last set from /private/var/containers/Bundle/Application/EAEEFF97-571A-4CBB-8641-20E203B29FF0/iVim.app/runtime/menu.vim line 938
+function neocomplete#is_auto_complete() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete.vim line 193
+function <SNR>128_get_member_pattern(filetype) abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/sources/member.vim line 250
+function neocomplete#mappings#manual_complete() abort
+	Last set from ~/.vim/pack/ivim/start/neocomplete/autoload/neocomplete/mappings.vim line 90
+function <SNR>106_illuminate(...) abort
+	Last set from ~/.vim/pack/ivim/start/vim-illuminate/autoload/illuminate.vim line 91
+function <SNR>55_CountNonESCedOccurances(str, searchstr, escChar)
+	Last set from ~/.vim/pack/ivim/start/nerdcommenter/plugin/NERD_commenter.vim line 2095

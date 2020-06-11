@@ -1,0 +1,1 @@
+nnoremap ga :UnicodeName<CR>
