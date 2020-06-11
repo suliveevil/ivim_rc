@@ -2,6 +2,9 @@ iplug list
 ----
 [Colorizer]            https://github.com/chrisbra/Colorizer
 [LeaderF]              https://github.com/Yggdroot/LeaderF
+[NrrwRgn]              https://github.com/chrisbra/NrrwRgn
+[asyncrun.vim]         https://github.com/skywind3000/asyncrun.vim
+[calendar.vim]         https://github.com/itchyny/calendar.vim
 [ctrlp.vim]            https://github.com/ctrlpvim/ctrlp.vim
 [fern.vim]             https://github.com/lambdalisue/fern.vim
 [findr.vim]            https://github.com/conweller/findr.vim
@@ -9,6 +12,7 @@ iplug list
 [helptab.vim]          https://github.com/suliveevil/helptab.vim
 [hiPairs]              https://github.com/suliveevil/hiPairs
 [indentLine]           https://github.com/Yggdroot/indentLine
+[ivim-dash]            https://github.com/suliveevil/ivim-dash
 [ivim-snippets]        https://github.com/suliveevil/ivim-snippets
 [lightline.vim]        https://github.com/itchyny/lightline.vim
 [limelight.vim]        https://github.com/junegunn/limelight.vim
@@ -23,6 +27,8 @@ iplug list
 [tagbar]               https://github.com/majutsushi/tagbar
 [ultisnips]            https://github.com/SirVer/ultisnips
 [unicode.vim]          https://github.com/chrisbra/unicode.vim
+[utl.vim]              https://github.com/suliveevil/utl.vim
+[vim-SyntaxRange]      https://github.com/inkarkat/vim-SyntaxRange
 [vim-colors-solarized] https://github.com/altercation/vim-colors-solarized.git
 [vim-easy-align]       https://github.com/junegunn/vim-easy-align
 [vim-easymotion-chs]   https://github.com/ZSaberLv0/vim-easymotion-chs
@@ -31,6 +37,8 @@ iplug list
 [vim-grep]             https://github.com/itchyny/vim-grep
 [vim-gutentags]        https://github.com/ludovicchabant/vim-gutentags
 [vim-illuminate]       https://github.com/RRethy/vim-illuminate
+[vim-ingo-library]     https://github.com/inkarkat/vim-ingo-library
+[vim-mark]             https://github.com/inkarkat/vim-mark
 [vim-markdown]         https://github.com/plasticboy/vim-markdown
 [vim-mundo]            https://github.com/suliveevil/vim-mundo
 [vim-orgmode]          https://github.com/jceb/vim-orgmode
@@ -41,7 +49,6 @@ iplug list
 [vim-redir-output]     https://github.com/suliveevil/vim-redir-output
 [vim-repeat]           https://github.com/tpope/vim-repeat
 [vim-repl]             https://github.com/sillybun/vim-repl
-[vim-slime]            https://github.com/jpalardy/vim-slime
 [vim-speeddating]      https://github.com/tpope/vim-speeddating
 [vim-surround]         https://github.com/tpope/vim-surround
 [vim-textobj-user]     https://github.com/kana/vim-textobj-user
@@ -53,4 +60,4 @@ iplug list
 [vimcdoc]              https://github.com/yianwillis/vimcdoc
 [vimtex]               https://github.com/lervag/vimtex
 
-52 plugin(s) found
+59 plugin(s) found
