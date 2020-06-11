@@ -40,6 +40,8 @@ noremap <Leader>q <Esc>
 
 
 "✅ 主题-----------------------------------------------------------------------
+
+
 colorscheme murphy
 
 "✅ 高亮-----------------------------------------------------------------------
@@ -66,8 +68,10 @@ highlight SpellLocal term=underline cterm=underline
 "✅ 字符-----------------------------------------------------------------------
 
 "✅ 空白字符
+set list
 "如果行尾有多余的空白字符,让这些字符显示为可见的小方块。
 set listchars=tab:»■,trail:■
+" set listchars+=eol:$,
 
 "✅ 制表符、空格、缩进 Tab & Space
 set autoindent
@@ -88,8 +92,6 @@ if has('ivim')
     nnoremap <leader>-- :ifont -<cr>
 endif
 
-"换行符显示
-set list
 
 "✅ 单行字符数提示(会导致屏幕重绘，耗时)
 "set colorcolumn=80
@@ -137,7 +139,7 @@ autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,pe
 
 
 
-"✅ 补全-----------------------------------------------------------------------
+"✅ 补全和 Tags-----------------------------------------------------------------
 set completeopt=longest,menu
 
 " disable scanning included files
@@ -145,6 +147,7 @@ set completeopt=longest,menu
 
 " disable searching tags
 " set complete-=t
+set tags=./.tags;,.tags
 
 "✅ 标签栏状态栏命令栏---------------------------------------------------------
 set showtabline=2
@@ -154,8 +157,6 @@ set wildmenu
 set wildmode=longest,full
 "✅ 行-------------------------------------------------------------------------
 
-"换行符显示
-set list
 
 "✅ 单行字符数提示
 set colorcolumn=80
@@ -256,7 +257,7 @@ nnoremap <leader>bn :bnext<cr>
 nnoremap <leader>bh :bhide<cr>
 
 " 退出
-nnoremap <leader>bd :bdelete <cr>
+nnoremap <leader>bd :bdelete<cr>
 nnoremap <leader>bD :bdelete!<cr>
 
 syntax enable
@@ -631,12 +632,11 @@ endif
 "endfor
 
 " 创建/删除
-"nnoremap <leader> t c :tabe<CR>
+"nnoremap <leader>tc :tabe<CR>
 
 
 " 移动/聚焦
-nnoremap <Leader> t p :-tabnext<CR>
-nnoremap <Leader> t n :+tabnext<CR>
+" gt
 
 " 调整布局
 
@@ -662,24 +662,24 @@ nnoremap <leader> x j :set splitbelow<CR>:split<CR>
 
 
 " 切换/聚焦
-nnoremap <leader> w h <C-w>h
-nnoremap <leader> w j <C-w>j
-nnoremap <leader> w k <C-w>k
-nnoremap <leader> w l <C-w>l
+nnoremap <leader>wh <C-w>h
+nnoremap <leader>wj <C-w>j
+nnoremap <leader>wk <C-w>k
+nnoremap <leader>wl <C-w>l
 
 " 调整
 
-nnoremap <leader> w " :res +5<CR>
-nnoremap <leader> w @ :res -5<CR>
-nnoremap <leader> w 0 :vertical resize-5<CR>
-nnoremap <leader> w 9 :vertical resize+5<CR>
+" nnoremap <leader>w" :res +5<CR>
+" nnoremap <leader> w @ :res -5<CR>
+nnoremap <leader>w0 :vertical resize-5<CR>
+nnoremap <leader>w9 :vertical resize+5<CR>
 
 " 退出
 
 "✅ Buffer
 
-nnoremap <leader> b d :bde <cr>
-nnoremap <leader> b D :bde!<cr>
+nnoremap <leader>bd :bde<cr>
+nnoremap <leader>bD :bde!<cr>
 
 "----------------------------------✅ 模式切换---------------------------------
 

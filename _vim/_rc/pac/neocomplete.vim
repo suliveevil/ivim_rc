@@ -4,8 +4,6 @@ inoremap <expr><BS>    neocomplete#smart_close_popup()."\<C-h>"
 
 
 
-
-
 " 选择：智能 TAB
 " inoremap <expr><TAB>  pumvisible() ? "\<C-n>" :
 "     \ <SID>check_back_space() ? "\<TAB>" :
@@ -32,7 +30,7 @@ inoremap <expr><BS>    neocomplete#smart_close_popup()."\<C-h>"
 " function! s:check_back_space() abort "{{{
 "   let col = col('.') - 1
 "   return !col || getline('.')[col - 1]  =~ '\s'
-endfunction"}}}
+" endfunction"}}}
 
 " 确认选择
 " inoremap <expr><CR> pumvisible()? "\<C-y>" : "\<CR>"
@@ -69,13 +67,13 @@ let g:neocomplete#enable_multibyte_completion = 1
 " g:neocomplete#sources
 
 
-
 " 自定义词典补全
-" let g:neocomplete#sources#dictionary#dictionaries = {
-"     \ 'default' : '',
-"     \ 'vimshell' : $HOME.'/.vimshell_hist',
-"     \ 'scheme' : $HOME.'/.gosh_completions'
-"         \ }
+" let g:neocomplete#data_directory = '~/.vim/pack/ivim/start/ivim-snippets/dict'
+let  g:neocomplete#sources#dictionary#dictionaries = {
+    \ '_'        :'~/.vim/pack/ivim/start/ivim-snippets/dict/all.dict',
+    \ 'default'  : '',
+    \ 'python'   :'~/.vim/pack/ivim/start/ivim-snippets/dict/python.dict',
+    \ }
 
 " 关键词补全
 " if !exists('g:neocomplete#keyword_patterns')
@@ -84,11 +82,11 @@ let g:neocomplete#enable_multibyte_completion = 1
 " let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
 " omni 补全
-" autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-" autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-" autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-" autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-" autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " omni 更多补全
 " if !exists('g:neocomplete#sources#omni#input_patterns')
