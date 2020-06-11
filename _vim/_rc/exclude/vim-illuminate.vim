@@ -1,0 +1,1 @@
+let g:Illuminate_highlightUnderCursor = 1
