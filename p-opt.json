@@ -1,1 +1,152 @@
+[
+  {
+    "oid" : "528a59f26d12278698bb946f8fb82a63711eec21",
+    "type" : "opt",
+    "name" : "vim-colors-solarized",
+    "origin" : "https:\/\/github.com\/altercation\/vim-colors-solarized.git",
+    "docDir" : "doc",
+    "rev" : "b:master"
+  },
+  {
+    "name" : "hiPairs",
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/suliveevil\/hiPairs",
+    "oid" : "f25963661acfb8b886952221c5f2db03601277e0",
+    "type" : "start"
+  },
+  {
+    "name" : "vim-illuminate",
+    "oid" : "0778289e391c419f7a3af9de8229f798ee292013",
+    "type" : "start",
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/RRethy\/vim-illuminate",
+    "docDir" : "doc"
+  },
+  {
+    "name" : "LeaderF",
+    "docDir" : "doc",
+    "oid" : "570e0a428bc0ac43ab7a59784b9b2a33356840dc",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/Yggdroot\/LeaderF",
+    "rev" : "b:master"
+  },
+  {
+    "name" : "ctrlp.vim",
+    "oid" : "d93d97813dc839ef0782302a0debd7c4877f09f3",
+    "docDir" : "doc",
+    "type" : "start",
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/ctrlpvim\/ctrlp.vim"
+  },
+  {
+    "origin" : "https:\/\/github.com\/conweller\/findr.vim",
+    "rev" : "b:master",
+    "name" : "findr.vim",
+    "oid" : "92126073e8ac1df8d864c062853df68a243f4f2f",
+    "type" : "start",
+    "docDir" : "doc"
+  },
+  {
+    "origin" : "https:\/\/github.com\/suliveevil\/vim-plist",
+    "oid" : "12dce205a219321423de9fd3175e7bcc1c7d135d",
+    "rev" : "b:master",
+    "name" : "vim-plist",
+    "type" : "start"
+  },
+  {
+    "origin" : "https:\/\/github.com\/vim-pandoc\/vim-pandoc",
+    "rev" : "b:master",
+    "type" : "start",
+    "name" : "vim-pandoc",
+    "oid" : "e49f9e7e3fc041dab0e9a1de4b564b3ddd8f77aa",
+    "docDir" : "doc"
+  },
+  {
+    "name" : "vim-gutentags",
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/ludovicchabant\/vim-gutentags",
+    "oid" : "8e69652c7a7e7aabd96cff21b6ee6b6a295c901c",
+    "type" : "start",
+    "docDir" : "doc"
+  },
+  {
+    "oid" : "55c659d3429f09ebb818615056a86a67901f022c",
+    "origin" : "https:\/\/github.com\/sbdchd\/neoformat",
+    "docDir" : "doc",
+    "rev" : "b:master",
+    "name" : "neoformat",
+    "type" : "start"
+  },
+  {
+    "docDir" : "doc",
+    "type" : "start",
+    "name" : "vim-fugitive",
+    "oid" : "27a5c3abd211c2784513dab4db082fa414ad0967",
+    "rev" : "b:master",
+    "origin" : "https:\/\/github.com\/tpope\/vim-fugitive"
+  },
+  {
+    "name" : "vim-unimpaired",
+    "origin" : "https:\/\/github.com\/tpope\/vim-unimpaired",
+    "type" : "start",
+    "docDir" : "doc",
+    "oid" : "4afbe5ebf32ad85341b4c02b0e1d8ca96a64c561",
+    "rev" : "b:master"
+  },
+  {
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/tpope\/vim-surround",
+    "oid" : "f51a26d3710629d031806305b6c8727189cd1935",
+    "rev" : "b:master",
+    "name" : "vim-surround",
+    "docDir" : "doc"
+  },
+  {
+    "rev" : "b:master",
+    "oid" : "43dbd7092801637972b1d9fcecaaeee11f8e00cf",
+    "origin" : "https:\/\/github.com\/Yggdroot\/indentLine",
+    "docDir" : "doc",
+    "name" : "indentLine",
+    "type" : "start"
+  },
+  {
+    "name" : "lightline.vim",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/itchyny\/lightline.vim",
+    "docDir" : "doc",
+    "oid" : "c172131e0369672bc1b9454a2aec6d532d350dcc",
+    "rev" : "b:master"
+  },
+  {
+    "oid" : "3e129198bba7d6b50406902002ad7d213a6cccaa",
+    "rev" : "b:master",
+    "docDir" : "doc",
+    "name" : "goyo.vim",
+    "type" : "start",
+    "origin" : "https:\/\/github.com\/junegunn\/goyo.vim"
+  },
+  {
+    "rev" : "b:master",
+    "name" : "limelight.vim",
+    "type" : "start",
+    "oid" : "26e913a2e061195245bc62d24009ab67143a3c32",
+    "origin" : "https:\/\/github.com\/junegunn\/limelight.vim"
+  },
+  {
+    "origin" : "https:\/\/github.com\/luochen1990\/rainbow",
+    "docDir" : "doc",
+    "rev" : "b:master",
+    "name" : "rainbow",
+    "type" : "start",
+    "oid" : "4d15633cdaf61602e1d9fd216a77fc02e0881b2d"
+  },
 
+
+
+
+
+
+
+
+
+]
