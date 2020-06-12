@@ -1,15 +1,14 @@
 
-let g:mapleader = "\<Space>"
+"let g:mapleader = "\<Space>"
+let g:mapleader = "<Space>"
+
 let g:which_key_exit = "\<Space>"
 
-nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
-" nnoremap <silent> <localleader> :WhichKey ','<CR>
+nnoremap <silent><leader> :WhichKey '<Space>'<CR>
+" nnoremap <silent><localleader> :WhichKey ','<CR>
 
 nnoremap <Leader>a<Tab> :echom "Hello, World"<cr>
 nnoremap <Leader>1 :echom "THis is one"<cr>
-
-
-
 
 
 
@@ -28,7 +27,7 @@ let g:which_key_floating_opts={'col':'-3'}
 let g:which_key_run_map_on_popup = 1
 let g:which_key_disable_default_offset = 1
 let g:which_key_display_names = {'<CR>': '↵', '<TAB>': '⇆'}
-let g:WhichKeyFormatFunc = function('which_key#format')
+" let g:WhichKeyFormatFunc = function('which_key#format')
 
 
 highlight default link WhichKey          Function
