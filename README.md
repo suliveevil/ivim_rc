@@ -3,21 +3,30 @@
 iVim rc folder, under $HOME/.vim
 Vim in a-Shell, under $HOME/Documents/.vim
 
+## Quick Start
+
+Import plugins using iVim-iplug：
+
+```viml
+https://gitee.com/suliveevil/ivim_rc/raw/master/p.json
+```
+
 
 ## Plugins and Packages
 
 
 ### Plugin/Package Manager
 
-#### Vim 8 builtin Package Manager
 
 #### iVim-iplug
 
+#### Vim 8 builtin Package Manager
+
 #### pathogen
 
-#### dein
-
 #### vim-plug
+
+#### dein
 
 ### VimL
 
