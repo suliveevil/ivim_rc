@@ -74,6 +74,8 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+" 显示匹配总数及当前匹配位置
+set shortmess-=S
 
 " n 始终向后搜索，N 始终向前搜索
 nnoremap <expr> n  'Nn'[v:searchforward]
@@ -156,9 +158,9 @@ let &t_EI .= "\<Esc>[?2004l"
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
 function! XTermPasteBegin()
-  set pastetoggle=<Esc>[201~
-  set paste
-  return ""
+    set pastetoggle=<Esc>[201~
+    set paste
+    return ""
 endfunction
 
 " 重做：u 撤销， U 重做
@@ -178,13 +180,17 @@ autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,pe
 
 
 "✅ 补全和 Tags-----------------------------------------------------------------
+set complete=.,w,b,u,
+
+set completepopup=height:10,width:60,highlight:InfoPopup
 set completeopt=longest,menu
 
-" disable scanning included files
-" set complete-=i
+autocmd FileType * setlocal
+            \ omnifunc=syntaxcomplete#Complete
+autocmd FileType python setlocal
+            \ omnifunc=python3complete#Complete
 
-" disable searching tags
-" set complete-=t
+" Tags
 set tags=./.tags;,.tags
 
 "✅ 标签栏状态栏命令栏---------------------------------------------------------

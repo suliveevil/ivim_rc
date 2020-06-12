@@ -61,10 +61,16 @@ let g:neocomplete#sources#syntax#min_keyword_length = 1
 " AutoComplPop 类似
 "let g:neocomplete#enable_auto_select   = 0
 let g:neocomplete#enable_refresh_always = 1
-" g:neocomplete#keyword_patterns
+
 let g:neocomplete#enable_multibyte_completion = 1
 
-" g:neocomplete#sources
+
+
+
+let g:neocomplete#sources._=['buffer']
+let g:neocomplete#sources.python=['buffer','dictionary']
+
+
 
 
 " 自定义词典补全
@@ -76,22 +82,23 @@ let  g:neocomplete#sources#dictionary#dictionaries = {
     \ }
 
 " 关键词补全
-" if !exists('g:neocomplete#keyword_patterns')
-"     let g:neocomplete#keyword_patterns = {}
-" endif
-" let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+if !exists('g:neocomplete#keyword_patterns')
+    let g:neocomplete#keyword_patterns = {}
+endif
+let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+let g:neocomplete#keyword_patterns._='\h\w*'
 
 " omni 补全
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+autocmd FileType python setlocal omnifunc=python3complete#Complete
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#Complete
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#Complete
+autocmd FileType css setlocal omnifunc=csscomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#Complete
 
 " omni 更多补全
-" if !exists('g:neocomplete#sources#omni#input_patterns')
-"     let g:neocomplete#sources#omni#input_patterns = {}
-" endif
+if !exists('g:neocomplete#sources#omni#input_patterns')
+    let g:neocomplete#sources#omni#input_patterns = {}
+endif
 "let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 "let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 "let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
