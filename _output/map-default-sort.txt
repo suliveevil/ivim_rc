@@ -1,0 +1,37 @@
+n  <D-a>       * :if &slm != ""|exe ":norm gggH<C-O>G"| else|exe ":norm ggVG"|endif<CR> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 37
+n  <D-f>       * / Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 34
+n  <D-g>       * n Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 31
+n  <D-n>       * :confirm enew<CR> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 55
+n  <D-o>       * :browse confirm e<CR> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 52
+n  <D-s>       * :if expand("%") == ""|browse confirm w| else|confirm w|endif<CR> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 46
+n  <D-v>       * "+gP Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 59
+n  <D-w>       * :if winheight(2) < 0 | confirm enew | else | confirm close | endif<CR> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 49
+n  <D-z>       * u Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 40
+n  <Plug>NetrwBrowseX * :call netrw#BrowseX(expand((exists("g:netrw_gx")? g:netrw_gx : '<cfile>')),netrw#CheckIfRemote())<CR> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 28
+n  <S-D-s>     * :browse confirm saveas<CR> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 43
+n  gx            <Plug>NetrwBrowseX Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 26
+o  <D-a>         <Esc><D-a> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 35
+o  <D-f>         <Esc><D-f> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 32
+o  <D-g>         <Esc><D-g> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 29
+o  <D-n>         <Esc><D-n> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 53
+o  <D-o>         <Esc><D-o> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 50
+o  <D-s>         <Esc><D-s> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 44
+o  <D-w>         <Esc><D-w> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 47
+o  <D-z>         <Esc><D-z> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 38
+o  <S-D-s>       <Esc><D-s> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 41
+v  <BS>          "-d Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 56
+v  <D-a>         <Esc><D-a> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 36
+v  <D-c>       * "+y Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 58
+v  <D-f>         <Esc><D-f> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 33
+v  <D-g>         <Esc><D-g> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 30
+v  <D-n>         <Esc><D-n>gv Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 54
+v  <D-o>         <Esc><D-o>gv Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 51
+v  <D-s>         <Esc><D-s>gv Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 45
+v  <D-v>       & "-c<Esc>:call paste#Paste()<CR> Last set from /private/var/containers/Bundle/Application/0C3BDE87-2E2B-4E0B-A205-88EE2102B1E1/iVim.app/runtime/macmap.vim line 56
+v  <D-w>         <Esc><D-w>gv Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 48
+v  <D-x>       * "+x Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 57
+v  <D-z>         <Esc><D-z>gv Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 39
+v  <Plug>NetrwBrowseXVis * :<C-U>call netrw#BrowseXVis()<CR> Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 27
+v  <S-D-s>       <Esc><D-s>gv Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 42
+v  gx            <Plug>NetrwBrowseXVis Last set from /private/var/mobile/Containers/Data/Application/9E87FC76-9530-454E-9AE3-84CFF0205465/Library/ivim/scenes/session.vim line 25
+verb map ----
