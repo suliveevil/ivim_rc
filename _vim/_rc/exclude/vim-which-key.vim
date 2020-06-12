@@ -13,6 +13,11 @@ nnoremap <Leader>1 :echom "THis is one"<cr>
 
 
 
+
+
+
+
+
 let g:which_key_timeout = 300
 let g:which_key_sep = '➡️'
 let g:which_key_hspace = 5

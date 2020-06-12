@@ -1,4 +1,4 @@
-
+let $PYTHONUNBUFFERED=1
 let g:asyncrun_open = 6
 let g:asyncrun_rootmarks = [
 \     '.svn',
