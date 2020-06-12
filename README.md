@@ -9,6 +9,8 @@ Import plugins using iVim-iplug：
 
 ```viml
 https://gitee.com/suliveevil/ivim_rc/raw/master/p.json
+" or
+https://github.com/suliveevil/ivim_rc/raw/master/p.json
 ```
 
 
