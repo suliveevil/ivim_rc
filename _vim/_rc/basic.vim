@@ -18,10 +18,6 @@ set ttimeout
 " 功能键超时检测 50 毫秒
 set ttimeoutlen=50
 "✅ 重定向---------------------------------------------------------------------
-if exists("g:loaded_vim_redir_output")
-  finish
-endif
-let g:loaded_vim_redir_output = 1
 
 let s:cpo_save = &cpo
 set cpo&vim
@@ -39,7 +35,7 @@ function! s:redir(new, cmd)
   setlocal nobuflisted buftype=nofile bufhidden=wipe noswapfile
   call setline(1, split(output, "\n"))
   put! = a:cmd
-  put = '----'
+  put = '------'
 endfunction
 
 if !exists(":RedirT")
