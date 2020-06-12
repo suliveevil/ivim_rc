@@ -150,6 +150,17 @@ set autoread
 " 剪贴板：让 Y 表现的和其他大写字母一样
 map Y y$
 
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
+
 " 重做：u 撤销， U 重做
 nnoremap U <C-r>
 
