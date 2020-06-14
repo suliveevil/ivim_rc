@@ -10,7 +10,6 @@ iplug list
 [caw.vim]              https://github.com/tyru/caw.vim
 [context_filetype.vim] https://github.com/Shougo/context_filetype.vim
 [fern.vim]             https://github.com/lambdalisue/fern.vim
-[gina.vim]             https://github.com/lambdalisue/gina.vim
 [goyo.vim]             https://github.com/junegunn/goyo.vim
 [grep]                 https://github.com/yegappan/grep
 [helpful.vim]          https://github.com/tweekmonster/helpful.vim
@@ -18,6 +17,7 @@ iplug list
 [hyperlist.vim]        https://github.com/isene/hyperlist.vim
 [indentLine]           https://github.com/Yggdroot/indentLine
 [is.vim]               https://github.com/haya14busa/is.vim
+[jupytext.vim]         https://github.com/goerz/jupytext.vim
 [limelight.vim]        https://github.com/junegunn/limelight.vim
 [mru]                  https://github.com/yegappan/mru
 [neocomplete]          https://github.com/Shougo/neocomplete
@@ -36,10 +36,12 @@ iplug list
 [vim-CountJump]        https://github.com/inkarkat/vim-CountJump
 [vim-SearchPosition]   https://github.com/inkarkat/vim-SearchPosition
 [vim-SyntaxRange]      https://github.com/inkarkat/vim-SyntaxRange
+[vim-TextTransform]    https://github.com/inkarkat/vim-TextTransform
 [vim-airline-themes]   https://github.com/vim-airline/vim-airline-themes
 [vim-airline]          https://github.com/vim-airline/vim-airline
 [vim-asterisk]         https://github.com/haya14busa/vim-asterisk
 [vim-colorschemes]     https://github.com/flazz/vim-colorschemes
+[vim-cyim]             https://github.com/cy2081/vim-cyim
 [vim-dirdiff]          https://github.com/will133/vim-dirdiff
 [vim-easy-align]       https://github.com/junegunn/vim-easy-align
 [vim-easygrep]         https://github.com/dkprice/vim-easygrep
@@ -63,15 +65,17 @@ iplug list
 [vim-quickrun]         https://github.com/thinca/vim-quickrun
 [vim-repeat]           https://github.com/tpope/vim-repeat
 [vim-repl]             https://github.com/sillybun/vim-repl
+[vim-snippets]         https://github.com/honza/vim-snippets
 [vim-speeddating]      https://github.com/tpope/vim-speeddating
 [vim-textobj-user]     https://github.com/kana/vim-textobj-user
 [vim-thematic]         https://github.com/reedes/vim-thematic
 [vim-vinegar]          https://github.com/tpope/vim-vinegar
 [vim-visual-multi]     https://github.com/mg979/vim-visual-multi
+[vim-visualrepeat]     https://github.com/inkarkat/vim-visualrepeat
 [vim-wheel]            https://github.com/reedes/vim-wheel
 [vim-which-key]        https://github.com/liuchengxu/vim-which-key
 [vimcdoc]              https://github.com/yianwillis/vimcdoc
 [vimtex]               https://github.com/lervag/vimtex
 [wheel]                https://github.com/chimay/wheel
 
-73 plugin(s) found
+77 plugin(s) found
