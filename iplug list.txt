@@ -80,7 +80,8 @@ iplug list
 [vim-wheel]            https://github.com/reedes/vim-wheel
 [vim-which-key]        https://github.com/liuchengxu/vim-which-key
 [vimcdoc]              https://github.com/yianwillis/vimcdoc
+[vimtags_vim]          https://github.com/tomtom/vimtags_vim
 [vimtex]               https://github.com/lervag/vimtex
 [wheel]                https://github.com/chimay/wheel
 
-82 plugin(s) found
+83 plugin(s) found
