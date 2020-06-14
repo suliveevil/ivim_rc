@@ -23,11 +23,13 @@ iplug list
 [neocomplete]          https://github.com/Shougo/neocomplete
 [nerdcommenter]        https://github.com/preservim/nerdcommenter
 [nerdtree]             https://github.com/preservim/nerdtree
+[nginx.vim]            https://github.com/chr4/nginx.vim
 [open-browser.vim]     https://github.com/tyru/open-browser.vim
 [python-mode]          https://github.com/python-mode/python-mode
 [searchvim]            https://github.com/suliveevil/searchvim
 [swy-ivim]             https://github.com/suliveevil/swy-ivim
 [tagbar]               https://github.com/majutsushi/tagbar
+[tcomment_vim]         https://github.com/tomtom/tcomment_vim
 [thesaurus_query.vim]  https://github.com/Ron89/thesaurus_query.vim
 [tlib_vim]             https://github.com/tomtom/tlib_vim
 [ultisnips]            https://github.com/SirVer/ultisnips
@@ -41,12 +43,14 @@ iplug list
 [vim-airline]          https://github.com/vim-airline/vim-airline
 [vim-asterisk]         https://github.com/haya14busa/vim-asterisk
 [vim-colorschemes]     https://github.com/flazz/vim-colorschemes
+[vim-cool]             https://github.com/romainl/vim-cool
 [vim-cyim]             https://github.com/cy2081/vim-cyim
 [vim-dirdiff]          https://github.com/will133/vim-dirdiff
 [vim-easy-align]       https://github.com/junegunn/vim-easy-align
 [vim-easygrep]         https://github.com/dkprice/vim-easygrep
 [vim-easymotion-chs]   https://github.com/ZSaberLv0/vim-easymotion-chs
 [vim-easymotion]       https://github.com/easymotion/vim-easymotion
+[vim-fold-cycle]       https://github.com/arecarn/vim-fold-cycle
 [vim-freekeys]         https://github.com/lacygoill/vim-freekeys
 [vim-grep]             https://github.com/itchyny/vim-grep
 [vim-highlightedyank]  https://github.com/machakann/vim-highlightedyank
@@ -62,6 +66,7 @@ iplug list
 [vim-orgmode]          https://github.com/jceb/vim-orgmode
 [vim-pencil]           https://github.com/reedes/vim-pencil
 [vim-pythonsense]      https://github.com/suliveevil/vim-pythonsense
+[vim-qf]               https://github.com/romainl/vim-qf
 [vim-quickrun]         https://github.com/thinca/vim-quickrun
 [vim-repeat]           https://github.com/tpope/vim-repeat
 [vim-repl]             https://github.com/sillybun/vim-repl
@@ -78,4 +83,4 @@ iplug list
 [vimtex]               https://github.com/lervag/vimtex
 [wheel]                https://github.com/chimay/wheel
 
-77 plugin(s) found
+82 plugin(s) found
