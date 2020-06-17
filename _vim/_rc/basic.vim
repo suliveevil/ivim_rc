@@ -1,8 +1,30 @@
+" test
+
+vnoremap <Leader>/ y/\V<C-R>=escape(@",'/\:')<CR><CR>
+
+"----------------------------------✅ iVim-------------------------------------
+
+
+
+nnoremap <Leader>io    :idoc<CR>
+nnoremap <Leader>iu    :!openurl <cword><CR>
+nnoremap <Leader>is    :ishare<CR>
+nnoremap <Leader>dc    :!openurl dash://<cword><CR> :<Esc>
+nnoremap <Leader>dw    :!openurl eudic://dict/<cword><CR> :<Esc>
+nnoremap <Leader>dc    :!open -g dash://<cword><CR> :<Esc>
+nnoremap <Leader>dw    :!open -g eudic://dict/<cword><CR> :<Esc>
+
+
 
 "-----------------------------------✅ Vim-------------------------------------
 
 "✅ 禁用 vi 兼容模式
 set nocompatible
+
+" 下面这行设置不允许等号两边有空格
+set cmdheight=2
+
+" set viminfo=\"50,'1000,h,f1,rA:,r$TEMP:,r$TMP:,r$TMPDIR:,:500,!,n$VIM/_viminfo
 
 set viminfo='20,<50,s10
 
@@ -17,6 +39,69 @@ set timeoutlen=500
 set ttimeout
 " 功能键超时检测 50 毫秒
 set ttimeoutlen=50
+
+" set spell spelllang=en_US
+
+" get a dialog when :q, :w, or :wq fails
+set confirm
+
+" remember copy registers after quitting in the .viminfo file -- 20 jump links, regs up to 500 lines'
+set viminfo='20,\"500
+
+" remember undo after quitting
+set hidden
+
+" 命令行历史记录
+set history=256
+
+"✅ 查找 搜索------------------------------------------------------------------
+set magic
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" 显示匹配总数及当前匹配位置
+set shortmess-=S
+
+" n 始终向后搜索，N 始终向前搜索
+nnoremap <expr> n  'Nn'[v:searchforward]
+nnoremap <expr> N  'nN'[v:searchforward]
+
+autocmd BufWritePost :nohls<CR>
+
+" find current word in quickfix
+nnoremap <leader>fw :execute "vimgrep ".expand("<cword>")." %"<cr>:copen<cr>
+" find last search in quickfix
+nnoremap <leader>ff :execute 'vimgrep /'.@/.'/g %'<cr>:copen<cr>
+
+
+" 屏幕重绘，取消搜索高亮，刷新 diff 模式高亮，解决代码语法高亮问题
+
+
+" Tags-----------------------------------------------------------------------
+" 查找当前目录下有没有 tags 文件，没有的话就向上查找直到找到为止
+set tags=./tags;/
+
+
+"✅ 普通模式
+" jump
+" nnoremap <Leader>j <C-]>
+" nnoremap <Leader>j <C->
+
+"✅ 补全-----------------------------------------------------------------------
+set complete=.,w,b,u,
+
+set completepopup=height:10,width:60,highlight:InfoPopup
+set completeopt=longest,menu
+
+autocmd FileType * setlocal
+            \ omnifunc=syntaxcomplete#Complete
+autocmd FileType python setlocal
+            \ omnifunc=python3complete#Complete
+            
+
+
 "✅ 重定向---------------------------------------------------------------------
 
 let s:cpo_save = &cpo
@@ -38,8 +123,8 @@ function! s:redir(new, cmd)
   put = '------'
 endfunction
 
-if !exists(":RedirT")
-  command! -nargs=1 RedirT silent call <SID>redir('tabnew', <f-args>)
+if !exists(":Redir")
+  command! -nargs=1 Redir silent call <SID>redir('tabnew', <f-args>)
 endif
 if !exists(":RedirS")
   command! -nargs=1 RedirS silent call <SID>redir('new', <f-args>)
@@ -58,17 +143,25 @@ unlet s:cpo_save
 let g:mapleader = "\<space>"
 noremap <Leader>q <Esc>
 
-"✅ 普通模式
-" jump
-" nnoremap <Leader>j <C-]>
+
+inoremap <Leader>dtt   <C-R>=strftime("%Y-%m-%d-%H:%M:%S")<CR>
+inoremap <Leader>ymd   <C-R>=strftime("%y%m%d")<CR>
+inoremap <Leader>mdy   <C-R>=strftime("%m/%d/%y")<CR>
+inoremap <Leader>ndy   <C-R>=strftime("%b %d, %Y")<CR>
+inoremap <Leader>hms   <C-R>=strftime("%T")<CR>
+inoremap <Leader>ynd   <C-R>=strftime("%Y %b %d")<CR>
 
 
 "✅ 主题-----------------------------------------------------------------------
 
+colo murphy
 
-colorscheme murphy
 
 "✅ 颜色和高亮-----------------------------------------------------------------
+
+" 取消搜索高亮
+nnoremap <silent> <Esc><Esc> :noh<CR> :call clearmatches()<CR>
+
 if !has('gui_running')
     set t_Co=256
     endif
@@ -92,31 +185,6 @@ highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 
-"✅ 查找 搜索------------------------------------------------------------------
-set magic
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-" 显示匹配总数及当前匹配位置
-set shortmess-=S
-
-" n 始终向后搜索，N 始终向前搜索
-nnoremap <expr> n  'Nn'[v:searchforward]
-nnoremap <expr> N  'nN'[v:searchforward]
-
-autocmd BufWritePost :nohls<CR>
-
-if has('iVim')
-    nnoremap <Leader>dc :!openurl dash://<cword><CR> :<Esc>
-    nnoremap <Leader>dw :!openurl eudic://dict/<cword><CR> :<Esc>
-else
-    nnoremap <Leader>dc :!open -g dash://<cword><CR> :<Esc>
-    nnoremap <Leader>dw :!open -g eudic://dict/<cword><CR> :<Esc>
-
-endif
-
-" 屏幕重绘，取消搜索高亮，刷新 diff 模式高亮，解决代码语法高亮问题
 
 "✅ 字符-----------------------------------------------------------------------
 
@@ -141,8 +209,6 @@ autocmd BufNewFile,BufRead *.py inoremap # X<c-h>#
 "✅ 字体
 if has('ivim')
     ifont Menlo 16
-    nnoremap <leader>++ :ifont +<cr>
-    nnoremap <leader>-- :ifont -<cr>
 endif
 
 
@@ -151,12 +217,42 @@ endif
 
 "------------------------------------------------------------------------------
 
-" 帮助语言
-if has('iVim')
-    set helplang=cn,en
-    set langmenu=zh_CN.utf-8
-    language message zh_CN.UTF-8
+
+if exists("g:loaded_helptab") || &cp
+  finish
 endif
+let g:loaded_helptab = 1
+
+
+function! s:HelpTab()
+  if !(getcmdtype() == ':' && getcmdpos() <= 2)
+    return 'h'
+  endif
+
+  let helptabnr = 0
+  for i in range(tabpagenr('$'))
+    let tabnr = i + 1
+    for bufnr in tabpagebuflist(tabnr)
+      if getbufvar(bufnr, "&ft") == 'help'
+        let helptabnr = tabnr
+        break
+      endif
+    endfor
+  endfor
+
+  if helptabnr
+    if tabpagenr() == helptabnr
+      return 'h'
+    else
+      return 'tabnext '.helptabnr.' | h'
+    endif
+  else
+    return 'tab h'
+  endif
+endfunction
+
+cnoreabbrev <expr> h <SID>HelpTab()
+
 
 " 显示光标位置
 set ruler
@@ -167,11 +263,13 @@ set ruler
 "nnoremap <leader>ek. <D-.>
 
 "✅ 编辑-----------------------------------------------------------------------
-" history存储容量
-set history=2048
+
 
 " 文件修改之后自动载入
 set autoread
+
+" 自动保存
+set autowriteall
 
 " 剪贴板：让 Y 表现的和其他大写字母一样
 map Y y$
@@ -203,20 +301,6 @@ autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,pe
 
 
 
-"✅ 补全和 Tags-----------------------------------------------------------------
-set complete=.,w,b,u,
-
-set completepopup=height:10,width:60,highlight:InfoPopup
-set completeopt=longest,menu
-
-autocmd FileType * setlocal
-            \ omnifunc=syntaxcomplete#Complete
-autocmd FileType python setlocal
-            \ omnifunc=python3complete#Complete
-
-" Tags
-set tags=./.tags;,.tags
-
 "✅ 标签栏状态栏命令栏---------------------------------------------------------
 set showtabline=2
 set guioptions-=e
@@ -225,6 +309,8 @@ set wildmenu
 set wildmode=longest,full
 "✅ 行-------------------------------------------------------------------------
 
+"✅ 设置行宽，即一行显示多少个字符
+set textwidth=80
 
 "✅ 单行字符数提示
 set colorcolumn=80
@@ -250,8 +336,8 @@ endfunction
 
 "set wrapscan
 
-"✅ 自动折行，即太长的行分成几行显示
-"关闭自动折行为set nowrap
+"✅ 自动折行，即太长的行显示为多行的形式来适应屏幕
+" set nowrap
 set wrap
 
 "不在单词内部折行，只有遇到指定的符号（比如空格、连词号和其他标点符号）才折行。
@@ -260,8 +346,6 @@ set linebreak
 "指定折行处与编辑窗口的右边缘之间空出的字符数。
 set wrapmargin=2
 
-"✅ 设置行宽，即一行显示多少个字符
-set textwidth=80
 
 "合并两行中文时，不在中间加空格
 set formatoptions+=B
@@ -280,15 +364,24 @@ set formatoptions+=m
 
 set formatoptions+=w
 
-"✅ 折叠 Fold------------------------------------------------------------------
-if has('folding')
-    set foldenable
-    "method:indent,expr,syntax,marker,diff,manual
-    set foldmethod=indent
-    set foldlevel=99
-    set foldlevelstart=10
-    set foldnestmax=10
-endif
+"✅ 折叠和对比 Fold and Diff --------------------------------------------------
+
+set diffopt+=internal,algorithm:patience
+
+
+" set foldenable
+" fold method:indent,expr,syntax,marker,diff,manual
+" set foldmethod=indent
+" set foldlevel=99
+" set foldlevelstart=10
+" set foldnestmax=10
+
+
+
+" Moving up/down by function, unfolding current function but folding all else
+noremap [[  [[zMzvz.
+noremap ]]  ]]zMzvz.
+
 
 "✅ 代码折叠自定义快捷键 <leader>zz
 let g:FoldMethod = 0
@@ -303,30 +396,7 @@ fun! ToggleFold()
     endif
 endfun
 
-"✅ Buffer - 加载一个文件
 
-set hidden
-
-
-
-" 查看
-nnoremap <silent><leader>bl :ls<cr>
-
-" 创建
-
-nnoremap <silent><leader>bo :enew<cr>
-
-" 切换
-nnoremap <leader>bp :bprevious<cr>
-nnoremap <leader>bn :bnext<cr>
-
-" 隐藏
-
-nnoremap <leader>bh :bhide<cr>
-
-" 退出
-nnoremap <leader>bd :bdelete<cr>
-nnoremap <leader>bD :bdelete!<cr>
 
 syntax enable
 filetype on
@@ -403,10 +473,9 @@ let &t_EI.="\e[1 q"
 " autocmd InsertEnter,WinLeave * set nocursorline
 
 "✅ 鼠标-----------------------------------------------------------------------
-"set mousehide
-if has('mouse')
-    set mouse=a
-endif
+
+" 只在可视模式下使用鼠标，而不是在 n i c 或 help 模式中
+set mouse=v
 set selection=exclusive
 set selectmode=mouse,key
 
@@ -457,35 +526,35 @@ let g:netrw_sort_direction = 'reverse'
 
 "⚠️ 临时文件--------------------------------------------------------------------
 " 交换文件
-if !isdirectory("_vim/files/backup")
-    call mkdir("_vim/files/swap", "p")
+if !isdirectory("_vim/.files/backup")
+    call mkdir("_vim/.files/swap", "p")
 endif
-set dir         =~/_vim/files/swap/
+set dir         =~/_vim/.files/swap/
 set updatecount =200
 set updatetime  =5000
 
 
 " 文件 undo tree
 set undofile
-if !isdirectory("_vim/files/undo")
-    call mkdir("_vim/files/undo", "p")
+if !isdirectory("_vim/.files/undo")
+    call mkdir("_vim/.files/undo", "p")
 endif
-set undodir     =~/_vim/files/undo/
+set undodir     =~/_vim/.files/undo/
 " viminfo 文件
-set viminfo     ='100,~/_vim/files/viminfo
+
 
 
 " 备份文件
-if !isdirectory("_vim/files/backup")
-    call mkdir("_vim/files/backup", "p")
+if !isdirectory("_vim/.files/backup")
+    call mkdir("_vim/.files/backup", "p")
 endif
 set backup
-set backupdir   =~/_vim/files/backup/
+set backupdir   =~/_vim/.files/backup/
 set backupext   =-vimbackup
 set backupskip  =
 
-if !isdirectory("_vim/files/yankring")
-    call mkdir("_vim/files/yankring", "p")
+if !isdirectory("_vim/.files/yankring")
+    call mkdir("_vim/.files/yankring", "p")
 endif
 
 
@@ -685,8 +754,9 @@ set suffixes+=.obj
 "nnoremap <leader>tc :tabe<CR>
 
 
-" 移动/聚焦
-" gt
+" 移动/聚焦 Use H and L to move to the previous/next tabpage.
+nnoremap H gT
+nnoremap L gt
 
 " 调整布局
 
@@ -699,16 +769,19 @@ set suffixes+=.obj
 " 一个 Tab 可以管理一个或多个 Window。
 " 一个 Vim 界面可以有多个 Tab。
 
-"✅ Window - 查看一个 Buffer 的内容----------------------------------------------
+"✅ Window 和 buffer ----------------------------------------------
 
 " 查看
 
-" 创建
+" quick buffer open
+nnoremap gb :ls<cr>:e #
 
-nnoremap <leader> x l :set splitright<CR>:vsplit<CR>
-nnoremap <leader> x h :set nosplitright<CR>:vsplit<CR>
-nnoremap <leader> x k :set nosplitbelow<CR>:split<CR>
-nnoremap <leader> x j :set splitbelow<CR>:split<CR>
+" 创建
+nnoremap <silent><leader>bo :enew<cr>
+"nnoremap <leader>xl :set splitright<CR>:vsplit<CR>
+"nnoremap <leader>xh :set nosplitright<CR>:vsplit<CR>
+"nnoremap <leader>xk :set nosplitbelow<CR>:split<CR>
+"nnoremap <leader>xj :set splitbelow<CR>:split<CR>
 
 
 " 切换/聚焦
@@ -717,6 +790,10 @@ nnoremap <leader>wj <C-w>j
 nnoremap <leader>wk <C-w>k
 nnoremap <leader>wl <C-w>l
 
+nnoremap <leader>bN  :bprevious<CR>
+nnoremap <leader>bn  :bnext<CR>
+
+
 " 调整
 
 " nnoremap <leader>w" :res +5<CR>
@@ -724,12 +801,32 @@ nnoremap <leader>wl <C-w>l
 nnoremap <leader>w0 :vertical resize-5<CR>
 nnoremap <leader>w9 :vertical resize+5<CR>
 
-" 退出
+" 退出 window 或 buffer（排除 nerdtree）
+function! CloseWindowOrKillBuffer()
+    let number_of_windows_to_this_buffer = len(filter(range(1, winnr('$')), "winbufnr(v:val) == bufnr('%')"))
+
+    " never bdelete a nerd tree
+    if matchstr(expand("%"), 'NERD') == 'NERD'
+        wincmd c
+        return
+    endif
+
+    if number_of_windows_to_this_buffer > 1
+        wincmd c
+    else
+       bdelete
+    endif
+endfunction
+nnoremap <silent><Leader>Q  :call CloseWindowOrKillBuffer()<CR>
+  
 
 "✅ Buffer 加载一个文件----------------------------------------------
 
-nnoremap <leader>bd :bde<cr>
-nnoremap <leader>bD :bde!<cr>
+
+" 隐藏
+
+nnoremap <leader>bh :bhide<cr>
+
 
 "----------------------------------✅ 模式切换---------------------------------
 
@@ -740,7 +837,7 @@ nnoremap <leader>bD :bde!<cr>
 " V
 
 " 普通➡️可视-块
-nnoremap <leader>v <C-v>
+" nnoremap <leader><leader>v <C-v>
 
 " ----------------------------------------------
 
@@ -818,8 +915,8 @@ inoremap <C-f> <Right>
 
 "✅ 跳转
 
-nnoremap <leader>j <C-]>
-nnoremap <leader>k <C-[>
+nnoremap <leader>j  <C-]>
+
 " 跳转 Home End
 noremap H ^
 noremap L $

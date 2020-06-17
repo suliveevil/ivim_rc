@@ -10,7 +10,6 @@ let g:openbrowser_search_engines = {
     \ 'devdocs': 'https://devdocs.io/#q={query}',
     \ 'baidu': 'https://www.baidu.com/s?wd={query}',
     \ 'cpan': 'http://search.cpan.org/search?query={query}',
-    \ 'devdocs': 'https://devdocs.io/#q={query}',
     \ 'fileformat': 'https://www.fileformat.info/info/unicode/char/{query}/',
     \ 'wikipedia': 'https://en.wikipedia.org/wiki/{query}',
     \ 'yahoo': 'https://search.yahoo.com/search?p={query}',

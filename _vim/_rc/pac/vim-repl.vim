@@ -1,15 +1,18 @@
+let g:repl_program = {
+            \   'python':  'python3',
+            \   'default': 'ivish',
+            \   'lua': 'lua',
+            \   'vim': 'vim -e',
+            \   }
+
+
+
 let g:repl_input_symbols = {
-    \ 'python': [
-    \ '>>>',
-    \ '>>>>',
-    \ 'ipdb>',
-    \ 'pdb',
-    \ '...'
-    \ ],
-    \}
+    \ 'python': '>>>',
+    \ }
+let g:repl_console_name = 'swy-PDB'
 
 
-let g:repl_ipython_version = '7.15'
 
 
 let g:repl_exit_commands = {
@@ -19,17 +22,12 @@ let g:repl_exit_commands = {
     \'default': 'exit',
     \}
 
-let g:repl_program = {
-            \   'python': ['ipython'],
-            \   'default': ['ivish'],
-            \   'r': ['R'],
-            \   'lua': ['lua'],
-            \   'vim': ['vim -e'],
-            \   }
-let g:repl_predefine_python = {
-            " \   'numpy': 'import numpy as np',
-            " \   'matplotlib': 'from matplotlib import pyplot as plt'
-            \   }
+    
+let g:repl_predefine_python = {}
+
+
+
+let g:repl_ipython_version = '7.15'
 let g:repl_cursor_down = 1
 let g:repl_python_automerge = 1
 let g:repl_ipython_version = '7'

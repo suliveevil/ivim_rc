@@ -1,0 +1,1 @@
+let g:yanktools_main_key = '<C-Y>'
