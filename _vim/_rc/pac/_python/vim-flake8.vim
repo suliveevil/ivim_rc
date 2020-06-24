@@ -1,0 +1,1 @@
+autocmd FileType python map <buffer> <Leader>cf :call flake8#Flake8()<CR>
