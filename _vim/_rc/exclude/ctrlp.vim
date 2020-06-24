@@ -1,4 +1,4 @@
-nnoremap <silent><Leader>p :CtrlP<CR>
+nnoremap <silent><Leader>pp :CtrlP<CR>
 
 let g:ctrlp_max_files = 4096
 let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'

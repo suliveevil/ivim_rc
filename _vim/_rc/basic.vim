@@ -54,6 +54,11 @@ set hidden
 " 命令行历史记录
 set history=256
 
+syntax enable
+filetype on
+filetype plugin on
+filetype plugin indent on
+
 "✅ 查找 搜索------------------------------------------------------------------
 set magic
 set hlsearch
@@ -153,8 +158,10 @@ inoremap <Leader>ynd   <C-R>=strftime("%Y %b %d")<CR>
 
 
 "✅ 主题-----------------------------------------------------------------------
-
-colo murphy
+autocmd FileType latex    colo vividchalk
+autocmd FileType python   colo default
+" autocmd FileType markdown colo desert
+autocmd FileType markdown colo pencil
 
 
 "✅ 颜色和高亮-----------------------------------------------------------------
@@ -366,6 +373,11 @@ set formatoptions+=w
 
 "✅ 折叠和对比 Fold and Diff --------------------------------------------------
 
+
+" Fold settings
+autocmd FileType python setlocal foldmethod=indent
+
+
 set diffopt+=internal,algorithm:patience
 
 
@@ -379,29 +391,24 @@ set diffopt+=internal,algorithm:patience
 
 
 " Moving up/down by function, unfolding current function but folding all else
-noremap [[  [[zMzvz.
-noremap ]]  ]]zMzvz.
+" nnoremap <Leader>zz  [[zMzvz.
+" nnoremap <Leader>ZZ  ]]zMzvz.
 
 
 "✅ 代码折叠自定义快捷键 <leader>zz
-let g:FoldMethod = 0
-map <leader>zz :call ToggleFold()<cr>
-fun! ToggleFold()
-    if g:FoldMethod == 0
-        exe "normal! zM"
-        let g:FoldMethod = 1
-    else
-        exe "normal! zR"
-        let g:FoldMethod = 0
-    endif
-endfun
+" let g:FoldMethod = 0
+" map <leader>zz :call ToggleFold()<cr>
+" fun! ToggleFold()
+"     if g:FoldMethod == 0
+"         exe "normal! zM"
+"         let g:FoldMethod = 1
+"     else
+"         exe "normal! zR"
+"         let g:FoldMethod = 0
+"     endif
+" endfun
 
 
-
-syntax enable
-filetype on
-filetype plugin on
-filetype plugin indent on
 
 
 
