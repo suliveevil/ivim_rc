@@ -9,11 +9,15 @@
 " inoremap <expr><Leader>ijm         ZFVimIME_keymap_next_i()
 " vnoremap <expr><Leader>ijm         ZFVimIME_keymap_next_v()
 
-
+" cache
+if !isdirectory("_vim/.files/ZFVimIM")
+    call mkdir("_vim/.files/ZFVimIM", "p")
+endif
+let g:ZFVimIM_cachePath = $HOME.'/_vim/.files/ZFVimIM'
 
 " config
 let g:ZFVimIM_autoAddWordLen=3*4
-let g:ZFVimIM_cachePath=$HOME.'/_vim/.cache'
+
 " debug
 let g:ZFVimIME_DEBUG=1
 let g:ZFJobVerboseLogEnable = 1
