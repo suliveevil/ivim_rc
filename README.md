@@ -5,7 +5,12 @@ Vim in a-Shell, under $HOME/Documents/.vim
 
 ## Quick Start
 
-Import plugins using iVim-iplug：
+```shell
+mkdir -p _vim/pack/foldername/start/
+ln -s _vim .vim
+```
+
+Import plugins using iVim-iplug or using Vim 8 builtin package management
 
 ```viml
 https://gitee.com/suliveevil/ivim_rc/raw/master/p.json
