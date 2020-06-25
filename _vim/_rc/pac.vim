@@ -78,15 +78,236 @@ let g:ZFVimIM_DEBUG_profile = 1
 autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.org
 \ call PanGuSpacing()
 
+
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                 Python                                    │
 " └───────────────────────────────────────────────────────────────────────────┘
 
+
+
+autocmd FileType python nnoremap <buffer> K :call PyDocVim()<CR>
+
+function! PyDocVim()
+python3 << EOF
+import jedi
+
+curfile = vim.current.buffer.name
+row = vim.current.window.cursor[0]
+col= vim.current.window.cursor[1]
+
+script = jedi.Script(
+    source=None,
+    path=curfile,
+    line=row,
+    column=col)
+
+try:
+    definitions = script.goto_definitions()
+except Exception:
+    # print to stdout, will be in :messages
+    definitions = []
+    print("Exception, this shouldn't happen.")
+    print(traceback.format_exc())
+
+    if not definitions:
+        echo_highlight("No documentation found for that.")
+        vim.command("return")
+
+docs = []
+for d in definitions:
+    doc = d.docstring()
+    if doc:
+        title = "Docstring for %s" % d.desc_with_module
+        underline = "=" * len(title)
+        docs.append("%s\n%s\n%s" % (title, underline, doc))
+    else:
+        docs.append("|No Docstring for %s|" % d)
+    text = ("\n" + "-" * 79 + "\n").join(docs)
+vim.command("let docWidth = %s" % len(title))
+vim.command("let doc_lines = %s" % len(text.split("\n")))
+EOF
+    "Scroll
+    function! s:popup_filter(winid, key)
+        if a:key ==# "\<c-k>"
+            call win_execute(a:winid, "normal! \<c-y>")
+            return v:true
+        elseif a:key ==# "\<c-j>"
+            call win_execute(a:winid, "normal! \<c-e>")
+            return v:true
+        elseif a:key ==# 'q' || a:key ==# 'x'
+            return popup_filter_menu(a:winid, 'x')
+        endif
+        return v:false
+    endfunction
+
+    let lines = py3eval('text')
+    let winid = popup_create(lines->split('\n'), #{
+            \ filter: function('s:popup_filter'),
+            \ pos: 'botleft',
+            \ line: 'cursor-1',
+            \ col: 'cursor',
+            \ moved: 'any',
+            \ border: [1,1,1,1,1,1,1,1],
+            \ borderchars: ['─', '│', '─', '│', '┌', '┐', '┘', '└'],
+            \ borderhighlight: ['Todo'],
+            \ padding: [0,1,0,1],
+            \ firstline: 1,
+            \ scrollbar: 1,
+            \ minwidth: docWidth,
+            \ maxwidth: 74,
+            \ minheight: doc_lines,
+            \ maxheight: 20,
+            \ mapping: 0,
+            \ })
+
+    call setbufvar(winbufnr(winid), '&syntax','rst')
+    call setwinvar(winid, '&wincolor', 'Normal')
+endfunction
+
+
+
+" Plugin : python-mode --------------------
+" functions: 语法检查          同类插件：neomake
+" functions: 快速运行          同类插件：
+" functions: 代码格式化         同类插件：neoformat
+" functions: 查询 Python 文档  同类插件：
+" functions: 断点调试           同类插件：vim-vebugger
+
+
+" 使用 python3
+let g:pymode_python = 'python3'
+
+"开启python所有的语法高亮
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_slow_sync = 1
+let g:pymode_syntax_print_as_function = 1
+let g:pymode_syntax_highlight_async_await = g:pymode_syntax_all
+let g:pymode_syntax_highlight_equal_operator = g:pymode_syntax_all
+let g:pymode_syntax_highlight_stars_operator = g:pymode_syntax_all
+let g:pymode_syntax_highlight_self = g:pymode_syntax_all
+"高亮缩进错误
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+"高亮空格错误
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+let g:pymode_syntax_builtin_objs = g:pymode_syntax_all
+let g:pymode_syntax_builtin_types = g:pymode_syntax_all
+let g:pymode_syntax_highlight_exceptions = g:pymode_syntax_all
+let g:pymode_syntax_docstrings = g:pymode_syntax_all
+
+
+" 警告
+let g:pymode_warnings = 0
+
+let g:pymode_options = 1
+"保存文件时自动删除无用空格
+let g:pymode_trim_whitespaces = 1
+
+"开启python-mode定义的操作模式
+let g:pymode_motion = 0
+
+let g:pymode_options_max_line_length = 79
+let g:pymode_options_colorcolumn = 1
+
+" 使用PEP8风格的缩进
+let g:pymode_indent = 1
+
+"启用python-mode内置的python文档，使用K进行查找
+let g:pymode_doc = 1
+let g:pymode_doc_bind = 'K'
+
+"自动检测并启用virtualenv
+let g:pymode_virtualenv = 1
+
+" 运行python代码
+let g:pymode_run = 1
+let g:pymode_run_bind = '<Leader>r'
+
+" 设置断点
+let g:pymode_breakpoint = 1
+let g:pymode_breakpoint_bind = '<leader>br'
+
+" 关闭代码折叠(python-mode 官方提示：处于试验阶段，有 bug)
+let g:pymode_folding = 0
+
+
+
+"显示允许的最大长度的列
+let g:pymode_options_colorcolumn = 1
+
+"设置QuickFix窗口的最大，最小高度
+let g:pymode_quickfix_minheight = 3
+let g:pymode_quickfix_maxheight = 12
+
+
+
+" 语法检查
+let g:pymode_lint = 1
+
+" 编辑时检查
+let g:pymode_lint_on_fly = 1
+" 保存时不检查
+let g:pymode_lint_on_write = 0
+let g:pymode_lint_message = 1
+" QuickFix Error
+let g:pymode_lint_cwindow = 1
+" 检查工具
+let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
+let g:pymode_lint_sort = ['E', 'C', 'I']
+" let g:pymode_lint_ignore = ["E501", "W",]
+" let g:pymode_lint_select = ["E501", "W0011", "W430"]
+" 侧边栏 Lint 标志
+let g:pymode_lint_signs = 1
+let g:pymode_lint_todo_symbol = 'TD'
+let g:pymode_lint_comment_symbol = 'CC'
+let g:pymode_lint_visual_symbol = 'RR'
+let g:pymode_lint_error_symbol = 'EE'
+let g:pymode_lint_info_symbol = 'II'
+let g:pymode_lint_pyflakes_symbol = 'FF'
+
+
+
+
+
+
+" 重构 rope
+let g:pymode_rope = 0
+
+" 不在父目录下查找.ropeproject，能提升响应速度
+" let g:pymode_rope_lookup_project = 0
+
+" 查阅光标下单词的相关文档
+" let g:pymode_rope_show_doc_bind = '<C-c>d'
+
+" 项目修改后重新生成缓存
+" let g:pymode_rope_regenerate_on_write = 1
+
+" 补全
+" let g:pymode_rope_completion = 0
+" let g:pymode_rope_complete_on_dot = 1
+" let g:pymode_rope_completion_bind = '<C-Tab>'
+
+
+" 跳转到定义处，同时新建竖直窗口打开
+" let g:pymode_rope_goto_definition_bind = '<C-c>g'
+" let g:pymode_rope_goto_definition_cmd = 'vnew'
+
+" 重命名光标下的函数，方法，变量及类名
+" let g:pymode_rope_rename_bind = '<C-c>rr'
+
+" 重命名光标下的模块或包
+" let g:pymode_rope_rename_module_bind = '<C-c>r1r'
+
+" Plugin : vim-pythonsense --------------------
+
+
 " Plugin : vim-flake8 -------------------------
 
-autocmd FileType python map <buffer> <Leader>cf :call flake8#Flake8()<CR>
+" autocmd FileType python map <buffer> <Leader>cf :call flake8#Flake8()<CR>
 
-" Plugin : vim-pythonsense ---------------------
+" Plugin : jedi-vim ---------------------------
+
+" Plugin : vim-flake8 -------------------------
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                   SQL                                     │
@@ -284,41 +505,8 @@ inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS>  neocomplete#smart_close_popup()."\<C-h>"
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
-" │                             Explore Key Motion                            │
+" │                                   Explore                                 │
 " └───────────────────────────────────────────────────────────────────────────┘
-
-" Plugin : supertab -----------------
-
-" Plugin : vim-clevertab -----------------
-
-" inoremap <silent><tab> <c-r>=CleverTab#Complete('start')<cr>
-"                           \<c-r>=CleverTab#Complete('tab')<cr>
-"                           \<c-r>=CleverTab#Complete('ultisnips')<cr>
-"                           \<c-r>=CleverTab#Complete('keyword')<cr>
-"                           \<c-r>=CleverTab#Complete('neocomplete')<cr>
-"                           \<c-r>=CleverTab#Complete('omni')<cr>
-"                           \<c-r>=CleverTab#Complete('stop')<cr>
-"                           inoremap <silent><s-tab> <c-r>=CleverTab#Complete('prev')<cr>
-
-" Plugin : do.vim -----------------
-
-let g:vimdo_use_default_commands = 1
-let g:vimdo_default_prefix = 'do'
-let g:vimdo_interactive = 1
-let g:vimdo_show_filename = 1
-
-" nnoremap doft  :call do#cmd#open_ftplugin()<cr>
-" nnoremap dofT  :call do#cmd#open_ftplugin(1)<cr>
-" nnoremap dosn  :call do#cmd#snippets()<cr>
-" nnoremap dorf  :call do#cmd#reindent_file()<cr>
-" nnoremap docf  :call do#cmd#copy_file()<cr>
-" nnoremap dodo  :call do#diff#other()<cr>
-" nnoremap dods  :call do#diff#saved()<cr>
-" nnoremap dout  :call do#cmd#update_tags()<cr>
-" nnoremap dovp  :call do#cmd#profiling()<cr>
-" nnoremap dofcr :call do#cmd#find_crlf(1, "")<cr>
-" nnoremap dossa :call do#cmd#syntax_attr()<cr>
-" nnoremap doec  :call do#color#echo()<cr>
 
 " Plugin : nerdtree -----------------
 
@@ -422,13 +610,42 @@ let g:NERDTreeExtensionHighlightColor['yaml'       ] =  'c8c8c8'
 let g:NERDTreeExtensionHighlightColor['yml'        ] =  'c8c8c8'
 let g:NERDTreeExtensionHighlightColor['zip'        ] =  'FFB340'
 
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                          Motion TextObject  Key                           │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+
 " Plugin : vim-easymotion -----------------
 
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_keys =
 \   'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
 
-" Plugin : vim-easymotion-chs -----------------
+" Plugin : vim-easymotion-chs -------------
+
+" Plugin : vim-textobj-user ---------------
+
+" Plugin : do.vim -------------------------
+
+let g:vimdo_use_default_commands = 1
+let g:vimdo_default_prefix = 'do'
+let g:vimdo_interactive = 1
+let g:vimdo_show_filename = 1
+
+" nnoremap doft  :call do#cmd#open_ftplugin()<cr>
+" nnoremap dofT  :call do#cmd#open_ftplugin(1)<cr>
+" nnoremap dosn  :call do#cmd#snippets()<cr>
+" nnoremap dorf  :call do#cmd#reindent_file()<cr>
+" nnoremap docf  :call do#cmd#copy_file()<cr>
+" nnoremap dodo  :call do#diff#other()<cr>
+" nnoremap dods  :call do#diff#saved()<cr>
+" nnoremap dout  :call do#cmd#update_tags()<cr>
+" nnoremap dovp  :call do#cmd#profiling()<cr>
+" nnoremap dofcr :call do#cmd#find_crlf(1, "")<cr>
+" nnoremap dossa :call do#cmd#syntax_attr()<cr>
+" nnoremap doec  :call do#color#echo()<cr>
+
 
 " Plugin : vim-which-key -----------------
 
@@ -474,11 +691,31 @@ highlight default link WhichKeyDesc      Identifier
 "autocmd  FileType which_key set laststatus=0 noshowmode noruler
 "\| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
+
+" Plugin : supertab -----------------
+
+" Plugin : vim-clevertab -----------------
+
+" inoremap <silent><tab> <c-r>=CleverTab#Complete('start')<cr>
+"                           \<c-r>=CleverTab#Complete('tab')<cr>
+"                           \<c-r>=CleverTab#Complete('ultisnips')<cr>
+"                           \<c-r>=CleverTab#Complete('keyword')<cr>
+"                           \<c-r>=CleverTab#Complete('neocomplete')<cr>
+"                           \<c-r>=CleverTab#Complete('omni')<cr>
+"                           \<c-r>=CleverTab#Complete('stop')<cr>
+"                           inoremap <silent><s-tab> <c-r>=CleverTab#Complete('prev')<cr>
+
+
+
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                Comment                                    │
 " └───────────────────────────────────────────────────────────────────────────┘
 
 " Plugin : nerdcommenter -----------------
+
+let g:NERDSpaceDelims = 1
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
 
 " Plugin : tcomment -----------------
 

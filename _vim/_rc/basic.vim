@@ -14,10 +14,73 @@ vnoremap <Leader>/ y/\V<C-R>=escape(@",'/\:')<CR><CR>
 " └───────────────────────────────────────────────────────────────────────────┘
 
 
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                          work with other tools                            │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                                    Tags                                   │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+" Tools: ctags-------------------------------
+
+" 查找当前目录下有没有 tags 文件，没有的话就向上查找直到找到为止
+" looks up and up (non-recursively) until / for tags files.
+set tags=./tags;/,tags;/
 
 
 
+" tag file generated automatically
+" augroup AutoTag
+"    autocmd!
+"    autocmd BufWritePost *.py,*.c,*.cpp,*.h
+"        \ silent! !eval 'ctags -R -o tags 1>/dev/null 2>&1' &
+" augroup END
 
+" autocmd FileType c setlocal tags=/path/to/your/global/c/tags,./tags;/,tags;/
+function SetTags()
+    let curdir = getcwd()
+
+    while !filereadable("tags") && getcwd() != "/"
+        cd ..
+    endwhile
+
+    if filereadable("tags")
+        execute "set tags=" . getcwd() . "/tags"
+    endif
+
+    execute "cd " . curdir
+endfunction
+
+call SetTags()
+
+" find . -regex ".*\.\(c\|h\|hpp\|cc\|cpp\)"
+"     \ -print | ctags --totals --recurse --extra="+qf" --fields="+i" -L -
+
+function s:FindFile(file)
+    let curdir = getcwd()
+    let found = curdir
+    while !filereadable(a:file) && found != "/"
+        cd ..
+        let found = getcwd()
+    endwhile
+    execute "cd " . curdir
+    return found
+endfunction
+
+
+" Tools: cscope -----------------------------
+if has('cscope')
+    let $CSCOPE_DIR=s:FindFile("cscope.out")
+    let $CSCOPE_DB=$CSCOPE_DIR."/cscope.out"
+    if filereadable($CSCOPE_DB)
+        cscope add $CSCOPE_DB $CSCOPE_DIR
+    endif
+    command -nargs=0 Cscope !cscope -ub -R &
+endif
+
+
+" Tools: gtags ------------------------------
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                 Python                                    │
@@ -26,7 +89,6 @@ vnoremap <Leader>/ y/\V<C-R>=escape(@",'/\:')<CR><CR>
 
 
 " 文件头-------------------------------
-" 创建文件头
 function FileHead()
     call append( 0,"---")
     call append( 1,"create time   : ".strftime("%Y-%m-%d %H:%M:%S") )
@@ -49,6 +111,9 @@ function SetLastModifiedTimes()
     call setpos(".",pos)
 endfunction
 autocmd BufWritePre *.md call SetLastModifiedTimes()
+
+" 运行
+au BufRead *.py map <buffer> <F5> :w<CR>:!/usr/bin/env python3 % <CR>
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                             Vim Leader 键                                 │
@@ -652,64 +717,7 @@ endfunction
 "     endif
 " endfun
 
-" ┌───────────────────────────────────────────────────────────────────────────┐
-" │                                    Tags                                   │
-" └───────────────────────────────────────────────────────────────────────────┘
 
-
-" 查找当前目录下有没有 tags 文件，没有的话就向上查找直到找到为止
-" looks up and up (non-recursively) until / for tags files.
-set tags=./tags;/,tags;/
-
-
-
-" tag file generated automatically
-" augroup AutoTag
-"    autocmd!
-"    autocmd BufWritePost *.py,*.c,*.cpp,*.h
-"        \ silent! !eval 'ctags -R -o tags 1>/dev/null 2>&1' &
-" augroup END
-
-
-
-" autocmd FileType c setlocal tags=/path/to/your/global/c/tags,./tags;/,tags;/
-function SetTags()
-    let curdir = getcwd()
-
-    while !filereadable("tags") && getcwd() != "/"
-        cd ..
-    endwhile
-
-    if filereadable("tags")
-        execute "set tags=" . getcwd() . "/tags"
-    endif
-
-    execute "cd " . curdir
-endfunction
-
-call SetTags()
-
-" find . -regex ".*\.\(c\|h\|hpp\|cc\|cpp\)"
-"     \ -print | ctags --totals --recurse --extra="+qf" --fields="+i" -L -
-
-function s:FindFile(file)
-    let curdir = getcwd()
-    let found = curdir
-    while !filereadable(a:file) && found != "/"
-        cd ..
-        let found = getcwd()
-    endwhile
-    execute "cd " . curdir
-    return found
-endfunction
-if has('cscope')
-    let $CSCOPE_DIR=s:FindFile("cscope.out")
-    let $CSCOPE_DB=$CSCOPE_DIR."/cscope.out"
-    if filereadable($CSCOPE_DB)
-        cscope add $CSCOPE_DB $CSCOPE_DIR
-    endif
-    command -nargs=0 Cscope !cscope -ub -R &
-endif
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                  主题                                     │
@@ -1195,7 +1203,7 @@ set suffixes+=.obj
 
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
-" │                   Tab - 管理多个 Window 的布局                            │
+" │                     Tab - ViewPort: Window 的布局                          │
 " └───────────────────────────────────────────────────────────────────────────┘
 
 
@@ -1226,7 +1234,7 @@ nnoremap L gt
 " 一个 Vim 界面可以有多个 Tab。
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
-" │                             window buffer                                 │
+" │                       window: show one buffer                             │
 " └───────────────────────────────────────────────────────────────────────────┘
 
 
@@ -1279,7 +1287,7 @@ endfunction
 
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
-" │                                  模式切换                                 │
+" │                                   模式切换                                 │
 " └───────────────────────────────────────────────────────────────────────────┘
 
 
