@@ -13,6 +13,34 @@ https://gitee.com/suliveevil/ivim_rc/raw/master/p.json
 https://github.com/suliveevil/ivim_rc/raw/master/p.json
 ```
 
+Python Environment
+
+```shell
+pip3 install -r requirements.txt
+
+# for pynvim(depends on greenlet, iVim integrates but pip3 doesn;t recognize it)
+pip3 install pynvim --no-deps
+```
+
+Python modules:
+
+```python
+autopep8
+pylama
+yapf
+flake8
+django
+flask
+msgpack
+jedi
+jupytext
+ipython
+mccabe
+pandoc
+wheel
+
+```
+
 
 ## Plugins and Packages
 
