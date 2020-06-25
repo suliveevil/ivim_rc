@@ -22,6 +22,25 @@ pip3 install -r requirements.txt
 pip3 install pynvim --no-deps
 ```
 
+Python modules:
+
+```python
+autopep8
+pylama
+yapf
+flake8
+django
+flask
+msgpack
+jedi
+jupytext
+ipython
+mccabe
+pandoc
+wheel
+
+```
+
 
 ## Plugins and Packages
 
