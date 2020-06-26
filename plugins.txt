@@ -1,93 +1,95 @@
-2048
-BufTimer
-ChineseLinter.vim
-Colorizer
-DrawIt
-EngSpChk
-FastFold
-FoldText
-IndGuide
-NrrwRgn
-SQHell.vim
-VOoM
-ZFVimIM
-ZFVimJob
-asyncfinder.vim
-auto-pairs
-changesPlugin
-codi.vim
-csv.vim
-ctrlp.vim
-deol.nvim
-devotion.vim
-do.vim
-eregex.vim
-goyo.vim
-hiPairs
-imc-b
-indentLine
-jupytext.vim
-limelight.vim
-mathmenu
-mru
-neocomplete.vim
-nerdcommenter
-nerdtree
-nerdtree_fs_menu
-nerdtree_menu_util
-pangu.vim
-randomTheme.vim
-splitjoin.vim
-swy-ivim
-tabular
-tagbar
-taglist
-tcomment_vim
-thesaurus_query.vim
-tlib_vim
-traces.vim
-ultisnips
-undotree
-unicode.vim
-utl.vim
-vfix
-vim-SyntaxRange
-vim-airline
-vim-airline-themes
-vim-anzu
-vim-carbon-now-sh
-vim-cursorword
-vim-easy-align
-vim-easygrep
-vim-easymotion
-vim-easymotion-chs
-vim-floaterm
-vim-fold-cycle
-vim-fuzzyfinder
-vim-gol
-vim-grepper
-vim-highlightedyank
-vim-highlighturl
-vim-illuminate
-vim-interestingwords
-vim-markdown
-vim-markdown-toc
-vim-orgmode
-vim-pencil
-vim-polyglot
-vim-repl
-vim-sneak
-vim-snippets
-vim-speeddating
-vim-surround
-vim-synstax
-vim-table-mode
-vim-tetris
-vim-timetap
-vim-tldr
-vim-which-key
-vim-wordy
-vimcdoc
-vimtags_vim
-vimtex
-yankring_200
+
+| plugins              |  |  |
+|----------------------|--|--|
+| 2048                 |  |  |
+| ChineseLinter.vim    |  |  |
+| Colorizer            |  |  |
+| DrawIt               |  |  |
+| EngSpChk             |  |  |
+| FastFold             |  |  |
+| FoldText             |  |  |
+| IndGuide             |  |  |
+| NrrwRgn              |  |  |
+| SQHell.vim           |  |  |
+| VOoM                 |  |  |
+| ZFVimIM              |  |  |
+| ZFVimJob             |  |  |
+| asyncfinder.vim      |  |  |
+| auto-pairs           |  |  |
+| changesPlugin        |  |  |
+| codi.vim             |  |  |
+| csv.vim              |  |  |
+| ctrlp.vim            |  |  |
+| deol.nvim            |  |  |
+| devotion.vim         |  |  |
+| do.vim               |  |  |
+| eregex.vim           |  |  |
+| goyo.vim             |  |  |
+| hiPairs              |  |  |
+| imc-b                |  |  |
+| indentLine           |  |  |
+| jupytext.vim         |  |  |
+| limelight.vim        |  |  |
+| mathmenu             |  |  |
+| mru                  |  |  |
+| neocomplete.vim      |  |  |
+| nerdcommenter        |  |  |
+| nerdtree             |  |  |
+| nerdtree_fs_menu     |  |  |
+| nerdtree_menu_util   |  |  |
+| pangu.vim            |  |  |
+| randomTheme.vim      |  |  |
+| splitjoin.vim        |  |  |
+| swy-ivim             |  |  |
+| tabular              |  |  |
+| tagbar               |  |  |
+| taglist              |  |  |
+| tcomment_vim         |  |  |
+| thesaurus_query.vim  |  |  |
+| tlib_vim             |  |  |
+| traces.vim           |  |  |
+| ultisnips            |  |  |
+| undotree             |  |  |
+| unicode.vim          |  |  |
+| utl.vim              |  |  |
+| vfix                 |  |  |
+| vim-SyntaxRange      |  |  |
+| vim-airline          |  |  |
+| vim-airline-themes   |  |  |
+| vim-anzu             |  |  |
+| vim-carbon-now-sh    |  |  |
+| vim-cursorword       |  |  |
+| vim-easy-align       |  |  |
+| vim-easygrep         |  |  |
+| vim-easymotion       |  |  |
+| vim-easymotion-chs   |  |  |
+| vim-floaterm         |  |  |
+| vim-fold-cycle       |  |  |
+| vim-fuzzyfinder      |  |  |
+| vim-gol              |  |  |
+| vim-grepper          |  |  |
+| vim-highlightedyank  |  |  |
+| vim-highlighturl     |  |  |
+| vim-illuminate       |  |  |
+| vim-interestingwords |  |  |
+| vim-markdown         |  |  |
+| vim-markdown-toc     |  |  |
+| vim-orgmode          |  |  |
+| vim-pencil           |  |  |
+| vim-polyglot         |  |  |
+| vim-repl             |  |  |
+| vim-sneak            |  |  |
+| vim-snippets         |  |  |
+| vim-speeddating      |  |  |
+| vim-surround         |  |  |
+| vim-synstax          |  |  |
+| vim-table-mode       |  |  |
+| vim-tetris           |  |  |
+| vim-timetap          |  |  |
+| vim-tldr             |  |  |
+| vim-which-key        |  |  |
+| vim-wordy            |  |  |
+| vimcdoc              |  |  |
+| vimtags_vim          |  |  |
+| vimtex               |  |  |
+| yankring_200         |  |  |
