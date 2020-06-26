@@ -1,202 +1,3 @@
-
-" ┌───────────────────────────────────────────────────────────────────────────┐
-" │                                 test                                      │
-" └───────────────────────────────────────────────────────────────────────────┘
-
-
-
-vnoremap <Leader>/ y/\V<C-R>=escape(@",'/\:')<CR><CR>
-
-
-
-" ┌───────────────────────────────────────────────────────────────────────────┐
-" │                              newly added                                  │
-" └───────────────────────────────────────────────────────────────────────────┘
-
-
-" ┌───────────────────────────────────────────────────────────────────────────┐
-" │                          work with other tools                            │
-" └───────────────────────────────────────────────────────────────────────────┘
-
-" ┌───────────────────────────────────────────────────────────────────────────┐
-" │                                    Tags                                   │
-" └───────────────────────────────────────────────────────────────────────────┘
-
-" Tools: ctags-------------------------------
-
-" 查找当前目录下有没有 tags 文件，没有的话就向上查找直到找到为止
-" looks up and up (non-recursively) until / for tags files.
-set tags=./tags;/,tags;/
-
-
-
-" tag file generated automatically
-" augroup AutoTag
-"    autocmd!
-"    autocmd BufWritePost *.py,*.c,*.cpp,*.h
-"        \ silent! !eval 'ctags -R -o tags 1>/dev/null 2>&1' &
-" augroup END
-
-" autocmd FileType c setlocal tags=/path/to/your/global/c/tags,./tags;/,tags;/
-function SetTags()
-    let curdir = getcwd()
-
-    while !filereadable("tags") && getcwd() != "/"
-        cd ..
-    endwhile
-
-    if filereadable("tags")
-        execute "set tags=" . getcwd() . "/tags"
-    endif
-
-    execute "cd " . curdir
-endfunction
-
-call SetTags()
-
-" find . -regex ".*\.\(c\|h\|hpp\|cc\|cpp\)"
-"     \ -print | ctags --totals --recurse --extra="+qf" --fields="+i" -L -
-
-function s:FindFile(file)
-    let curdir = getcwd()
-    let found = curdir
-    while !filereadable(a:file) && found != "/"
-        cd ..
-        let found = getcwd()
-    endwhile
-    execute "cd " . curdir
-    return found
-endfunction
-
-
-" Tools: cscope -----------------------------
-if has('cscope')
-    let $CSCOPE_DIR=s:FindFile("cscope.out")
-    let $CSCOPE_DB=$CSCOPE_DIR."/cscope.out"
-    if filereadable($CSCOPE_DB)
-        cscope add $CSCOPE_DB $CSCOPE_DIR
-    endif
-    command -nargs=0 Cscope !cscope -ub -R &
-endif
-
-
-" Tools: gtags ------------------------------
-
-" ┌───────────────────────────────────────────────────────────────────────────┐
-" │                                 Python                                    │
-" └───────────────────────────────────────────────────────────────────────────┘
-
-
-
-" 文件头-------------------------------
-function FileHead()
-    call append( 0,"---")
-    call append( 1,"create time   : ".strftime("%Y-%m-%d %H:%M:%S") )
-    call append( 2,"last modified : ".strftime("%Y-%m-%d %H:%M:%S") )
-    call append( 3,"---")
-    echo
-endfunction
-nnoremap <Leader>fh  <Esc>:call FileHead()<CR><C-I>
-
-" 自动修改文件头信息：last modify time
-function SetLastModifiedTimes()
-    let pos = getpos('.')
-    let line = getline(2)
-    let newtime = "last modified : ".strftime("%Y-%m-%d %H:%M:%S")
-    let repl = substitute(line,".*$",newtime,"g")
-    let res = search("last modified","w")
-    if res
-        call setline(2,repl)
-    endif
-    call setpos(".",pos)
-endfunction
-autocmd BufWritePre *.md call SetLastModifiedTimes()
-
-" 运行
-au BufRead *.py map <buffer> <F5> :w<CR>:!/usr/bin/env python3 % <CR>
-
-" ┌───────────────────────────────────────────────────────────────────────────┐
-" │                             Vim Leader 键                                 │
-" └───────────────────────────────────────────────────────────────────────────┘
-
-
-"✅ Leader 键-空格键作为 Leader(全局变量）
-let g:mapleader = "\<space>"
-noremap <Leader>q <Esc>
-
-" Show key bindings
-nnoremap <leader>?    :Redir verbose map<CR>
-vnoremap <leader>?    <Esc>:Redir verbose map<CR>
-
-inoremap <Leader>dtt   <C-R>=strftime("%Y-%m-%d-%H:%M:%S")<CR>
-inoremap <Leader>ymd   <C-R>=strftime("%y%m%d")<CR>
-inoremap <Leader>mdy   <C-R>=strftime("%m/%d/%y")<CR>
-inoremap <Leader>ndy   <C-R>=strftime("%b %d, %Y")<CR>
-inoremap <Leader>hms   <C-R>=strftime("%T")<CR>
-inoremap <Leader>ynd   <C-R>=strftime("%Y %b %d")<CR>
-
-" ┌───────────────────────────────────────────────────────────────────────────┐
-" │                                     keys                                  │
-" └───────────────────────────────────────────────────────────────────────────┘
-
-
-" Buffer------------------------------
-" 隐藏
-nnoremap <leader>bh    :bhide<cr>
-" open previous buffer
-nnoremap <leader><Tab> :b#<CR>
-" next buffer
-nnoremap <leader>bn     :bnext<CR>
-" previous buffer
-nnoremap <leader>bp     :bprevious<CR>
-" Copy whole buffer
-nnoremap <leader>bY    :%y<CR>
-vnoremap <leader>bY    <Esc>:%y<CR>
-
-" Edit--------------------------------
-" Insert line below
-nnoremap <leader>ij    o<Esc>k
-vnoremap <leader>ij    <Esc>o<Esc>k
-
-" Insert line above
-nnoremap <leader>ik    O<Esc>j
-vnoremap <leader>ik    <Esc>O<Esc>j
-
-
-
-" File--------------------------------
-" copy file relative path
-nnoremap <leader>fp :let @+ = expand("%")<CR>
-" copy file full path
-nnoremap <leader>fP :let @+ = expand("%:p")<CR>
-
-" Project-----------------------------
-
-
-
-" Register----------------------------
-" Show registers
-nnoremap <leader>re    :reg<CR>
-vnoremap <leader>re    <Esc>:reg<CR>
-
-" ┌───────────────────────────────────────────────────────────────────────────┐
-" │                                    iVim                                   │
-" └───────────────────────────────────────────────────────────────────────────┘
-
-
-
-nnoremap <Leader>fd    :!openurl dash://<cword><CR> :<Esc>
-nnoremap <Leader>fe    :!openurl eudic://dict/<cword><CR> :<Esc>
-" nnoremap <Leader>fc    :!open -g dash://<cword><CR> :<Esc>
-" nnoremap <Leader>fw    :!open -g eudic://dict/<cword><CR> :<Esc>
-nnoremap <Leader>io    :idoc<CR>
-nnoremap <Leader>is    :ishare<CR>
-
-"✅ iVim Extended Keyboards
-"nnoremap <leader>eks <D-s>
-"nnoremap <leader>ekh <D-h>
-"nnoremap <leader>ek. <D-.>
-
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                    Vim                                    │
 " └───────────────────────────────────────────────────────────────────────────┘
@@ -261,6 +62,11 @@ filetype plugin on
 "
 filetype plugin indent on
 
+"✅ Leader 键-空格键作为 Leader(全局变量）
+let g:mapleader = "\<space>"
+noremap <Leader>q <Esc>
+
+
 " line wrap
 nnoremap <leader>tlw :set wrap!<CR>
 " line numbers
@@ -271,8 +77,269 @@ set number relativenumber
 " " relative line numbers
 " nnoremap <leader>tlr :set number relativenumber!<CR>
 
+
+" Show key bindings
+nnoremap <leader>?    :Redir verbose map<CR>
+vnoremap <leader>?    <Esc>:Redir verbose map<CR>
+
+inoremap <Leader>dtt   <C-R>=strftime("%Y-%m-%d-%H:%M:%S")<CR>
+inoremap <Leader>ymd   <C-R>=strftime("%y%m%d")<CR>
+inoremap <Leader>mdy   <C-R>=strftime("%m/%d/%y")<CR>
+inoremap <Leader>ndy   <C-R>=strftime("%b %d, %Y")<CR>
+inoremap <Leader>hms   <C-R>=strftime("%T")<CR>
+inoremap <Leader>ynd   <C-R>=strftime("%Y %b %d")<CR>
+
+
 " ┌───────────────────────────────────────────────────────────────────────────┐
-" │                               编辑 Diff                                   │
+" │                                 test                                      │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+
+
+vnoremap <Leader>/ y/\V<C-R>=escape(@",'/\:')<CR><CR>
+
+
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                     newly added - unclassified                            │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                                 keys                                      │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+
+" Buffer------------------------------
+" 隐藏
+nnoremap <leader>bh    :bhide<cr>
+" open previous buffer
+nnoremap <leader><Tab> :b#<CR>
+" next buffer
+nnoremap <leader>bn     :bnext<CR>
+" previous buffer
+nnoremap <leader>bp     :bprevious<CR>
+" Copy whole buffer
+nnoremap <leader>bY    :%y<CR>
+vnoremap <leader>bY    <Esc>:%y<CR>
+
+" Edit--------------------------------
+" Insert line below
+nnoremap <leader>ij    o<Esc>k
+vnoremap <leader>ij    <Esc>o<Esc>k
+
+" Insert line above
+nnoremap <leader>ik    O<Esc>j
+vnoremap <leader>ik    <Esc>O<Esc>j
+
+
+
+" File--------------------------------
+" copy file relative path
+nnoremap <leader>fp :let @+ = expand("%")<CR>
+" copy file full path
+nnoremap <leader>fP :let @+ = expand("%:p")<CR>
+
+" Project-----------------------------
+
+
+
+" Register----------------------------
+" Show registers
+nnoremap <leader>re    :reg<CR>
+vnoremap <leader>re    <Esc>:reg<CR>
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                                    iVim                                   │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+
+
+nnoremap <Leader>fd    :!openurl dash://<cword><CR> :<Esc>
+nnoremap <Leader>fe    :!openurl eudic://dict/<cword><CR> :<Esc>
+" nnoremap <Leader>fc    :!open -g dash://<cword><CR> :<Esc>
+" nnoremap <Leader>fw    :!open -g eudic://dict/<cword><CR> :<Esc>
+nnoremap <Leader>io    :idoc<CR>
+nnoremap <Leader>is    :ishare<CR>
+
+"✅ iVim Extended Keyboards
+"nnoremap <leader>eks <D-s>
+"nnoremap <leader>ekh <D-h>
+"nnoremap <leader>ek. <D-.>
+
+
+
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                              重定向 redir                                  │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+
+" redirect the output
+" from vim cmd or external command into a scratch buffer
+function! s:redir(new, cmd)
+    if a:cmd =~ '^!'
+          execute "let output = system('" . substitute(a:cmd, '^!', '', '') . "')"
+    else
+          redir => output
+          execute a:cmd
+          redir END
+    endif
+        execute a:new
+        setlocal nobuflisted buftype=nofile bufhidden=wipe noswapfile
+        call setline(1, split(output, "\n"))
+        put! = a:cmd
+        put = '------'
+endfunction
+
+if !exists(":Redir")
+    command! -nargs=1 Redir silent call <SID>redir('tabnew', <f-args>)
+endif
+if !exists(":RedirS")
+    command! -nargs=1 RedirS silent call <SID>redir('new', <f-args>)
+endif
+if !exists(":RedirV")
+    command! -nargs=1 RedirV silent call <SID>redir('vnew', <f-args>)
+endif
+
+let &cpo = s:cpo_save
+unlet s:cpo_save
+
+
+
+" helptab
+" https://github.com/airblade/vim-helptab
+let g:loaded_helptab = 1
+
+function! s:HelpTab()
+  if !(getcmdtype() == ':' && getcmdpos() <= 2)
+    return 'h'
+  endif
+
+  let helptabnr = 0
+  for i in range(tabpagenr('$'))
+    let tabnr = i + 1
+    for bufnr in tabpagebuflist(tabnr)
+      if getbufvar(bufnr, "&ft") == 'help'
+        let helptabnr = tabnr
+        break
+      endif
+    endfor
+  endfor
+
+  if helptabnr
+    if tabpagenr() == helptabnr
+      return 'h'
+    else
+      return 'tabnext '.helptabnr.' | h'
+    endif
+  else
+    return 'tab h'
+  endif
+endfunction
+
+cnoreabbrev <expr> h <SID>HelpTab()
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                                 Python                                    │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+
+
+" 文件头-------------------------------
+function FileHead()
+    call append( 0,"---")
+    call append( 1,"create time   : ".strftime("%Y-%m-%d %H:%M:%S") )
+    call append( 2,"last modified : ".strftime("%Y-%m-%d %H:%M:%S") )
+    call append( 3,"---")
+    echo
+endfunction
+nnoremap <Leader>fh  <Esc>:call FileHead()<CR><C-I>
+
+" 自动修改文件头信息：last modify time
+function SetLastModifiedTimes()
+    let pos = getpos('.')
+    let line = getline(2)
+    let newtime = "last modified : ".strftime("%Y-%m-%d %H:%M:%S")
+    let repl = substitute(line,".*$",newtime,"g")
+    let res = search("last modified","w")
+    if res
+        call setline(2,repl)
+    endif
+    call setpos(".",pos)
+endfunction
+autocmd BufWritePre *.md call SetLastModifiedTimes()
+
+" 运行
+au BufRead *.py map <buffer> <F5> :w<CR>:!/usr/bin/env python3 % <CR>
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                          work with other tools                            │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+
+" Tools: ctags-------------------------------
+
+" 查找当前目录下有没有 tags 文件，没有的话就向上查找直到找到为止
+" looks up and up (non-recursively) until / for tags files.
+set tags=./tags;/,tags;/
+
+
+
+" tag file generated automatically
+" augroup AutoTag
+"    autocmd!
+"    autocmd BufWritePost *.py,*.c,*.cpp,*.h
+"        \ silent! !eval 'ctags -R -o tags 1>/dev/null 2>&1' &
+" augroup END
+
+" autocmd FileType c setlocal tags=/path/to/your/global/c/tags,./tags;/,tags;/
+function SetTags()
+    let curdir = getcwd()
+
+    while !filereadable("tags") && getcwd() != "/"
+        cd ..
+    endwhile
+
+    if filereadable("tags")
+        execute "set tags=" . getcwd() . "/tags"
+    endif
+
+    execute "cd " . curdir
+endfunction
+
+call SetTags()
+
+" find . -regex ".*\.\(c\|h\|hpp\|cc\|cpp\)"
+"     \ -print | ctags --totals --recurse --extra="+qf" --fields="+i" -L -
+
+function s:FindFile(file)
+    let curdir = getcwd()
+    let found = curdir
+    while !filereadable(a:file) && found != "/"
+        cd ..
+        let found = getcwd()
+    endwhile
+    execute "cd " . curdir
+    return found
+endfunction
+
+
+" Tools: cscope -----------------------------
+if has('cscope')
+    let $CSCOPE_DIR=s:FindFile("cscope.out")
+    let $CSCOPE_DB=$CSCOPE_DIR."/cscope.out"
+    if filereadable($CSCOPE_DB)
+        cscope add $CSCOPE_DB $CSCOPE_DIR
+    endif
+    command -nargs=0 Cscope !cscope -ub -R &
+endif
+
+
+" Tools: gtags ------------------------------
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                             Edit & Diff                                   │
 " └───────────────────────────────────────────────────────────────────────────┘
 
 
@@ -483,43 +550,7 @@ if has('neovim')
     set inccommand=nosplit
 endif
 
-" ┌───────────────────────────────────────────────────────────────────────────┐
-" │                             重定向 redir                                  │
-" └───────────────────────────────────────────────────────────────────────────┘
 
-
-
-let s:cpo_save = &cpo
-set cpo&vim
-
-" redirect the output of a vim or external command into a scratch buffer
-function! s:redir(new, cmd)
-    if a:cmd =~ '^!'
-          execute "let output = system('" . substitute(a:cmd, '^!', '', '') . "')"
-    else
-          redir => output
-          execute a:cmd
-          redir END
-    endif
-        execute a:new
-        setlocal nobuflisted buftype=nofile bufhidden=wipe noswapfile
-        call setline(1, split(output, "\n"))
-        put! = a:cmd
-        put = '------'
-endfunction
-
-if !exists(":Redir")
-    command! -nargs=1 Redir silent call <SID>redir('tabnew', <f-args>)
-endif
-if !exists(":RedirS")
-    command! -nargs=1 RedirS silent call <SID>redir('new', <f-args>)
-endif
-if !exists(":RedirV")
-    command! -nargs=1 RedirV silent call <SID>redir('vnew', <f-args>)
-endif
-
-let &cpo = s:cpo_save
-unlet s:cpo_save
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                               文件浏览器                                  │
@@ -791,43 +822,7 @@ endif
 "set colorcolumn=80
 
 
-" ┌───────────────────────────────────────────────────────────────────────────┐
-" │                                   Help                                    │
-" └───────────────────────────────────────────────────────────────────────────┘
 
-
-
-" https://github.com/airblade/vim-helptab
-let g:loaded_helptab = 1
-
-function! s:HelpTab()
-  if !(getcmdtype() == ':' && getcmdpos() <= 2)
-    return 'h'
-  endif
-
-  let helptabnr = 0
-  for i in range(tabpagenr('$'))
-    let tabnr = i + 1
-    for bufnr in tabpagebuflist(tabnr)
-      if getbufvar(bufnr, "&ft") == 'help'
-        let helptabnr = tabnr
-        break
-      endif
-    endfor
-  endfor
-
-  if helptabnr
-    if tabpagenr() == helptabnr
-      return 'h'
-    else
-      return 'tabnext '.helptabnr.' | h'
-    endif
-  else
-    return 'tab h'
-  endif
-endfunction
-
-cnoreabbrev <expr> h <SID>HelpTab()
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                     UI                                    │
