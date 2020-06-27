@@ -26,7 +26,8 @@ normal mode English letters [a-zA-Z]
 
 ### internal byte representation part
 
-normal mode <kbd>\<Leader></kbd>      <kbd>ý`</kbd>
+
+normal mode <kbd>Space</kbd>      <kbd>ý`</kbd>
 
 
 
