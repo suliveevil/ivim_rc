@@ -15,6 +15,10 @@ the `.vimkeys` file's encoding is latin1, and the keystroke representation is no
 
 ## keystroke representation in `.vimkeys`
 
+### duplicated
+
+If you map shortcuts to cmd mode command, `.vimkeys` will log both keystroke and the command.
+
 
 ### human friendly part
 
