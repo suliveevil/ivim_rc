@@ -57,17 +57,7 @@ augroup syntax_set
 augroup end
 
 
-" 检测文件类型
-filetype on
 
-" 针对不同的文件类型采用不同的缩进格式
-filetype indent on
-
-" 允许插件
-filetype plugin on
-
-" 允许文件类型插件
-filetype plugin indent on
 
 "✅ Leader 键-空格键作为 Leader(全局变量）
 let g:mapleader = "\<space>"
@@ -96,6 +86,28 @@ inoremap <Leader>mdy   <C-R>=strftime("%m/%d/%y")<CR>
 inoremap <Leader>ndy   <C-R>=strftime("%b %d, %Y")<CR>
 inoremap <Leader>hms   <C-R>=strftime("%T")<CR>
 inoremap <Leader>ynd   <C-R>=strftime("%Y %b %d")<CR>
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                       Encoding File FileType                              │
+" └───────────────────────────────────────────────────────────────────────────┘
+" set encoding=utf-8
+" set termencoding=utf-8
+" set fileencoding=utf-8
+" set fileencodings=ucs-bom,utf-8,cp936,gb2312,latin1
+" 检测文件类型
+filetype on
+
+" 针对不同的文件类型采用不同的缩进格式
+filetype indent on
+
+" 允许插件
+filetype plugin on
+
+" 允许文件类型插件
+filetype plugin indent on
+
+autocmd FileType *        setlocal foldmethod=manual
+autocmd FileType markdown setlocal foldmethod=manual
+autocmd FileType python   setlocal foldmethod=indent
 
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
@@ -538,6 +550,9 @@ set incsearch
 set ignorecase
 set smartcase
 
+nnoremap <Leader>rev :/\v
+nnoremap <Leader>rel :/\V
+
 " 显示匹配总数及当前匹配位置
 set shortmess-=S
 
@@ -656,7 +671,6 @@ endfunction
 " Fold settings
 " fold method:indent,expr,syntax,marker,diff,manual
 set foldenable
-" set foldlevel=0
 set foldlevel=20
 set foldlevelstart=0
 set foldnestmax=19

@@ -3,21 +3,19 @@
 " │                               Vim Plugins                                 │
 " └───────────────────────────────────────────────────────────────────────────┘
 
-
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                Lazy Load                                  │
 " └───────────────────────────────────────────────────────────────────────────┘
 
 " put your plugin folder under "~/.vim/pack/*/opt/",
 " then add autocmds into this file("pac.vim")
-augroup lazy_load
-    autocmd!
-    autocmd VimEnter * :packadd searchvim
-    autocmd VimEnter * :packadd python-mode
-    autocmd! lazy_load
-augroup END
-
-
+" augroup lazy_load
+"     autocmd!
+"     autocmd VimEnter * :packadd searchvim
+"     autocmd VimEnter * :packadd python-mode
+"     autocmd! lazy_load
+" augroup END
+"
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                 Character                                 │
 " └───────────────────────────────────────────────────────────────────────────┘
@@ -26,13 +24,10 @@ augroup END
 
 nnoremap guc :UnicodeName<CR>
 
-
 " Plugin : painless-digraph -----------------
 inoremap <silent> <Leader>ede  <Plug>(PainlessdigraphEnable)
 inoremap <silent> <Leader>edd  <Plug>(PainlessdigraphDisable)
 inoremap <silent> <Leader>edt  <Plug>(PainlessdigraphToggle)
-
-
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                 Chinese                                   │
@@ -113,7 +108,6 @@ let g:ZFVimIM_DEBUG_profile = 1
 autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.org
 \ call PanGuSpacing()
 
-
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                               Document                                    │
 " └───────────────────────────────────────────────────────────────────────────┘
@@ -131,8 +125,6 @@ let g:tldr_language = 'zh'
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                 Python                                    │
 " └───────────────────────────────────────────────────────────────────────────┘
-
-
 
 autocmd FileType python nnoremap <buffer> K :call PyDocVim()<CR>
 
@@ -213,20 +205,16 @@ EOF
     call setwinvar(winid, '&wincolor', 'Normal')
 endfunction
 
-
-
 " Plugin : python-mode --------------------
 
 " lazyload
 packadd python-mode
-
 
 " functions: 语法检查          同类插件：neomake
 " functions: 快速运行          同类插件：
 " functions: 代码格式化         同类插件：neoformat
 " functions: 查询 Python 文档  同类插件：
 " functions: 断点调试           同类插件：vim-vebugger
-
 
 " 使用 python3
 let g:pymode_python = 'python3'
@@ -248,7 +236,6 @@ let g:pymode_syntax_builtin_objs = g:pymode_syntax_all
 let g:pymode_syntax_builtin_types = g:pymode_syntax_all
 let g:pymode_syntax_highlight_exceptions = g:pymode_syntax_all
 let g:pymode_syntax_docstrings = g:pymode_syntax_all
-
 
 " 警告
 let g:pymode_warnings = 0
@@ -284,16 +271,12 @@ let g:pymode_breakpoint_bind = '<leader>br'
 " 关闭代码折叠(python-mode 官方提示：处于试验阶段，有 bug)
 let g:pymode_folding = 0
 
-
-
 "显示允许的最大长度的列
 let g:pymode_options_colorcolumn = 1
 
 "设置QuickFix窗口的最大，最小高度
 let g:pymode_quickfix_minheight = 3
 let g:pymode_quickfix_maxheight = 12
-
-
 
 " 语法检查
 let g:pymode_lint = 1
@@ -319,8 +302,6 @@ let g:pymode_lint_error_symbol = 'EE'
 let g:pymode_lint_info_symbol = 'II'
 let g:pymode_lint_pyflakes_symbol = 'FF'
 
-
-
 " 重构 rope
 let g:pymode_rope = 0
 
@@ -338,7 +319,6 @@ let g:pymode_rope = 0
 " let g:pymode_rope_complete_on_dot = 1
 " let g:pymode_rope_completion_bind = '<C-Tab>'
 
-
 " 跳转到定义处，同时新建竖直窗口打开
 " let g:pymode_rope_goto_definition_bind = '<C-c>g'
 " let g:pymode_rope_goto_definition_cmd = 'vnew'
@@ -350,7 +330,6 @@ let g:pymode_rope = 0
 " let g:pymode_rope_rename_module_bind = '<C-c>r1r'
 
 " Plugin : vim-pythonsense --------------------
-
 
 " Plugin : vim-flake8 -------------------------
 
@@ -397,7 +376,6 @@ if !isdirectory("_vim/.files/yankring")
 endif
 let g:yankring_history_dir = $HOME.'/_vim/.files/yankring'
 
-
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                Comment                                    │
 " └───────────────────────────────────────────────────────────────────────────┘
@@ -416,37 +394,52 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Plugin : NrrRgn -----------------
 
-
 " Plugin : contextfiletype_vim -----------------
-
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                            Find Search Jump                               │
 " └───────────────────────────────────────────────────────────────────────────┘
 
+" Plugin : eregex -------------------------
+nnoremap <leader>/ :call eregex#toggle()<CR>
+" nnoremap / :M/
+" nnoremap ? :M?
+" nnoremap ,/ /
+" nnoremap ,? /
+" let g:eregex_force_case = 1
+
+" Plugin : nru ----------------------------
+" let MRU_File = '~/_vim/.files/vim_mru_files'
+
+" Plugin : vim-fuzzyfinder ----------------
+if !isdirectory("_vim/.files/vim-fuf-data")
+    call mkdir("_vim/.files/vim-fuf-data", "p")
+endif
+let g:fuf_dataDir = '~/_vim/.files/vim-fuf-data'
+
+" Plugin : vim-fuzzyfinders ---------------
+
 " Plugin : vim-indentwise -----------------
-" Jump on Indent
-" Higher level: Less Indent
-" Lower  level: More Indent
-" Jump to Indent Block Begin/End
-map <Leader>jba       <Plug>(IndentWiseBlockScopeBoundaryBegin)
-map <Leader>jbe       <Plug>(IndentWiseBlockScopeBoundaryEnd)
-
-" Jump to Previous Indent
-map <NOP>       <Plug>(IndentWisePreviousEqualIndent)
-map <Leader>Jh  <Plug>(IndentWisePreviousLesserIndent)
-map <Leader>Jl  <Plug>(IndentWisePreviousGreaterIndent)
-
-
-" Jump to Next Indent
-map <NOP>       <Plug>(IndentWiseNextEqualIndent)
-map <Leader>jh  <Plug>(IndentWiseNextLesserIndent)
-map <Leader>jl  <Plug>(IndentWiseNextGreaterIndent)
-
-
+" Jump on Indent " Higher level: Less Indent " Lower  level: More Indent
 " Jump to Absolute Indent
 map <Leader>jap <Plug>(IndentWisePreviousAbsoluteIndent)
 map <Leader>jan <Plug>(IndentWiseNextAbsoluteIndent)
+" Jump to Indent Block Begin/End(TextObject - Indent)
+map <Leader>jba       <Plug>(IndentWiseBlockScopeBoundaryBegin)
+map <Leader>jbe       <Plug>(IndentWiseBlockScopeBoundaryEnd)
+
+" Jump to Next Indent
+map <Leader>jj       <Plug>(IndentWiseNextEqualIndent)
+map <Leader>jh  <Plug>(IndentWiseNextLesserIndent)
+map <Leader>jl  <Plug>(IndentWiseNextGreaterIndent)
+" Jump to Previous Indent
+map <Leader>jbj       <Plug>(IndentWisePreviousEqualIndent)
+map <Leader>jbk  <Plug>(IndentWisePreviousLesserIndent)
+map <Leader>jbl  <Plug>(IndentWisePreviousGreaterIndent)
+
+
+
+
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                  Fold                                     │
@@ -456,7 +449,7 @@ map <Leader>jan <Plug>(IndentWiseNextAbsoluteIndent)
 let g:markdown_folding = 0
 
 " Plugin : FoldText -----------------------
-set foldmethod=syntax
+" set foldmethod=syntax
 
 " { Syntax Folding
   let g:vimsyn_folding='af'
@@ -467,12 +460,6 @@ set foldmethod=syntax
   let perl_fold = 1
   let perl_fold_blocks = 1
 " }
-
-set foldenable
-set foldlevel=0
-set foldlevelstart=0
-" specifies for which commands a fold will be opened
-set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
 
 nnoremap <silent> zr zr:<c-u>setlocal foldlevel?<CR>
 nnoremap <silent> zm zm:<c-u>setlocal foldlevel?<CR>
@@ -507,9 +494,6 @@ endfunction
 " │                         Highlight Indent Syntax                           │
 " └───────────────────────────────────────────────────────────────────────────┘
 
-
-
-
 " Plugin : vim-cursorword -----------------
 
 let g:cursorword = 1
@@ -530,7 +514,6 @@ augroup illuminate_augroup
     autocmd VimEnter * hi link illuminatedWord CursorLine
 augroup END
 
-
 " Plugin : hi-Pairs ----------------------------
 
 let g:hiPairs_enable_matchParen = 1
@@ -544,7 +527,6 @@ let g:highlightedyank_highlight_duration = 3600
 "highlight HighlightedyankRegion ctermbg=237 guibg=#404040
 highlight HighlightedyankRegion cterm=237 gui=#404040
 
-
 " Plugin : Colorizer -----------------
 let g:colorizer_auto_filetype='css,html'
 
@@ -555,8 +537,6 @@ let g:spchkdialect = "usa"
 
 " load engspchk.dict
 let g:spchklang= "eng"
-
-
 
 " Plugin : indentLine -----------------
 
@@ -911,7 +891,6 @@ let g:tq_mthesaur_file=
 let g:tq_openoffice_en_file=
 \"~/_vim/pack/misc/start/swy-ivim/thesaurus/MyThes-1.0/th_en_US_new"
 
-
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                              Complete                                     │
 " └───────────────────────────────────────────────────────────────────────────┘
@@ -1016,24 +995,30 @@ let g:tq_openoffice_en_file=
 " " inoremap <expr><BS>
 " " 	\ deoplete#smart_close_popup()."\<C-h>"
 
-" ----------------------
+" Plugin: neocomplete ----------------------
 let g:neocomplete#enable_at_startup = 1
+
+" sources - omni complete
 if !exists('g:neocomplete#sources#omni#input_patterns')
     let g:neocomplete#sources#omni#input_patterns = {}
 endif
-autocmd Filetype tex let g:neocomplete#sources#omni#input_patterns.tex =
-\ '\v\\\a*(ref|cite)\a*([^]]*\])?\{([^}]*,)*[^}]*'
+" autocmd Filetype tex let g:neocomplete#sources#omni#input_patterns.tex =
+" \ '\v\\\a*(ref|cite)\a*([^]]*\])?\{([^}]*,)*[^}]*'
+
+let g:neocomplete#sources#omni#input_patterns.tex =
+        \ g:vimtex#re#neocomplete
 
 " sources - dictionary.
 let g:neocomplete#sources#dictionary#dictionaries = {
-    \ 'default' : $HOME.'/.vim/pack/misc/start/swy-ivim/dict/english466k.dict',
-    \ 'markdown' : $HOME.'/.vim/pack/misc/start/swy-ivim/dict/english466k.dict',
+    \ 'default' : $HOME.'/.vim/pack/misc/start/swy-ivim/dict/frequent.dict',
+    \ 'markdown' : $HOME.'/.vim/pack/misc/start/swy-ivim/dict/frequent.dict',
     \ 'python' : $HOME.'/.vim/pack/misc/start/swy-ivim/dict/python.dict',
     \ 'vim' : $HOME.'/.vim/pack/misc/start/swy-ivim/dict/vim.dict',
     \ 'vimshell' : $HOME.'/.ivish_history',
     \ 'scheme' : $HOME.'/.gosh_completions',
 \ }
 
+" Plugin: UltiSnips ----------------------
 " inoremap <TAB> {{{1
 " Next menu item, expand snippet, jump to next placeholder or insert literal tab
 let g:UltiSnipsJumpForwardTrigger="<NOP>"
@@ -1195,7 +1180,6 @@ let g:NERDTreeExtensionHighlightColor['yaml'       ] =  'c8c8c8'
 let g:NERDTreeExtensionHighlightColor['yml'        ] =  'c8c8c8'
 let g:NERDTreeExtensionHighlightColor['zip'        ] =  'FFB340'
 
-
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                   Key                                     │
 " └───────────────────────────────────────────────────────────────────────────┘
@@ -1219,7 +1203,6 @@ let g:vimdo_show_filename = 1
 " nnoremap dofcr :call do#cmd#find_crlf(1, "")<cr>
 " nnoremap dossa :call do#cmd#syntax_attr()<cr>
 " nnoremap doec  :call do#color#echo()<cr>
-
 
 " Plugin : vim-which-key -----------------
 
@@ -1265,7 +1248,6 @@ highlight default link WhichKeyDesc      Identifier
 "autocmd  FileType which_key set laststatus=0 noshowmode noruler
 "\| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
-
 " Plugin : supertab -----------------
 
 " Plugin : vim-clevertab -----------------
@@ -1291,7 +1273,6 @@ let g:EasyMotion_keys =
 
 " Plugin : vim-easymotion-chs -------------
 
-
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                 Operator                                  │
 " └───────────────────────────────────────────────────────────────────────────┘
@@ -1300,11 +1281,7 @@ let g:EasyMotion_keys =
 " │                                Text Object                                │
 " └───────────────────────────────────────────────────────────────────────────┘
 
-
-
 " Plugin : vim-textobj-user ---------------
-
-
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                     Code Tag Format Debug/Lint Run Test                   │
@@ -1418,26 +1395,33 @@ let g:jupytext_to_ipynb_opts = '--to=ipynb --update'
 
 " Plugin : vim-markdown ---------------
 
+let g:vim_markdown_auto_extension_ext = 'txt'
+
+let g:vim_markdown_folding_disabled = 1
+autocmd FileType markdown setlocal conceallevel=2
+let g:tex_conceal = ""
+let g:vim_markdown_math = 1
+let g:vim_markdown_conceal_code_blocks = 0
 let g:vim_markdown_fenced_languages =
     \ [
     \ 'csharp=cs',
     \ 'c++=cpp',
     \ 'python=python',
-    \ 'viml=vim',
+    \ 'viml=viml',
     \ 'bash=sh',
     \ 'shell=sh',
     \ 'ini=dosini',
 \ ]
-let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_math = 1
-let g:vim_markdown_json_frontmatter = 1
+let g:vim_markdown_strikethrough = 1
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_json_frontmatter = 1 " requires vim-json
 let g:vim_markdown_no_extensions_in_markdown = 1
 
 let g:vim_markdown_toc_autofit = 1
 
-let g:vim_markdown_auto_insert_bullets = 0
+let g:vim_markdown_auto_insert_bullets = 1
 
-let g:vim_markdown_new_list_item_indent = 0
+let g:vim_markdown_new_list_item_indent = 1
 
 let g:vim_markdown_edit_url_in = 'tab'
 
@@ -1645,6 +1629,11 @@ let g:limelight_conceal_ctermfg = 240
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                    MISC                                   │
 " └───────────────────────────────────────────────────────────────────────────┘
+" Plugin : vim-timetap -----------------
+if !isdirectory("_vim/.files/timetap")
+    call mkdir("_vim/.files/timetap", "p")
+endif
+let g:timetap_data_dir = $HOME.'/_vim/.files/timetap'
 
 " Plugin : BufTimer -----------------
 
@@ -1659,19 +1648,14 @@ if !isdirectory("_vim/.files/BufTimerLog")
 endif
 let g:buf_report_autosave_dir = $HOME."/_vim/.files/BufTimerLog"
 
-
 " Plugin : Tabular -----------------
 
 " Plugin : vim-table-mode -----------------
-
-
-
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                 Old Config                                │
 " └───────────────────────────────────────────────────────────────────────────┘
 
-" Old config
 "" for fpath in split(globpath('~/_vim/_rc/*/', '*.vim'), '\n')
 "     execute 'source' fpath
 " endfor
