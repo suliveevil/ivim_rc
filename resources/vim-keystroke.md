@@ -20,14 +20,14 @@ the `.vimkeys` file's encoding is latin1, and the keystroke representation is no
 
 cmd mode input
 
-normal mode English letters [a-zA-Z]
+normal mode Space and English letters [a-zA-Z]
 
 
 
 ### internal byte representation part
 
 
-normal mode <kbd>Space</kbd>      <kbd>ý`</kbd>
+normal mode <kbd>\<Leader></kbd>      <kbd>ý`</kbd>
 
 
 
