@@ -15,6 +15,10 @@ the `.vimkeys` file's encoding is latin1, and the keystroke representation is no
 
 ## keystroke representation in `.vimkeys`
 
+### missing
+
+If you use Tab Complete in cmdmode, `.vimkeys` will log the actually pressed key i.e. literally keystroke.
+
 ### duplicated
 
 If you map shortcuts to cmd mode command, `.vimkeys` will log both keystroke and the command.
