@@ -1,29 +1,35 @@
 " ┌───────────────────────────────────────────────────────────────────────────┐
-" │                                    Vim                                    │
+" │                               Start Vim                                   │
 " └───────────────────────────────────────────────────────────────────────────┘
 
 
 
-"✅ 禁用 vi 兼容模式
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                                    Vim                                    │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+" ✅ 禁用 vi 兼容模式
 set nocompatible
 
-" 下面这行设置不允许等号两边有空格
+" 设置 cmd 高度（⚠️ 注意：此处不允许等号两边有空格）
 set cmdheight=2
 
 
-" backspace
+" ✅ backspace
 " 解决 vi compatible 模式或终端下 backspace 置空
 set backspace=2
 set backspace=eol,start,indent
 
+"
 set timeout
 set timeoutlen=500
-"✅ 功能键超时检测（终端下功能键为一串 ESC 开头的字符串）
+
+" ✅ 功能键超时检测（终端下功能键为一串 ESC 开头的字符串）
 set ttimeout
 " 功能键超时检测 50 毫秒
 set ttimeoutlen=50
 
-" spell check
+" ✅ spell check
 set spell
 " set spelllangs=en,fr,de,ch,jp
 set spelllang=en_us,cjk
@@ -40,14 +46,15 @@ set hidden
 set history=256
 
 " syntax enable 可保存个人设置，syntax on 是使用 Vim 默认值
-" augroup syntax_set
-"     if exists("g:syntax_on")
-"         syntax off
-"         syntax enable
-"     else
-"         syntax enable
-"     endif
-" augroup end
+augroup syntax_set
+    if exists("g:syntax_on")
+        syntax reset
+        syntax off
+        syntax enable
+    else
+        syntax enable
+    endif
+augroup end
 
 
 " 检测文件类型
@@ -59,7 +66,7 @@ filetype indent on
 " 允许插件
 filetype plugin on
 
-"
+" 允许文件类型插件
 filetype plugin indent on
 
 "✅ Leader 键-空格键作为 Leader(全局变量）
@@ -67,7 +74,7 @@ let g:mapleader = "\<space>"
 noremap <Leader>q <Esc>
 
 
-" line wrap
+" line wrap toggle
 nnoremap <leader>tlw :set wrap!<CR>
 " line numbers
 set numberwidth=3
@@ -79,9 +86,10 @@ set number relativenumber
 
 
 " Show key bindings
-nnoremap <leader>?    :Redir verbose map<CR>
+nnoremap <leader>?         :Redir verbose map<CR>
 vnoremap <leader>?    <Esc>:Redir verbose map<CR>
 
+" insert time
 inoremap <Leader>dtt   <C-R>=strftime("%Y-%m-%d-%H:%M:%S")<CR>
 inoremap <Leader>ymd   <C-R>=strftime("%y%m%d")<CR>
 inoremap <Leader>mdy   <C-R>=strftime("%m/%d/%y")<CR>
@@ -95,14 +103,18 @@ inoremap <Leader>ynd   <C-R>=strftime("%Y %b %d")<CR>
 " └───────────────────────────────────────────────────────────────────────────┘
 
 
+" :map  _ls  :!ls -l %:S<CR>:echo "the end"<CR>
 
-vnoremap <Leader>/ y/\V<C-R>=escape(@",'/\:')<CR><CR>
+" vnoremap <Leader>/ y/\V<C-R>=escape(@",'/\:')<CR><CR>
 
 
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                     newly added - unclassified                            │
 " └───────────────────────────────────────────────────────────────────────────┘
+
+
+
 
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
@@ -643,11 +655,24 @@ endfunction
 
 " Fold settings
 " fold method:indent,expr,syntax,marker,diff,manual
-" set foldenable
-set foldmethod=indent
+set foldenable
+" set foldlevel=0
 set foldlevel=20
 set foldlevelstart=0
 set foldnestmax=19
+" specifies for which commands a fold will be opened
+set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
+
+
+augroup FoldMethods
+    autocmd!
+    autocmd FileType c,cpp      set foldmethod=syntax
+    " autocmd FileType markdown   set foldmethod=syntax
+    autocmd FileType python     set foldmethod=indent
+augroup END
+
+
+
 
 " Moving up/down by function, unfolding current function but folding all else
 noremap [[  [[zMzvz.
@@ -657,7 +682,7 @@ noremap ]]  ]]zMzvz.
 
 " fold unmatched lines when search
 " https://github.com/carbonscott/vim-smartfold
-nnoremap <Leader>sss :setlocal hls<CR>:call FoldUnmatch()<CR>
+nnoremap <Leader>zs :setlocal hls<CR>:call FoldUnmatch()<CR>
 function FoldUnmatch()
     " Set foldmethod to be manual...
     set fdm=manual
@@ -736,8 +761,9 @@ endfunction
 
 
 "✅ 代码折叠自定义快捷键 <leader>zz
+
 " let g:FoldMethod = 0
-" map <leader>zz :call ToggleFold()<cr>
+" nnoremap <leader>zz :call ToggleFold()<CR>
 " fun! ToggleFold()
 "     if g:FoldMethod == 0
 "         exe "normal! zM"
@@ -840,7 +866,7 @@ set showtabline=2
 set guioptions-=e
 set laststatus=2
 set wildmenu
-set wildmode=longest,full,list
+set wildmode=longest,list,full
 "✅ 行-------------------------------------------------------------------------
 
 "✅ 设置行宽，即一行显示多少个字符
@@ -1318,9 +1344,6 @@ endfunction
 " ----------------------------------------------
 
 " 插入➡️普通
-" the method `jj` maps to <Esc> sucks
-" because `jj` is used for join the lines
-" noremap jj <Esc>
 inoremap jk <Esc>l
 vnoremap jk <Esc>
 cnoremap jk <Esc>
@@ -1393,3 +1416,6 @@ nnoremap <C-s> :w<CR>
 
 "----------------------------------✅ EX 模式----------------------------------
 
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                                    Vim                                    │
+" └───────────────────────────────────────────────────────────────────────────┘
