@@ -13,3 +13,17 @@ the `.vimkeys` file's encoding is latin1, and the keystroke representation is no
 
 
 
+## keystroke representation in `.vimkeys`
+
+
+### human friendly part
+
+cmdmode input
+
+English letters [a-zA-Z]
+
+
+
+### internal byte representation part
+
+<Leader>      ý`
