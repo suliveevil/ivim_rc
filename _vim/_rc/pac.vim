@@ -481,7 +481,7 @@ nnoremap <silent> zR zR:<c-u>setlocal foldlevel?<CR>
 nnoremap <silent> zM zM:<c-u>setlocal foldlevel?<CR>
 
 " Change Option Folds
-nnoremap zi  :<c-u>call <SID>ToggleFoldcolumn(1)<CR>
+nnoremap cfc :<c-u>call <SID>ToggleFoldcolumn(1)<CR>
 nnoremap coz :<c-u>call <SID>ToggleFoldcolumn(0)<CR>
 nmap     cof coz
 
@@ -1428,6 +1428,7 @@ let g:vim_markdown_fenced_languages =
     \ 'shell=sh',
     \ 'ini=dosini',
 \ ]
+let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_math = 1
 let g:vim_markdown_json_frontmatter = 1
 let g:vim_markdown_no_extensions_in_markdown = 1
@@ -1464,11 +1465,17 @@ let g:neocomplete#sources#omni#input_patterns.pandoc = '@'
 
 " Plugin : vimwiki ----------------
 
-nnoremap <Leader>wki     <Plug>VimwikiIndex
-nnoremap <Leader>wkti    <Plug>VimwikiTabIndex
-nnoremap <Leader>wkui    <Plug>VimwikiUISelect
-nnoremap <Leader>wkdi    <Plug>VimwikiDiaryIndex
-
+" nnoremap <Leader>wki     <Plug>VimwikiIndex
+" nnoremap <Leader>wkti    <Plug>VimwikiTabIndex
+" nnoremap <Leader>wkui    <Plug>VimwikiUISelect
+" nnoremap <Leader>wkdi    <Plug>VimwikiDiaryIndex
+" " let g:vimwiki_filetypes = ['markdown','pandoc']
+" let g:vimwiki_filetypes = []
+" let g:vimwiki_folding = ''
+"
+" let g:vimwiki_ext2syntax = {
+"     \ '.wiki':'media',
+" }
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                           UI: Font Theme ……                               │
