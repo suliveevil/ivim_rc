@@ -1,7 +1,7 @@
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                               Start Vim                                   │
 " └───────────────────────────────────────────────────────────────────────────┘
-" │                                  Vim                                      │
+" │                           Vim Basic Setting                               │
 " └───────────────────────────────────────────────────────────────────────────┘
 
 " ✅ 禁用 vi 兼容模式
@@ -9,6 +9,10 @@ set nocompatible
 
 " 设置 cmd 高度（⚠️ 注意：此处不允许等号两边有空格）
 set cmdheight=2
+
+" line numbers
+set numberwidth=3
+set number relativenumber
 
 
 " ✅ backspace
@@ -26,14 +30,13 @@ set ttimeout
 set ttimeoutlen=50
 
 " ✅ spell check
-set spell
+" set spell
+" set spelllang=en_us,cjk
 " set spelllangs=en,fr,de,ch,jp
-set spelllang=en_us,cjk
-" set spell spelllang=en_US
 
+" confirm
 " get a dialog when :q, :w, or :wq fails
 set confirm
-
 
 " remember undo after quitting
 set hidden
@@ -53,21 +56,16 @@ augroup syntax_set
 augroup end
 
 
-
-
-"✅ Leader 键-空格键作为 Leader(全局变量）
+"✅ Leader 键-空格键作为 Leader(全局变量）---------------------------------
 let g:mapleader = "\<space>"
 noremap <Leader>q <Esc>
 
 
 " line wrap toggle
-nnoremap <leader>tlw :set wrap!<CR>
-" line numbers
-set numberwidth=3
-set number relativenumber
+" nnoremap <leader>tlw :set wrap!<CR>
 
-" nnoremap <leader>tln :set norelativenumber number!<CR>
 " " relative line numbers
+" nnoremap <leader>tln :set norelativenumber number!<CR>
 " nnoremap <leader>tlr :set number relativenumber!<CR>
 
 
@@ -82,9 +80,12 @@ inoremap <Leader>mdy   <C-R>=strftime("%m/%d/%y")<CR>
 inoremap <Leader>ndy   <C-R>=strftime("%b %d, %Y")<CR>
 inoremap <Leader>hms   <C-R>=strftime("%T")<CR>
 inoremap <Leader>ynd   <C-R>=strftime("%Y %b %d")<CR>
+
+
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                       Encoding File FileType                              │
 " └───────────────────────────────────────────────────────────────────────────┘
+
 " set encoding=utf-8
 " set termencoding=utf-8
 " set fileencoding=utf-8
@@ -116,6 +117,10 @@ filetype plugin indent on
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                     newly added - unclassified                            │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                             Text Object                                   │
 " └───────────────────────────────────────────────────────────────────────────┘
 
 
@@ -198,9 +203,12 @@ nnoremap <Leader>is    :ishare<CR>
 " │                              重定向 redir                                  │
 " └───────────────────────────────────────────────────────────────────────────┘
 
+" 1 Vim 8
+" :redir! > vim_keys.txt
+" :silent verbose map
+" :redir END
 
-" redirect the output
-" from vim cmd or external command into a scratch buffer
+" 2 from vim cmd or external command into a scratch buffer
 function! s:redir(new, cmd)
     if a:cmd =~ '^!'
           execute "let output = system('" . substitute(a:cmd, '^!', '', '') . "')"
@@ -231,10 +239,14 @@ unlet s:cpo_save
 
 
 
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                                  Help                                     │
+" └───────────────────────────────────────────────────────────────────────────┘
+
 " helptab
 " https://github.com/airblade/vim-helptab
 let g:loaded_helptab = 1
-
+cnoreabbrev <expr> h <SID>HelpTab()
 function! s:HelpTab()
   if !(getcmdtype() == ':' && getcmdpos() <= 2)
     return 'h'
@@ -262,7 +274,6 @@ function! s:HelpTab()
   endif
 endfunction
 
-cnoreabbrev <expr> h <SID>HelpTab()
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                 Python                                    │
@@ -271,6 +282,16 @@ cnoreabbrev <expr> h <SID>HelpTab()
 
 
 " 文件头-------------------------------
+" 1
+" autocmd bufnewfile *.py call HeaderPython()
+" function HeaderPython()
+"     call setline(1, "#!/usr/bin/env python")
+"     call append(1, "# -*- coding: utf-8 -*-")
+"     normal G
+"     normal o
+"     normal o
+" endf
+" 2
 function FileHead()
     call append( 0,"---")
     call append( 1,"create time   : ".strftime("%Y-%m-%d %H:%M:%S") )
@@ -361,6 +382,34 @@ endif
 
 
 " Tools: gtags ------------------------------
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                              Complete                                     │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+"离开插入模式后自动关闭预览窗口
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"回车即选中当前项
+inoremap <expr> <CR>     pumvisible() ? "\<C-y>" : "\<CR>"
+" 对应的插件设置
+" let g:xxx_select_completion = ['<C-j>', '<Down>']
+" let g:xxx_previous_completion = ['<C-k>', '<Up>']
+" let g:xxx_invoke_completion = '<Enter>'
+" let g:xxx_semantic_triggers =  {
+"     \ 'c' : ['->', '.'],
+"     \ 'objc' : ['->', '.'],
+"     \ 'ocaml' : ['.', '#'],
+"     \ 'cpp,objcpp' : ['->', '.', '::'],
+"     \ 'php' : ['->', '::'],
+"     \ 'cs,java,javascript,vim,coffee,python,scala,go' : ['.'],
+"     \ 'ruby' : ['.', '::']
+" \}
+
+
+" let g:xxx_ExpandSnippetTrigger="<tab>"
+" let g:xxx_expandabbr_key = '<C-e>'
+
+
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                             Edit & Diff                                   │
