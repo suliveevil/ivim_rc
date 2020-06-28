@@ -408,7 +408,42 @@ nnoremap <leader>/ :call eregex#toggle()<CR>
 " nnoremap ,? /
 " let g:eregex_force_case = 1
 
-" Plugin : nru ----------------------------
+" Plugin: CtrlP ---------------------------
+" path: root a current
+let g:ctrlp_working_path_mode = 'rac'
+" 1:follow symlinks but ignore looped internal symlinks to avoid duplicates.
+let g:ctrlp_follow_symlinks = 1
+let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript',
+\ 'undo', 'line', 'changes', 'mixed', 'bookmarkdir']
+" let g:ctrlp_user_command = 'find %s -type f'       " MacOSX/Linux
+" let g:ctrlp_user_command =
+" \ 'find %s -type f | grep -v -P "\.jpg$|/tmp/"'      " MacOSX/Linux
+let g:ctrlp_use_caching = 1
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_cache_dir = $HOME.'/_vim/.files/ctrlp'
+let g:ctrlp_reuse_window = 'netrw\|help\|quickfix'
+let g:ctrlp_root_markers = [
+    \ 'idea',
+    \ '.git',
+    \ '.vim',
+    \ '.vscode',
+    \ 'requirements.txt',
+\ ]
+
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+    \ 'file': '\v\.(exe|so|dll|pyc)$',
+    \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
+\ }
+
+" let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+" let g:ctrlp_custom_ignore = {
+"     \ 'file': '\v(\.cpp|\.h|\.hh|\.cxx|\.pyc)@<!$'
+" \ }
+" let g:ctrlp_custom_ignore = {
+"     \ 'func': 'some#custom#match_function'
+"     \ }
+" Plugin : mru ----------------------------
 " let MRU_File = '~/_vim/.files/vim_mru_files'
 
 " Plugin : vim-fuzzyfinder ----------------
@@ -1261,6 +1296,13 @@ highlight default link WhichKeyDesc      Identifier
 "                           \<c-r>=CleverTab#Complete('stop')<cr>
 "                           inoremap <silent><s-tab> <c-r>=CleverTab#Complete('prev')<cr>
 
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                                 Operator                                  │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+
+
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                  Motion                                   │
 " └───────────────────────────────────────────────────────────────────────────┘
@@ -1273,9 +1315,7 @@ let g:EasyMotion_keys =
 
 " Plugin : vim-easymotion-chs -------------
 
-" ┌───────────────────────────────────────────────────────────────────────────┐
-" │                                 Operator                                  │
-" └───────────────────────────────────────────────────────────────────────────┘
+
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                Text Object                                │
@@ -1381,7 +1421,7 @@ let g:repl_position = 3
 " Plugin : ** -----------------
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
-" │                               File FileType                               │
+" │                            FileType Transfer                              │
 " └───────────────────────────────────────────────────────────────────────────┘
 
 " Plugin : jupytext --------------------
@@ -1392,6 +1432,41 @@ let g:jupytext_command = 'jupytext'
 let g:jupytext_filetype_map = {'md':'markdown'}
 let g:jupytext_print_debug_msgs = 1
 let g:jupytext_to_ipynb_opts = '--to=ipynb --update'
+
+" Plugin : vim-pandoc ---------------
+
+let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
+let g:pandoc#filetypes#pandoc_markdown = 0
+
+" let g:pandoc#modules#enabled = [
+"    \ "formatting", "folding", "bibliographies",
+"    \ "completion","metadata", "menu",
+"    \ "executors", "keyboard", "toc", "spell", "hypertext"
+" \ ]
+let g:pandoc#modules#disabled = ["folding"]
+
+" let g:pandoc#command#autoexec_command = "Pandoc! pdf"
+
+let g:pandoc#after#modules#enabled = ["nrrwrgn", "ultisnips"]
+
+if !exists('g:neocomplete#sources#omni#input_patterns')
+    let g:neocomplete#sources#omni#input_patterns = {}
+endif
+let g:neocomplete#sources#omni#input_patterns.pandoc = '@'
+
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                            FileType LaTeX                                 │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+" Plugin : vim-latex -------------------
+
+
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                            FileType Markdown                              │
+" └───────────────────────────────────────────────────────────────────────────┘
+
+
 
 " Plugin : vim-markdown ---------------
 
@@ -1425,29 +1500,19 @@ let g:vim_markdown_new_list_item_indent = 1
 
 let g:vim_markdown_edit_url_in = 'tab'
 
-" Plugin : vim-pandoc ---------------
 
-let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
-let g:pandoc#filetypes#pandoc_markdown = 0
 
-" let g:pandoc#modules#enabled = [
-"    \ "formatting", "folding", "bibliographies",
-"    \ "completion","metadata", "menu",
-"    \ "executors", "keyboard", "toc", "spell", "hypertext"
-" \ ]
-let g:pandoc#modules#disabled = ["folding"]
+" ┌───────────────────────────────────────────────────────────────────────────┐
+" │                               FileType other                              │
+" └───────────────────────────────────────────────────────────────────────────┘
 
-" let g:pandoc#command#autoexec_command = "Pandoc! pdf"
-
-let g:pandoc#after#modules#enabled = ["nrrwrgn", "ultisnips"]
-
-if !exists('g:neocomplete#sources#omni#input_patterns')
-    let g:neocomplete#sources#omni#input_patterns = {}
-endif
-let g:neocomplete#sources#omni#input_patterns.pandoc = '@'
-"
+" Plugin :  ----------------
+" Plugin :  ----------------
+" Plugin :  ----------------
+" Plugin :  ----------------
 
 " Plugin : vimwiki ----------------
+" vimwiki sucks because it conflicts woth other fold&syntax plugins
 
 " nnoremap <Leader>wki     <Plug>VimwikiIndex
 " nnoremap <Leader>wkti    <Plug>VimwikiTabIndex
