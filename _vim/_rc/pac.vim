@@ -33,6 +33,12 @@ inoremap <silent> <Leader>edt  <Plug>(PainlessdigraphToggle)
 " │                                 Chinese                                   │
 " └───────────────────────────────────────────────────────────────────────────┘
 
+" Plugin : pangu -----------------------------
+
+autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.org
+\ call PanGuSpacing()
+
+
 " Plugin : ZFVimIM ZFVimJob ----------
 " keymap
 " let g:ZFVimIM_keymap = 0
@@ -103,10 +109,6 @@ let g:ZFVimIM_DEBUG_profile = 1
 " let g:ZFVimIM_cloudAsync_autoInit=1
 " let g:ZFVimIM_cloudAsync_timeout=30000
 
-" Plugin : pangu -----------------------------
-
-autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.org
-\ call PanGuSpacing()
 
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                               Document                                    │
@@ -443,6 +445,28 @@ let g:ctrlp_custom_ignore = {
 " let g:ctrlp_custom_ignore = {
 "     \ 'func': 'some#custom#match_function'
 "     \ }
+
+" Plugin: Denite ---------------------------
+
+
+" Define mappings
+autocmd FileType denite call s:denite_my_settings()
+function! s:denite_my_settings() abort
+    nnoremap <silent><buffer><expr> <CR>
+        \ denite#do_map('do_action')
+    nnoremap <silent><buffer><expr> d
+        \ denite#do_map('do_action', 'delete')
+    nnoremap <silent><buffer><expr> p
+        \ denite#do_map('do_action', 'preview')
+    nnoremap <silent><buffer><expr> q
+        \ denite#do_map('quit')
+    nnoremap <silent><buffer><expr> i
+        \ denite#do_map('open_filter_buffer')
+    nnoremap <silent><buffer><expr> <Space>
+        \ denite#do_map('toggle_select').'j'
+endfunction
+
+
 " Plugin : mru ----------------------------
 " let MRU_File = '~/_vim/.files/vim_mru_files'
 
@@ -529,6 +553,37 @@ endfunction
 " │                         Highlight Indent Syntax                           │
 " └───────────────────────────────────────────────────────────────────────────┘
 
+" Plugin : rainbow -----------------
+let g:rainbow_active = 1
+let g:rainbow_conf = {
+\	'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+\	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+\	'operators': '_,_',
+\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+\	'separately': {
+\		'*': {},
+\		'tex': {
+\			'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/'],
+\		},
+\		'lisp': {
+\			'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'],
+\		},
+\		'vim': {
+\			'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/', 'start=/{/ end=/}/ fold', 'start=/(/ end=/)/ containedin=vimFuncBody', 'start=/\[/ end=/\]/ containedin=vimFuncBody', 'start=/{/ end=/}/ fold containedin=vimFuncBody'],
+\		},
+\		'html': {
+\			'parentheses': ['start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end=#</\z1># fold'],
+\		},
+\		'css': 0,
+\ }
+\ }
+
+" Plugin : hi-Pairs ----------------------------
+
+let g:hiPairs_enable_matchParen = 0
+let g:hiPairs_timeout = 300
+let g:hiPairs_insert_timeout = 300
+
 " Plugin : vim-cursorword -----------------
 
 let g:cursorword = 1
@@ -549,11 +604,7 @@ augroup illuminate_augroup
     autocmd VimEnter * hi link illuminatedWord CursorLine
 augroup END
 
-" Plugin : hi-Pairs ----------------------------
 
-let g:hiPairs_enable_matchParen = 1
-let g:hiPairs_timeout = 500
-let g:hiPairs_insert_timeout = 500
 
 " Plugin : vim-highlightedyank -----------------
 
@@ -1121,7 +1172,7 @@ nnoremap <Leader>nt :NERDTreeToggle<CR>
 let g:NERDTreeMapOpenVSplit = "<NOP>"
 
 let g:NERDTreeDirArrows           = 1
-let g:NERDTreeDirArrowExpandable  = '📁'
+let g:NERDTreeDirArrowExpandable  = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
 let g:NERDTreeShowHidden          = 1
 let g:NERDTreeBookmarksFile       = 1
@@ -1694,6 +1745,9 @@ let g:limelight_conceal_ctermfg = 240
 " ┌───────────────────────────────────────────────────────────────────────────┐
 " │                                    MISC                                   │
 " └───────────────────────────────────────────────────────────────────────────┘
+" swy-ivim
+set guifont=YaHei\ Consolas\ Icon\ Hybrid:h15
+
 " Plugin : vim-timetap -----------------
 if !isdirectory("_vim/.files/timetap")
     call mkdir("_vim/.files/timetap", "p")

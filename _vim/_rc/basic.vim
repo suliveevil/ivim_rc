@@ -170,6 +170,13 @@ vnoremap <leader>re    <Esc>:reg<CR>
 " │                                    iVim                                   │
 " └───────────────────────────────────────────────────────────────────────────┘
 
+if has('gui_running')
+    if has("win32") || has("win64") || has("linux") || has("unix")
+        set guifont=Code\ New\ Roman:h18,Menlo:h15
+    elseif
+        set guifont=Cuorier:h16
+    endif
+endif
 
 
 nnoremap <Leader>fd    :!openurl dash://<cword><CR> :<Esc>
@@ -767,9 +774,7 @@ set listchars=tab:»■,trail:■
 
 
 "✅ 字体
-if has('ivim')
-    ifont Menlo 14
-endif
+set guifont=Code\ New\ Roman
 
 
 "✅ 单行字符数提示(会导致屏幕重绘，耗时)
