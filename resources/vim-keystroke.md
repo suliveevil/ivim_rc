@@ -24,11 +24,13 @@ If you use Tab Complete in cmdmode, `.vimkeys` will log the actually pressed key
 If you map shortcuts to cmd mode command, `.vimkeys` will log both keystroke and the command.
 
 
-### human friendly part
+### human friendly part (literally logged)
 
-cmd mode input
+cmd mode input(including <Tab>)
 
 normal mode Space and English letters [a-zA-Z]
+
+terminal mode <Tab>
 
 
 
