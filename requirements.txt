@@ -48,7 +48,7 @@ pyparsing==2.4.7
 pyrsistent==0.16.0
 pytest==5.4.3
 pytz==2020.1
-PyYAML==5.3.1
+PyYAML==5.4
 six==1.15.0
 snowballstemmer==2.0.0
 sqlparse==0.3.1
